@@ -1,8 +1,8 @@
-import React from 'react'
+// import React from 'react'
 
 const FooterBar = () => {
   return (
-    <div>FooterBar</div>
+    <footer>This is the footer</footer>
   )
 }
 
