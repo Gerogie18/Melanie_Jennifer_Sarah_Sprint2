@@ -1,9 +1,19 @@
-// Once a user selects a product, it should send them here.
-// We need to set up dynamic routing, so that the url is updated with the
-// product ID. 
+// This should display just one product.
+// Right now ProductList sends to here, but maybe the Shop should?
+
+//import { object } from "prop-types";
+import { useOutletContext, useParams } from "react-router-dom";
 
 const Product = () => {
-    return <h1>This is the product page</h1>;
+    const { id } = useParams()
+    const obj = useOutletContext()
+
+    return (
+        <>
+            <h2>Product {id}</h2>
+            <p>Testing outlet context: {obj.hello}</p>
+        </>
+    );
   };
   
   export default Product;
