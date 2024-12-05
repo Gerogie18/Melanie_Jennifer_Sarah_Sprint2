@@ -1,5 +1,10 @@
-// This should display just one product.
-// Right now ProductList sends to here, but maybe the Shop should?
+// 2. Product Details Page:
+// o Provides detailed information about a selected product, including:
+    // § Larger product image
+    // § Description
+    // § Price
+    // § Available quantity
+// o Option to add the product to the cart.
 
 //import { object } from "prop-types";
 import { useOutletContext, useParams } from "react-router-dom";

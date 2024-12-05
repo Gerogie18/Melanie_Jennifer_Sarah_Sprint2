@@ -7,7 +7,7 @@ import { Outlet, Link } from "react-router-dom";
 const ProductLayout = () => {
   return (
     <>
-        <h1>Product List</h1>
+        <h1>Shop</h1>
         <div className = "productNav">
             <Link to="/product/1">Product 1</Link>
             <br/>

@@ -1,7 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout"
 import Home from "./pages/Home";
-import Shop from "./pages/Shop";
 import ProductLayout from "./components/ProductLayout";
 import ProductList from "./pages/ProductList";
 import Product from "./pages/Product";
@@ -15,7 +14,6 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="shop" element={<Shop />} />
           <Route path="product" element={<ProductLayout />} >
             <Route index element={<ProductList />} />
             <Route path=":id" element={<Product />} />
