@@ -38,8 +38,9 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: var(--color-background);
     color: var(--color-font);
-    width: 100nh;
-    height: 100vh;
+    width: 100vw;
+    min-height: 100vh;
+    height: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,7 +49,9 @@ body {
 /* Container */
 .container {
     width: 100vw; /* Full width of the viewport */
-    height: 100vh; /* Full height of the viewport */
+    height: fit-content; /* Full height of the viewport */
+    min-height: 100vh; /* Minimum height of the viewport */
+    max-width: 1200px; /* Maximum width of the container */
     display: flex; /* Flexbox for layout control */
     flex-direction: column; /* Stack items vertically */
     justify-content: space-between; /* Distribute items: top, middle, bottom */
