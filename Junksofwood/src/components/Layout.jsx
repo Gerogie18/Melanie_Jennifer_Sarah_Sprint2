@@ -1,6 +1,6 @@
 import { Outlet, NavLink, useLocation} from "react-router-dom";
 import FooterBar from './FooterBar';
-import PromoBanner from "./Promobanner";
+import PromoBanner from "./PromoBanner";
 import "../temp.css"
 
 

@@ -8,42 +8,50 @@
 
 
 
-//import {useState} from 'react'
+// import {useState} from 'react'
 
 
 // function ProductList({ products, onDelete, onToggle}){
-const ProductList = () => {
+// const ProductList = () => {
 
-//    const [id, setID] = useState();
+// //    const [id, setID] = useState();
 
 
 
-    return (<div>
-        <p>This is a list of products.</p>
-        <p>It might be the same as the store?</p>
-        <p> Or maybe we can make it a componet that filters by categories? I dunno. </p>
+//     return (<div>
+//         <p>This is a list of products.</p>
+//         <p>It might be the same as the store?</p>
+//         <p> Or maybe we can make it a componet that filters by categories? I dunno. </p>
 
-        </div>);
-  };
+//         </div>);
+//   };
   
-  export default ProductList;
+//   export default ProductList;
 
 //We can select and unselect (delete?) products from the product list 
 
-// import Product from "./Product";
-// const ProductList = ({ products, onToggle }) => {
-//   return (
-//     <>
-//       {products.map((product) => (
-//         // <h3 key={product.id}>{product.text}</h3>
-//         <Product
-//           key={product.id}
-//           product={product}
-//           onToggle={onToggle}
-//         />
-//       ))}
-//     </>
-//   );
-// };
 
-// export default Tasks;
+import PropTypes from 'prop-types'
+import Product from "./Product";
+
+const ProductList = ({ products, onToggle }) => {
+  return (
+    <>
+      {products.map((product) => (
+        // <h3 key={product.id}>{product.text}</h3>
+        <Product
+          key={product.id}
+          product={product}
+          onToggle={onToggle}
+        />
+      ))}
+    </>
+  );
+};
+
+ProductList.propTypes = {
+  products: PropTypes.array.isRequired,
+  onToggle: PropTypes.func.isRequired
+};
+
+export default ProductList;

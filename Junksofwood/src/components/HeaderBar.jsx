@@ -1,4 +1,4 @@
-// import proptypes from 'prop-types'
+// import PropTypes from 'prop-types'
 
 const Header = () => {
   return (
