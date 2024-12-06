@@ -18,7 +18,7 @@ const Layout = () => {
                     <NavLink to="/" state="Hi">Home</NavLink>                
                 </li>
                 <li>
-                    <NavLink to="/product">Shop</NavLink>
+                    <NavLink to="/shop">Shop</NavLink>
                 </li>
                 <li>
                     <NavLink to="/about">About</NavLink>
@@ -28,9 +28,6 @@ const Layout = () => {
                 </li>
             </ul>
         </nav>
-        <div>
-        {location.state}
-            </div>
         <main>
             <Outlet />
         </main>
