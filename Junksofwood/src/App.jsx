@@ -21,6 +21,7 @@ import ProductList from "./pages/ProductList";
 import Product from "./pages/Product";
 import About from "./pages/About";
 import Cart from "./pages/Cart";
+import Test from "./pages/Test";
 import NotFound from "./pages/NotFound";
 
 function App() {
@@ -82,6 +83,7 @@ function App() {
           </Route>
           <Route path="about" element={<About />} />
           <Route path="cart" element={<Cart cartItems={addedProducts} onDelete={deleteProduct} />} />
+          <Route path="test" element={<Test />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
