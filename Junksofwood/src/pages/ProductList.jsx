@@ -2,8 +2,16 @@
 // We need to set it up so the id can change as the user selects a product
 
 
+// 1. Product Listing Page:
+// o Displays a grid or list of products fetched from a mock API.
+// o Each product includes an image, name, price, and a "View Details" or "Add to Cart" button.
+
+
+
 //import {useState} from 'react'
 
+
+// function ProductList({ products, onDelete, onToggle}){
 const ProductList = () => {
 
 //    const [id, setID] = useState();
@@ -19,3 +27,23 @@ const ProductList = () => {
   };
   
   export default ProductList;
+
+//We can select and unselect (delete?) products from the product list 
+
+// import Product from "./Product";
+// const ProductList = ({ products, onToggle }) => {
+//   return (
+//     <>
+//       {products.map((product) => (
+//         // <h3 key={product.id}>{product.text}</h3>
+//         <Product
+//           key={product.id}
+//           product={product}
+//           onToggle={onToggle}
+//         />
+//       ))}
+//     </>
+//   );
+// };
+
+// export default Tasks;
