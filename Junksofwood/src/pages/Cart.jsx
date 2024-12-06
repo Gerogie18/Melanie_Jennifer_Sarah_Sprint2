@@ -3,8 +3,25 @@
   // o Shows the total price of the items in the cart.
   // o Allows users to remove products or update their quantities.
 
-const Cart = () => {
-    return <h1>This is the Cart</h1>;
+import PropTypes from "prop-types";
+import Button from "../components/Button"
+function Cart ({cartItems, onDelete}) {
+    return (
+    <div>
+      <h1>This is the Cart</h1>
+      <p>{cartItems}</p>
+      <Button text="delete items" click={onDelete}/>
+    </div>
+      );
+
   };
-  
-  export default Cart;
+
+
+Cart.propTypes = {
+   cartItems: PropTypes.array.isRequired,
+   onDelete: PropTypes.func.isRequired
+   };
+
+export default Cart;
+
+

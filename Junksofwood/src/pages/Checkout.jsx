@@ -3,8 +3,19 @@
   // o Option to proceed with payment or simulate the checkout process.
   // o Simple confirmation message upon checkout.
 
-const Checkout = () => {
-    return <h1>Checkout</h1>;
+import PropTypes from "prop-types";
+
+const Checkout = ({cartItems}) => {
+    return (
+    <div>
+      <h1>Checkout</h1>
+      <p>{cartItems}</p>;
+    </div>
+    )
   };
   
-  export default Checkout;
+Checkout.propTypes = {
+  cartItems: PropTypes.array.isRequired
+};
+ 
+export default Checkout;
