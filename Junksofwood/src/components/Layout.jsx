@@ -1,27 +1,36 @@
-import { Outlet, Link } from "react-router-dom";
+import { Outlet, NavLink, useLocation} from "react-router-dom";
 import FooterBar from './FooterBar';
 import HeaderBar from './HeaderBar';
+import "../index.css"
 
 const Layout = () => {
+
+    const location = useLocation()
+    console.log(location)
+
   return (
     <div className = "container">
         <HeaderBar />
         <nav>
             <ul>
                 <li>
-                    <Link to="/">Home</Link>
+                    {/* <NavLink style={({ isActive }) => { return isActive ? {color: "red"} : {}} } to="/">Home</NavLink> */}
+                    <NavLink to="/" state="Hi">Home</NavLink>                
                 </li>
                 <li>
-                    <Link to="/product">Shop</Link>
+                    <NavLink to="/product">Shop</NavLink>
                 </li>
                 <li>
-                    <Link to="/about">About</Link>
+                    <NavLink to="/about">About</NavLink>
                 </li>
                 <li>
-                    <Link to="/cart">CART BUTTON</Link>
+                    <NavLink to="/cart">CART BUTTON</NavLink>
                 </li>
             </ul>
         </nav>
+        <div>
+        {location.state}
+            </div>
         <main>
             <Outlet />
         </main>
