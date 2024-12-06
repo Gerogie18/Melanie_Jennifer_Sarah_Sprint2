@@ -50,11 +50,11 @@ const ProductLayout = () => {
     <>
         <h1>Shop</h1>
         <div className = "productNav">
-            <Link to="/product/1">Product 1</Link>
+            <Link to="/shop/1">Product 1</Link>
             <br/>
-            <Link to="/product/2">Product 2</Link>
+            <Link to="/shop/2">Product 2</Link>
             <br/>
-            <Link to={`/product/${number}`}>Updateable Product. Number: {number}</Link>
+            <Link to={`/shop/${number}`}>Updateable Product. Number: {number}</Link>
         </div>
         <div>
             <Outlet context={{hello: "world"}}/>
