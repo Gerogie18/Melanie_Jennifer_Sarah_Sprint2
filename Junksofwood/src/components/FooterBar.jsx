@@ -1,10 +1,12 @@
-// import React from 'react'
+import React from 'react'
+import { FaCopyright } from "react-icons/fa";
 
 const FooterBar = () => {
   return (
     <footer>
-      <h1>This is the footer
-      </h1>
+      <p>
+      <FaCopyright /> Copyright JunksofWood 2024
+      </p>
       </footer>
   )
 }

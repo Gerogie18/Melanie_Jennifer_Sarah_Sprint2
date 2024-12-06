@@ -1,0 +1,187 @@
+/* Fonts */
+@font-face {
+    font-family: 'Pacific Northwest';
+    src: url('./assets/fonts/pacific_northwest-webfont.woff2') format('woff2'),
+         url('./assets/fonts/pacific_northwest-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Root Beer';
+    src: url('./assets/fonts/root_beer-webfont.woff2') format('woff2'),
+         url('./assets/fonts/root_beer-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Root variables */
+:root {
+    --color-primary: #77b2df;
+    --color-secondary: #4f9eb6;
+    --color-background: #f9f9f9;
+    --color-focus: #242aea;
+    --color-font: #282b3f;
+    --color-hover: #4e6e88;
+    --color-border: #cccccc;
+}
+
+/* Global reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-font);
+    width: 100nh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container */
+.container {
+    width: 100vw; /* Full width of the viewport */
+    height: 100vh; /* Full height of the viewport */
+    display: flex; /* Flexbox for layout control */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: space-between; /* Distribute items: top, middle, bottom */
+    align-items: center; /* Center items horizontally */
+    background-color: var(--color-background); /* Optional: Add background color */
+    padding: 1em; /* Add spacing inside the container */
+    box-sizing: border-box; /* Ensure padding is included in dimensions */
+}
+
+
+/* Navigation bar */
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    background-color: var(--color-primary);
+    color: var(--color-font);
+    font-family: 'Root Beer', Arial, Helvetica, sans-serif;
+    font-weight: bold   ;
+    border-bottom: 2px solid var(--color-border);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin: 0 1em;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--color-hover);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+}
+
+/* Main content */
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    background-color: var(--color-primary);
+    color: white;
+    text-align: center;
+    border-top: 2px solid var(--color-border);
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    nav, footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.5em;
+    }
+}
+
+:focus {
+    outline: none;
+    padding: 0.2em;
+    box-shadow: 0 0 0 2px var(--color-focus);
+    transition: box-shadow 0.2s ease-in-out;
+};
+
+button {
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--color-primary);
+    color: var(--color-font);
+    transition: background-color 0.2s ease-in-out;
+};
+
+button:hover {
+    background-color: var(--color-hover);
+    color: var(--color-font);
+    transition: background-color 0.2s ease-in-out;
+};
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--color-focus);
+    transition: box-shadow 0.2s ease-in-out;
+};
+
+/* Promo Banner Styles */
+.promo-banner {
+    width: 90%;
+    height: fit-content;
+    padding: 1em;
+    background-color: var(--color-secondary); /* Set a proper background */
+    color: var(--color-font); /* Ensure text color contrasts with background */
+    text-align: center; /* Optional: Center align text */
+    margin: 1em auto; /* Center promo-banner in the container */
+    border-radius: 8px; /* Optional: Add rounded corners for modern design */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for emphasis */
+}
+
+/* Link Styles inside .promo-banner */
+.promo-banner a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: bold; /* Optional: Make links bold for prominence */
+}
+
+.promo-banner a:hover {
+    color: var(--color-hover);
+    text-decoration: underline;
+}
+
+.promo-banner a:active {
+    color: var(--color-primary);
+}
+
+.promo-banner a:visited {
+    color: var(--color-visited);
+}

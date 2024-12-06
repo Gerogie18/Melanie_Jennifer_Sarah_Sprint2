@@ -1,7 +1,8 @@
 import { Outlet, NavLink, useLocation} from "react-router-dom";
 import FooterBar from './FooterBar';
-import HeaderBar from './HeaderBar';
-import "../index.css"
+import PromoBanner from "./Promobanner";
+import "../temp.css"
+
 
 const Layout = () => {
 
@@ -10,23 +11,25 @@ const Layout = () => {
 
   return (
     <div className = "container">
-        <HeaderBar />
+        <PromoBanner />
         <nav>
-            <ul>
-                <li>
-                    {/* <NavLink style={({ isActive }) => { return isActive ? {color: "red"} : {}} } to="/">Home</NavLink> */}
-                    <NavLink to="/" state="Hi">Home</NavLink>                
-                </li>
-                <li>
-                    <NavLink to="/shop">Shop</NavLink>
-                </li>
-                <li>
-                    <NavLink to="/about">About</NavLink>
-                </li>
-                <li>
-                    <NavLink to="/cart">CART BUTTON</NavLink>
-                </li>
-            </ul>
+            <div className ='nav-container' >
+                <ul>
+                    <li>
+                        {/* <NavLink style={({ isActive }) => { return isActive ? {color: "red"} : {}} } to="/">Home</NavLink> */}
+                        <NavLink to="/" state="Hi">Home</NavLink>                
+                    </li>
+                    <li>
+                        <NavLink to="/shop">Shop</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/about">About</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/cart">CART BUTTON</NavLink>
+                    </li>
+                </ul>
+            </div>
         </nav>
         <main>
             <Outlet />
