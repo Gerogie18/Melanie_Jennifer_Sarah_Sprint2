@@ -1,0 +1,692 @@
+{
+    "Wooden Brooches": {
+        "Title": "Wooden Brooches",
+        "Description": "Wooden Brooches are made from the finest quality of wood. They are handcrafted with love. They are perfect for any occasion and can be worn with any outfit.",
+        "Materials": "",
+        "Varients": [
+            {
+                "Name": "Canada Brooch",
+                "Price": 10,
+                "Description": "",
+                "size": "",
+                "tags": ["Brooch", "Wood", "Canada", "Hockey", "Sport"],
+                "Images": [{
+                    "title": "Canada Brooch - Card",
+                    "src": "../assets/productimages/brooches/CanadaBroochCard.jpg",
+                    "alt": ""
+                },
+                {
+                    "title": "Canada Brooch - Plate",
+                    "src": "../assets/productimages/brooches/CanadaBroochPlate.jpg",
+                    "alt": ""
+                }]
+            },
+            {
+                "Name": "Rowhouse Brooch - Orange and Blue",
+                "Price": 10,
+                "Description": "",
+                "size": "",
+                "tags": ["Brooch", "Wood", "Rowhouse", "Orange and Blue", "Newfoundland"],
+                "Images": [
+                    {
+                    "title": "Rowhouse Brooch - Orange and Blue",
+                    "src": "../assets/productimages/brooches/RowhouseBroochPlate_OrangeBlue.jpg",
+                    "alt": ""
+                }
+            ]
+            },
+            {
+                "Name": "Rowhouse Brooch - Purple and Yellow",
+                "Price": 10,
+                "Description": "",
+                "size": "",
+                "tags": ["Brooch", "Wood", "Rowhouse", "Purple and Yellow", "Newfoundland"],
+                "Images": [
+                    {
+                    "title": "Rowhouse Brooch - Purple and Yellow",
+                    "src": "../assets/productimages/brooches/RowhouseBroochPlate_PurpleYellow.jpg",
+                    "alt": ""
+                }
+            ]
+            },
+            {
+                "Name": "Rowhouse Brooch - Red and Purple",
+                "Price": 10,
+                "Description": "",
+                "size": "",
+                "tags": ["Brooch", "Wood", "Rowhouse", "Green and Red", "Newfoundland"],
+                "Images": [
+                    {
+                    "title": "Rowhouse Brooch - Green and Red",
+                    "src": "../assets/productimages/brooches/RowhouseBroochPlate_RedPurple.jpg",
+                    "alt": ""
+                }
+            ]
+            }, 
+            {
+                "Name": "Labrador Brooch - Natural",
+                "Price": 10,
+                "Description": "",
+                "size": "",
+                "tags": ["Brooch", "Wood", "Labrador"],
+                "Images": [
+                    {
+                    "title": "Labrador Brooch - Card",
+                    "src": "../assets/productimages/brooches/LabradorBroochCard.jpg",
+                    "alt": ""
+                },
+                {
+                    "title": "Labrador Brooch - Plate",
+                    "src": "../assets/productimages/brooches/LabradorBroochPlate.jpg",
+                    "alt": ""
+                }
+            ]
+            },
+            {
+                "Name": "Labrador Brooch - Stained",
+                "Price": 10,
+                "Description": "",
+                "size": "",
+                "tags": ["Brooch", "Wood", "Labrador", "Stained"],
+                "Images": [
+                    {
+                    "title": "Labrador Brooch - Card",
+                    "src": "../assets/productimages/brooches/LabradorBroochCard.jpg",
+                    "alt": ""
+                },
+                {
+                    "title": "Labrador Brooch - Plate",
+                    "src": "../assets/productimages/brooches/LabradorBroochPlate.jpg",
+                    "alt": ""
+                }
+            ]
+            },
+            {
+                "Name": "Newfoundland Brooch - Natural",
+                "Price": 10,    
+                "Description": "",
+                "size": "",
+                "tags": ["Brooch", "Wood", "Newfoundland"],
+                "Images": [
+                    {
+                    "title": "Newfoundland Brooch - Card",
+                    "src": "../assets/productimages/brooches/NewfoundlandBroochCard.jpg",
+                    "alt": ""
+                },
+                {
+                    "title": "Newfoundland Brooch - Plate",
+                    "src": "../assets/productimages/brooches/NewfoundlandBroochPlate.jpg",
+                    "alt": ""
+                }
+            ]   
+            },
+            {
+                "Name": "Newfoundland Brooch - Stained",
+                "Price": 10,
+                "Description": "",
+                "size": "",
+                "tags": ["Brooch", "Wood", "Newfoundland", "Stained"],
+                "Images": [
+                    {
+                    "title": "Newfoundland Brooch - Card",
+                    "src": "../assets/productimages/brooches/NewfoundlandBroochCard.jpg",
+                    "alt": ""
+                },
+                {
+                    "title": "Newfoundland Brooch - Plate",
+                    "src": "../assets/productimages/brooches/NewfoundlandBroochPlate.jpg",
+                    "alt": ""
+                }
+            ]
+            },
+            {
+                "Name": "Puffin Brooch",
+                "Price": 10,
+                "Description": "",
+                "size": "",
+                "tags": ["Brooch", "Wood", "Puffin"],
+                "Images": [
+                    {
+                    "title": "Puffin Brooch - Card",
+                    "src": "../assets/productimages/brooches/PuffinBroochCard.jpg",
+                    "alt": ""
+                },
+                {
+                    "title": "Puffin Brooch - Plate",
+                    "src": "../assets/productimages/brooches/PuffinBroochPlate.jpg",
+                    "alt": ""
+                }
+            ]
+            }
+        ]
+    },
+    "Wooden Earrings": {
+        "Title": "Wooden Earrings",
+        "Description": "Wooden Earrings are made from the finest quality of wood. They are handcrafted with love. They are perfect for any occasion and can be worn with any outfit.",
+        "Materials": "",
+        "Varients": [
+            {
+                "Name": "Partridgeberry Earrings",
+                "Price": 10,
+                "Description": "",
+                "size": "",
+                "tags": ["Earrings", "Wood", "Partridgeberry", "Newfoundland"],
+                "Images": [
+                    {
+                        "title": "Partridgeberry Earrings - Card",
+                        "src": "../assets/productimages/earrings/BerryEarringCard_Partridgeberry.jpg",
+                        "alt": ""
+                    },
+                    {
+                        "title": "Partridgeberry Earrings - Plate",
+                        "src": "../assets/productimages/earrings/BerryEarringPlate_Partridgeberry.jpg",
+                        "alt": ""
+                    }
+                ]
+            },
+            {
+                "Name": "Bakeapple Earrings",
+                "Price": 10,
+                "Description": "",
+                "size": "",
+                "tags": ["Earrings", "Wood", "Bakeapple", "Newfoundland"],
+                "Images": [
+                    {
+                        "title": "Bakeapple Earrings - Card",
+                        "src": "../assets/productimages/earrings/BerryEarringCard_Bakeapple.jpg",
+                        "alt": ""
+                    },
+                    {
+                        "title": "Bakeapple Earrings - Plate",
+                        "src": "../assets/productimages/earrings/BerryEarringPlate_Bakeapple.jpg",
+                        "alt": ""
+                    }
+                ]
+            },
+            {
+                "Name": "Blueberry Earrings",
+                "Price": 10,
+                "Description": "",
+                "size": "",
+                "tags": ["Earrings", "Wood", "Blueberry", "Newfoundland"],
+                "Images": [
+                    {
+                        "title": "Blueberry Earrings - Card",
+                        "src": "../assets/productimages/earrings/BerryEarringCard_Blueberry.jpg",
+                        "alt": ""
+                    },
+                    {
+                        "title": "Blueberry Earrings - Plate",
+                        "src": "../assets/productimages/earrings/BerryEarringPlate_Blueberry.jpg",
+                        "alt": ""
+                    }
+                ]
+            },
+            {
+                "Name": "Casette Earrings",
+                "Price": 10,
+                "Description": "",
+                "size": "",
+                "tags": ["Earrings", "Wood", "Casette"],
+                "Images": [
+                    {
+                        "title": "Casette Earrings - Plate",
+                        "src": "../assets/productimages/earrings/CasetteEarringPlate.jpg",
+                        "alt": ""
+                    }
+                ]
+            },
+            {
+                "Name": "Diamond Earrings",
+                "Price": 10,
+                "Description": "",
+                "size": "",
+                "tags": ["Earrings", "Wood", "Diamond"],
+                "Images": [
+                    {
+                        "title": "Diamond Earrings - Plate",
+                        "src": "../assets/productimages/earrings/DiamondEarringPlate.jpg",
+                        "alt": ""
+                    },                  
+                    {
+                        "title": "Diamond Earrings - Card",
+                        "src": "../assets/productimages/earrings/DiamondEarringCard.jpg",
+                        "alt": ""
+                    }
+                ]
+            },
+            {
+                "Name": "Hotdog Earring",
+                "Price": 10,
+                "Description": "",
+                "size": "",
+                "tags": ["Earrings", "Wood", "Hotdog"],
+                "Images": [
+                    {
+                        "title": "Hotdog Earrings - Plate",
+                        "src": "../assets/productimages/earrings/HotdogEarringPlate.jpg",
+                        "alt": ""
+                    },                
+                    {
+                        "title": "Hotdog Earrings - Card",
+                        "src": "../assets/productimages/earrings/HotdogEarringCard.jpg",
+                        "alt": ""
+                    }
+                ]
+            },
+            {
+                "Name": "Labrador Earrings",
+                "Price": 10,
+                "Description": "",
+                "size": "",
+                "tags": ["Earrings", "Wood", "Labrador"],
+                "Images": [
+                    {
+                        "title": "Labrador Earrings - Plate",
+                        "src": "../assets/productimages/earrings/MapEarringPlate_Labrador.jpg",
+                        "alt": ""
+                    },                
+                    {
+                        "title": "Labrador Earrings - Card",
+                        "src": "../assets/productimages/earrings/MapEarringCard_Labrador.jpg",
+                        "alt": ""
+                    }, 
+                    {
+                        "title": "Labrador Earrings - Plate - Dime",
+                        "src": "../assets/productimages/earrings/MapEarringPlateDime_Labrador.jpg",
+                        "alt": ""
+                    }
+                ]
+            },
+            {
+                "Name": "Leaf Earring - Green",
+                "Price": 10,
+                "Description": "",
+                "size": "",
+                "tags": ["Earrings", "Wood", "Leaf", "Green"],
+                "Images": [
+                    {
+                        "title": "Leaf Earrings - Plate",
+                        "src": "../assets/productimages/earrings/LeafEarringPlate_Green.jpg",
+                        "alt": ""
+                    },                
+                    {
+                        "title": "Leaf Earrings - Card",
+                        "src": "../assets/productimages/earrings/LeafEarringCard_Green.jpg",
+                        "alt": ""
+                    }
+                ]
+            },
+            {
+                "Name": "Leaf Earring - Red",
+                "Price": 10,
+                "Description": "",
+                "size": "",
+                "tags": ["Earrings", "Wood", "Leaf", "Red"],
+                "Images": [
+                    {
+                        "title": "Leaf Earrings - Plate",
+                        "src": "../assets/productimages/earrings/LeafEarringPlate_Red.jpg",
+                        "alt": ""
+                    },                
+                    {
+                        "title": "Leaf Earrings - Plate - Dime",
+                        "src": "../assets/productimages/earrings/LeafEarringPlateDime_Red.jpg",
+                        "alt": ""
+                    }
+                ]
+            },
+            {
+                "Name": "Leaf Earring - Yellow",
+                "Price": 10,
+                "Description": "",
+                "size": "",
+                "tags": ["Earrings", "Wood", "Leaf", "Yellow"],
+                "Images": [
+                    {
+                        "title": "Leaf Earrings - Plate",
+                        "src": "../assets/productimages/earrings/LeafEarringPlate_Yellow.jpg",
+                        "alt": ""
+                    },                
+                    {
+                        "title": "Leaf Earrings - Plate - Dime",
+                        "src": "../assets/productimages/earrings/LeafEarringPlateDime_Yellow.jpg",
+                        "alt": ""
+                    }
+                ]
+            },
+            {
+                "Name": "Leaf Earring - Orange",
+                "Price": 10,
+                "Description": "",
+                "size": "",
+                "tags": ["Earrings", "Wood", "Leaf", "Orange"],
+                "Images": [
+                    {
+                        "title": "Leaf Earrings - Plate",
+                        "src": "../assets/productimages/earrings/LeafEarringPlate_Orange.jpg",
+                        "alt": ""
+                    },                
+                    {
+                        "title": "Leaf Earrings - Plate - Dime",
+                        "src": "../assets/productimages/earrings/LeafEarringPlateDime_Orange.jpg",
+                        "alt": ""
+                    }
+                ]
+            },
+            {
+                "Name": "Maple Leaf Earrings - Natural",
+                "Price": 10,
+                "Description": "",
+                "size": "",
+                "tags": ["Earrings", "Wood", "Maple Leaf"],
+                "Images": [
+                    {
+                        "title": "Maple Leaf Earrings - Plate",
+                        "src": "../assets/productimages/earrings/MapleLeafEarringPlate_Natural.jpg",
+                        "alt": ""
+                    },                
+                    {
+                        "title": "Maple Leaf Earrings - Card",
+                        "src": "../assets/productimages/earrings/MapleLeafEarringCard_Natural.jpg",
+                        "alt": ""
+                    }
+                ]
+            },
+            {
+                "Name": "Maple Leaf Earrings - Red",
+                "Price": 10,
+                "Description": "",
+                "size": "",
+                "tags": ["Earrings", "Wood", "Maple Leaf", "Red"],
+                "Images": [
+                    {
+                        "title": "Red Maple Leaf Earrings - Plate",
+                        "src": "../assets/productimages/earrings/MapleLeafEarringPlate_Red.jpg",
+                        "alt": ""
+                    },                
+                    {
+                        "title": "Red Maple Leaf Earrings - Card",
+                        "src": "../assets/productimages/earrings/MapleLeafEarringCard_Red.jpg",
+                        "alt": ""
+                    }
+                ]
+            },
+            {
+                "Name": "Newfoundland Earrings",
+                "Price": 10,
+                "Description": "",
+                "size": "",
+                "tags": ["Earrings", "Wood", "Newfoundland"],
+                "Images": [
+                    {
+                        "title": "Newfoundland Earrings - Card",
+                        "src": "../assets/productimages/earrings/MapEarringCard_Newfoundland.jpg",
+                        "alt": ""
+                    },                
+                    {
+                        "title": "Newfoundland Earrings - Plate",
+                        "src": "../assets/productimages/earrings/MapEarringPlate_Newfoundland_.jpg",
+                        "alt": ""
+                    }
+                ]
+            },
+            {
+                "Name": "Newfoundland and Labrador Earrings",
+                "Price": 10,
+                "Description": "",
+                "size": "",
+                "tags": ["Earrings", "Wood", "Newfoundland", "Labrador"],
+                "Images": [
+                    {
+                        "title": "Newfoundland and Labrador Earrings - Card",
+                        "src": "../assets/productimages/earrings/MapEarringCard_NewfoundlandLabrador.jpg",
+                        "alt": ""
+                    },                
+                    {
+                        "title": "Newfoundland and Labrador Earrings - Plate",
+                        "src": "../assets/productimages/earrings/MapEarringPlate_NewfoundlandLabrador.jpg",
+                        "alt": ""
+                    }
+                ]
+            },
+            {
+                "Name": "Moonkitties Earrings",
+                "Price": 10,
+                "Description": "",
+                "size": "",
+                "tags": ["Earrings", "Wood", "Moonkitties"],
+                "Images": [
+                    {
+                        "title": "Moonkitties Earrings - Plate",
+                        "src": "../assets/productimages/earrings/MoonkittiesEarringPlate.jpg",
+                        "alt": ""
+                    },                
+                    {
+                        "title": "Moonkitties Earrings - Card",
+                        "src": "../assets/productimages/earrings/MoonkittiesEarringCard.jpg",
+                        "alt": ""
+                    }
+                ]
+            },
+            {
+                "Name": "Pineapple Earrings",
+                "Price": 10,
+                "Description": "",
+                "size": "",
+                "tags": ["Earrings", "Wood", "Pineapple"],
+                "Images": [
+                    {
+                        "title": "Pineapple Earrings - Plate",
+                        "src": "../assets/productimages/earrings/PineappleEarringPlate.jpg",
+                        "alt": ""
+                    },                
+                    {
+                        "title": "Pineapple Earrings - Card",
+                        "src": "../assets/productimages/earrings/PineappleEarringCard.jpg",
+                        "alt": ""
+                    }
+                ]
+            },
+            {
+                "Name": "Planner Earrings",
+                "Price": 10,
+                "Description": "",
+                "size": "",
+                "tags": ["Earrings", "Wood", "Planner"],
+                "Images": [
+                    {
+                        "title": "Planner Earrings - Plate",
+                        "src": "../assets/productimages/earrings/PlannerEarringPlate.jpg",
+                        "alt": ""
+                    },                
+                    {
+                        "title": "Planner Earrings - Plate - Dime",
+                        "src": "../assets/productimages/earrings/PlannerEarringPlateDime.jpg",
+                        "alt": ""
+                    }
+                ]
+            },
+            {
+                "Name": "Ships Wheel Earrings",
+                "Price": 10,
+                "Description": "",
+                "size": "",
+                "tags": ["Earrings", "Wood", "Ships Wheel"],
+                "Images": [
+                    {
+                        "title": "Ships Wheel Earrings - Plate",
+                        "src": "../assets/productimages/earrings/ShipsWheelEarringPlate.jpg",
+                        "alt": ""
+                    },                
+                    {
+                        "title": "Ships Wheel Earrings - Card",
+                        "src": "../assets/productimages/earrings/ShipsWheelEarringCard.jpg",
+                        "alt": ""
+                    }
+                ] 
+            },
+            {
+                "Name": "Strawberry Earrings",
+                "Price": 10,
+                "Description": "",
+                "size": "",
+                "tags": ["Earrings", "Wood", "Strawberry"],
+                "Images": [
+                    {
+                        "title": "Strawberry Earrings - Plate",
+                        "src": "../assets/productimages/earrings/StrawberryEarringPlate.jpg",
+                        "alt": ""
+                    },                
+                    {
+                        "title": "Strawberry Earrings - Card",
+                        "src": "../assets/productimages/earrings/StrawberryEarringCard.jpg",
+                        "alt": ""
+                    }
+                ]
+            },
+            {
+                "Name": "Succulent Earrings",
+                "Price": 10,
+                "Description": "",
+                "size": "",
+                "tags": ["Earrings", "Wood", "Succulent"],
+                "Images": [
+                    {
+                        "title": "Succulent Earrings - Plate",
+                        "src": "../assets/productimages/earrings/SucculentEarringPlate.jpg",
+                        "alt": ""
+                    },                
+                    {
+                        "title": "Succulent Earrings - Card",
+                        "src": "../assets/productimages/earrings/SucculentEarringCard.jpg",
+                        "alt": ""
+                    }
+                ]
+            },
+            {
+                "Name": "Sushi Earrings",
+                "Price": 10,
+                "Description": "",
+                "size": "",
+                "tags": ["Earrings", "Wood", "Sushi"],
+                "Images": [
+                    {
+                        "title": "Sushi Earrings - Plate",
+                        "src": "../assets/productimages/earrings/SushiEarringPlate.jpg",
+                        "alt": ""
+                    },                
+                    {
+                        "title": "Sushi Earrings - Card",
+                        "src": "../assets/productimages/earrings/SushiEarringCard.jpg",
+                        "alt": ""
+                    }
+                ]
+            },
+            {
+                "Name": "Terrarium Earrings",
+                "Price": 10,
+                "Description": "",
+                "size": "",
+                "tags": ["Earrings", "Wood", "Terrarium"],
+                "Images": [
+                    {
+                        "title": "Terrarium Earrings - Plate",
+                        "src": "../assets/productimages/earrings/TerrariumEarringPlate.jpg",
+                        "alt": ""
+                    },                
+                    {
+                        "title": "Terrarium Earrings - Card",
+                        "src": "../assets/productimages/earrings/TerrariumEarringCard.jpg",
+                        "alt": ""
+                    }
+                ]
+            },
+            {
+                "Name": "Togo Cup Earrings",
+                "Price": 10,
+                "Description": "",
+                "size": "",
+                "tags": ["Earrings", "Wood", "Togo Cup", "Coffee", "Tea"],
+                "Images": [
+                    {
+                        "title": "Togo Cup Earrings - Plate",
+                        "src": "../assets/productimages/earrings/TogoCupEarringPlate.jpg",
+                        "alt": ""
+                    },                
+                    {
+                        "title": "Togo Cup Earrings - Card",
+                        "src": "../assets/productimages/earrings/TogoCupEarringCard.jpg",
+                        "alt": ""
+                    }
+                ]
+            },
+            {
+                "Name": "Whale Tail Earrings",
+                "Price": 10,
+                "Description": "",
+                "size": "",
+                "tags": ["Earrings", "Wood", "Whale Tail"],
+                "Images": [
+                    {
+                        "title": "Whale Tail Earrings - Plate",
+                        "src": "../assets/productimages/earrings/WhaleTailEarringPlate.jpg",
+                        "alt": ""
+                    },                
+                    {
+                        "title": "Whale Tail Earrings - Card",
+                        "src": "../assets/productimages/earrings/WhaleTailEarringCard.jpg",
+                        "alt": ""
+                    }
+                ]
+            }
+        ]
+    },
+    "Wooden Keychains": {
+        "Title": "Wooden Keychains",
+        "Description": "Wooden Keychains are made from the finest quality of wood. They are handcrafted with love. They are perfect for any occasion and can be used to hold your keys.",
+        "Materials": "",
+        "Varients": [
+
+        ]
+    },
+    "Wooden Magnets": {
+        "Title": "Wooden Magnets",
+        "Description": "Wooden Magnets are made from the finest quality of wood. They are handcrafted with love. They are perfect for any occasion and can be used to hold your notes.",
+        "Materials": "",
+        "Varients": [
+            {
+                "Name": "RowHouse Magnet",
+                "Price": 10,
+                "Description": "",
+                "size": "",
+                "tags": ["Magnets", "Wood"],
+                "Images": [
+                    {
+                        "title": "RowHouse Magnet - Plate",
+                        "src": "../assets/productimages/magnets/RowhouseMagnetPlate.jpg",
+                        "alt": ""
+                    },
+                    {
+                        "title": "RowHouse Magnet  Back- Plate",
+                        "src": "../assets/productimages/magnets/RowhouseMagnetCardBack.jpg",
+                        "alt": ""
+                    },
+                    {
+                        "title": "RowHouse Magnet",
+                        "src": "../assets/productimages/magnets/RowhouseMagnetWood.jpg",
+                        "alt": ""
+                    }
+                ]
+            }
+        ]
+    },
+    "Wooden Ornaments": {
+        "Title": "Wooden Ornaments",
+        "Description": "Wooden Ornaments are made from the finest quality of wood. They are handcrafted with love. They are perfect for the holiday season for gifts and decorating your own tree.",
+        "Materials": "",
+        "Varients": [
+
+        ]
+    }
+}
