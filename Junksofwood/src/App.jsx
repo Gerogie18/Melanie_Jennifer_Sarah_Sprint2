@@ -13,11 +13,11 @@
 // · DELETE /cart/:id - Removes a product from the cart.
 
 import { useState, useEffect } from "react"
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation} from "react-router-dom";
 import Layout from "./components/Layout"
 import Home from "./pages/Home";
 import ProductLayout from "./components/ProductLayout";
-import ProductList from "./pages/ProductList";
+import Shop from "./pages/Shop";
 import Product from "./pages/Product";
 import About from "./pages/About";
 import Cart from "./pages/Cart";
@@ -28,55 +28,65 @@ function App() {
 
   // const [productList, setProductList] = useState([])
   // const [addedProducts, setAddedProducts] = useState(null); // Track products added to cart
+  const location = useLocation();
 
+  const [categories, setCategories] = useState([]);
+  const [products, setProducts] = useState([]);
 
-  const [catArray, setCatArray] = useState([]);
-  const [productArray, setProductArray] = useState([]);
-
-  useEffect(() => {
-    const fetchProducts = async () => {
-      try {
-        const response = await fetch('http://localhost:5005/Brooches');
-        const data = await response.json();
+  // useEffect(() => {
+  //   const fetchProducts = async () => {
+  //     try {
+  //       const response = await fetch('http://localhost:5005/products');
+  //       const data = await response.json();
         
-        if (data.Title) {
-          setCatArray([data.Title]);  // Set category array with the title
-          console.log(catArray)
-        }
+  //       if (data.Title) {
+  //         setCatArray([data.Title]);  // Set category array with the title
+  //         console.log(catArray)
+  //       }
 
-        if (data.Varients && Array.isArray(data.Varients)) {
-          setProductArray(data.Varients);  // Set product array with the variants
-          console.log(productArray)
-        }
-      } catch (error) {
-        console.error('Failed to fetch data:', error);
-      }
-    };
+  //       if (data.Varients && Array.isArray(data.Varients)) {
+  //         setProductArray(data.Varients);  // Set product array with the variants
+  //         console.log(productArray)
+  //       }
+  //     } catch (error) {
+  //       console.error('Failed to fetch data:', error);
+  //     }
+  //   };
 
-    fetchProducts();
-  }, []);  // Empty dependency array to run only once on component mount
+  //   fetchProducts();
+  // }, []);  // Empty dependency array to run only once on component mount
 
 
 
     // Put the products fetched from the server in a products array...
-    // useEffect(() => {
-    //   const getProducts = async () => {
-    //     const productsFromServer = await fetchProducts();
+    useEffect(() => {
+      const getData = async () => {
+        const productsFromServer = await fetchProducts(); // this is an object ( {} )
+        const categoriesFromServer = await fetchCategories(); // this is an array ( [] )
+
+        const productsArray = Object.values(productsFromServer); // Convert object to array
+
+        setProducts(productsArray);
+        setCategories(categoriesFromServer);
+      };
+      getData();
+    }, []);
   
-    //     setProductList(productsFromServer);
-    //     console.log(productList)
-    //   };
-    //   getProducts();
-    // }, []);
+    // fetch the products from server...
+    const fetchProducts = async () => {
+      const res = await fetch("http://localhost:5005/products");
+      const data = await res.json();
+      return data;
+    };
   
-    // // fetch the products from server...
-    // const fetchProducts = async () => {
-    //   const res = await fetch("http://localhost:5005/Brooches");
-    //   const data = await res.json();
-    //   console.log(data)
-    //   return data;
-    // };
-  
+
+//    fetch product categories from server...
+    const fetchCategories = async () => {
+      const res = await fetch("http://localhost:5005/categories");
+      const data = await res.json();
+      return data;
+    };  
+
     // fetch ONE Product from Product from the server...
   
     // const fetchProduct = async (id) => {
@@ -89,11 +99,11 @@ function App() {
 
 
   return (
-      <Routes>
+      <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="shop" element={<ProductLayout />} >
-            <Route index element={<ProductList />} />
+          <Route path="shop" element={<ProductLayout categories={categories}/>} >
+            <Route index element={<Shop products={products}/>} />
             <Route path=":id" element={<Product />} />
             <Route path=":id" element={<Product />} />
           </Route>

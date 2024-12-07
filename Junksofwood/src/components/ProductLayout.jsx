@@ -2,38 +2,58 @@
 // we do this inside the "context"
 
 import { Outlet, Link, useSearchParams } from "react-router-dom";
+import PropTypes from 'prop-types'
+import Button from './Button'
 // import { useState } from "react"
 
 
-const ProductLayout = () => {
-  const [searchParams, setSearchParams] = useSearchParams({n: 3})
-  const number = searchParams.get("n");
+const ProductLayout = ({categories}) => {
+  const [searchParams, setSearchParams] = useSearchParams({n: "brooch"})
+  const text = searchParams.get("n");
 
-  const handleNumberChange = (event) => {
-    let num = event.target.value
-    setSearchParams({ n: num})
+  const handleTextChange = (event) => {
+    let id = event.target.value
+    console.log(`text was added ${id}`)
+    setSearchParams({ n: id})
   }
   
+  function doStuff(){
+    console.log("Button was clicked")
+  };
 
   return (
     <>
         <h1>Shop</h1>
         <div className = "productNav">
-            <Link to="/shop/1">Product 1</Link>
+        <p>We could turn this into a filter or buttons to select categories</p>
+        {categories.map((category) => (
+
+          <Button key={category.id} text={category.title} click={doStuff}/>
+        ))}
+
+        </div>
+            {/* <Link to="/shop/1">Product 1</Link>
             <br/>
             <Link to="/shop/2">Product 2</Link>
             <br/>
             <Link to={`/shop/${number}`}>Updateable Product. Number: {number}</Link>
-        </div>
+        </div> */}
         <div>
             <Outlet context={{hello: "world"}}/>
         </div>
         <div>
-          <p>If you change this number, you will change the product link</p>
-          <input type="number" value={number} onChange={handleNumberChange}></input>
+          <p>Maybe we could turn this into a search box:</p>
+          <input type="text" value={text} onChange={handleTextChange}></input>
         </div>
     </>
 
   )
+};
+
+ProductLayout.propTypes = {
+//  products: PropTypes.array.isRequired,
+  categories: PropTypes.array.isRequired,
+//   onDelete: PropTypes.func.isRequired,
+//   onAdd: PropTypes.func.isRequired
 };
 export default ProductLayout;
