@@ -22,23 +22,3 @@ const Product = () => {
   };
   
   export default Product;
-
-
-
-
-//   const Product = ({ product, onToggle }) => {
-//     return (
-//       <div
-//         className={`product ${product.slected ? "selected" : ""}`}
-//         onDoubleClick={() => onToggle(product.id)}}
-//       >
-//         <h3>
-//           {product.text}
-//         </h3>
-//         <p>
-//           {" "}
-//           <Link to={`/product/${product.id}`}>View Details</Link>
-//         </p>
-//       </div>
-//     );
-//   };

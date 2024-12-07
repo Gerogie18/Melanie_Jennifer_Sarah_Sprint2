@@ -18,7 +18,7 @@ import Layout from "./components/Layout"
 import Home from "./pages/Home";
 import ProductLayout from "./components/ProductLayout";
 import Shop from "./pages/Shop";
-import Product from "./pages/Product";
+import ProductDetails from "./components/ProductDetails";
 import About from "./pages/About";
 import Cart from "./pages/Cart";
 import Test from "./pages/Test";
@@ -32,31 +32,7 @@ function App() {
 
   const [categories, setCategories] = useState([]);
   const [products, setProducts] = useState([]);
-
-  // useEffect(() => {
-  //   const fetchProducts = async () => {
-  //     try {
-  //       const response = await fetch('http://localhost:5005/products');
-  //       const data = await response.json();
-        
-  //       if (data.Title) {
-  //         setCatArray([data.Title]);  // Set category array with the title
-  //         console.log(catArray)
-  //       }
-
-  //       if (data.Varients && Array.isArray(data.Varients)) {
-  //         setProductArray(data.Varients);  // Set product array with the variants
-  //         console.log(productArray)
-  //       }
-  //     } catch (error) {
-  //       console.error('Failed to fetch data:', error);
-  //     }
-  //   };
-
-  //   fetchProducts();
-  // }, []);  // Empty dependency array to run only once on component mount
-
-
+  const [product, setProduct] = useState([]);
 
     // Put the products fetched from the server in a products array...
     useEffect(() => {
@@ -87,15 +63,25 @@ function App() {
       return data;
     };  
 
-    // fetch ONE Product from Product from the server...
-  
-    // const fetchProduct = async (id) => {
-    //   const res = await fetch(`http://localhost:5000/products/${id}`);
-    //   const data = await res.json();
-    //   return data;
-    // };
-  
+ //   fetch ONE Product from Product from the server...
 
+  useEffect(() => {
+    const fetchProduct = async (id) => {
+      try {
+        const response = await fetch(`http://localhost:5005/products/${id}`);
+        const data = await response.json();
+        
+        if (data.name) {
+          setProduct([data.name]);  // Set category array with the title
+        }
+
+      } catch (error) {
+        console.error('Failed to fetch data:', error);
+      }
+    };
+
+    fetchProduct();
+  }, []);  // Empty dependency array to run only once on component mount
 
 
   return (
@@ -104,8 +90,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="shop" element={<ProductLayout categories={categories}/>} >
             <Route index element={<Shop products={products}/>} />
-            <Route path=":id" element={<Product />} />
-            <Route path=":id" element={<Product />} />
+            <Route path=":productID" element={<ProductDetails product={product}/>} />
           </Route>
           <Route path="about" element={<About />} />
           <Route path="cart" element={<Cart />} />
