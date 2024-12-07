@@ -3,7 +3,13 @@ import { MdOutlineCheckBox, MdOutlineCheckBoxOutlineBlank } from 'react-icons/md
 
 const Checkbox = ({ text, checked, onClick }) => {
   return (
-    <button className="checkbox-button" onClick={onClick}>
+    <button 
+        className="checkbox-button" 
+        onClick={onClick}
+        style= {{
+            alignItems: 'left',
+            padding: '7px',
+        }}>
       {checked ? <MdOutlineCheckBox /> : <MdOutlineCheckBoxOutlineBlank />}
       <span className="checkbox-label" style={{ paddingLeft: '0.2em' }}>{text}</span>
     </button>

@@ -55,10 +55,6 @@ const ProductLayout = ({categories}) => {
         <div>
             <Outlet context={{hello: "world"}}/>
         </div>
-        <div>
-          <p>Maybe we could turn this into a search box:</p>
-          
-        </div>
     </>
 
   )
