@@ -34,7 +34,7 @@ function ProductDetails () {
         setLoading(false);
       } catch (error) {
         setError(error.message);
-        navigate(-1); // redirect if the product is not found
+        // navigate(-1); // redirect if the product is not found
       }
     };
   
