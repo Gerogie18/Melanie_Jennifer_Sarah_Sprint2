@@ -31,27 +31,28 @@
 //We can select and unselect (delete?) products from the product list 
 
 
-import PropTypes from 'prop-types'
-import Product from "./Product";
+// import PropTypes from 'prop-types'
+// import Product from "./Product";
 
-const ProductList = ({ products, onToggle }) => {
+const ProductList = () => {
+
   return (
     <>
-      {products.map((product) => (
+      {/* {products.map((product) => (
         // <h3 key={product.id}>{product.text}</h3>
         <Product
           key={product.id}
           product={product}
-          onToggle={onToggle}
         />
-      ))}
+      ))} */}
     </>
   );
 };
 
-ProductList.propTypes = {
-  products: PropTypes.array.isRequired,
-  onToggle: PropTypes.func.isRequired
-};
+// ProductList.propTypes = {
+//   products: PropTypes.array.isRequired,
+//   onDelete: PropTypes.func.isRequired,
+//   onAdd: PropTypes.func.isRequired
+// };
 
 export default ProductList;

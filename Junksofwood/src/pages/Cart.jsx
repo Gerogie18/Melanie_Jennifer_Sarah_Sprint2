@@ -18,7 +18,7 @@ function Cart ({cartItems, onDelete}) {
 
 
 Cart.propTypes = {
-   cartItems: PropTypes.array.isRequired,
+   cartItems: PropTypes.array,
    onDelete: PropTypes.func.isRequired
    };
 
