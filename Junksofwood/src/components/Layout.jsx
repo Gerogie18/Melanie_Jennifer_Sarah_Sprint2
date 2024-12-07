@@ -14,25 +14,27 @@ const Layout = () => {
     <BreakpointProvider>
         <div className = "container">
             <PromoBanner />
-            <nav>
-                <div className ='nav-container' >
-                    <ul>
-                        <li>
-                            {/* <NavLink style={({ isActive }) => { return isActive ? {color: "red"} : {}} } to="/">Home</NavLink> */}
-                            <NavLink to="/" state="Hi">Home</NavLink>                
-                        </li>
-                        <li>
-                            <NavLink to="/shop">Shop</NavLink>
-                        </li>
-                        <li>
-                            <NavLink to="/about">About</NavLink>
-                        </li>
-                        <li>
-                            <NavLink to="/cart">CART BUTTON</NavLink>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+            <header>
+                <nav>
+                    <div className ='nav-container' >
+                        <ul>
+                            <li>
+                                {/* <NavLink style={({ isActive }) => { return isActive ? {color: "red"} : {}} } to="/">Home</NavLink> */}
+                                <NavLink to="/" state="Hi">Home</NavLink>                
+                            </li>
+                            <li>
+                                <NavLink to="/shop">Shop</NavLink>
+                            </li>
+                            <li>
+                                <NavLink to="/about">About</NavLink>
+                            </li>
+                            <li>
+                                <NavLink to="/cart">CART BUTTON</NavLink>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
             <main>
                 <Outlet />
             </main>
