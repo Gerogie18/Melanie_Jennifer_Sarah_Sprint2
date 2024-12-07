@@ -10,7 +10,12 @@ import CheckBox from './CheckBox.jsx';
 const ProductLayout = ({categories}) => {
   const [searchParams, setSearchParams] = useSearchParams({n: ""})
   const text = searchParams.get("n");
-  const [checked, setchecked] = useState(false) 
+  const [checkedState, setCheckedState] = useState(
+    categories.reduce((acc, category) => {
+      acc[category.id] = false;
+      return acc;
+    }, {})
+  );
 
   const handleTextChange = (event) => {
     let id = event.target.value
@@ -18,9 +23,11 @@ const ProductLayout = ({categories}) => {
     setSearchParams({ n: id})
   }
   
-  function doStuff(){
-    console.log("Button was clicked")
-    setchecked(!checked)
+  const handleCheckboxChange = (id) => {
+    setCheckedState((prevState) => ({
+      ...prevState,
+      [id]: !prevState[id],
+    }));
   };
 
   return (
@@ -30,7 +37,11 @@ const ProductLayout = ({categories}) => {
         <p>We could turn this into a filter or buttons to select categories</p>
         {categories.map((category) => (
 
-          <CheckBox key={category.id} checked={checked} text={category.title} onClick={doStuff}/>
+          <CheckBox 
+            key={category.id} 
+            checked={checkedState[category.id]} 
+            text={category.title} 
+            onClick={() =>(handleCheckboxChange(category.id))}/>
         ))}
         <input type="search" placeholder="Search" className="search-bar" value={text} onChange={handleTextChange} />
 
