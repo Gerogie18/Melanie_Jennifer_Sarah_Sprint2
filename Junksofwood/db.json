@@ -118,9 +118,9 @@
         ],
         "images": [
           {
-            "title": "Rowhouse Brooch - Green and Red",
+            "title": "Rowhouse Brooch - Red and Purple",
             "filepath": "/brooches/RowhouseBroochPlate_RedPurple.jpg",
-            "alt": "Image of Rowhouse Brooch - Green and Red"
+            "alt": "Image of Rowhouse Brooch - Red and Purple"
           }
         ],
         "id": "3"
@@ -240,11 +240,6 @@
         ],
         "images": [
           {
-            "title": "Puffin Brooch - Card",
-            "filepath": "/brooches/PuffinBroochCard.jpg",
-            "alt": "Image of Puffin Brooch on card"
-          },
-          {
             "title": "Puffin Brooch - Plate",
             "filepath": "/brooches/PuffinBroochPlate.jpg",
             "alt": "Image of Puffin Brooch - Plate"
@@ -292,11 +287,6 @@
         ],
         "images": [
           {
-            "title": "Bakeapple Earrings - Card",
-            "filepath": "/earrings/BerryEarringCard_Bakeapple.jpg",
-            "alt": "Image of Bakeapple Earrings on card"
-          },
-          {
             "title": "Bakeapple Earrings - Plate",
             "filepath": "/earrings/BerryEarringPlate_Bakeapple.jpg",
             "alt": "Image of Bakeapple Earrings - Plate"
@@ -317,11 +307,6 @@
           "Newfoundland"
         ],
         "images": [
-          {
-            "title": "Blueberry Earrings - Card",
-            "filepath": "/earrings/BerryEarringCard_Blueberry.jpg",
-            "alt": "Image of Blueberry Earrings on card"
-          },
           {
             "title": "Blueberry Earrings - Plate",
             "filepath": "/earrings/BerryEarringPlate_Blueberry.jpg",
@@ -604,7 +589,7 @@
           },
           {
             "title": "Newfoundland Earrings - Plate",
-            "filepath": "/earrings/MapEarringPlate_Newfoundland_.jpg",
+            "filepath": "/earrings/MapEarringPlate_Newfoundlandmap_.jpg",
             "alt": "Image of Newfoundland Earrings - Plate"
           }
         ],
@@ -623,11 +608,6 @@
           "Labrador"
         ],
         "images": [
-          {
-            "title": "Newfoundland and Labrador Earrings - Card",
-            "filepath": "/earrings/MapEarringCard_NewfoundlandLabrador.jpg",
-            "alt": "Image of Newfoundland and Labrador Earrings on card"
-          },
           {
             "title": "Newfoundland and Labrador Earrings - Plate",
             "filepath": "/earrings/MapEarringPlate_NewfoundlandLabrador.jpg",
@@ -1285,12 +1265,12 @@
         "images": [
           {
             "title": "Whatta Y'at Ornament - Plate",
-            "filepath": "/ornaments/WhattyaOrnamentPlate.jpg",
+            "filepath": "/ornaments/WhattayaOrnamentPlate.jpg",
             "alt": "Image of Whatta Y'at Ornament - Plate"
           },
           {
             "title": "Whatta Y'at Ornament - Detail",
-            "filepath": "/ornaments/WhattyaOrnamentPlateDetail.jpg",
+            "filepath": "/ornaments/WhattayaOrnamentPlateDetail.jpg",
             "alt": "Image of Whatta Y'at Ornament - Detail"
           }
         ],
