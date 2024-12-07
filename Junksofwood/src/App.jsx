@@ -14,6 +14,7 @@
 
 import { useState, useEffect } from "react"
 import { Routes, Route, useLocation} from "react-router-dom";
+import BreakpointProvider from "./utils/BreakpointProvider.jsx";
 import Layout from "./components/Layout"
 import Home from "./pages/Home";
 import ProductLayout from "./components/ProductLayout";
@@ -99,6 +100,7 @@ function App() {
 
 
   return (
+    <BreakpointProvider>
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
@@ -113,6 +115,7 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
+    </BreakpointProvider>
   )
 }
 
