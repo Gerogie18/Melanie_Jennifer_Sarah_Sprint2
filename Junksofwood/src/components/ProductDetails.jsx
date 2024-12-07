@@ -9,47 +9,46 @@
 
 
 
-import { useParams, useNavigate, useLocation } from "react-router-dom";
-import { useState, useEffect } from "react";
-import Button from "./Button";
+// import { useParams, useNavigate, useLocation } from "react-router-dom";
+// import { useState, useEffect } from "react";
+// import Button from "./Button";
 
 
-function ProductDetails ({productID}) {
+function ProductDetails () {
 
-  const { pathname } = useLocation();
-  // const params = useParams();
-  // const { productID } = params;
-
-
-  const navigate = useNavigate();
-  const [loading, setLoading] = useState(true);
-  const [product, setProduct] = useState({});
-  const [error, setError] = useState(null);
+  // const { pathname } = useLocation();
+  // // const params = useParams();
+  // // const { productID } = params;
 
 
+  // const navigate = useNavigate();
+  // const [loading, setLoading] = useState(true);
+  // const [product, setProduct] = useState({});
+  // const [error, setError] = useState(null);
 
-  useEffect(() => {
-    const fetchProduct = async () => {
-      const res = await fetch(`http://localhost:5005/products/${productID}`);
 
-      if (res.status === 404) {
-        setError("Product not found");
-      }
+  // useEffect(() => {
+  //   const fetchProduct = async () => {
+  //     const res = await fetch(`http://localhost:5005/products/${productID}`);
 
-      const data = await res.json();
-      setProduct(data);
-      setLoading(false);
-    };
+  //     if (res.status === 404) {
+  //       setError("Product not found");
+  //     }
 
-    fetchProduct();
-  });
+  //     const data = await res.json();
+  //     setProduct(data);
+  //     setLoading(false);
+  //   };
 
-  if (error) {
-    navigate("/");
-  }
+  //   fetchProduct();
+  // });
+
+  // if (error) {
+  //   navigate("/");
+  // }
   return (
     <div>
-      {loading ? (
+      {/* {loading ? (
         <h3>Loading...</h3>
       ) : (
         <div className="product detail">
@@ -63,7 +62,7 @@ function ProductDetails ({productID}) {
             click={() => {navigate(-1);}}
           /> 
         </div>
-      )}
+      )} */}
     </div>
   );
 };

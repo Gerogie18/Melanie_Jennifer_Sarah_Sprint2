@@ -8,8 +8,10 @@ import CheckBox from './CheckBox.jsx';
 
 
 const ProductLayout = ({categories}) => {
+
   const [searchParams, setSearchParams] = useSearchParams({cat: "", tags: []})
-  const text = searchParams.get("cat");
+  const cat = searchParams.get("cat");
+
   const [checkedState, setCheckedState] = useState(
     categories.reduce((acc, category) => {
       acc[category.id] = false;
@@ -43,7 +45,7 @@ const ProductLayout = ({categories}) => {
             text={category.title} 
             onClick={() =>(handleCheckboxChange(category.id))}/>
         ))}
-        <input type="search" placeholder="Search" className="search-bar" value={text} onChange={handleTextChange} />
+        <input type="search" placeholder="Search" className="search-bar" value={cat} onChange={handleTextChange} />
 
         </div>
         <div>
