@@ -19,7 +19,7 @@ function Cart ({cartItems, onDelete}) {
 
 Cart.propTypes = {
    cartItems: PropTypes.array,
-   onDelete: PropTypes.func.isRequired
+   onDelete: PropTypes.func
    };
 
 export default Cart;

@@ -58,15 +58,6 @@ function App() {
 
 
 
-
-
-
-
-
-
-
-
-
     // Put the products fetched from the server in a products array...
     // useEffect(() => {
     //   const getProducts = async () => {
@@ -95,22 +86,6 @@ function App() {
     // };
   
 
-//  Add / Delete products from cart (This should be moved to the shop maybe?)
-//  Delete Product from cart
-  const deleteProduct = async (id) => {
-    // await fetch(`http://localhost:5005/cart/${id}`, {
-    //   method: "DELETE",
-    // });
-    // setAddedProducts(addedProducts.filter((product) => product.id !== id));
-    return `Delete ${id}`
-  };
-
-//  Add product to cart
-//  Needs to be fixed because it will rewrite the whole cart
-  const addProduct = (product) => {
-   // setAddedProducts(product);
-        return `Delete ${product}`
-  };
 
 
   return (
@@ -123,7 +98,7 @@ function App() {
             <Route path=":id" element={<Product />} />
           </Route>
           <Route path="about" element={<About />} />
-          <Route path="cart" element={<Cart cartItems={addedProducts} onDelete={deleteProduct} />} />
+          <Route path="cart" element={<Cart />} />
           <Route path="test" element={<Test />} />
           <Route path="*" element={<NotFound />} />
         </Route>
