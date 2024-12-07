@@ -8,14 +8,21 @@
 
 
 
-// import {useState} from 'react'
-
- import PropTypes from 'prop-types'
+import {useState} from 'react'
+import PropTypes from 'prop-types'
+import ProductDetails from '../components/ProductDetails';
 // import Product from "./Product";
+
+
 
 const Shop = ({products}) => {
   const imagePath = './src/assets/productImages';
-
+  const [showDetails, setShowDetails] = useState(false);
+  
+    const toggleDetails = () => {
+      setShowDetails(!showDetails);
+    };
+  
 
   return (
     <div>
@@ -24,13 +31,18 @@ const Shop = ({products}) => {
 
         <div className="img-container" key={product.id}>
           <h3>{product.name}</h3>
-          <img src={imagePath + product.images[0].filepath} alt={product.images[0].alt} />
+          <img 
+            src={imagePath + product.images[0].filepath} 
+            alt={product.images[0].alt} 
+            onClick={toggleDetails}
+            />
+            {showDetails && <ProductDetails productID={product.id} />}
         </div>
-
       ))}
     </div>
   );
 };
+
 
  Shop.propTypes = {
    products: PropTypes.array.isRequired,

@@ -8,8 +8,10 @@ import CheckBox from './CheckBox.jsx';
 
 
 const ProductLayout = ({categories}) => {
-  const [searchParams, setSearchParams] = useSearchParams({n: ""})
-  const text = searchParams.get("n");
+
+  const [searchParams, setSearchParams] = useSearchParams({cat: "", tags: []})
+  const cat = searchParams.get("cat");
+
   const [checkedState, setCheckedState] = useState(
     categories.reduce((acc, category) => {
       acc[category.id] = false;
@@ -18,9 +20,9 @@ const ProductLayout = ({categories}) => {
   );
 
   const handleTextChange = (event) => {
-    let id = event.target.value
-    console.log(`text was added ${id}`)
-    setSearchParams({ n: id})
+    let cat = event.target.value
+    console.log(`text was added ${cat}`)
+    setSearchParams({ cat: cat})
   }
   
   const handleCheckboxChange = (id) => {
@@ -43,17 +45,22 @@ const ProductLayout = ({categories}) => {
             text={category.title} 
             onClick={() =>(handleCheckboxChange(category.id))}/>
         ))}
-        <input type="search" placeholder="Search" className="search-bar" value={text} onChange={handleTextChange} />
+        <input type="search" placeholder="Search" className="search-bar" value={cat} onChange={handleTextChange} />
 
         </div>
-            {/* <Link to="/shop/1">Product 1</Link>
+        <div>
+            <Link to="/shop/1">Product 1</Link>
             <br/>
             <Link to="/shop/2">Product 2</Link>
             <br/>
-            <Link to={`/shop/${number}`}>Updateable Product. Number: {number}</Link>
-        </div> */}
+            {/* <Link to={`/shop/${number}`}>Updateable Product. Number: {number}</Link> */}
+        </div>
         <div>
             <Outlet context={{hello: "world"}}/>
+        </div>
+        <div>
+          <p>Maybe we could turn this into a search box:</p>
+          <input type="text" value={cat} onChange={handleTextChange}></input>
         </div>
     </>
 
