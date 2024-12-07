@@ -18,7 +18,6 @@ const Layout = () => {
                     <div className ='nav-container' >
                         <ul>
                             <li>
-                                {/* <NavLink style={({ isActive }) => { return isActive ? {color: "red"} : {}} } to="/">Home</NavLink> */}
                                 <NavLink to="/" state="Hi">Home</NavLink>                
                             </li>
                             <li>

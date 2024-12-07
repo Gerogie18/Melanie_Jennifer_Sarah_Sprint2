@@ -9,60 +9,49 @@
 
 
 
-// import { useParams, useNavigate, useLocation } from "react-router-dom";
-// import { useState, useEffect } from "react";
-// import Button from "./Button";
+import { useParams, useNavigate } from "react-router-dom";
+import { useState, useEffect } from "react";
+//import Button from "./Button";
 
 
 function ProductDetails () {
-
-  // const { pathname } = useLocation();
-  // // const params = useParams();
-  // // const { productID } = params;
-
-
-  // const navigate = useNavigate();
-  // const [loading, setLoading] = useState(true);
-  // const [product, setProduct] = useState({});
-  // const [error, setError] = useState(null);
+  const { productID } = useParams();
+  const navigate = useNavigate();
+  const [loading, setLoading] = useState(true);
+  const [product, setProduct] = useState({});
+  const [error, setError] = useState(null);
 
 
-  // useEffect(() => {
-  //   const fetchProduct = async () => {
-  //     const res = await fetch(`http://localhost:5005/products/${productID}`);
+  useEffect(() => {
+    const fetchProduct = async () => {
+      try {
+        const res = await fetch(`http://localhost:5005/shop/${productID}`);
+        if (res.status === 404) {
+          throw new Error('Product not found');
+        }
+        const data = await res.json();
+        setProduct(data);
+        setLoading(false);
+      } catch (error) {
+        setError(error.message);
+        navigate(-1); // redirect if the product is not found
+      }
+    };
+  
 
-  //     if (res.status === 404) {
-  //       setError("Product not found");
-  //     }
+    fetchProduct();
+  }, [productID, navigate]);
 
-  //     const data = await res.json();
-  //     setProduct(data);
-  //     setLoading(false);
-  //   };
-
-  //   fetchProduct();
-  // });
-
-  // if (error) {
-  //   navigate("/");
-  // }
   return (
     <div>
-      {/* {loading ? (
-        <h3>Loading...</h3>
-      ) : (
-        <div className="product detail">
-          <p>
-            {pathname}
-          </p>
+      {loading ? <h3>Loading...</h3> : (
+        <div className="product-detail">
           <h3>{product.name}</h3>
           <p>{product.price}</p>
-           <Button
-            text="Go Back"
-            click={() => {navigate(-1);}}
-          /> 
+          <button onClick={() => navigate(-1)}>Go Back</button>
         </div>
-      )} */}
+      )}
+      {error && <p>{error}</p>}
     </div>
   );
 };

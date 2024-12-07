@@ -8,20 +8,21 @@
 
 
 
-import {useState} from 'react'
+
 import PropTypes from 'prop-types'
-import ProductDetails from '../components/ProductDetails';
+// import ProductDetails from '../components/ProductDetails';
+import { useNavigate } from 'react-router-dom';
 // import Product from "./Product";
 
 
 
 const Shop = ({products}) => {
+  const navigate = useNavigate();
   const imagePath = './src/assets/productImages';
-  const [showDetails, setShowDetails] = useState(false);
   
-    const toggleDetails = () => {
-      setShowDetails(!showDetails);
-    };
+  const handleProductClick = (productID) => {
+    navigate(`/shop/${productID}`);
+  };
   
 
   return (
@@ -34,9 +35,8 @@ const Shop = ({products}) => {
           <img 
             src={imagePath + product.images[0].filepath} 
             alt={product.images[0].alt} 
-            onClick={toggleDetails}
+            onClick={() => handleProductClick(product.id)}
             />
-            {showDetails && <ProductDetails productID={product.id} />}
         </div>
       ))}
     </div>
