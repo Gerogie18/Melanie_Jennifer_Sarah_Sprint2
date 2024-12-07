@@ -1,15 +1,16 @@
 //We can pass data to all the children (everything inside ProductLayout)
 // we do this inside the "context"
-
+import { useState } from "react";
 import { Outlet, Link, useSearchParams } from "react-router-dom";
-import PropTypes from 'prop-types'
-import Button from './Button'
+import PropTypes from 'prop-types';
+import CheckBox from './CheckBox.jsx';
 // import { useState } from "react"
 
 
 const ProductLayout = ({categories}) => {
-  const [searchParams, setSearchParams] = useSearchParams({n: "brooch"})
+  const [searchParams, setSearchParams] = useSearchParams({n: ""})
   const text = searchParams.get("n");
+  const [checked, setchecked] = useState(false) 
 
   const handleTextChange = (event) => {
     let id = event.target.value
@@ -19,6 +20,7 @@ const ProductLayout = ({categories}) => {
   
   function doStuff(){
     console.log("Button was clicked")
+    setchecked(!checked)
   };
 
   return (
@@ -28,8 +30,9 @@ const ProductLayout = ({categories}) => {
         <p>We could turn this into a filter or buttons to select categories</p>
         {categories.map((category) => (
 
-          <Button key={category.id} text={category.title} click={doStuff}/>
+          <CheckBox key={category.id} checked={checked} text={category.title} onClick={doStuff}/>
         ))}
+        <input type="search" placeholder="Search" className="search-bar" value={text} onChange={handleTextChange} />
 
         </div>
             {/* <Link to="/shop/1">Product 1</Link>
@@ -43,7 +46,7 @@ const ProductLayout = ({categories}) => {
         </div>
         <div>
           <p>Maybe we could turn this into a search box:</p>
-          <input type="text" value={text} onChange={handleTextChange}></input>
+          
         </div>
     </>
 
