@@ -12,9 +12,10 @@
 // · GET /cart - Retrieves items in the cart.
 // · DELETE /cart/:id - Removes a product from the cart.
 
-import { useState, useEffect } from "react"
-import { Routes, Route, useLocation} from "react-router-dom";
+import { useState, useEffect, useContext } from "react"
+import { Routes, Route, useLocation } from "react-router-dom";
 import BreakpointProvider from "./utils/BreakpointProvider.jsx";
+import { CartProvider, CartContext } from './utils/CartProvider';
 import Layout from "./components/Layout"
 import Home from "./pages/Home";
 import ProductLayout from "./components/ProductLayout";
@@ -30,13 +31,14 @@ function App() {
   // const [productList, setProductList] = useState([])
   // const [addedProducts, setAddedProducts] = useState(null); // Track products added to cart
   const location = useLocation();
-
   const [categories, setCategories] = useState([]);
   const [products, setProducts] = useState([]);
   const [product, setProduct] = useState([]);
+  const { fetchCart} = useContext(CartContext);
 
     // Put the products fetched from the server in a products array...
     useEffect(() => {
+      fetchCart()
       const getData = async () => {
         const productsFromServer = await fetchProducts(); // this is an object ( {} )
         const categoriesFromServer = await fetchCategories(); // this is an array ( [] )
@@ -87,6 +89,7 @@ function App() {
 
   return (
     <BreakpointProvider>
+     <CartProvider>
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
@@ -99,7 +102,8 @@ function App() {
           <Route path="test" element={<Test />} />
           <Route path="*" element={<NotFound />} />
         </Route>
-      </Routes>
+        </Routes>
+      </CartProvider>
     </BreakpointProvider>
   )
 }
