@@ -87,8 +87,37 @@ const CartProvider = ({ children }) => {
         }
     };
 
+    const finalizeCart = async (user, date) => {
+        try {
+          // Create order
+          const response = await fetch("http://localhost:5005/order", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ user, date, cart }),
+          });
+      
+          if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+          }
+      
+          const data = await response.json();
+          console.log(data);
+      
+          // Clear cart
+          await fetch("http://localhost:5005/cart", {
+            method: "DELETE",
+            headers: { "Content-Type": "application/json" },
+          });
+      
+          setCart([]);
+          console.log("Cart cleared successfully");
+        } catch (error) {
+          console.error("Error finalizing cart:", error);
+        }
+      };
+
     return (
-        <CartContext.Provider value={{ cart, fetchCart, addToCart, removeFromCart, clearCart, updateQuantity }}>
+        <CartContext.Provider value={{ cart, fetchCart, addToCart, removeFromCart, clearCart, updateQuantity, finilizeCart }}>
             {children}
         </CartContext.Provider>
     )
