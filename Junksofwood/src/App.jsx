@@ -90,9 +90,9 @@ function App() {
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="shop" element={<ProductLayout categories={categories}/>} >
+          <Route path="shop" element={<ProductLayout categories={categories} products={products}/>} >
             <Route index element={<Shop products={products}/>} />
-            <Route path=":productID" element={<ProductDetails product={product}/>} />
+            <Route path=":productID" element={<ProductDetails/>} />
           </Route>
           <Route path="about" element={<About />} />
           <Route path="cart" element={<Cart />} />

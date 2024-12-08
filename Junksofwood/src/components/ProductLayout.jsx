@@ -7,8 +7,11 @@ import CheckBox from './CheckBox.jsx';
 // import { useState } from "react"
 
 
-const ProductLayout = ({categories}) => {
+const ProductLayout = ({categories, products}) => {
 
+  //bring in products and filter them
+  //by category / checkbox
+  //by tags / searchable
   const [searchParams, setSearchParams] = useSearchParams({cat: "", tags: []})
   const cat = searchParams.get("cat");
 
@@ -68,7 +71,7 @@ const ProductLayout = ({categories}) => {
 };
 
 ProductLayout.propTypes = {
-//  products: PropTypes.array.isRequired,
+  products: PropTypes.array.isRequired,
   categories: PropTypes.array.isRequired,
 //   onDelete: PropTypes.func.isRequired,
 //   onAdd: PropTypes.func.isRequired
