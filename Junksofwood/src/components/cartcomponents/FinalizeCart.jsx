@@ -5,12 +5,12 @@ import PropTypes from 'prop-types';
 
 const FinalizeCart = () => {
     const { finalizeCart } = useContext(CartContext);
-    const user = Math.floor(Math.random() *10000)+1
+    const orderNumber = Math.floor(Math.random() *10000)+1
     const date = new Date().toLocaleDateString()
     
     const handleclick = () => {
-        addToCart(user, date),
-        console.log(`Order Finilized: ${user}, ${date}`);
+        addToCart(orderNumber, date),
+        console.log(`Order Finilized: ${orderNumber}, ${date}`);
     }
 
   return (
