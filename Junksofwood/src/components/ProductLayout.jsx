@@ -13,6 +13,7 @@ const ProductLayout = ({categories, products}) => {
   //by category / checkbox
   //by tags / searchable
   const [searchParams, setSearchParams] = useSearchParams({cat: "", tags: []})
+  const [number, setNumber] = useState(1)
   const cat = searchParams.get("cat");
 
   const [checkedState, setCheckedState] = useState(
@@ -26,6 +27,12 @@ const ProductLayout = ({categories, products}) => {
     let cat = event.target.value
     console.log(`text was added ${cat}`)
     setSearchParams({ cat: cat})
+  }
+
+  const handleNumberChange = (event) => {
+    let num = event.target.value
+    console.log(`text was added ${num}`)
+    setNumber(num)
   }
   
   const handleCheckboxChange = (id) => {
@@ -56,14 +63,14 @@ const ProductLayout = ({categories, products}) => {
             <br/>
             <Link to="/shop/2">Product 2</Link>
             <br/>
-            {/* <Link to={`/shop/${number}`}>Updateable Product. Number: {number}</Link> */}
+            <Link to={`/shop/${number}`}>Updateable Product. Number: {number}</Link>
         </div>
         <div>
             <Outlet context={{hello: "world"}}/>
         </div>
         <div>
           <p>Maybe we could turn this into a search box:</p>
-          <input type="text" value={cat} onChange={handleTextChange}></input>
+          <input type="number" value={number} onChange={handleNumberChange}></input>
         </div>
     </>
 

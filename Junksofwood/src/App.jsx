@@ -33,7 +33,7 @@ function App() {
   const location = useLocation();
   const [categories, setCategories] = useState([]);
   const [products, setProducts] = useState([]);
-  const [product, setProduct] = useState([]);
+  //const [product, setProduct] = useState([]);
   const { fetchCart} = useContext(CartContext);
 
     // Put the products fetched from the server in a products array...
@@ -43,9 +43,9 @@ function App() {
         const productsFromServer = await fetchProducts(); // this is an object ( {} )
         const categoriesFromServer = await fetchCategories(); // this is an array ( [] )
 
-        const productsArray = Object.values(productsFromServer); // Convert object to array
+        //const productsArray = Object.values(productsFromServer); // Convert object to array
 
-        setProducts(productsArray);
+        setProducts(productsFromServer);
         setCategories(categoriesFromServer);
       };
       getData();
@@ -68,23 +68,23 @@ function App() {
 
  //   fetch ONE Product from Product from the server...
 
-  useEffect(() => {
-    const fetchProduct = async (id) => {
-      try {
-        const response = await fetch(`http://localhost:5005/products/${id}`);
-        const data = await response.json();
+  // useEffect(() => {
+  //   const fetchProduct = async (id) => {
+  //     try {
+  //       const response = await fetch(`http://localhost:5005/products/${id}`);
+  //       const data = await response.json();
         
-        if (data.name) {
-          setProduct([data.name]);  // Set category array with the title
-        }
+  //       if (data.name) {
+  //         setProduct([data.name]);  // Set category array with the title
+  //       }
 
-      } catch (error) {
-        console.error('Failed to fetch data:', error);
-      }
-    };
+  //     } catch (error) {
+  //       console.error('Failed to fetch data:', error);
+  //     }
+  //   };
 
-    fetchProduct();
-  }, []);  // Empty dependency array to run only once on component mount
+  //   fetchProduct();
+  // }, []);  // Empty dependency array to run only once on component mount
 
 
   return (

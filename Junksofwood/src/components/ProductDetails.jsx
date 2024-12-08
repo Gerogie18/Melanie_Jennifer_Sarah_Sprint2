@@ -8,6 +8,8 @@ function ProductDetails() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
+  const imagePath = './src/assets/productImages';
+
   useEffect(() => {
     const fetchProduct = async () => {
       try {
@@ -32,7 +34,13 @@ function ProductDetails() {
       {loading ? <h3>Loading...</h3> : (
         <div className="product-detail">
           <h3>{product.name}</h3>
-          <p>{product.price}</p>
+          <p>Price: {product.price}</p>
+          <div className="img-container" key={product.id}>
+            <img 
+              src={imagePath + product.images[0].filepath} 
+              alt={product.images[0].alt} 
+            />
+          </div>
           <button onClick={() => navigate(-1)}>Go Back</button>
         </div>
       )}
