@@ -4,9 +4,9 @@ import QuantityContainer from './QuantityContainer';
 import PropTypes from 'prop-types';
 import { IoBagCheck } from "react-icons/io5";
 
-const UpdateCart = (id) => {
+const UpdateCart = (id, itemQuantity) => {
   const { updateQuantity, removeFromCart } = useContext(CartContext);
-  const [quantity, setQuantity] = useState(1);
+  const [quantity, setQuantity] = useState(itemQuantity);
   
   const handleClick = () => {
     if (quantity === 0) {
@@ -43,17 +43,7 @@ return (
 
 export default UpdateCart
 
-AddToCart.propTypes = {
-  //    id: PropTypes.number.isRequired
-  //    name: PropTypes.string.isRequired,
-  //    price: PropTypes.number.isRequired,
-  //    filepath: PropTypes.string.isRequired
-  };
-  
-  //testing
-  AddToCart.defaultProps = {
-       id: 0,
-       name: 'Canada Brooch',
-       price: 10.00,
-       filepath: 'productImage.jpg'
-  };
+UpdateCart.propTypes = {  
+  id: PropTypes.number.isRequired,
+  itemQuantity: PropTypes.number.isRequired,
+};

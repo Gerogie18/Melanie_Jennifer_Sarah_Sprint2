@@ -32,12 +32,12 @@ const CartProvider = ({ children }) => {
     };
     
 
-    const addToCart = async (id, quantity, name, price, filepath ) => {
+    const addToCart = async (id, quantity, name, price, img ) => {
         try {
             const response = await fetch("http://localhost:5005/cart", {
                 method: "POST",
                 headers: {"Content-Type": "application/json"},
-                body: JSON.stringify({ id, quantity, name, price, filepath})
+                body: JSON.stringify({ id, quantity, name, price, img })
             });
 
             if (!response.ok) {

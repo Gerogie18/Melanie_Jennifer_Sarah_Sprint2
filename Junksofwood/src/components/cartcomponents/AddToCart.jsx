@@ -4,12 +4,12 @@ import { BsBagPlusFill } from "react-icons/bs";
 import QuantityContainer from './QuantityContainer';
 import PropTypes from 'prop-types';
 
-const AddToCart = ({id, name, price, filepath }) => {
+const AddToCart = ({id, name, price, img }) => {
     const {addToCart} = useContext(CartContext);
     const [quantity, setQuantity] = useState(1);
     
     const handleClick = () => {
-        addToCart(id, quantity, name, price, filepath),
+        addToCart(id, quantity, name, price, img),
         console.log(`Added to cart: ${name} ${quantity}`);
     };
 
