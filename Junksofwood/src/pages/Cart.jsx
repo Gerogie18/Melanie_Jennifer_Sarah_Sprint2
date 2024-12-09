@@ -5,11 +5,28 @@
 
 import PropTypes from "prop-types";
 import Button from "../components/Button"
-function Cart ({cartItems, onDelete}) {
+import { useContext } from 'react'
+import { CartContext } from '../utils/CartProvider';
+
+
+function Cart ({onDelete}) {
+  const { cart } = useContext(CartContext);
+
     return (
     <div>
-      <h1>This is the Cart</h1>
-      <p>{cartItems}</p>
+
+     <h1>Your Cart</h1>
+     {cart.length === 0 ? (
+      <p>Your cart is empty.</p>
+    ) : (
+      <ul>
+        {cart.map((item, index) => (
+          <li key={index}>
+            {item.name} - ${item.price}
+          </li>
+        ))}
+      </ul>
+    )}
       <Button text="delete items" click={onDelete}/>
     </div>
       );
@@ -24,4 +41,9 @@ Cart.propTypes = {
 
 export default Cart;
 
+
+//const { cart } = useContext(CartContext);
+
+
+// };
 

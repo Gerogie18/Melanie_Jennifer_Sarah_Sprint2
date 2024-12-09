@@ -61,9 +61,16 @@ const CartProvider = ({ children }) => {
           if (!response.ok) {
               throw new Error(`HTTP error! status: ${response.status}`);
           }
+          let product = {
+            "id": {id},
+            "quantity": {quantity},
+            "name": {name},
+            "price": {price},
+            "img": {img}
+          };
+          
+          setCart((prevCart) => [...prevCart, product]);
 
-          const updatedCart = await response.json();
-          setCart(updatedCart);
       } catch (error) {
           console.error("Error adding to cart:", error);
       }
