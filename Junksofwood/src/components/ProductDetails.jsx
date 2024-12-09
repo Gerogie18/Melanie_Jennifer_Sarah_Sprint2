@@ -6,9 +6,11 @@
     // § Available quantity
 // o Option to add the product to the cart.
 
-import { useEffect, useState, useContext } from 'react'
-import { useParams, useNavigate } from "react-router-dom";
+import React, { useContext, useState, useEffect } from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
 import { CartContext } from '../utils/CartProvider';
+import CartDiv from './cartcomponents/CartDiv.jsx';
+import PropTypes from 'prop-types';
 
 function ProductDetails() {
   const { productID } = useParams();
@@ -16,9 +18,20 @@ function ProductDetails() {
   const [product, setProduct] = useState({});
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const { addToCart} = useContext(CartContext);
+  const { cart } = useContext(CartContext);
 
-  const imagePath = '../src/assets/productImages';
+  // Check if the product ID is already in the cart
+  const productInCart = cart.find((item) => item.id === productID);
+
+  useEffect(() => {
+    if (productInCart) {
+      console.log("Product is in the cart:", productInCart);
+    } else {
+      console.log("Product is not in the cart");
+    }
+  }, [productInCart]);
+
+  const imagePath = './src/assets/productImages';
 
   useEffect(() => {
     const fetchProduct = async () => {
@@ -32,33 +45,33 @@ function ProductDetails() {
         setLoading(false);
       } catch (error) {
         setError(error.message);
-        //navigate("/"); // redirect if the product is not found
+        setLoading(false);
       }
     };
 
     fetchProduct();
-  }, [productID, navigate]);
+  }, [productID]);
+
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>Error: {error}</p>;
 
   return (
     <div>
-      {loading ? <h3>Loading...</h3> : (
-        <div className="product-detail">
-          <h3>{product.name}</h3>
-          <p>Price: {product.price}</p>
-          <p>Description: {product.description}</p>
-          <div className="img-container" key={product.id}>
-            <img 
-              src={imagePath + product.images[0].filepath} 
-              alt={product.images[0].alt} 
-            />
-          </div>
-          <button onClick={() => addToCart(product.id, 1, product.name, product.price, "")}>Add to Cart</button>
-          <button onClick={() => navigate(-1)}>Go Back</button>
-        </div>
-      )}
-      {error && <p>{error}</p>}
+      <div className="product-detail">
+        <h2>{product.name}</h2>
+        {product.img && (
+          <img src={`${imagePath}/${product.img.filepath}`} alt={product.img.alt} title={product.img.title} />
+        )}
+        <p>{product.description}</p>
+        <p>Price: ${product.price}</p>
+        <CartDiv productInCart={productInCart} product={product} />
+      </div>
     </div>
   );
 }
+
+ProductDetails.propTypes = {
+  productID: PropTypes.string.isRequired,
+};
 
 export default ProductDetails;

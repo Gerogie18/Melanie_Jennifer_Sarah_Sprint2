@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { CartContext } from '../utils/CartProvider';
+import { CartContext } from '../../utils/CartProvider.jsx';
 import CartItem from './CartItem';
 import FinalizeCart from './FinalizeCart.jsx';
 import ClearCart from './ClearCart.jsx';

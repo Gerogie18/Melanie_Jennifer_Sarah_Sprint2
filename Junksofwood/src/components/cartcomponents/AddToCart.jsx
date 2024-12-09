@@ -1,5 +1,5 @@
 import {useState, useContext} from 'react'
-import { CartContext } from '../utils/CartProvider';
+import { CartContext } from '../../utils/CartProvider.jsx';
 import { BsBagPlusFill } from "react-icons/bs";
 import QuantityContainer from './QuantityContainer';
 import PropTypes from 'prop-types';
@@ -36,21 +36,10 @@ const AddToCart = ({id, name, price, img }) => {
 export default AddToCart
 
 AddToCart.propTypes = {
-//    id: PropTypes.number.isRequired
-//    name: PropTypes.string.isRequired,
-//    price: PropTypes.number.isRequired,
-//   img: PropTypes.object.isRequired,
+    id: PropTypes.number.isRequired,
+    name: PropTypes.string.isRequired,
+    price: PropTypes.number.isRequired,
+    img: PropTypes.object.isRequired,
 };
 
-//testing
-AddToCart.defaultProps = {
-     id: 0,
-     name: 'Canada Brooch',
-     price: 10.00,
-     img: {
-        title: 'Canada Brooch',
-        src: 'https://example.com/image.jpg',
-        alt: 'Canada Brooch',
-     }
-};
 

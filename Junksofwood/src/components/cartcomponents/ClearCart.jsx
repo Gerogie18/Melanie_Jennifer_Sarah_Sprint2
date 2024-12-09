@@ -1,5 +1,5 @@
 import { useContext } from 'react'
-import { CartContext } from '../utils/CartProvider';
+import { CartContext } from '../../utils/CartProvider.jsx';
 import { BsCartXFill } from "react-icons/bs";
 import PropTypes from 'prop-types';
 

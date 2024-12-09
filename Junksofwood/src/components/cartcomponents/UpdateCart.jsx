@@ -1,5 +1,5 @@
 import {useState, useContext} from 'react'
-import { CartContext } from '../utils/CartProvider';
+import { CartContext } from '../../utils/CartProvider.jsx';
 import QuantityContainer from './QuantityContainer';
 import PropTypes from 'prop-types';
 import { IoBagCheck } from "react-icons/io5";

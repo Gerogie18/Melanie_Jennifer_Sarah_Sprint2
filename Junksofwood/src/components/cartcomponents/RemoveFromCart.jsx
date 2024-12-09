@@ -1,5 +1,5 @@
 import { useContext } from 'react'
-import { CartContext } from '../utils/CartProvider';
+import { CartContext } from '../../utils/CartProvider.jsx';
 import PropTypes from 'prop-types';
 import { IoBagRemove } from "react-icons/io5";
 
