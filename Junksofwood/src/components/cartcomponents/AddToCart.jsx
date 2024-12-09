@@ -39,7 +39,7 @@ AddToCart.propTypes = {
 //    id: PropTypes.number.isRequired
 //    name: PropTypes.string.isRequired,
 //    price: PropTypes.number.isRequired,
-//    filepath: PropTypes.string.isRequired
+//   img: PropTypes.object.isRequired,
 };
 
 //testing
@@ -47,6 +47,10 @@ AddToCart.defaultProps = {
      id: 0,
      name: 'Canada Brooch',
      price: 10.00,
-     filepath: 'productImage.jpg'
+     img: {
+        title: 'Canada Brooch',
+        src: 'https://example.com/image.jpg',
+        alt: 'Canada Brooch',
+     }
 };
 

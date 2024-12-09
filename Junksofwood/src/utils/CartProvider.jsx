@@ -14,7 +14,7 @@ const CartProvider = ({ children }) => {
         return data;
       };
 
-    const clearCart = async () => {
+    const handleClearCart = async () => {
         try {
           const response = await fetch("http://localhost:5005/cart", {
             method: "DELETE",
@@ -31,7 +31,6 @@ const CartProvider = ({ children }) => {
         }
     };
     
-
     const addToCart = async (id, quantity, name, price, img ) => {
         try {
             const response = await fetch("http://localhost:5005/cart", {
@@ -50,6 +49,7 @@ const CartProvider = ({ children }) => {
             console.error("Error adding to cart:", error);
         }
     };
+
 
     const removeFromCart = async (id) => {
         try {
