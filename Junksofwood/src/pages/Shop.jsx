@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 const Shop = ({ products }) => {
   const navigate = useNavigate();
@@ -24,4 +25,8 @@ const Shop = ({ products }) => {
   );
 };
 
+Shop.propTypes = {
+  products: PropTypes.array.isRequired,
+
+};
 export default Shop;

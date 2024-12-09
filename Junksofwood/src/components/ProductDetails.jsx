@@ -1,3 +1,11 @@
+// 2. Product Details Page:
+// o Provides detailed information about a selected product, including:
+    // § Larger product image
+    // § Description
+    // § Price
+    // § Available quantity
+// o Option to add the product to the cart.
+
 import { useEffect, useState, useContext } from 'react'
 import { useParams, useNavigate } from "react-router-dom";
 import { CartContext } from '../utils/CartProvider';
@@ -10,7 +18,7 @@ function ProductDetails() {
   const [error, setError] = useState(null);
   const { addToCart} = useContext(CartContext);
 
-  const imagePath = './src/assets/productImages';
+  const imagePath = '../src/assets/productImages';
 
   useEffect(() => {
     const fetchProduct = async () => {
