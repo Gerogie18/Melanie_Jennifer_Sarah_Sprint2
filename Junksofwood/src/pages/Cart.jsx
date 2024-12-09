@@ -41,9 +41,3 @@ Cart.propTypes = {
 
 export default Cart;
 
-
-//const { cart } = useContext(CartContext);
-
-
-// };
-
