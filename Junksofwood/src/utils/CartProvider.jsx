@@ -31,25 +31,43 @@ const CartProvider = ({ children }) => {
         }
     };
     
+    // const addToCart = async (id, quantity, name, price, img ) => {
+    //     try {
+    //         const response = await fetch("http://localhost:5005/cart", {
+    //             method: "POST",
+    //             headers: {"Content-Type": "application/json"},
+    //             body: JSON.stringify({ id, quantity, name, price, img })
+    //         });
+
+    //         if (!response.ok) {
+    //             throw new Error(`HTTP error! status: ${response.status}`);
+    //         }
+
+    //         const updatedCart = await response.json();
+    //         setCart(updatedCart);
+    //     } catch (error) {
+    //         console.error("Error adding to cart:", error);
+    //     }
+    // };
+
     const addToCart = async (id, quantity, name, price, img ) => {
-        try {
-            const response = await fetch("http://localhost:5005/cart", {
-                method: "POST",
-                headers: {"Content-Type": "application/json"},
-                body: JSON.stringify({ id, quantity, name, price, img })
-            });
+      try {
+          const response = await fetch("http://localhost:5005/cart", {
+              method: "POST",
+              headers: {"Content-Type": "application/json"},
+              body: JSON.stringify({ id, quantity, name, price, img })
+          });
 
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
-            }
+          if (!response.ok) {
+              throw new Error(`HTTP error! status: ${response.status}`);
+          }
 
-            const updatedCart = await response.json();
-            setCart(updatedCart);
-        } catch (error) {
-            console.error("Error adding to cart:", error);
-        }
-    };
-
+          const updatedCart = await response.json();
+          setCart(updatedCart);
+      } catch (error) {
+          console.error("Error adding to cart:", error);
+      }
+  };
 
     const removeFromCart = async (id) => {
         try {
@@ -117,7 +135,7 @@ const CartProvider = ({ children }) => {
       };
 
     return (
-        <CartContext.Provider value={{ cart, fetchCart, addToCart, removeFromCart, clearCart, updateQuantity, finalizeCart }}>
+        <CartContext.Provider value={{ cart, fetchCart, addToCart, removeFromCart, handleClearCart, updateQuantity, finalizeCart }}>
             {children}
         </CartContext.Provider>
     )

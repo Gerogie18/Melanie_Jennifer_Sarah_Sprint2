@@ -1,1308 +1,1315 @@
 {
   "categories": [
-      {
-          "id": 0,
-          "title": "Wooden Brooches",
-          "description": "Wooden Brooches are made from the finest quality of wood. They are handcrafted with love. They are perfect for any occasion and can be worn with any outfit.",
-          "materials": ""
-      },
-      {
-          "id": 1,
-          "title": "Wooden Earrings",
-          "description": "Wooden Earrings are made from the finest quality of wood. They are handcrafted with love. They are perfect for any occasion and can be worn with any outfit.",
-          "materials": ""
-      },
-      {
-          "id": 2,
-          "title": "Wooden Keychains",
-          "description": "Wooden Keychains are made from the finest quality of wood. They are handcrafted with love. They are perfect for any occasion and can be used to hold your keys.",
-          "materials": ""
-      },
-      {
-          "id": 3,
-          "title": "Wooden Magnets",
-          "description": "Wooden Magnets are made from the finest quality of wood. They are handcrafted with love. They are perfect for any occasion and can be used to hold your notes.",
-          "materials": ""
-      },
-      {
-          "id": 4,
-          "title": "Wooden Ornaments",
-          "description": "Wooden Ornaments are made from the finest quality of wood. They are handcrafted with love. They are perfect for the holiday season for gifts and decorating your own tree.",
-          "materials": ""
-      }
+    {
+      "id": "0",
+      "title": "Wooden Brooches",
+      "description": "Wooden Brooches are made from the finest quality of wood. They are handcrafted with love. They are perfect for any occasion and can be worn with any outfit.",
+      "materials": ""
+    },
+    {
+      "id": "1",
+      "title": "Wooden Earrings",
+      "description": "Wooden Earrings are made from the finest quality of wood. They are handcrafted with love. They are perfect for any occasion and can be worn with any outfit.",
+      "materials": ""
+    },
+    {
+      "id": "2",
+      "title": "Wooden Keychains",
+      "description": "Wooden Keychains are made from the finest quality of wood. They are handcrafted with love. They are perfect for any occasion and can be used to hold your keys.",
+      "materials": ""
+    },
+    {
+      "id": "3",
+      "title": "Wooden Magnets",
+      "description": "Wooden Magnets are made from the finest quality of wood. They are handcrafted with love. They are perfect for any occasion and can be used to hold your notes.",
+      "materials": ""
+    },
+    {
+      "id": "4",
+      "title": "Wooden Ornaments",
+      "description": "Wooden Ornaments are made from the finest quality of wood. They are handcrafted with love. They are perfect for the holiday season for gifts and decorating your own tree.",
+      "materials": ""
+    }
   ],
   "products": [
-      {
-          "name": "Canada Brooch",
-          "category": "0",
-          "price": 10,
-          "description": "",
-          "size": "",
-          "tags": [
-              "Brooch",
-              "Wood",
-              "Canada",
-              "Hockey",
-              "Sport"
-          ],
-          "images": [
-              {
-                  "title": "Canada Brooch - Card",
-                  "filepath": "/brooches/CanadaBroochCard.jpg",
-                  "alt": "Image of Canada Brooch on card"
-              },
-              {
-                  "title": "Canada Brooch - Plate",
-                  "filepath": "/brooches/CanadaBroochPlate.jpg",
-                  "alt": "Image of Canada Brooch - Plate"
-              }
-          ],
-          "id": 0
-      },
-      {
-          "name": "Rowhouse Brooch - Orange and Blue",
-          "category": "0",
-          "price": 20,
-          "description": "Lovingly nicknamed Jellybean Row, colourful row houses line the streets of downtown St Johns. Green, blue, purple, red, orange... Every colour you can imagine, sometimes matching, sometimes clashing, combined with sloping hills all come together to create a unique visual you're not likely to find anywhere else. \n\nThese brooches are laser cut from maple plywood, about 2 inches in height. They have hand painted details and are finished with a varnish sealant with a silver c clasp brooch pin. Due to the handmade nature of this item and keeping in the spirit of Jellybean Row, each piece will be slightly different from another. \n\nAll pieces are designed and produced by myself at my home studio in St. John's, Newfoundland.",
-          "size": "",
-          "tags": [
-              "Brooch",
-              "Wood",
-              "Rowhouse",
-              "Orange and Blue",
-              "Newfoundland"
-          ],
-          "images": [
-              {
-                  "title": "Rowhouse Brooch - Orange and Blue",
-                  "filepath": "/brooches/RowhouseBroochPlate_OrangeBlue.jpg",
-                  "alt": "Image of Rowhouse Brooch - Orange and Blue"
-              }
-          ],
-          "id": 1
-      },
-      {
-          "name": "Rowhouse Brooch - Purple and Yellow",
-          "category": "0",
-          "price": 20,
-          "description": "Lovingly nicknamed Jellybean Row, colourful row houses line the streets of downtown St Johns. Green, blue, purple, red, orange... Every colour you can imagine, sometimes matching, sometimes clashing, combined with sloping hills all come together to create a unique visual you're not likely to find anywhere else. \n\nThese brooches are laser cut from maple plywood, about 2 inches in height. They have hand painted details and are finished with a varnish sealant with a silver c clasp brooch pin. Due to the handmade nature of this item and keeping in the spirit of Jellybean Row, each piece will be slightly different from another. \n\nAll pieces are designed and produced by myself at my home studio in St. John's, Newfoundland.",
-          "size": "",
-          "tags": [
-              "Brooch",
-              "Wood",
-              "Rowhouse",
-              "Purple and Yellow",
-              "Newfoundland"
-          ],
-          "images": [
-              {
-                  "title": "Rowhouse Brooch - Purple and Yellow",
-                  "filepath": "/brooches/RowhouseBroochPlate_PurpleYellow.jpg",
-                  "alt": "Image of Rowhouse Brooch - Purple and Yellow"
-              }
-          ],
-          "id": 2
-      },
-      {
-          "name": "Rowhouse Brooch - Red and Purple",
-          "category": "0",
-          "price": 10,
-          "description": "Lovingly nicknamed Jellybean Row, colourful row houses line the streets of downtown St Johns. Green, blue, purple, red, orange... Every colour you can imagine, sometimes matching, sometimes clashing, combined with sloping hills all come together to create a unique visual you're not likely to find anywhere else. \n\nThese brooches are laser cut from maple plywood, about 2 inches in height. They have hand painted details and are finished with a varnish sealant with a silver c clasp brooch pin. Due to the handmade nature of this item and keeping in the spirit of Jellybean Row, each piece will be slightly different from another. \n\nAll pieces are designed and produced by myself at my home studio in St. John's, Newfoundland.",
-          "size": "",
-          "tags": [
-              "Brooch",
-              "Wood",
-              "Rowhouse",
-              "Green and Red",
-              "Newfoundland"
-          ],
-          "images": [
-              {
-                  "title": "Rowhouse Brooch - Red and Purple",
-                  "filepath": "/brooches/RowhouseBroochPlate_RedPurple.jpg",
-                  "alt": "Image of Rowhouse Brooch - Red and Purple"
-              }
-          ],
-          "id": 3
-      },
-      {
-          "name": "Labrador Brooch - Natural",
-          "category": "0",
-          "price": 15,
-          "description": "The Newfoundland and Labrador Labrador Region page says it the best:\n\n\"Labrador, The Big Land, one of the last untamed, unspoiled places left on earth. It stretches from the Strait of Belle Isle in the south, to Cape Chidley in the far north, boasting towering mountains, massive rock faces and an infinite supply of lakes and rivers, not to mention waters seasonally teeming with whales and icebergs. Here, you'll find plenty of fresh air, crystal clear water and truly authentic people.\"\n\nIt's a place that those who call home love fiercely, and a place that visitors wish they could call home. No matter if you're a Livyer or a CFA (Come From Away), with this Labrador map brooch showcasing Labrador City, you can take a little piece of The Big Land with you wherever you go.\n\nThese brooches are laser cut from oak plywood, about 2 inches in height. They have hand painted details and are finished with a varnish sealant with a silver c clasp brooch pin. Due to the handmade nature of this item, each piece will be slightly different from another.\n\nAll pieces are designed and produced by myself at my home studio in St. John's, Newfoundland.",
-          "size": "",
-          "tags": [
-              "Brooch",
-              "Wood",
-              "Labrador"
-          ],
-          "images": [
-              {
-                  "title": "Labrador Brooch - Card",
-                  "filepath": "/brooches/LabradorBroochCard.jpg",
-                  "alt": "Image of Labrador Brooch on card"
-              },
-              {
-                  "title": "Labrador Brooch - Plate",
-                  "filepath": "/brooches/LabradorBroochPlate.jpg",
-                  "alt": "Image of Labrador Brooch - Plate"
-              }
-          ],
-          "id": 4
-      },
-      {
-          "name": "Labrador Brooch - Stained",
-          "category": "0",
-          "price": 10,
-          "description": "The Newfoundland and Labrador Labrador Region page says it the best:\n\n\"Labrador, The Big Land, one of the last untamed, unspoiled places left on earth. It stretches from the Strait of Belle Isle in the south, to Cape Chidley in the far north, boasting towering mountains, massive rock faces and an infinite supply of lakes and rivers, not to mention waters seasonally teeming with whales and icebergs. Here, you'll find plenty of fresh air, crystal clear water and truly authentic people.\"\n\nIt's a place that those who call home love fiercely, and a place that visitors wish they could call home. No matter if you're a Livyer or a CFA (Come From Away), with this Labrador map brooch showcasing Labrador City, you can take a little piece of The Big Land with you wherever you go.\n\nThese brooches are laser cut from oak plywood, about 2 inches in height. They have hand painted details and are finished with a varnish sealant with a silver c clasp brooch pin. Due to the handmade nature of this item, each piece will be slightly different from another.\n\nAll pieces are designed and produced by myself at my home studio in St. John's, Newfoundland."
-,
-          "size": "",
-          "tags": [
-              "Brooch",
-              "Wood",
-              "Labrador",
-              "Stained"
-          ],
-          "images": [
-              {
-                  "title": "Labrador Brooch - Card",
-                  "filepath": "/brooches/LabradorBroochCard.jpg",
-                  "alt": "Image of Labrador Brooch on card"
-              },
-              {
-                  "title": "Labrador Brooch - Plate",
-                  "filepath": "/brooches/LabradorBroochPlate.jpg",
-                  "alt": "Image of Labrador Brooch - Plate"
-              }
-          ],
-          "id": 5
-      },
-      {
-          "name": "Newfoundland Brooch - Natural",
-          "category": "0",
-          "price": 10,
-          "description": "The Newfoundland and Labrador Tourism page says it the best:\n\n\"This is where the sun rises first. Where Vikings landed over 1,000 years ago. This place is home to the oldest settlement and the oldest city in North America, but is the youngest province of Canada. A vast land, with a relatively small population, Newfoundland and Labrador has some of the friendliest people you'll ever meet.\"\n\nIt's a place that those who call home love fiercely, and a place that visitors wish they could call home. No matter if you're a Livyer or a CFA (Come From Away), with this Newfoundland map brooch showcasing the capital St Johns, you can take a little piece of home with you wherever you go.\n\nThese brooches are laser cut from meranti plywood, about 2 inches in height. They have hand painted details and are finished with a varnish sealant with a silver c clasp brooch pin. Due to the handmade nature of this item, each piece will be slightly different from another.\n\nAll pieces are designed and produced by myself at my home studio in St. John's, Newfoundland.",
-          "size": "",
-          "tags": [
-              "Brooch",
-              "Wood",
-              "Newfoundland"
-          ],
-          "images": [
-              {
-                  "title": "Newfoundland Brooch - Card",
-                  "filepath": "/brooches/NewfoundlandBroochCard.jpg",
-                  "alt": "Image of Newfoundland Brooch on card"
-              },
-              {
-                  "title": "Newfoundland Brooch - Plate",
-                  "filepath": "/brooches/NewfoundlandBroochPlate.jpg",
-                  "alt": "Image of Newfoundland Brooch - Plate"
-              }
-          ],
-          "id": 6
-      },
-      {
-          "name": "Newfoundland Brooch - Stained",
-          "category": "0",
-          "price": 10,
-          "description": "",
-          "size": "",
-          "tags": [
-              "Brooch",
-              "Wood",
-              "Newfoundland",
-              "Stained"
-          ],
-          "images": [
-              {
-                  "title": "Newfoundland Brooch - Card",
-                  "filepath": "/brooches/NewfoundlandBroochCard.jpg",
-                  "alt": "Image of Newfoundland Brooch on card"
-              },
-              {
-                  "title": "Newfoundland Brooch - Plate",
-                  "filepath": "/brooches/NewfoundlandBroochPlate.jpg",
-                  "alt": "Image of Newfoundland Brooch - Plate"
-              }
-          ],
-          "id": 7
-      },
-      {
-          "name": "Puffin Brooch",
-          "category": "0",
-          "price": 10,
-          "description": "",
-          "size": "",
-          "tags": [
-              "Brooch",
-              "Wood",
-              "Puffin"
-          ],
-          "images": [
-              {
-                  "title": "Puffin Brooch - Plate",
-                  "filepath": "/brooches/PuffinBroochPlate.jpg",
-                  "alt": "Image of Puffin Brooch - Plate"
-              }
-          ],
-          "id": 8
-      },
-      {
-          "name": "Partridgeberry Earrings",
-          "category": "1",
-          "price": 10,
-          "description": "",
-          "size": "",
-          "tags": [
-              "Earrings",
-              "Wood",
-              "Partridgeberry",
-              "Newfoundland"
-          ],
-          "images": [
-              {
-                  "title": "Partridgeberry Earrings - Card",
-                  "filepath": "/earrings/BerryEarringCard_Partridgeberry.jpg",
-                  "alt": "Image of Partridgeberry Earrings on card"
-              },
-              {
-                  "title": "Partridgeberry Earrings - Plate",
-                  "filepath": "/earrings/BerryEarringPlate_Partridgeberry.jpg",
-                  "alt": "Image of Partridgeberry Earrings - Plate"
-              }
-          ],
-          "id": 9
-      },
-      {
-          "name": "Bakeapple Earrings",
-          "category": "1",
-          "price": 10,
-          "description": "",
-          "size": "",
-          "tags": [
-              "Earrings",
-              "Wood",
-              "Bakeapple",
-              "Newfoundland"
-          ],
-          "images": [
-              {
-                  "title": "Bakeapple Earrings - Plate",
-                  "filepath": "/earrings/BerryEarringPlate_Bakeapple.jpg",
-                  "alt": "Image of Bakeapple Earrings - Plate"
-              }
-          ],
-          "id": 10
-      },
-      {
-          "name": "Blueberry Earrings",
-          "category": "1",
-          "price": 10,
-          "description": "",
-          "size": "",
-          "tags": [
-              "Earrings",
-              "Wood",
-              "Blueberry",
-              "Newfoundland"
-          ],
-          "images": [
-              {
-                  "title": "Blueberry Earrings - Plate",
-                  "filepath": "/earrings/BerryEarringPlate_Blueberry.jpg",
-                  "alt": "Image of Blueberry Earrings - Plate"
-              }
-          ],
-          "id": 11
-      },
-      {
-          "name": "Casette Earrings",
-          "category": "1",
-          "price": 10,
-          "description": "",
-          "size": "",
-          "tags": [
-              "Earrings",
-              "Wood",
-              "Casette"
-          ],
-          "images": [
-              {
-                  "title": "Casette Earrings - Plate",
-                  "filepath": "/earrings/CasetteEarringPlate.jpg",
-                  "alt": "Image of Casette Earrings - Plate"
-              }
-          ],
-          "id": 12
-      },
-      {
-          "name": "Diamond Earrings",
-          "category": "1",
-          "price": 10,
-          "description": "",
-          "size": "",
-          "tags": [
-              "Earrings",
-              "Wood",
-              "Diamond"
-          ],
-          "images": [
-              {
-                  "title": "Diamond Earrings - Plate",
-                  "filepath": "/earrings/DiamondEarringPlate.jpg",
-                  "alt": "Image of Diamond Earrings - Plate"
-              },
-              {
-                  "title": "Diamond Earrings - Card",
-                  "filepath": "/earrings/DiamondEarringCard.jpg",
-                  "alt": "Image of Diamond Earrings on card"
-              }
-          ],
-          "id": 13
-      },
-      {
-          "name": "Hotdog Earring",
-          "category": "1",
-          "price": 10,
-          "description": "",
-          "size": "",
-          "tags": [
-              "Earrings",
-              "Wood",
-              "Hotdog"
-          ],
-          "images": [
-              {
-                  "title": "Hotdog Earrings - Plate",
-                  "filepath": "/earrings/HotdogEarringPlate.jpg",
-                  "alt": "Image of Hotdog Earrings - Plate"
-              },
-              {
-                  "title": "Hotdog Earrings - Card",
-                  "filepath": "/earrings/HotdogEarringCard.jpg",
-                  "alt": "Image of Hotdog Earrings on card"
-              }
-          ],
-          "id": 14
-      },
-      {
-          "name": "Labrador Earrings",
-          "category": "1",
-          "price": 10,
-          "description": "",
-          "size": "",
-          "tags": [
-              "Earrings",
-              "Wood",
-              "Labrador"
-          ],
-          "images": [
-              {
-                  "title": "Labrador Earrings - Plate",
-                  "filepath": "/earrings/MapEarringPlate_Labrador.jpg",
-                  "alt": "Image of Labrador Earrings - Plate"
-              },
-              {
-                  "title": "Labrador Earrings - Card",
-                  "filepath": "/earrings/MapEarringCard_Labrador.jpg",
-                  "alt": "Image of Labrador Earrings on card"
-              },
-              {
-                  "title": "Labrador Earrings - Plate - Dime",
-                  "filepath": "/earrings/MapEarringPlateDime_Labrador.jpg",
-                  "alt": "Image of Labrador Earrings - Plate - Dime"
-              }
-          ],
-          "id": 15
-      },
-      {
-          "name": "Leaf Earring - Green",
-          "category": "1",
-          "price": 10,
-          "description": "",
-          "size": "",
-          "tags": [
-              "Earrings",
-              "Wood",
-              "Leaf",
-              "Green"
-          ],
-          "images": [
-              {
-                  "title": "Leaf Earrings - Plate",
-                  "filepath": "/earrings/LeafEarringPlate_Green.jpg",
-                  "alt": "Image of Leaf Earrings - Plate"
-              },
-              {
-                  "title": "Leaf Earrings - Card",
-                  "filepath": "/earrings/LeafEarringCard_Green.jpg",
-                  "alt": "Image of Leaf Earrings on card"
-              }
-          ],
-          "id": 16
-      },
-      {
-          "name": "Leaf Earring - Red",
-          "category": "1",
-          "price": 10,
-          "description": "",
-          "size": "",
-          "tags": [
-              "Earrings",
-              "Wood",
-              "Leaf",
-              "Red"
-          ],
-          "images": [
-              {
-                  "title": "Leaf Earrings - Plate",
-                  "filepath": "/earrings/LeafEarringPlate_Red.jpg",
-                  "alt": "Image of Leaf Earrings - Plate"
-              },
-              {
-                  "title": "Leaf Earrings - Plate - Dime",
-                  "filepath": "/earrings/LeafEarringPlateDime_Red.jpg",
-                  "alt": "Image of Leaf Earrings - Plate - Dime"
-              }
-          ],
-          "id": 17
-      },
-      {
-          "name": "Leaf Earring - Yellow",
-          "category": "1",
-          "price": 10,
-          "description": "",
-          "size": "",
-          "tags": [
-              "Earrings",
-              "Wood",
-              "Leaf",
-              "Yellow"
-          ],
-          "images": [
-              {
-                  "title": "Leaf Earrings - Plate",
-                  "filepath": "/earrings/LeafEarringPlate_Yellow.jpg",
-                  "alt": "Image of Leaf Earrings - Plate"
-              },
-              {
-                  "title": "Leaf Earrings - Plate - Dime",
-                  "filepath": "/earrings/LeafEarringPlateDime_Yellow.jpg",
-                  "alt": "Image of Leaf Earrings - Plate - Dime"
-              }
-          ],
-          "id": 18
-      },
-      {
-          "name": "Leaf Earring - Orange",
-          "category": "1",
-          "price": 10,
-          "description": "",
-          "size": "",
-          "tags": [
-              "Earrings",
-              "Wood",
-              "Leaf",
-              "Orange"
-          ],
-          "images": [
-              {
-                  "title": "Leaf Earrings - Plate",
-                  "filepath": "/earrings/LeafEarringPlate_Orange.jpg",
-                  "alt": "Image of Leaf Earrings - Plate"
-              },
-              {
-                  "title": "Leaf Earrings - Plate - Dime",
-                  "filepath": "/earrings/LeafEarringPlateDime_Orange.jpg",
-                  "alt": "Image of Leaf Earrings - Plate - Dime"
-              }
-          ],
-          "id": 19
-      },
-      {
-          "name": "Maple Leaf Earrings - Natural",
-          "category": "1",
-          "price": 10,
-          "description": "",
-          "size": "",
-          "tags": [
-              "Earrings",
-              "Wood",
-              "Maple Leaf"
-          ],
-          "images": [
-              {
-                  "title": "Maple Leaf Earrings - Plate",
-                  "filepath": "/earrings/MapleLeafEarringPlate_Natural.jpg",
-                  "alt": "Image of Maple Leaf Earrings - Plate"
-              },
-              {
-                  "title": "Maple Leaf Earrings - Card",
-                  "filepath": "/earrings/MapleLeafEarringCard_Natural.jpg",
-                  "alt": "Image of Maple Leaf Earrings on card"
-              }
-          ],
-          "id": 20
-      },
-      {
-          "name": "Maple Leaf Earrings - Red",
-          "category": "1",
-          "price": 10,
-          "description": "",
-          "size": "",
-          "tags": [
-              "Earrings",
-              "Wood",
-              "Maple Leaf",
-              "Red"
-          ],
-          "images": [
-              {
-                  "title": "Red Maple Leaf Earrings - Plate",
-                  "filepath": "/earrings/MapleLeafEarringPlate_Red.jpg",
-                  "alt": "Image of Red Maple Leaf Earrings - Plate"
-              },
-              {
-                  "title": "Red Maple Leaf Earrings - Card",
-                  "filepath": "/earrings/MapleLeafEarringCard_Red.jpg",
-                  "alt": "Image of Red Maple Leaf Earrings on card"
-              }
-          ],
-          "id": 21
-      },
-      {
-          "name": "Newfoundland Earrings",
-          "category": "1",
-          "price": 10,
-          "description": "",
-          "size": "",
-          "tags": [
-              "Earrings",
-              "Wood",
-              "Newfoundland"
-          ],
-          "images": [
-              {
-                  "title": "Newfoundland Earrings - Card",
-                  "filepath": "/earrings/MapEarringCard_Newfoundland.jpg",
-                  "alt": "Image of Newfoundland Earrings on card"
-              },
-              {
-                  "title": "Newfoundland Earrings - Plate",
-                  "filepath": "/earrings/MapEarringPlate_Newfoundlandmap_.jpg",
-                  "alt": "Image of Newfoundland Earrings - Plate"
-              }
-          ],
-          "id": 22
-      },
-      {
-          "name": "Newfoundland and Labrador Earrings",
-          "category": "1",
-          "price": 10,
-          "description": "",
-          "size": "",
-          "tags": [
-              "Earrings",
-              "Wood",
-              "Newfoundland",
-              "Labrador"
-          ],
-          "images": [
-              {
-                  "title": "Newfoundland and Labrador Earrings - Plate",
-                  "filepath": "/earrings/MapEarringPlate_NewfoundlandLabrador.jpg",
-                  "alt": "Image of Newfoundland and Labrador Earrings - Plate"
-              }
-          ],
-          "id": 23
-      },
-      {
-          "name": "Moonkitties Earrings",
-          "category": "1",
-          "price": 10,
-          "description": "",
-          "size": "",
-          "tags": [
-              "Earrings",
-              "Wood",
-              "Moonkitties"
-          ],
-          "images": [
-              {
-                  "title": "Moonkitties Earrings - Plate",
-                  "filepath": "/earrings/MoonkittiesEarringPlate.jpg",
-                  "alt": "Image of Moonkitties Earrings - Plate"
-              },
-              {
-                  "title": "Moonkitties Earrings - Card",
-                  "filepath": "/earrings/MoonkittiesEarringCard.jpg",
-                  "alt": "Image of Moonkitties Earrings on card"
-              }
-          ],
-          "id": 24
-      },
-      {
-          "name": "Pineapple Earrings",
-          "category": "1",
-          "price": 10,
-          "description": "",
-          "size": "",
-          "tags": [
-              "Earrings",
-              "Wood",
-              "Pineapple"
-          ],
-          "images": [
-              {
-                  "title": "Pineapple Earrings - Plate",
-                  "filepath": "/earrings/PineappleEarringPlate.jpg",
-                  "alt": "Image of Pineapple Earrings - Plate"
-              },
-              {
-                  "title": "Pineapple Earrings - Card",
-                  "filepath": "/earrings/PineappleEarringCard.jpg",
-                  "alt": "Image of Pineapple Earrings on card"
-              }
-          ],
-          "id": 25
-      },
-      {
-          "name": "Planner Earrings",
-          "category": "1",
-          "price": 10,
-          "description": "",
-          "size": "",
-          "tags": [
-              "Earrings",
-              "Wood",
-              "Planner"
-          ],
-          "images": [
-              {
-                  "title": "Planner Earrings - Plate",
-                  "filepath": "/earrings/PlannerEarringPlate.jpg",
-                  "alt": "Image of Planner Earrings - Plate"
-              },
-              {
-                  "title": "Planner Earrings - Plate - Dime",
-                  "filepath": "/earrings/PlannerEarringPlateDime.jpg",
-                  "alt": "Image of Planner Earrings - Plate - Dime"
-              }
-          ],
-          "id": 26
-      },
-      {
-          "name": "Ships Wheel Earrings",
-          "category": "1",
-          "price": 10,
-          "description": "",
-          "size": "",
-          "tags": [
-              "Earrings",
-              "Wood",
-              "Ships Wheel"
-          ],
-          "images": [
-              {
-                  "title": "Ships Wheel Earrings - Plate",
-                  "filepath": "/earrings/ShipsWheelEarringPlate.jpg",
-                  "alt": "Image of Ships Wheel Earrings - Plate"
-              },
-              {
-                  "title": "Ships Wheel Earrings - Card",
-                  "filepath": "/earrings/ShipsWheelEarringCard.jpg",
-                  "alt": "Image of Ships Wheel Earrings on card"
-              }
-          ],
-          "id": 27
-      },
-      {
-          "name": "Strawberry Earrings",
-          "category": "1",
-          "price": 10,
-          "description": "",
-          "size": "",
-          "tags": [
-              "Earrings",
-              "Wood",
-              "Strawberry"
-          ],
-          "images": [
-              {
-                  "title": "Strawberry Earrings - Plate",
-                  "filepath": "/earrings/StrawberryEarringPlate.jpg",
-                  "alt": "Image of Strawberry Earrings - Plate"
-              },
-              {
-                  "title": "Strawberry Earrings - Card",
-                  "filepath": "/earrings/StrawberryEarringCard.jpg",
-                  "alt": "Image of Strawberry Earrings on card"
-              }
-          ],
-          "id": 28
-      },
-      {
-          "name": "Strawberry Earrings",
-          "category": "1",
-          "price": 10,
-          "description": "",
-          "size": "",
-          "tags": [
-              "Earrings",
-              "Wood",
-              "Strawberry"
-          ],
-          "images": [
-              {
-                  "title": "Strawberry Earrings - Plate",
-                  "filepath": "/earrings/StrawberryEarringPlate.jpg",
-                  "alt": "Image of Strawberry Earrings - Plate"
-              },
-              {
-                  "title": "Strawberry Earrings - Card",
-                  "filepath": "/earrings/StrawberryEarringCard.jpg",
-                  "alt": "Image of Strawberry Earrings on card"
-              }
-          ],
-          "id": 29
-      },
-      {
-          "name": "Succulent Earrings",
-          "category": "1",
-          "price": 10,
-          "description": "",
-          "size": "",
-          "tags": [
-              "Earrings",
-              "Wood",
-              "Succulent"
-          ],
-          "images": [
-              {
-                  "title": "Succulent Earrings - Plate",
-                  "filepath": "/earrings/SucculentEarringPlate.jpg",
-                  "alt": "Image of Succulent Earrings - Plate"
-              },
-              {
-                  "title": "Succulent Earrings - Card",
-                  "filepath": "/earrings/SucculentEarringCard.jpg",
-                  "alt": "Image of Succulent Earrings on card"
-              }
-          ],
-          "id": 30
-      },
-      {
-          "name": "Sushi Earrings",
-          "category": "1",
-          "price": 10,
-          "description": "",
-          "size": "",
-          "tags": [
-              "Earrings",
-              "Wood",
-              "Sushi"
-          ],
-          "images": [
-              {
-                  "title": "Sushi Earrings - Plate",
-                  "filepath": "/earrings/SushiEarringPlate.jpg",
-                  "alt": "Image of Sushi Earrings - Plate"
-              },
-              {
-                  "title": "Sushi Earrings - Card",
-                  "filepath": "/earrings/SushiEarringCard.jpg",
-                  "alt": "Image of Sushi Earrings on card"
-              }
-          ],
-          "id": 31
-      },
-      {
-          "name": "Terrarium Earrings",
-          "category": "1",
-          "price": 10,
-          "description": "",
-          "size": "",
-          "tags": [
-              "Earrings",
-              "Wood",
-              "Terrarium"
-          ],
-          "images": [
-              {
-                  "title": "Terrarium Earrings - Plate",
-                  "filepath": "/earrings/TerrariumEarringPlate.jpg",
-                  "alt": "Image of Terrarium Earrings - Plate"
-              },
-              {
-                  "title": "Terrarium Earrings - Card",
-                  "filepath": "/earrings/TerrariumEarringCard.jpg",
-                  "alt": "Image of Terrarium Earrings on card"
-              }
-          ],
-          "id": 32
-      },
-      {
-          "name": "Togo Cup Earrings",
-          "category": "1",
-          "price": 10,
-          "description": "",
-          "size": "",
-          "tags": [
-              "Earrings",
-              "Wood",
-              "Togo Cup",
-              "Coffee",
-              "Tea"
-          ],
-          "images": [
-              {
-                  "title": "Togo Cup Earrings - Plate",
-                  "filepath": "/earrings/TogoCupEarringPlate.jpg",
-                  "alt": "Image of Togo Cup Earrings - Plate"
-              },
-              {
-                  "title": "Togo Cup Earrings - Card",
-                  "filepath": "/earrings/TogoCupEarringCard.jpg",
-                  "alt": "Image of Togo Cup Earrings on card"
-              }
-          ],
-          "id": 33
-      },
-      {
-          "name": "Whale Tail Earrings",
-          "category": "1",
-          "price": 10,
-          "description": "",
-          "size": "",
-          "tags": [
-              "Earrings",
-              "Wood",
-              "Whale Tail"
-          ],
-          "images": [
-              {
-                  "title": "Whale Tail Earrings - Plate",
-                  "filepath": "/earrings/WhaleTailEarringPlate.jpg",
-                  "alt": "Image of Whale Tail Earrings - Plate"
-              },
-              {
-                  "title": "Whale Tail Earrings - Card",
-                  "filepath": "/earrings/WhaleTailEarringCard.jpg",
-                  "alt": "Image of Whale Tail Earrings on card"
-              }
-          ],
-          "id": 34
-      },
-      {
-          "name": "Best Kind Keychain",
-          "category": "2",
-          "price": 10,
-          "description": "",
-          "size": "",
-          "tags": [
-              "Keychains",
-              "Wood",
-              "Best Kind"
-          ],
-          "images": [
-              {
-                  "title": "Best Kind Keychain - Plate",
-                  "filepath": "/keychains/BestkindKeychainPlate.jpg",
-                  "alt": "Image of Best Kind Keychain - Plate"
-              },
-              {
-                  "title": "Best Kind Keychain - Tag",
-                  "filepath": "/keychains/BestkindKeychainPlateTag.jpg",
-                  "alt": "Image of Best Kind Keychain - Tag"
-              }
-          ],
-          "id": 35
-      },
-      {
-          "name": "Dies at You Keychain",
-          "category": "2",
-          "price": 10,
-          "description": "",
-          "size": "",
-          "tags": [
-              "Keychains",
-              "Wood",
-              "Dies at You"
-          ],
-          "images": [
-              {
-                  "title": "Dies at You Keychain - Plate",
-                  "filepath": "/keychains/DiesatyouKeychainPlate.jpg",
-                  "alt": "Image of Dies at You Keychain - Plate"
-              },
-              {
-                  "title": "Dies at You Keychain - Tag",
-                  "filepath": "/keychains/DiesatyouKeychainPlateTag.jpg",
-                  "alt": "Image of Dies at You Keychain - Tag"
-              }
-          ],
-          "id": 36
-      },
-      {
-          "name": "Half Cut Keychain",
-          "category": "2",
-          "price": 10,
-          "description": "",
-          "size": "",
-          "tags": [
-              "Keychains",
-              "Wood",
-              "Half Cut"
-          ],
-          "images": [
-              {
-                  "title": "Half Cut Keychain - Plate",
-                  "filepath": "/keychains/HalfcutKeychainPlate.jpg",
-                  "alt": "Image of Half Cut Keychain - Plate"
-              },
-              {
-                  "title": "Half Cut Keychain - Tag",
-                  "filepath": "/keychains/HalfcutKeychainPlateTag.jpg",
-                  "alt": "Image of Half Cut Keychain - Tag"
-              }
-          ],
-          "id": 37
-      },
-      {
-          "name": "Proper 'Ting Keychain",
-          "category": "2",
-          "price": 10,
-          "description": "",
-          "size": "",
-          "tags": [
-              "Keychains",
-              "Wood",
-              "Proper 'Ting",
-              "Proper Thing"
-          ],
-          "images": [
-              {
-                  "title": "Proper 'Ting Keychain - Plate",
-                  "filepath": "/keychains/PropertingKeychainPlate.jpg",
-                  "alt": "Image of Proper 'Ting Keychain - Plate"
-              },
-              {
-                  "title": "Proper 'Ting Keychain - Tag",
-                  "filepath": "/keychains/PropertingKeychainPlateTag.jpg",
-                  "alt": "Image of Proper 'Ting Keychain - Tag"
-              }
-          ],
-          "id": 38
-      },
-      {
-          "name": "Rotted Keychain",
-          "category": "2",
-          "price": 10,
-          "description": "",
-          "size": "",
-          "tags": [
-              "Keychains",
-              "Wood",
-              "Rotted"
-          ],
-          "images": [
-              {
-                  "title": "Rotted Keychain - Plate",
-                  "filepath": "/keychains/RottedKeychainPlate.jpg",
-                  "alt": "Image of Rotted Keychain - Plate"
-              },
-              {
-                  "title": "Rotted Keychain - Tag",
-                  "filepath": "/keychains/RottedKeychainPlateTag.jpg",
-                  "alt": "Image of Rotted Keychain - Tag"
-              }
-          ],
-          "id": 39
-      },
-      {
-          "name": "Some Crooked Keychain",
-          "category": "2",
-          "price": 10,
-          "description": "",
-          "size": "",
-          "tags": [
-              "Keychains",
-              "Wood",
-              "Some Crooked"
-          ],
-          "images": [
-              {
-                  "title": "Some Crooked Keychain - Plate",
-                  "filepath": "/keychains/SomecrookedKeychainPlate.jpg",
-                  "alt": "Image of Some Crooked Keychain - Plate"
-              },
-              {
-                  "title": "Some Crooked Keychain - Tag",
-                  "filepath": "/keychains/SomecrookedKeychainPlateTag.jpg",
-                  "alt": "Image of Some Crooked Keychain - Tag"
-              }
-          ],
-          "id": 40
-      },
-      {
-          "name": "Townie Keychain",
-          "category": "2",
-          "price": 10,
-          "description": "",
-          "size": "",
-          "tags": [
-              "Keychains",
-              "Wood",
-              "Townie"
-          ],
-          "images": [
-              {
-                  "title": "Townie Keychain - Plate",
-                  "filepath": "/keychains/TownieKeychainPlate.jpg",
-                  "alt": "Image of Townie Keychain - Plate"
-              },
-              {
-                  "title": "Townie Keychain - Tag",
-                  "filepath": "/keychains/TownieKeychainPlateTag.jpg",
-                  "alt": "Image of Townie Keychain - Tag"
-              }
-          ],
-          "id": 41
-      },
-      {
-          "name": "RowHouse Magnet",
-          "category": "3",
-          "price": 10,
-          "description": "",
-          "size": "",
-          "tags": [
-              "Magnets",
-              "Wood"
-          ],
-          "images": [
-              {
-                  "title": "RowHouse Magnet - Plate",
-                  "filepath": "/magnets/RowhouseMagnetPlate.jpg",
-                  "alt": "Image of RowHouse Magnet - Plate"
-              },
-              {
-                  "title": "RowHouse Magnet  Back- Plate",
-                  "filepath": "/magnets/RowhouseMagnetCardBack.jpg",
-                  "alt": "Image of RowHouse Magnet  Back- Plate"
-              },
-              {
-                  "title": "RowHouse Magnet",
-                  "filepath": "/magnets/RowhouseMagnetWood.jpg",
-                  "alt": "Image of RowHouse Magnet"
-              }
-          ],
-          "id": 42
-      },
-      {
-          "name": "Best Kind Ornament",
-          "category": "4",
-          "price": 10,
-          "description": "",
-          "size": "",
-          "tags": [
-              "Ornaments",
-              "Wood",
-              "Best Kind"
-          ],
-          "images": [
-              {
-                  "title": "Best Kind Ornament - Plate",
-                  "filepath": "/ornaments/BestkindOrnamentPlate.jpg",
-                  "alt": "Image of Best Kind Ornament - Plate"
-              },
-              {
-                  "title": "Best Kind Ornament - Detail",
-                  "filepath": "/ornaments/BestkindOrnamentPlateDetail.jpg",
-                  "alt": "Image of Best Kind Ornament - Detail"
-              }
-          ],
-          "id": 43
-      },
-      {
-          "name": "Dies at You Ornament",
-          "category": "4",
-          "price": 10,
-          "description": "",
-          "size": "",
-          "tags": [
-              "Ornaments",
-              "Wood",
-              "Dies at You"
-          ],
-          "images": [
-              {
-                  "title": "Dies at You Ornament - Plate",
-                  "filepath": "/ornaments/DiesatyouOrnamentPlate.jpg",
-                  "alt": "Image of Dies at You Ornament - Plate"
-              },
-              {
-                  "title": "Dies at You Ornament - Detail",
-                  "filepath": "/ornaments/DiesatyouOrnamentPlateDetail.jpg",
-                  "alt": "Image of Dies at You Ornament - Detail"
-              }
-          ],
-          "id": 44
-      },
-      {
-          "name": "Mummers Ornament",
-          "category": "4",
-          "price": 10,
-          "description": "",
-          "size": "",
-          "tags": [
-              "Ornaments",
-              "Wood",
-              "Mummers"
-          ],
-          "images": [
-              {
-                  "title": "Mummers Ornament - Plate",
-                  "filepath": "/ornaments/MummersOrnamentPlate.jpg",
-                  "alt": "Image of Mummers Ornament - Plate"
-              },
-              {
-                  "title": "Mummers Ornament - Detail",
-                  "filepath": "/ornaments/MummersOrnamentPlateDetail.jpg",
-                  "alt": "Image of Mummers Ornament - Detail"
-              }
-          ],
-          "id": 45
-      },
-      {
-          "name": "Oh Me Nerves Ornament",
-          "category": "4",
-          "price": 10,
-          "description": "",
-          "size": "",
-          "tags": [
-              "Ornaments",
-              "Wood",
-              "Oh Me Nerves",
-              "Oh My Nerves"
-          ],
-          "images": [
-              {
-                  "title": "Oh Me Nerves Ornament - Plate",
-                  "filepath": "/ornaments/NervesOrnamentPlate.jpg",
-                  "alt": "Image of Oh Me Nerves Ornament - Plate"
-              },
-              {
-                  "title": "Oh Me Nerves Ornament - Detail",
-                  "filepath": "/ornaments/NervesOrnamentPlateDetail.jpg",
-                  "alt": "Image of Oh Me Nerves Ornament - Detail"
-              }
-          ],
-          "id": 46
-      },
-      {
-          "name": "Rant and Roar Ornament",
-          "category": "4",
-          "price": 10,
-          "description": "",
-          "size": "",
-          "tags": [
-              "Ornaments",
-              "Wood",
-              "Rant and Roar"
-          ],
-          "images": [
-              {
-                  "title": "Rant and Roar Ornament - Plate",
-                  "filepath": "/ornaments/RantRoarOrnamentPlate.jpg",
-                  "alt": "Image of Rant and Roar Ornament - Plate"
-              },
-              {
-                  "title": "Rant and Roar Ornament - Detail",
-                  "filepath": "/ornaments/RantRoarOrnamentPlateDetail.jpg",
-                  "alt": "Image of Rant and Roar Ornament - Detail"
-              }
-          ],
-          "id": 47
-      },
-      {
-          "name": "Tibbs Eve Ornament",
-          "category": "4",
-          "price": 10,
-          "description": "",
-          "size": "",
-          "tags": [
-              "Ornaments",
-              "Wood",
-              "Tibbs Eve"
-          ],
-          "images": [
-              {
-                  "title": "Tibbs Eve Ornament - Plate",
-                  "filepath": "/ornaments/TibbsOrnamentPlate.jpg",
-                  "alt": "Image of Tibbs Eve Ornament - Plate"
-              },
-              {
-                  "title": "Tibbs Eve Ornament - Detail",
-                  "filepath": "/ornaments/TibbsOrnamentPlateDetail.jpg",
-                  "alt": "Image of Tibbs Eve Ornament - Detail"
-              }
-          ],
-          "id": 48
-      },
-      {
-          "name": "Whatta Y'at Ornament",
-          "category": "4",
-          "price": 10,
-          "description": "",
-          "size": "",
-          "tags": [
-              "Ornaments",
-              "Wood",
-              "Whatta Y'at",
-              "What are you at",
-              "What're you at"
-          ],
-          "images": [
-              {
-                  "title": "Whatta Y'at Ornament - Plate",
-                  "filepath": "/ornaments/WhattyaOrnamentPlate.jpg",
-                  "alt": "Image of Whatta Y'at Ornament - Plate"
-              },
-              {
-                  "title": "Whatta Y'at Ornament - Detail",
-                  "filepath": "/ornaments/WhattayaOrnamentPlateDetail.jpg",
-                  "alt": "Image of Whatta Y'at Ornament - Detail"
-              }
-          ],
-          "id": 49
-      },
-      {
-          "name": "Yes B'y",
-          "category": "4",
-          "price": 10,
-          "description": "",
-          "size": "",
-          "tags": [
-              "Ornaments",
-              "Wood",
-              "Yes B'y"
-          ],
-          "images": [
-              {
-                  "title": "Yes B'y Ornament - Plate",
-                  "filepath": "/ornaments/YesbyOrnamentPlate.jpg",
-                  "alt": "Image of Yes B'y Ornament - Plate"
-              },
-              {
-                  "title": "Yes B'y Ornament - Detail",
-                  "filepath": "/ornaments/YesbyOrnamentPlateDetail.jpg",
-                  "alt": "Image of Yes B'y Ornament - Detail"
-              }
-          ],
-          "id": 50
-      }
+    {
+      "name": "Canada Brooch",
+      "category": "0",
+      "price": 10,
+      "description": "",
+      "size": "",
+      "tags": [
+        "Brooch",
+        "Wood",
+        "Canada",
+        "Hockey",
+        "Sport"
+      ],
+      "images": [
+        {
+          "title": "Canada Brooch - Card",
+          "filepath": "/brooches/CanadaBroochCard.jpg",
+          "alt": "Image of Canada Brooch on card"
+        },
+        {
+          "title": "Canada Brooch - Plate",
+          "filepath": "/brooches/CanadaBroochPlate.jpg",
+          "alt": "Image of Canada Brooch - Plate"
+        }
+      ],
+      "id": "0"
+    },
+    {
+      "name": "Rowhouse Brooch - Orange and Blue",
+      "category": "0",
+      "price": 20,
+      "description": "Lovingly nicknamed Jellybean Row, colourful row houses line the streets of downtown St Johns. Green, blue, purple, red, orange... Every colour you can imagine, sometimes matching, sometimes clashing, combined with sloping hills all come together to create a unique visual you're not likely to find anywhere else. \n\nThese brooches are laser cut from maple plywood, about 2 inches in height. They have hand painted details and are finished with a varnish sealant with a silver c clasp brooch pin. Due to the handmade nature of this item and keeping in the spirit of Jellybean Row, each piece will be slightly different from another. \n\nAll pieces are designed and produced by myself at my home studio in St. John's, Newfoundland.",
+      "size": "",
+      "tags": [
+        "Brooch",
+        "Wood",
+        "Rowhouse",
+        "Orange and Blue",
+        "Newfoundland"
+      ],
+      "images": [
+        {
+          "title": "Rowhouse Brooch - Orange and Blue",
+          "filepath": "/brooches/RowhouseBroochPlate_OrangeBlue.jpg",
+          "alt": "Image of Rowhouse Brooch - Orange and Blue"
+        }
+      ],
+      "id": "1"
+    },
+    {
+      "name": "Rowhouse Brooch - Purple and Yellow",
+      "category": "0",
+      "price": 20,
+      "description": "Lovingly nicknamed Jellybean Row, colourful row houses line the streets of downtown St Johns. Green, blue, purple, red, orange... Every colour you can imagine, sometimes matching, sometimes clashing, combined with sloping hills all come together to create a unique visual you're not likely to find anywhere else. \n\nThese brooches are laser cut from maple plywood, about 2 inches in height. They have hand painted details and are finished with a varnish sealant with a silver c clasp brooch pin. Due to the handmade nature of this item and keeping in the spirit of Jellybean Row, each piece will be slightly different from another. \n\nAll pieces are designed and produced by myself at my home studio in St. John's, Newfoundland.",
+      "size": "",
+      "tags": [
+        "Brooch",
+        "Wood",
+        "Rowhouse",
+        "Purple and Yellow",
+        "Newfoundland"
+      ],
+      "images": [
+        {
+          "title": "Rowhouse Brooch - Purple and Yellow",
+          "filepath": "/brooches/RowhouseBroochPlate_PurpleYellow.jpg",
+          "alt": "Image of Rowhouse Brooch - Purple and Yellow"
+        }
+      ],
+      "id": "2"
+    },
+    {
+      "name": "Rowhouse Brooch - Red and Purple",
+      "category": "0",
+      "price": 10,
+      "description": "Lovingly nicknamed Jellybean Row, colourful row houses line the streets of downtown St Johns. Green, blue, purple, red, orange... Every colour you can imagine, sometimes matching, sometimes clashing, combined with sloping hills all come together to create a unique visual you're not likely to find anywhere else. \n\nThese brooches are laser cut from maple plywood, about 2 inches in height. They have hand painted details and are finished with a varnish sealant with a silver c clasp brooch pin. Due to the handmade nature of this item and keeping in the spirit of Jellybean Row, each piece will be slightly different from another. \n\nAll pieces are designed and produced by myself at my home studio in St. John's, Newfoundland.",
+      "size": "",
+      "tags": [
+        "Brooch",
+        "Wood",
+        "Rowhouse",
+        "Green and Red",
+        "Newfoundland"
+      ],
+      "images": [
+        {
+          "title": "Rowhouse Brooch - Red and Purple",
+          "filepath": "/brooches/RowhouseBroochPlate_RedPurple.jpg",
+          "alt": "Image of Rowhouse Brooch - Red and Purple"
+        }
+      ],
+      "id": "3"
+    },
+    {
+      "name": "Labrador Brooch - Natural",
+      "category": "0",
+      "price": 15,
+      "description": "The Newfoundland and Labrador Labrador Region page says it the best:\n\n\"Labrador, The Big Land, one of the last untamed, unspoiled places left on earth. It stretches from the Strait of Belle Isle in the south, to Cape Chidley in the far north, boasting towering mountains, massive rock faces and an infinite supply of lakes and rivers, not to mention waters seasonally teeming with whales and icebergs. Here, you'll find plenty of fresh air, crystal clear water and truly authentic people.\"\n\nIt's a place that those who call home love fiercely, and a place that visitors wish they could call home. No matter if you're a Livyer or a CFA (Come From Away), with this Labrador map brooch showcasing Labrador City, you can take a little piece of The Big Land with you wherever you go.\n\nThese brooches are laser cut from oak plywood, about 2 inches in height. They have hand painted details and are finished with a varnish sealant with a silver c clasp brooch pin. Due to the handmade nature of this item, each piece will be slightly different from another.\n\nAll pieces are designed and produced by myself at my home studio in St. John's, Newfoundland.",
+      "size": "",
+      "tags": [
+        "Brooch",
+        "Wood",
+        "Labrador"
+      ],
+      "images": [
+        {
+          "title": "Labrador Brooch - Card",
+          "filepath": "/brooches/LabradorBroochCard.jpg",
+          "alt": "Image of Labrador Brooch on card"
+        },
+        {
+          "title": "Labrador Brooch - Plate",
+          "filepath": "/brooches/LabradorBroochPlate.jpg",
+          "alt": "Image of Labrador Brooch - Plate"
+        }
+      ],
+      "id": "4"
+    },
+    {
+      "name": "Labrador Brooch - Stained",
+      "category": "0",
+      "price": 10,
+      "description": "The Newfoundland and Labrador Labrador Region page says it the best:\n\n\"Labrador, The Big Land, one of the last untamed, unspoiled places left on earth. It stretches from the Strait of Belle Isle in the south, to Cape Chidley in the far north, boasting towering mountains, massive rock faces and an infinite supply of lakes and rivers, not to mention waters seasonally teeming with whales and icebergs. Here, you'll find plenty of fresh air, crystal clear water and truly authentic people.\"\n\nIt's a place that those who call home love fiercely, and a place that visitors wish they could call home. No matter if you're a Livyer or a CFA (Come From Away), with this Labrador map brooch showcasing Labrador City, you can take a little piece of The Big Land with you wherever you go.\n\nThese brooches are laser cut from oak plywood, about 2 inches in height. They have hand painted details and are finished with a varnish sealant with a silver c clasp brooch pin. Due to the handmade nature of this item, each piece will be slightly different from another.\n\nAll pieces are designed and produced by myself at my home studio in St. John's, Newfoundland.",
+      "size": "",
+      "tags": [
+        "Brooch",
+        "Wood",
+        "Labrador",
+        "Stained"
+      ],
+      "images": [
+        {
+          "title": "Labrador Brooch - Card",
+          "filepath": "/brooches/LabradorBroochCard.jpg",
+          "alt": "Image of Labrador Brooch on card"
+        },
+        {
+          "title": "Labrador Brooch - Plate",
+          "filepath": "/brooches/LabradorBroochPlate.jpg",
+          "alt": "Image of Labrador Brooch - Plate"
+        }
+      ],
+      "id": "5"
+    },
+    {
+      "name": "Newfoundland Brooch - Natural",
+      "category": "0",
+      "price": 10,
+      "description": "The Newfoundland and Labrador Tourism page says it the best:\n\n\"This is where the sun rises first. Where Vikings landed over 1,000 years ago. This place is home to the oldest settlement and the oldest city in North America, but is the youngest province of Canada. A vast land, with a relatively small population, Newfoundland and Labrador has some of the friendliest people you'll ever meet.\"\n\nIt's a place that those who call home love fiercely, and a place that visitors wish they could call home. No matter if you're a Livyer or a CFA (Come From Away), with this Newfoundland map brooch showcasing the capital St Johns, you can take a little piece of home with you wherever you go.\n\nThese brooches are laser cut from meranti plywood, about 2 inches in height. They have hand painted details and are finished with a varnish sealant with a silver c clasp brooch pin. Due to the handmade nature of this item, each piece will be slightly different from another.\n\nAll pieces are designed and produced by myself at my home studio in St. John's, Newfoundland.",
+      "size": "",
+      "tags": [
+        "Brooch",
+        "Wood",
+        "Newfoundland"
+      ],
+      "images": [
+        {
+          "title": "Newfoundland Brooch - Card",
+          "filepath": "/brooches/NewfoundlandBroochCard.jpg",
+          "alt": "Image of Newfoundland Brooch on card"
+        },
+        {
+          "title": "Newfoundland Brooch - Plate",
+          "filepath": "/brooches/NewfoundlandBroochPlate.jpg",
+          "alt": "Image of Newfoundland Brooch - Plate"
+        }
+      ],
+      "id": "6"
+    },
+    {
+      "name": "Newfoundland Brooch - Stained",
+      "category": "0",
+      "price": 10,
+      "description": "",
+      "size": "",
+      "tags": [
+        "Brooch",
+        "Wood",
+        "Newfoundland",
+        "Stained"
+      ],
+      "images": [
+        {
+          "title": "Newfoundland Brooch - Card",
+          "filepath": "/brooches/NewfoundlandBroochCard.jpg",
+          "alt": "Image of Newfoundland Brooch on card"
+        },
+        {
+          "title": "Newfoundland Brooch - Plate",
+          "filepath": "/brooches/NewfoundlandBroochPlate.jpg",
+          "alt": "Image of Newfoundland Brooch - Plate"
+        }
+      ],
+      "id": "7"
+    },
+    {
+      "name": "Puffin Brooch",
+      "category": "0",
+      "price": 10,
+      "description": "",
+      "size": "",
+      "tags": [
+        "Brooch",
+        "Wood",
+        "Puffin"
+      ],
+      "images": [
+        {
+          "title": "Puffin Brooch - Plate",
+          "filepath": "/brooches/PuffinBroochPlate.jpg",
+          "alt": "Image of Puffin Brooch - Plate"
+        }
+      ],
+      "id": "8"
+    },
+    {
+      "name": "Partridgeberry Earrings",
+      "category": "1",
+      "price": 10,
+      "description": "",
+      "size": "",
+      "tags": [
+        "Earrings",
+        "Wood",
+        "Partridgeberry",
+        "Newfoundland"
+      ],
+      "images": [
+        {
+          "title": "Partridgeberry Earrings - Card",
+          "filepath": "/earrings/BerryEarringCard_Partridgeberry.jpg",
+          "alt": "Image of Partridgeberry Earrings on card"
+        },
+        {
+          "title": "Partridgeberry Earrings - Plate",
+          "filepath": "/earrings/BerryEarringPlate_Partridgeberry.jpg",
+          "alt": "Image of Partridgeberry Earrings - Plate"
+        }
+      ],
+      "id": "9"
+    },
+    {
+      "name": "Bakeapple Earrings",
+      "category": "1",
+      "price": 10,
+      "description": "",
+      "size": "",
+      "tags": [
+        "Earrings",
+        "Wood",
+        "Bakeapple",
+        "Newfoundland"
+      ],
+      "images": [
+        {
+          "title": "Bakeapple Earrings - Plate",
+          "filepath": "/earrings/BerryEarringPlate_Bakeapple.jpg",
+          "alt": "Image of Bakeapple Earrings - Plate"
+        }
+      ],
+      "id": "10"
+    },
+    {
+      "name": "Blueberry Earrings",
+      "category": "1",
+      "price": 10,
+      "description": "",
+      "size": "",
+      "tags": [
+        "Earrings",
+        "Wood",
+        "Blueberry",
+        "Newfoundland"
+      ],
+      "images": [
+        {
+          "title": "Blueberry Earrings - Plate",
+          "filepath": "/earrings/BerryEarringPlate_Blueberry.jpg",
+          "alt": "Image of Blueberry Earrings - Plate"
+        }
+      ],
+      "id": "11"
+    },
+    {
+      "name": "Casette Earrings",
+      "category": "1",
+      "price": 10,
+      "description": "",
+      "size": "",
+      "tags": [
+        "Earrings",
+        "Wood",
+        "Casette"
+      ],
+      "images": [
+        {
+          "title": "Casette Earrings - Plate",
+          "filepath": "/earrings/CasetteEarringPlate.jpg",
+          "alt": "Image of Casette Earrings - Plate"
+        }
+      ],
+      "id": "12"
+    },
+    {
+      "name": "Diamond Earrings",
+      "category": "1",
+      "price": 10,
+      "description": "",
+      "size": "",
+      "tags": [
+        "Earrings",
+        "Wood",
+        "Diamond"
+      ],
+      "images": [
+        {
+          "title": "Diamond Earrings - Plate",
+          "filepath": "/earrings/DiamondEarringPlate.jpg",
+          "alt": "Image of Diamond Earrings - Plate"
+        },
+        {
+          "title": "Diamond Earrings - Card",
+          "filepath": "/earrings/DiamondEarringCard.jpg",
+          "alt": "Image of Diamond Earrings on card"
+        }
+      ],
+      "id": "13"
+    },
+    {
+      "name": "Hotdog Earring",
+      "category": "1",
+      "price": 10,
+      "description": "",
+      "size": "",
+      "tags": [
+        "Earrings",
+        "Wood",
+        "Hotdog"
+      ],
+      "images": [
+        {
+          "title": "Hotdog Earrings - Plate",
+          "filepath": "/earrings/HotdogEarringPlate.jpg",
+          "alt": "Image of Hotdog Earrings - Plate"
+        },
+        {
+          "title": "Hotdog Earrings - Card",
+          "filepath": "/earrings/HotdogEarringCard.jpg",
+          "alt": "Image of Hotdog Earrings on card"
+        }
+      ],
+      "id": "14"
+    },
+    {
+      "name": "Labrador Earrings",
+      "category": "1",
+      "price": 10,
+      "description": "",
+      "size": "",
+      "tags": [
+        "Earrings",
+        "Wood",
+        "Labrador"
+      ],
+      "images": [
+        {
+          "title": "Labrador Earrings - Plate",
+          "filepath": "/earrings/MapEarringPlate_Labrador.jpg",
+          "alt": "Image of Labrador Earrings - Plate"
+        },
+        {
+          "title": "Labrador Earrings - Card",
+          "filepath": "/earrings/MapEarringCard_Labrador.jpg",
+          "alt": "Image of Labrador Earrings on card"
+        },
+        {
+          "title": "Labrador Earrings - Plate - Dime",
+          "filepath": "/earrings/MapEarringPlateDime_Labrador.jpg",
+          "alt": "Image of Labrador Earrings - Plate - Dime"
+        }
+      ],
+      "id": "15"
+    },
+    {
+      "name": "Leaf Earring - Green",
+      "category": "1",
+      "price": 10,
+      "description": "",
+      "size": "",
+      "tags": [
+        "Earrings",
+        "Wood",
+        "Leaf",
+        "Green"
+      ],
+      "images": [
+        {
+          "title": "Leaf Earrings - Plate",
+          "filepath": "/earrings/LeafEarringPlate_Green.jpg",
+          "alt": "Image of Leaf Earrings - Plate"
+        },
+        {
+          "title": "Leaf Earrings - Card",
+          "filepath": "/earrings/LeafEarringCard_Green.jpg",
+          "alt": "Image of Leaf Earrings on card"
+        }
+      ],
+      "id": "16"
+    },
+    {
+      "name": "Leaf Earring - Red",
+      "category": "1",
+      "price": 10,
+      "description": "",
+      "size": "",
+      "tags": [
+        "Earrings",
+        "Wood",
+        "Leaf",
+        "Red"
+      ],
+      "images": [
+        {
+          "title": "Leaf Earrings - Plate",
+          "filepath": "/earrings/LeafEarringPlate_Red.jpg",
+          "alt": "Image of Leaf Earrings - Plate"
+        },
+        {
+          "title": "Leaf Earrings - Plate - Dime",
+          "filepath": "/earrings/LeafEarringPlateDime_Red.jpg",
+          "alt": "Image of Leaf Earrings - Plate - Dime"
+        }
+      ],
+      "id": "17"
+    },
+    {
+      "name": "Leaf Earring - Yellow",
+      "category": "1",
+      "price": 10,
+      "description": "",
+      "size": "",
+      "tags": [
+        "Earrings",
+        "Wood",
+        "Leaf",
+        "Yellow"
+      ],
+      "images": [
+        {
+          "title": "Leaf Earrings - Plate",
+          "filepath": "/earrings/LeafEarringPlate_Yellow.jpg",
+          "alt": "Image of Leaf Earrings - Plate"
+        },
+        {
+          "title": "Leaf Earrings - Plate - Dime",
+          "filepath": "/earrings/LeafEarringPlateDime_Yellow.jpg",
+          "alt": "Image of Leaf Earrings - Plate - Dime"
+        }
+      ],
+      "id": "18"
+    },
+    {
+      "name": "Leaf Earring - Orange",
+      "category": "1",
+      "price": 10,
+      "description": "",
+      "size": "",
+      "tags": [
+        "Earrings",
+        "Wood",
+        "Leaf",
+        "Orange"
+      ],
+      "images": [
+        {
+          "title": "Leaf Earrings - Plate",
+          "filepath": "/earrings/LeafEarringPlate_Orange.jpg",
+          "alt": "Image of Leaf Earrings - Plate"
+        },
+        {
+          "title": "Leaf Earrings - Plate - Dime",
+          "filepath": "/earrings/LeafEarringPlateDime_Orange.jpg",
+          "alt": "Image of Leaf Earrings - Plate - Dime"
+        }
+      ],
+      "id": "19"
+    },
+    {
+      "name": "Maple Leaf Earrings - Natural",
+      "category": "1",
+      "price": 10,
+      "description": "",
+      "size": "",
+      "tags": [
+        "Earrings",
+        "Wood",
+        "Maple Leaf"
+      ],
+      "images": [
+        {
+          "title": "Maple Leaf Earrings - Plate",
+          "filepath": "/earrings/MapleLeafEarringPlate_Natural.jpg",
+          "alt": "Image of Maple Leaf Earrings - Plate"
+        },
+        {
+          "title": "Maple Leaf Earrings - Card",
+          "filepath": "/earrings/MapleLeafEarringCard_Natural.jpg",
+          "alt": "Image of Maple Leaf Earrings on card"
+        }
+      ],
+      "id": "20"
+    },
+    {
+      "name": "Maple Leaf Earrings - Red",
+      "category": "1",
+      "price": 10,
+      "description": "",
+      "size": "",
+      "tags": [
+        "Earrings",
+        "Wood",
+        "Maple Leaf",
+        "Red"
+      ],
+      "images": [
+        {
+          "title": "Red Maple Leaf Earrings - Plate",
+          "filepath": "/earrings/MapleLeafEarringPlate_Red.jpg",
+          "alt": "Image of Red Maple Leaf Earrings - Plate"
+        },
+        {
+          "title": "Red Maple Leaf Earrings - Card",
+          "filepath": "/earrings/MapleLeafEarringCard_Red.jpg",
+          "alt": "Image of Red Maple Leaf Earrings on card"
+        }
+      ],
+      "id": "21"
+    },
+    {
+      "name": "Newfoundland Earrings",
+      "category": "1",
+      "price": 10,
+      "description": "",
+      "size": "",
+      "tags": [
+        "Earrings",
+        "Wood",
+        "Newfoundland"
+      ],
+      "images": [
+        {
+          "title": "Newfoundland Earrings - Card",
+          "filepath": "/earrings/MapEarringCard_Newfoundland.jpg",
+          "alt": "Image of Newfoundland Earrings on card"
+        },
+        {
+          "title": "Newfoundland Earrings - Plate",
+          "filepath": "/earrings/MapEarringPlate_Newfoundlandmap_.jpg",
+          "alt": "Image of Newfoundland Earrings - Plate"
+        }
+      ],
+      "id": "22"
+    },
+    {
+      "name": "Newfoundland and Labrador Earrings",
+      "category": "1",
+      "price": 10,
+      "description": "",
+      "size": "",
+      "tags": [
+        "Earrings",
+        "Wood",
+        "Newfoundland",
+        "Labrador"
+      ],
+      "images": [
+        {
+          "title": "Newfoundland and Labrador Earrings - Plate",
+          "filepath": "/earrings/MapEarringPlate_NewfoundlandLabrador.jpg",
+          "alt": "Image of Newfoundland and Labrador Earrings - Plate"
+        }
+      ],
+      "id": "23"
+    },
+    {
+      "name": "Moonkitties Earrings",
+      "category": "1",
+      "price": 10,
+      "description": "",
+      "size": "",
+      "tags": [
+        "Earrings",
+        "Wood",
+        "Moonkitties"
+      ],
+      "images": [
+        {
+          "title": "Moonkitties Earrings - Plate",
+          "filepath": "/earrings/MoonkittiesEarringPlate.jpg",
+          "alt": "Image of Moonkitties Earrings - Plate"
+        },
+        {
+          "title": "Moonkitties Earrings - Card",
+          "filepath": "/earrings/MoonkittiesEarringCard.jpg",
+          "alt": "Image of Moonkitties Earrings on card"
+        }
+      ],
+      "id": "24"
+    },
+    {
+      "name": "Pineapple Earrings",
+      "category": "1",
+      "price": 10,
+      "description": "",
+      "size": "",
+      "tags": [
+        "Earrings",
+        "Wood",
+        "Pineapple"
+      ],
+      "images": [
+        {
+          "title": "Pineapple Earrings - Plate",
+          "filepath": "/earrings/PineappleEarringPlate.jpg",
+          "alt": "Image of Pineapple Earrings - Plate"
+        },
+        {
+          "title": "Pineapple Earrings - Card",
+          "filepath": "/earrings/PineappleEarringCard.jpg",
+          "alt": "Image of Pineapple Earrings on card"
+        }
+      ],
+      "id": "25"
+    },
+    {
+      "name": "Planner Earrings",
+      "category": "1",
+      "price": 10,
+      "description": "",
+      "size": "",
+      "tags": [
+        "Earrings",
+        "Wood",
+        "Planner"
+      ],
+      "images": [
+        {
+          "title": "Planner Earrings - Plate",
+          "filepath": "/earrings/PlannerEarringPlate.jpg",
+          "alt": "Image of Planner Earrings - Plate"
+        },
+        {
+          "title": "Planner Earrings - Plate - Dime",
+          "filepath": "/earrings/PlannerEarringPlateDime.jpg",
+          "alt": "Image of Planner Earrings - Plate - Dime"
+        }
+      ],
+      "id": "26"
+    },
+    {
+      "name": "Ships Wheel Earrings",
+      "category": "1",
+      "price": 10,
+      "description": "",
+      "size": "",
+      "tags": [
+        "Earrings",
+        "Wood",
+        "Ships Wheel"
+      ],
+      "images": [
+        {
+          "title": "Ships Wheel Earrings - Plate",
+          "filepath": "/earrings/ShipsWheelEarringPlate.jpg",
+          "alt": "Image of Ships Wheel Earrings - Plate"
+        },
+        {
+          "title": "Ships Wheel Earrings - Card",
+          "filepath": "/earrings/ShipsWheelEarringCard.jpg",
+          "alt": "Image of Ships Wheel Earrings on card"
+        }
+      ],
+      "id": "27"
+    },
+    {
+      "name": "Strawberry Earrings",
+      "category": "1",
+      "price": 10,
+      "description": "",
+      "size": "",
+      "tags": [
+        "Earrings",
+        "Wood",
+        "Strawberry"
+      ],
+      "images": [
+        {
+          "title": "Strawberry Earrings - Plate",
+          "filepath": "/earrings/StrawberryEarringPlate.jpg",
+          "alt": "Image of Strawberry Earrings - Plate"
+        },
+        {
+          "title": "Strawberry Earrings - Card",
+          "filepath": "/earrings/StrawberryEarringCard.jpg",
+          "alt": "Image of Strawberry Earrings on card"
+        }
+      ],
+      "id": "28"
+    },
+    {
+      "name": "Strawberry Earrings",
+      "category": "1",
+      "price": 10,
+      "description": "",
+      "size": "",
+      "tags": [
+        "Earrings",
+        "Wood",
+        "Strawberry"
+      ],
+      "images": [
+        {
+          "title": "Strawberry Earrings - Plate",
+          "filepath": "/earrings/StrawberryEarringPlate.jpg",
+          "alt": "Image of Strawberry Earrings - Plate"
+        },
+        {
+          "title": "Strawberry Earrings - Card",
+          "filepath": "/earrings/StrawberryEarringCard.jpg",
+          "alt": "Image of Strawberry Earrings on card"
+        }
+      ],
+      "id": "29"
+    },
+    {
+      "name": "Succulent Earrings",
+      "category": "1",
+      "price": 10,
+      "description": "",
+      "size": "",
+      "tags": [
+        "Earrings",
+        "Wood",
+        "Succulent"
+      ],
+      "images": [
+        {
+          "title": "Succulent Earrings - Plate",
+          "filepath": "/earrings/SucculentEarringPlate.jpg",
+          "alt": "Image of Succulent Earrings - Plate"
+        },
+        {
+          "title": "Succulent Earrings - Card",
+          "filepath": "/earrings/SucculentEarringCard.jpg",
+          "alt": "Image of Succulent Earrings on card"
+        }
+      ],
+      "id": "30"
+    },
+    {
+      "name": "Sushi Earrings",
+      "category": "1",
+      "price": 10,
+      "description": "",
+      "size": "",
+      "tags": [
+        "Earrings",
+        "Wood",
+        "Sushi"
+      ],
+      "images": [
+        {
+          "title": "Sushi Earrings - Plate",
+          "filepath": "/earrings/SushiEarringPlate.jpg",
+          "alt": "Image of Sushi Earrings - Plate"
+        },
+        {
+          "title": "Sushi Earrings - Card",
+          "filepath": "/earrings/SushiEarringCard.jpg",
+          "alt": "Image of Sushi Earrings on card"
+        }
+      ],
+      "id": "31"
+    },
+    {
+      "name": "Terrarium Earrings",
+      "category": "1",
+      "price": 10,
+      "description": "",
+      "size": "",
+      "tags": [
+        "Earrings",
+        "Wood",
+        "Terrarium"
+      ],
+      "images": [
+        {
+          "title": "Terrarium Earrings - Plate",
+          "filepath": "/earrings/TerrariumEarringPlate.jpg",
+          "alt": "Image of Terrarium Earrings - Plate"
+        },
+        {
+          "title": "Terrarium Earrings - Card",
+          "filepath": "/earrings/TerrariumEarringCard.jpg",
+          "alt": "Image of Terrarium Earrings on card"
+        }
+      ],
+      "id": "32"
+    },
+    {
+      "name": "Togo Cup Earrings",
+      "category": "1",
+      "price": 10,
+      "description": "",
+      "size": "",
+      "tags": [
+        "Earrings",
+        "Wood",
+        "Togo Cup",
+        "Coffee",
+        "Tea"
+      ],
+      "images": [
+        {
+          "title": "Togo Cup Earrings - Plate",
+          "filepath": "/earrings/TogoCupEarringPlate.jpg",
+          "alt": "Image of Togo Cup Earrings - Plate"
+        },
+        {
+          "title": "Togo Cup Earrings - Card",
+          "filepath": "/earrings/TogoCupEarringCard.jpg",
+          "alt": "Image of Togo Cup Earrings on card"
+        }
+      ],
+      "id": "33"
+    },
+    {
+      "name": "Whale Tail Earrings",
+      "category": "1",
+      "price": 10,
+      "description": "",
+      "size": "",
+      "tags": [
+        "Earrings",
+        "Wood",
+        "Whale Tail"
+      ],
+      "images": [
+        {
+          "title": "Whale Tail Earrings - Plate",
+          "filepath": "/earrings/WhaleTailEarringPlate.jpg",
+          "alt": "Image of Whale Tail Earrings - Plate"
+        },
+        {
+          "title": "Whale Tail Earrings - Card",
+          "filepath": "/earrings/WhaleTailEarringCard.jpg",
+          "alt": "Image of Whale Tail Earrings on card"
+        }
+      ],
+      "id": "34"
+    },
+    {
+      "name": "Best Kind Keychain",
+      "category": "2",
+      "price": 10,
+      "description": "",
+      "size": "",
+      "tags": [
+        "Keychains",
+        "Wood",
+        "Best Kind"
+      ],
+      "images": [
+        {
+          "title": "Best Kind Keychain - Plate",
+          "filepath": "/keychains/BestkindKeychainPlate.jpg",
+          "alt": "Image of Best Kind Keychain - Plate"
+        },
+        {
+          "title": "Best Kind Keychain - Tag",
+          "filepath": "/keychains/BestkindKeychainPlateTag.jpg",
+          "alt": "Image of Best Kind Keychain - Tag"
+        }
+      ],
+      "id": "35"
+    },
+    {
+      "name": "Dies at You Keychain",
+      "category": "2",
+      "price": 10,
+      "description": "",
+      "size": "",
+      "tags": [
+        "Keychains",
+        "Wood",
+        "Dies at You"
+      ],
+      "images": [
+        {
+          "title": "Dies at You Keychain - Plate",
+          "filepath": "/keychains/DiesatyouKeychainPlate.jpg",
+          "alt": "Image of Dies at You Keychain - Plate"
+        },
+        {
+          "title": "Dies at You Keychain - Tag",
+          "filepath": "/keychains/DiesatyouKeychainPlateTag.jpg",
+          "alt": "Image of Dies at You Keychain - Tag"
+        }
+      ],
+      "id": "36"
+    },
+    {
+      "name": "Half Cut Keychain",
+      "category": "2",
+      "price": 10,
+      "description": "",
+      "size": "",
+      "tags": [
+        "Keychains",
+        "Wood",
+        "Half Cut"
+      ],
+      "images": [
+        {
+          "title": "Half Cut Keychain - Plate",
+          "filepath": "/keychains/HalfcutKeychainPlate.jpg",
+          "alt": "Image of Half Cut Keychain - Plate"
+        },
+        {
+          "title": "Half Cut Keychain - Tag",
+          "filepath": "/keychains/HalfcutKeychainPlateTag.jpg",
+          "alt": "Image of Half Cut Keychain - Tag"
+        }
+      ],
+      "id": "37"
+    },
+    {
+      "name": "Proper 'Ting Keychain",
+      "category": "2",
+      "price": 10,
+      "description": "",
+      "size": "",
+      "tags": [
+        "Keychains",
+        "Wood",
+        "Proper 'Ting",
+        "Proper Thing"
+      ],
+      "images": [
+        {
+          "title": "Proper 'Ting Keychain - Plate",
+          "filepath": "/keychains/PropertingKeychainPlate.jpg",
+          "alt": "Image of Proper 'Ting Keychain - Plate"
+        },
+        {
+          "title": "Proper 'Ting Keychain - Tag",
+          "filepath": "/keychains/PropertingKeychainPlateTag.jpg",
+          "alt": "Image of Proper 'Ting Keychain - Tag"
+        }
+      ],
+      "id": "38"
+    },
+    {
+      "name": "Rotted Keychain",
+      "category": "2",
+      "price": 10,
+      "description": "",
+      "size": "",
+      "tags": [
+        "Keychains",
+        "Wood",
+        "Rotted"
+      ],
+      "images": [
+        {
+          "title": "Rotted Keychain - Plate",
+          "filepath": "/keychains/RottedKeychainPlate.jpg",
+          "alt": "Image of Rotted Keychain - Plate"
+        },
+        {
+          "title": "Rotted Keychain - Tag",
+          "filepath": "/keychains/RottedKeychainPlateTag.jpg",
+          "alt": "Image of Rotted Keychain - Tag"
+        }
+      ],
+      "id": "39"
+    },
+    {
+      "name": "Some Crooked Keychain",
+      "category": "2",
+      "price": 10,
+      "description": "",
+      "size": "",
+      "tags": [
+        "Keychains",
+        "Wood",
+        "Some Crooked"
+      ],
+      "images": [
+        {
+          "title": "Some Crooked Keychain - Plate",
+          "filepath": "/keychains/SomecrookedKeychainPlate.jpg",
+          "alt": "Image of Some Crooked Keychain - Plate"
+        },
+        {
+          "title": "Some Crooked Keychain - Tag",
+          "filepath": "/keychains/SomecrookedKeychainPlateTag.jpg",
+          "alt": "Image of Some Crooked Keychain - Tag"
+        }
+      ],
+      "id": "40"
+    },
+    {
+      "name": "Townie Keychain",
+      "category": "2",
+      "price": 10,
+      "description": "",
+      "size": "",
+      "tags": [
+        "Keychains",
+        "Wood",
+        "Townie"
+      ],
+      "images": [
+        {
+          "title": "Townie Keychain - Plate",
+          "filepath": "/keychains/TownieKeychainPlate.jpg",
+          "alt": "Image of Townie Keychain - Plate"
+        },
+        {
+          "title": "Townie Keychain - Tag",
+          "filepath": "/keychains/TownieKeychainPlateTag.jpg",
+          "alt": "Image of Townie Keychain - Tag"
+        }
+      ],
+      "id": "41"
+    },
+    {
+      "name": "RowHouse Magnet",
+      "category": "3",
+      "price": 10,
+      "description": "",
+      "size": "",
+      "tags": [
+        "Magnets",
+        "Wood"
+      ],
+      "images": [
+        {
+          "title": "RowHouse Magnet - Plate",
+          "filepath": "/magnets/RowhouseMagnetPlate.jpg",
+          "alt": "Image of RowHouse Magnet - Plate"
+        },
+        {
+          "title": "RowHouse Magnet  Back- Plate",
+          "filepath": "/magnets/RowhouseMagnetCardBack.jpg",
+          "alt": "Image of RowHouse Magnet  Back- Plate"
+        },
+        {
+          "title": "RowHouse Magnet",
+          "filepath": "/magnets/RowhouseMagnetWood.jpg",
+          "alt": "Image of RowHouse Magnet"
+        }
+      ],
+      "id": "42"
+    },
+    {
+      "name": "Best Kind Ornament",
+      "category": "4",
+      "price": 10,
+      "description": "",
+      "size": "",
+      "tags": [
+        "Ornaments",
+        "Wood",
+        "Best Kind"
+      ],
+      "images": [
+        {
+          "title": "Best Kind Ornament - Plate",
+          "filepath": "/ornaments/BestkindOrnamentPlate.jpg",
+          "alt": "Image of Best Kind Ornament - Plate"
+        },
+        {
+          "title": "Best Kind Ornament - Detail",
+          "filepath": "/ornaments/BestkindOrnamentPlateDetail.jpg",
+          "alt": "Image of Best Kind Ornament - Detail"
+        }
+      ],
+      "id": "43"
+    },
+    {
+      "name": "Dies at You Ornament",
+      "category": "4",
+      "price": 10,
+      "description": "",
+      "size": "",
+      "tags": [
+        "Ornaments",
+        "Wood",
+        "Dies at You"
+      ],
+      "images": [
+        {
+          "title": "Dies at You Ornament - Plate",
+          "filepath": "/ornaments/DiesatyouOrnamentPlate.jpg",
+          "alt": "Image of Dies at You Ornament - Plate"
+        },
+        {
+          "title": "Dies at You Ornament - Detail",
+          "filepath": "/ornaments/DiesatyouOrnamentPlateDetail.jpg",
+          "alt": "Image of Dies at You Ornament - Detail"
+        }
+      ],
+      "id": "44"
+    },
+    {
+      "name": "Mummers Ornament",
+      "category": "4",
+      "price": 10,
+      "description": "",
+      "size": "",
+      "tags": [
+        "Ornaments",
+        "Wood",
+        "Mummers"
+      ],
+      "images": [
+        {
+          "title": "Mummers Ornament - Plate",
+          "filepath": "/ornaments/MummersOrnamentPlate.jpg",
+          "alt": "Image of Mummers Ornament - Plate"
+        },
+        {
+          "title": "Mummers Ornament - Detail",
+          "filepath": "/ornaments/MummersOrnamentPlateDetail.jpg",
+          "alt": "Image of Mummers Ornament - Detail"
+        }
+      ],
+      "id": "45"
+    },
+    {
+      "name": "Oh Me Nerves Ornament",
+      "category": "4",
+      "price": 10,
+      "description": "",
+      "size": "",
+      "tags": [
+        "Ornaments",
+        "Wood",
+        "Oh Me Nerves",
+        "Oh My Nerves"
+      ],
+      "images": [
+        {
+          "title": "Oh Me Nerves Ornament - Plate",
+          "filepath": "/ornaments/NervesOrnamentPlate.jpg",
+          "alt": "Image of Oh Me Nerves Ornament - Plate"
+        },
+        {
+          "title": "Oh Me Nerves Ornament - Detail",
+          "filepath": "/ornaments/NervesOrnamentPlateDetail.jpg",
+          "alt": "Image of Oh Me Nerves Ornament - Detail"
+        }
+      ],
+      "id": "46"
+    },
+    {
+      "name": "Rant and Roar Ornament",
+      "category": "4",
+      "price": 10,
+      "description": "",
+      "size": "",
+      "tags": [
+        "Ornaments",
+        "Wood",
+        "Rant and Roar"
+      ],
+      "images": [
+        {
+          "title": "Rant and Roar Ornament - Plate",
+          "filepath": "/ornaments/RantRoarOrnamentPlate.jpg",
+          "alt": "Image of Rant and Roar Ornament - Plate"
+        },
+        {
+          "title": "Rant and Roar Ornament - Detail",
+          "filepath": "/ornaments/RantRoarOrnamentPlateDetail.jpg",
+          "alt": "Image of Rant and Roar Ornament - Detail"
+        }
+      ],
+      "id": "47"
+    },
+    {
+      "name": "Tibbs Eve Ornament",
+      "category": "4",
+      "price": 10,
+      "description": "",
+      "size": "",
+      "tags": [
+        "Ornaments",
+        "Wood",
+        "Tibbs Eve"
+      ],
+      "images": [
+        {
+          "title": "Tibbs Eve Ornament - Plate",
+          "filepath": "/ornaments/TibbsOrnamentPlate.jpg",
+          "alt": "Image of Tibbs Eve Ornament - Plate"
+        },
+        {
+          "title": "Tibbs Eve Ornament - Detail",
+          "filepath": "/ornaments/TibbsOrnamentPlateDetail.jpg",
+          "alt": "Image of Tibbs Eve Ornament - Detail"
+        }
+      ],
+      "id": "48"
+    },
+    {
+      "name": "Whatta Y'at Ornament",
+      "category": "4",
+      "price": 10,
+      "description": "",
+      "size": "",
+      "tags": [
+        "Ornaments",
+        "Wood",
+        "Whatta Y'at",
+        "What are you at",
+        "What're you at"
+      ],
+      "images": [
+        {
+          "title": "Whatta Y'at Ornament - Plate",
+          "filepath": "/ornaments/WhattyaOrnamentPlate.jpg",
+          "alt": "Image of Whatta Y'at Ornament - Plate"
+        },
+        {
+          "title": "Whatta Y'at Ornament - Detail",
+          "filepath": "/ornaments/WhattayaOrnamentPlateDetail.jpg",
+          "alt": "Image of Whatta Y'at Ornament - Detail"
+        }
+      ],
+      "id": "49"
+    },
+    {
+      "name": "Yes B'y",
+      "category": "4",
+      "price": 10,
+      "description": "",
+      "size": "",
+      "tags": [
+        "Ornaments",
+        "Wood",
+        "Yes B'y"
+      ],
+      "images": [
+        {
+          "title": "Yes B'y Ornament - Plate",
+          "filepath": "/ornaments/YesbyOrnamentPlate.jpg",
+          "alt": "Image of Yes B'y Ornament - Plate"
+        },
+        {
+          "title": "Yes B'y Ornament - Detail",
+          "filepath": "/ornaments/YesbyOrnamentPlateDetail.jpg",
+          "alt": "Image of Yes B'y Ornament - Detail"
+        }
+      ],
+      "id": "50"
+    }
   ],
-  "cart": [],
+  "cart": [
+    {
+      "id": "0",
+      "quantity": 1,
+      "name": "Canada Brooch",
+      "price": 10,
+      "img": ""
+    }
+  ],
   "orders": []
 }

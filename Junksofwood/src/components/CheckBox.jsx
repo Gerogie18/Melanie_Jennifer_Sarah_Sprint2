@@ -17,8 +17,8 @@ const Checkbox = ({ text, checked, onClick }) => {
 };
 
 Checkbox.propTypes = {
-  label: PropTypes.string.isRequired, // Defines 'label' as a required string
-  checked: PropTypes.bool.isRequired, // Defines 'checked' as a required boolean
+  text: PropTypes.string.isRequired, // Defines 'label' as a required string
+  checked: PropTypes.bool, // Defines 'checked' as a required boolean
   onClick: PropTypes.func.isRequired, // Defines 'onClick' as a required function
 };
 

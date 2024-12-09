@@ -1,7 +1,7 @@
 //We can pass data to all the children (everything inside ProductLayout)
 // we do this inside the "context"
 import { useState } from "react";
-import { Outlet, Link, useSearchParams } from "react-router-dom";
+import { Outlet, useSearchParams } from "react-router-dom";
 import PropTypes from 'prop-types';
 import CheckBox from './CheckBox.jsx';
 // import { useState } from "react"
@@ -58,13 +58,7 @@ const ProductLayout = ({categories, products}) => {
         <input type="search" placeholder="Search" className="search-bar" value={cat} onChange={handleTextChange} />
 
         </div>
-        <div>
-            <Link to="/shop/1">Product 1</Link>
-            <br/>
-            <Link to="/shop/2">Product 2</Link>
-            <br/>
-            <Link to={`/shop/${number}`}>Updateable Product. Number: {number}</Link>
-        </div>
+
         <div>
             <Outlet context={{hello: "world"}}/>
         </div>
