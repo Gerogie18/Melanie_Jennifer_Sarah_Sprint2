@@ -9,8 +9,9 @@ import { useContext } from 'react'
 import { CartContext } from '../utils/CartProvider';
 
 
-function Cart ({onDelete}) {
-  const { cart } = useContext(CartContext);
+function Cart () {
+  const { cart, removeFromCart } = useContext(CartContext);
+
 
     return (
     <div>
@@ -27,7 +28,7 @@ function Cart ({onDelete}) {
         ))}
       </ul>
     )}
-      <Button text="delete items" click={onDelete}/>
+      <Button text="delete items" onClick={() => {removeFromCart}}/>
     </div>
       );
 

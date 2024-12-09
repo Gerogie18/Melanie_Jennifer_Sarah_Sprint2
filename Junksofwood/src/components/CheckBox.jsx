@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types';
 import { MdOutlineCheckBox, MdOutlineCheckBoxOutlineBlank } from 'react-icons/md';
 
-const Checkbox = ({ text, checked, onClick }) => {
+const Checkbox = ({ text, checked, click }) => {
   return (
     <button 
         className="checkbox-button" 
-        onClick={onClick}
+        onClick={() => {click}}
         style= {{
             alignItems: 'left',
             padding: '7px',
@@ -19,7 +19,7 @@ const Checkbox = ({ text, checked, onClick }) => {
 Checkbox.propTypes = {
   text: PropTypes.string.isRequired, // Defines 'label' as a required string
   checked: PropTypes.bool, // Defines 'checked' as a required boolean
-  onClick: PropTypes.func.isRequired, // Defines 'onClick' as a required function
+  click: PropTypes.func, // Defines 'click' as a required function
 };
 
 export default Checkbox;

@@ -1309,6 +1309,48 @@
       "name": "Canada Brooch",
       "price": 10,
       "img": ""
+    },
+    {
+      "id": "11",
+      "quantity": 1,
+      "name": "Blueberry Earrings",
+      "price": 10,
+      "img": ""
+    },
+    {
+      "id": "14",
+      "quantity": 1,
+      "name": "Hotdog Earring",
+      "price": 10,
+      "img": ""
+    },
+    {
+      "id": "0",
+      "quantity": 1,
+      "name": "Canada Brooch",
+      "price": 10,
+      "img": ""
+    },
+    {
+      "id": "0",
+      "quantity": 1,
+      "name": "Canada Brooch",
+      "price": 10,
+      "img": ""
+    },
+    {
+      "id": "39",
+      "quantity": 1,
+      "name": "Rotted Keychain",
+      "price": 10,
+      "img": ""
+    },
+    {
+      "id": "2",
+      "quantity": 1,
+      "name": "Rowhouse Brooch - Purple and Yellow",
+      "price": 20,
+      "img": ""
     }
   ],
   "orders": []

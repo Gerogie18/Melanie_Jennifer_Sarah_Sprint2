@@ -62,11 +62,11 @@ const CartProvider = ({ children }) => {
               throw new Error(`HTTP error! status: ${response.status}`);
           }
           let product = {
-            "id": {id},
-            "quantity": {quantity},
-            "name": {name},
-            "price": {price},
-            "img": {img}
+            id: id,
+            quantity: quantity,
+            name: name,
+            price: price,
+            img: img
           };
           
           setCart((prevCart) => [...prevCart, product]);
