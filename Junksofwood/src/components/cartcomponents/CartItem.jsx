@@ -1,6 +1,5 @@
 import React, { memo } from 'react';
 import PropTypes from 'prop-types';
-import QuantityContainer from './QuantityContainer';
 import UpdateCart from './UpdateCart';
 import RemoveFromCart from './RemoveFromCart';
 
@@ -22,17 +21,16 @@ const CartItem = memo(({ item }) => {
       />
       <h3>{item.name}</h3>
       <p>{formatPrice(item.price)}</p>
-      <QuantityContainer item={item} />
-      <UpdateCart item={item} />
+      <UpdateCart id={item.id} quantity={item.quantity} />
       <RemoveFromCart item={item} />
-      <p>{formatPriceTotal(item.price)}</p>
+      <p>{formatPriceTotal(item.price, item.quantity)}</p>
     </div>
   );
 });
 
 CartItem.propTypes = {
   item: PropTypes.shape({
-    id: PropTypes.number.isRequired,
+    id: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     price: PropTypes.number.isRequired,
     img: PropTypes.shape({
