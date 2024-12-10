@@ -31,7 +31,14 @@ function ProductDetails() {
     }
   }, [productInCart]);
 
-  const imagePath = './src/assets/productImages';
+  useEffect(() => {
+    if (productID) {
+      navigate(`/shop/${productID}`);
+    } else {
+      navigate('/shop');
+    }
+  }, [navigate]);
+  const imagePath = '/assets/productimages';
 
   useEffect(() => {
     const fetchProduct = async () => {
@@ -55,13 +62,15 @@ function ProductDetails() {
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error: {error}</p>;
 
+  console.log("Product ID:", product);
+  console.log(`${imagePath}${product.images[0].filepath}`)
+
   return (
     <div>
       <div className="product-detail">
         <h2>{product.name}</h2>
         {product.images && (
-  <img src={`${imagePath}/${product.images[0].filepath}`} alt={product.images[0].alt} title={product.images[0].title} />
-)}
+            <img src={imagePath + product.images[0].filepath} alt={product.images[0].alt} title={product.images[0].title} />)}
         <p>{product.description}</p>
         <p>Price: ${product.price}</p>
         <CartDiv productInCart={productInCart} product={product} />

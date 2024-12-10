@@ -1,7 +1,6 @@
 import { useState, createContext, useEffect } from 'react';
-import addItemSound from '../assets/sounds/navigation_selection-complete-celebration.ogg';
-import clearCartSound from '../assets/sounds/ui_tap-variant-01.ogg';
-
+import addItemSound from '/assets/sounds/navigation_selection-complete-celebration.ogg';
+import clearCartSound from '/assets/sounds/ui_tap-variant-01.ogg';
 const CartContext = createContext();
 
 const CartProvider = ({ children }) => {

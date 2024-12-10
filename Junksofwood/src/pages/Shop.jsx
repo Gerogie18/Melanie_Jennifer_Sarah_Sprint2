@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const Shop = ({ products }) => {
   const navigate = useNavigate();
-  const imagePath = './src/assets/productImages';
+  const imagePath = '/assets/productimages';
 
   const handleProductClick = (productId) => {
     navigate(`/shop/${productId}`);
