@@ -5,7 +5,7 @@ import QuantityContainer from './QuantityContainer';
 import PropTypes from 'prop-types';
 
 const AddToCart = ({id, name, price, img }) => {
-    const {addToCart} = useContext(CartContext);
+    const { addToCart } = useContext(CartContext);
     const [quantity, setQuantity] = useState(1);
     
     const handleClick = () => {
@@ -36,7 +36,7 @@ const AddToCart = ({id, name, price, img }) => {
 export default AddToCart
 
 AddToCart.propTypes = {
-    id: PropTypes.number.isRequired,
+    id: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     price: PropTypes.number.isRequired,
     img: PropTypes.object.isRequired,

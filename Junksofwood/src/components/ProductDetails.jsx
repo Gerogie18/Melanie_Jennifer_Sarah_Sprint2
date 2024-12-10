@@ -59,9 +59,9 @@ function ProductDetails() {
     <div>
       <div className="product-detail">
         <h2>{product.name}</h2>
-        {product.img && (
-          <img src={`${imagePath}/${product.img.filepath}`} alt={product.img.alt} title={product.img.title} />
-        )}
+        {product.images && (
+  <img src={`${imagePath}/${product.images[0].filepath}`} alt={product.images[0].alt} title={product.images[0].title} />
+)}
         <p>{product.description}</p>
         <p>Price: ${product.price}</p>
         <CartDiv productInCart={productInCart} product={product} />

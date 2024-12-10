@@ -17,7 +17,7 @@ const CartDiv = ({ productInCart, product }) => {
           <RemoveFromCart id={productInCart.id} />
         </>
       ) : (
-        <AddToCart id={product.id} name={product.name} price={product.price} img={product.img} />
+        <AddToCart id={product.id} name={product.name} price={product.price} img={product.images[0]} />
       )}
     </div>
   );
