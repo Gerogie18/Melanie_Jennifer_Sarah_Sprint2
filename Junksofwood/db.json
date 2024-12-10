@@ -1359,6 +1359,39 @@
         "filepath": "/brooches/NewfoundlandBroochCard.jpg",
         "alt": "Image of Newfoundland Brooch on card"
       }
+    },
+    {
+      "id": "1",
+      "quantity": 4,
+      "name": "Rowhouse Brooch - Orange and Blue",
+      "price": 20,
+      "img": {
+        "title": "Rowhouse Brooch - Orange and Blue",
+        "filepath": "/brooches/RowhouseBroochPlate_OrangeBlue.jpg",
+        "alt": "Image of Rowhouse Brooch - Orange and Blue"
+      }
+    },
+    {
+      "id": "1",
+      "quantity": 4,
+      "name": "Rowhouse Brooch - Orange and Blue",
+      "price": 20,
+      "img": {
+        "title": "Rowhouse Brooch - Orange and Blue",
+        "filepath": "/brooches/RowhouseBroochPlate_OrangeBlue.jpg",
+        "alt": "Image of Rowhouse Brooch - Orange and Blue"
+      }
+    },
+    {
+      "id": "0",
+      "quantity": 5,
+      "name": "Canada Brooch",
+      "price": 10,
+      "img": {
+        "title": "Canada Brooch - Card",
+        "filepath": "/brooches/CanadaBroochCard.jpg",
+        "alt": "Image of Canada Brooch on card"
+      }
     }
   ],
   "orders": []
