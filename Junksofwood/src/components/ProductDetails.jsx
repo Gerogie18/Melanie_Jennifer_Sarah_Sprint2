@@ -6,11 +6,12 @@
     // § Available quantity
 // o Option to add the product to the cart.
 
-import React, { useContext, useState, useEffect } from 'react';
+import { useContext, useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { CartContext } from '../utils/CartProvider';
 import CartDiv from './cartcomponents/CartDiv.jsx';
 import PropTypes from 'prop-types';
+import formatDescription from '../utils/formatDescription';
 
 function ProductDetails() {
   const { productID } = useParams();
@@ -65,13 +66,34 @@ function ProductDetails() {
   console.log("Product ID:", product);
   console.log(`${imagePath}${product.images[0].filepath}`)
 
+
+
+// function formatDescription(description) {
+//   return description.split('\n').map((line) => (
+//       <>
+//           {line}
+//           <br />
+//       </>
+//   ));
+// }
+
   return (
     <div>
       <div className="product-detail">
         <h2>{product.name}</h2>
+        
         {product.images && (
-            <img src={imagePath + product.images[0].filepath} alt={product.images[0].alt} title={product.images[0].title} />)}
-        <p>{product.description}</p>
+          <div className="img-container">
+              <img 
+              src={imagePath + product.images[0].filepath} 
+              alt={product.images[0].alt} 
+              title={product.images[0].title} />
+          </div>
+          )}
+      
+      <span id="para">
+    {formatDescription(product.description)}
+    </span>
         <p>Price: ${product.price}</p>
         <CartDiv productInCart={productInCart} product={product} />
       </div>
@@ -80,7 +102,7 @@ function ProductDetails() {
 }
 
 ProductDetails.propTypes = {
-  productID: PropTypes.string.isRequired,
+  productID: PropTypes.string,
 };
 
 export default ProductDetails;
