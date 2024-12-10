@@ -1,4 +1,6 @@
 import { useState, createContext, useEffect } from 'react';
+import addItemSound from '../assets/sounds/navigation_selection-complete-celebration.ogg';
+import clearCartSound from '../assets/sounds/ui_tap-varient-01.ogg';
 
 const CartContext = createContext();
 
@@ -52,6 +54,7 @@ const CartProvider = ({ children }) => {
 
       const updatedCart = await response.json();
       setCart(updatedCart);
+      new Audio(addItemSound).play();
     } catch (error) {
       console.error("Error adding to cart:", error);
     }
@@ -86,7 +89,7 @@ const CartProvider = ({ children }) => {
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
-
+      new Audio(clearCartSound).play();
       const updatedCart = await response.json();
       setCart(updatedCart);
     } catch (error) {

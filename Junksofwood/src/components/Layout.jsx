@@ -1,5 +1,5 @@
 import { Outlet, NavLink, useLocation } from "react-router-dom";
-import { useContext, useEffect } from "react";
+import { useState,useContext, useEffect } from "react";
 import { CartContext } from '../utils/CartProvider';
 import FooterBar from './FooterBar';
 import PromoBanner from "./PromoBanner";
@@ -10,17 +10,14 @@ import { BsCart, BsCartFill } from "react-icons/bs";
 const Layout = () => {
     const { cart } = useContext(CartContext);
     const cartisEmpty = cart.length === 0;
-    const cartIcon = {cartisEmpty} ? <BsCart /> : <BsCartFill />
+    const [cartIcon, setCartIcon] = useState({cartisEmpty} ? <BsCart /> : <BsCartFill />)
     const location = useLocation()
     console.log(location)
 
     useEffect(() => {
-        if (cart.length === 0) {
-          console.log("Cart is empty");
-        } else {
-          console.log("Cart is not empty");
-        }
-      }, [cart]);
+        (cartisEmpty ? console.log("Cart is Empty") : console.log("Cart is not Empty"))
+        setCartIcon(cartisEmpty ? <BsCart /> : <BsCartFill />)
+    }, [cartisEmpty])
 
   return (
         <div className = "container">
