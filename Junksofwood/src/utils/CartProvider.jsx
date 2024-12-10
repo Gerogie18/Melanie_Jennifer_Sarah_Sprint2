@@ -2,10 +2,26 @@ import { useState, createContext, useEffect } from 'react';
 import addItemSound from '/assets/sounds/navigation_selection-complete-celebration.ogg';
 import clearCartSound from '/assets/sounds/ui_tap-variant-01.ogg';
 import cartUpdateSound from '/assets/sounds/ui_refresh-feed.ogg';
+import { BsCart, BsCartFill } from "react-icons/bs";
 const CartContext = createContext();
 
 const CartProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
+
+  //setting up the cart icon
+  const cartisEmpty = cart.length === 0;
+  const [cartIcon, setCartIcon] = useState({cartisEmpty} ? <BsCart /> : <BsCartFill />)
+  const cartLength = cart.length;
+  console.log(cartLength)
+  
+  useEffect(() => {
+    (cartisEmpty ? console.log("Cart is Empty") : console.log("Cart is not Empty"))
+    setCartIcon(cartisEmpty ? <BsCart /> : <BsCartFill />)
+  }, [cartisEmpty])
+
+  const productInCart = (productId) => {
+    return cart.find((item) => item.id === productId);
+  };
 
   //testing:
   useEffect(() => {
@@ -31,12 +47,12 @@ const CartProvider = ({ children }) => {
         method: "DELETE",
         headers: { "Content-Type": "application/json" },
       });
-      setCart([]);
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
       console.log("Cart cleared successfully");
       new Audio(clearCartSound).play();
+      setCart([]); // Set the cart to an empty array
     } catch (error) {
       console.error("Error clearing cart:", error);
     }
@@ -61,61 +77,45 @@ const CartProvider = ({ children }) => {
       console.error("Error adding to cart:", error);
     }
   };
-  
-  const updateCart = async (id, quantity) => {
+
+  const updateQuantity = async (id, quantity) => {
+    const index = cart.findIndex((item) => item.id === id);
     try {
-      const response = await fetch(`http://localhost:5005/cart/${id}`, {
+      const response = await fetch(`http://localhost:5005/cart/${index}`, {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ quantity }),
       });
-  
+
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
-  
+
       const updatedCart = await response.json();
       setCart(updatedCart);
       new Audio(cartUpdateSound).play();
-    } catch (error) {
-      console.error("Error updating cart:", error);
-    }
-  };
-
-  const updateQuantity = async (id, quantity) => {
-    try {
-      const response = await fetch(`http://localhost:5005/cart/${id}`, {
-        method: "PATCH",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ quantity }),
-      });
-
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
-
-      const updatedCart = await response.json();
-      setCart(updatedCart);
     } catch (error) {
       console.error("Error updating quantity:", error);
     }
   };
 
-  const removeFromCart = async ({id}) => {
+  const removeFromCart = async (id) => {
+    const index = cart.findIndex((item) => item.id === id);
     try {
-      const response = await fetch(`http://localhost:5005/cart/${id}`, {
+      const response = await fetch(`http://localhost:5005/cart/${index}`, {
         method: "DELETE",
         headers: { "Content-Type": "application/json" },
       });
-
+  
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
-      new Audio(clearCartSound).play();
+  
       const updatedCart = await response.json();
       setCart(updatedCart);
+      new Audio(clearCartSound).play();
     } catch (error) {
-      console.error("Error removing from cart:", error);
+      console.error("Error deleting item from cart:", error);
     }
   };
 
@@ -139,7 +139,7 @@ const CartProvider = ({ children }) => {
   };
 
   return (
-    <CartContext.Provider value={{ cart, fetchCart, clearCart, addToCart, updateQuantity, removeFromCart, finalizeCart }}>
+    <CartContext.Provider value={{ cart, cartLength, productInCart, fetchCart, clearCart, addToCart, updateQuantity, removeFromCart, finalizeCart, cartIcon }}>
       {children}
     </CartContext.Provider>
   );

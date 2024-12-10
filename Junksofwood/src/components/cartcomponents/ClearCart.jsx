@@ -1,7 +1,6 @@
 import { useContext } from 'react'
 import { CartContext } from '../../utils/CartProvider.jsx';
 import { BsCartXFill } from "react-icons/bs";
-import PropTypes from 'prop-types';
 
 const ClearCart = () => {
     const { clearCart } = useContext(CartContext);
@@ -22,8 +21,4 @@ const ClearCart = () => {
   )
 }
 
-export default ClearCart
-
-ClearCart.propTypes = {};
-
-ClearCart.defaultProps = {};
+export default ClearCart;

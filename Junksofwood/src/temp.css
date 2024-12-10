@@ -212,3 +212,16 @@ button:focus {
 .promo-banner a:visited {
     color: var(--color-visited);
 }
+
+.cart-icon {
+    position: relative;
+  }
+  
+.cart-length {
+position: absolute;
+top: 0px;
+right: 0px;
+color: var(--color-primary);
+border-radius: 50%;
+font-size: larger;
+}

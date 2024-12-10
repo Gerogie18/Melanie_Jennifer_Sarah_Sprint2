@@ -1,23 +1,15 @@
 import { Outlet, NavLink, useLocation } from "react-router-dom";
-import { useState,useContext, useEffect } from "react";
+import { useContext } from "react";
 import { CartContext } from '../utils/CartProvider';
 import FooterBar from './FooterBar';
 import PromoBanner from "./PromoBanner";
 import "../temp.css"
-import { BsCart, BsCartFill } from "react-icons/bs";
 
 
 const Layout = () => {
-    const { cart } = useContext(CartContext);
-    const cartisEmpty = cart.length === 0;
-    const [cartIcon, setCartIcon] = useState({cartisEmpty} ? <BsCart /> : <BsCartFill />)
+    const { cartIcon, cartLength } = useContext(CartContext);
     const location = useLocation()
     console.log(location)
-
-    useEffect(() => {
-        (cartisEmpty ? console.log("Cart is Empty") : console.log("Cart is not Empty"))
-        setCartIcon(cartisEmpty ? <BsCart /> : <BsCartFill />)
-    }, [cartisEmpty])
 
   return (
         <div className = "container">
@@ -37,7 +29,12 @@ const Layout = () => {
                                 <NavLink to="/about">About</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/cart"> {cartIcon} CART </NavLink>
+                            <NavLink to="/cart">
+                                <span className="cart-icon">{cartIcon}</span>
+                                {(cartLength > 0) && (
+                                    <span className="cart-length">{cartLength}</span>)}
+                                {" "} CART
+                                </NavLink>
                             </li>
                         </ul>
                     </div>

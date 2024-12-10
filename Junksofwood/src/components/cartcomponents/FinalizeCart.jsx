@@ -1,7 +1,6 @@
 import { useContext } from 'react';
 import { CartContext } from '../../utils/CartProvider.jsx';
 import { MdOutlineShoppingCartCheckout } from "react-icons/md";
-import PropTypes from 'prop-types';
 
 const FinalizeCart = () => {
   const { finalizeCart } = useContext(CartContext);
@@ -25,7 +24,3 @@ const FinalizeCart = () => {
 };
 
 export default FinalizeCart;
-
-FinalizeCart.propTypes = {};
-
-FinalizeCart.defaultProps = {};

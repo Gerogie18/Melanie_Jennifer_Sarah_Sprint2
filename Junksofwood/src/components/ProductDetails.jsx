@@ -19,18 +19,8 @@ function ProductDetails() {
   const [product, setProduct] = useState({});
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const { cart } = useContext(CartContext);
-
-  // Check if the product ID is already in the cart
-  const productInCart = cart.find((item) => item.id === productID);
-
-  useEffect(() => {
-    if (productInCart) {
-      console.log("Product is in the cart:", productInCart);
-    } else {
-      console.log("Product is not in the cart");
-    }
-  }, [productInCart]);
+  const { productInCart } = useContext(CartContext);
+  const [cartProduct, setCartProduct] = useState(null);
 
   useEffect(() => {
     if (productID) {
@@ -51,6 +41,7 @@ function ProductDetails() {
         const data = await res.json();
         setProduct(data);
         setLoading(false);
+        setCartProduct(productInCart(productID));
       } catch (error) {
         setError(error.message);
         setLoading(false);
@@ -95,7 +86,7 @@ function ProductDetails() {
     {formatDescription(product.description)}
     </span>
         <p>Price: ${product.price}</p>
-        <CartDiv productInCart={productInCart} product={product} />
+        <CartDiv productInCart={cartProduct} product={product} />
       </div>
     </div>
   );
