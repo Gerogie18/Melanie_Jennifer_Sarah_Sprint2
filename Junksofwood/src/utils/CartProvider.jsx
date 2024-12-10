@@ -1,6 +1,7 @@
 import { useState, createContext, useEffect } from 'react';
 import addItemSound from '/assets/sounds/navigation_selection-complete-celebration.ogg';
 import clearCartSound from '/assets/sounds/ui_tap-variant-01.ogg';
+import cartUpdateSound from '/assets/sounds/ui_refresh-feed.ogg';
 const CartContext = createContext();
 
 const CartProvider = ({ children }) => {
@@ -8,6 +9,7 @@ const CartProvider = ({ children }) => {
 
   //testing:
   useEffect(() => {
+    console.log('Testing: change to cart')
     console.log(cart)
   }, [cart])
 
@@ -34,6 +36,7 @@ const CartProvider = ({ children }) => {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
       console.log("Cart cleared successfully");
+      new Audio(clearCartSound).play();
     } catch (error) {
       console.error("Error clearing cart:", error);
     }
@@ -46,16 +49,36 @@ const CartProvider = ({ children }) => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ id, quantity, name, price, img }),
       });
-
+  
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
-
+  
       const updatedCart = await response.json();
       setCart(updatedCart);
       new Audio(addItemSound).play();
     } catch (error) {
       console.error("Error adding to cart:", error);
+    }
+  };
+  
+  const updateCart = async (id, quantity) => {
+    try {
+      const response = await fetch(`http://localhost:5005/cart/${id}`, {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ quantity }),
+      });
+  
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+  
+      const updatedCart = await response.json();
+      setCart(updatedCart);
+      new Audio(cartUpdateSound).play();
+    } catch (error) {
+      console.error("Error updating cart:", error);
     }
   };
 
@@ -107,9 +130,9 @@ const CartProvider = ({ children }) => {
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
-
+      clearCart();
       console.log("Order finalized successfully");
-      clearCart(); // Optionally clear the cart after finalizing the order
+      
     } catch (error) {
       console.error("Error finalizing order:", error);
     }
