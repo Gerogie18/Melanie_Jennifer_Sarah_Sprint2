@@ -82,9 +82,9 @@ function ProductDetails() {
           </div>
           )}
       
-      <span id="para">
-    {formatDescription(product.description)}
-    </span>
+        <p id="para">
+          {formatDescription(product.description)}
+        </p>
         <p>Price: ${product.price}</p>
         <CartDiv productInCart={cartProduct} product={product} />
       </div>

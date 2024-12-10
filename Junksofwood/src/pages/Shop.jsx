@@ -1,7 +1,8 @@
-import { useNavigate } from 'react-router-dom';
+import { useOutletContext, useNavigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-const Shop = ({ products }) => {
+const Shop = () => {
+  const { filteredProducts } = useOutletContext(); 
   const navigate = useNavigate();
   const imagePath = '/assets/productimages';
 
@@ -11,7 +12,7 @@ const Shop = ({ products }) => {
 
   return (
     <div>
-      {products.map((product) => (
+      {filteredProducts.map((product) => (
         <div className="img-container" key={product.id}>
           <h3>{product.name}</h3>
           <img 

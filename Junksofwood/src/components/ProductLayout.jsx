@@ -1,70 +1,63 @@
-//We can pass data to all the children (everything inside ProductLayout)
-// we do this inside the "context"
-import { useState } from "react";
-import { Outlet, useSearchParams } from "react-router-dom";
-import PropTypes from 'prop-types';
-import CheckBox from './CheckBox.jsx';
-// import { useState } from "react"
 
+import { useEffect, useState } from "react";
+import { Outlet } from "react-router-dom";
+import PropTypes from 'prop-types';
 
 const ProductLayout = ({categories, products}) => {
 
-  //bring in products and filter them
-  //by category / checkbox
-  //by tags / searchable
-  const [searchParams, setSearchParams] = useSearchParams({cat: "", tags: []})
-  const [number, setNumber] = useState(1)
-  const cat = searchParams.get("cat");
+  const [filteredProducts, setFilteredProducts] = useState(products);
+  const [desiredCategories, setDesiredCategories] = useState([]); 
 
-  const [checkedState, setCheckedState] = useState(
-    categories.reduce((acc, category) => {
-      acc[category.id] = false;
-      return acc;
-    }, {})
-  );
 
-  const handleTextChange = (event) => {
-    let cat = event.target.value
-    console.log(`text was added ${cat}`)
-    setSearchParams({ cat: cat})
-  }
+  const catIDs = [];
+  categories.forEach(category => {
+    catIDs.push(category.id)});
 
-  const handleNumberChange = (event) => {
-    let num = event.target.value
-    console.log(`text was added ${num}`)
-    setNumber(num)
-  }
+    useEffect(() => {
+      // Initialize desiredCategories on mount
+      const catIDs = categories.map(category => category.id);
+      setDesiredCategories(catIDs);
+    }, [categories]);
   
-  const handleCheckboxChange = (id) => {
-    setCheckedState((prevState) => ({
-      ...prevState,
-      [id]: !prevState[id],
-    }));
-  };
+    
+
+    useEffect(() => {
+    
+     let newproducts = products.filter(product => desiredCategories.includes(product.category))
+      setFilteredProducts(newproducts); // Set to products or apply filtering logic
+    }, [products, desiredCategories]); // Dependency array ensures effect runs only when products change
+  
+  
+    function handleCheckboxChange(event, catID) {
+      if (event.target.checked) {
+        setDesiredCategories(prev => [...prev, catID]);
+      } else {
+        setDesiredCategories(prev => prev.filter(id => id !== catID));
+      }
+   }
+
 
   return (
     <>
         <h1>Shop</h1>
-        <div className = "productNav">
-        <p>We could turn this into a filter or buttons to select categories</p>
+        <div className = "categorySelection">
+        <p>This should be a sidebar</p>
         {categories.map((category) => (
-
-          <CheckBox 
-            key={category.id} 
-            checked={checkedState[category.id]} 
-            text={category.title} 
-            onClick={() =>(handleCheckboxChange(category.id))}/>
+          <div key={category.id}>
+          <label htmlFor={category.id}>{category.title}</label>
+          <input 
+          type="checkbox" 
+          id={category.id} 
+          name={category.id} 
+          onChange={(event) => handleCheckboxChange(event, category.id)}
+          checked={desiredCategories.includes(category.id)}
+          />
+          </div>
         ))}
-        <input type="search" placeholder="Search" className="search-bar" value={cat} onChange={handleTextChange} />
-
         </div>
 
         <div>
-            <Outlet context={{hello: "world"}}/>
-        </div>
-        <div>
-          <p>Maybe we could turn this into a search box:</p>
-          <input type="number" value={number} onChange={handleNumberChange}></input>
+            <Outlet context={{ filteredProducts }}/>
         </div>
     </>
 
@@ -74,7 +67,5 @@ const ProductLayout = ({categories, products}) => {
 ProductLayout.propTypes = {
   products: PropTypes.array.isRequired,
   categories: PropTypes.array.isRequired,
-//   onDelete: PropTypes.func.isRequired,
-//   onAdd: PropTypes.func.isRequired
 };
 export default ProductLayout;
