@@ -12,13 +12,15 @@
 // · GET /cart - Retrieves items in the cart.
 // · DELETE /cart/:id - Removes a product from the cart.
 
-import { useState, useEffect } from "react"
-import { Routes, Route } from "react-router-dom";
+import { useState, useEffect, useContext } from "react"
+import { Routes, Route, useLocation } from "react-router-dom";
+import BreakpointProvider from "./utils/BreakpointProvider.jsx";
+import { CartProvider, CartContext } from './utils/CartProvider';
 import Layout from "./components/Layout"
 import Home from "./pages/Home";
 import ProductLayout from "./components/ProductLayout";
-import ProductList from "./pages/ProductList";
-import Product from "./pages/Product";
+import Shop from "./pages/Shop";
+import ProductDetails from "./components/ProductDetails";
 import About from "./pages/About";
 import Cart from "./pages/Cart";
 import Test from "./pages/Test";
@@ -28,81 +30,81 @@ function App() {
 
   // const [productList, setProductList] = useState([])
   // const [addedProducts, setAddedProducts] = useState(null); // Track products added to cart
-
-
-  const [catArray, setCatArray] = useState([]);
-  const [productArray, setProductArray] = useState([]);
-
-  useEffect(() => {
-    const fetchProducts = async () => {
-      try {
-        const response = await fetch('http://localhost:5005/Brooches');
-        const data = await response.json();
-        
-        if (data.Title) {
-          setCatArray([data.Title]);  // Set category array with the title
-          console.log(catArray)
-        }
-
-        if (data.Varients && Array.isArray(data.Varients)) {
-          setProductArray(data.Varients);  // Set product array with the variants
-          console.log(productArray)
-        }
-      } catch (error) {
-        console.error('Failed to fetch data:', error);
-      }
-    };
-
-    fetchProducts();
-  }, []);  // Empty dependency array to run only once on component mount
-
-
+  const location = useLocation();
+  const [categories, setCategories] = useState([]);
+  const [products, setProducts] = useState([]);
+  //const [product, setProduct] = useState([]);
+  const { fetchCart} = useContext(CartContext);
 
     // Put the products fetched from the server in a products array...
-    // useEffect(() => {
-    //   const getProducts = async () => {
-    //     const productsFromServer = await fetchProducts();
+    useEffect(() => {
+      fetchCart()
+      const getData = async () => {
+        const productsFromServer = await fetchProducts(); // this is an object ( {} )
+        const categoriesFromServer = await fetchCategories(); // this is an array ( [] )
+
+        //const productsArray = Object.values(productsFromServer); // Convert object to array
+
+        setProducts(productsFromServer);
+        setCategories(categoriesFromServer);
+      };
+      getData();
+    }, []);
   
-    //     setProductList(productsFromServer);
-    //     console.log(productList)
-    //   };
-    //   getProducts();
-    // }, []);
-  
-    // // fetch the products from server...
-    // const fetchProducts = async () => {
-    //   const res = await fetch("http://localhost:5005/Brooches");
-    //   const data = await res.json();
-    //   console.log(data)
-    //   return data;
-    // };
-  
-    // fetch ONE Product from Product from the server...
-  
-    // const fetchProduct = async (id) => {
-    //   const res = await fetch(`http://localhost:5000/products/${id}`);
-    //   const data = await res.json();
-    //   return data;
-    // };
+    // fetch the products from server...
+    const fetchProducts = async () => {
+      const res = await fetch("http://localhost:5005/products");
+      const data = await res.json();
+      return data;
+    };
   
 
+//    fetch product categories from server...
+    const fetchCategories = async () => {
+      const res = await fetch("http://localhost:5005/categories");
+      const data = await res.json();
+      return data;
+    };  
+
+ //   fetch ONE Product from Product from the server...
+
+  // useEffect(() => {
+  //   const fetchProduct = async (id) => {
+  //     try {
+  //       const response = await fetch(`http://localhost:5005/products/${id}`);
+  //       const data = await response.json();
+        
+  //       if (data.name) {
+  //         setProduct([data.name]);  // Set category array with the title
+  //       }
+
+  //     } catch (error) {
+  //       console.error('Failed to fetch data:', error);
+  //     }
+  //   };
+
+  //   fetchProduct();
+  // }, []);  // Empty dependency array to run only once on component mount
 
 
   return (
-      <Routes>
+    <BreakpointProvider>
+     <CartProvider>
+      <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="shop" element={<ProductLayout />} >
-            <Route index element={<ProductList />} />
-            <Route path=":id" element={<Product />} />
-            <Route path=":id" element={<Product />} />
+          <Route path="shop" element={<ProductLayout categories={categories} products={products}/>} >
+            <Route index element={<Shop products={products}/>} />
+            <Route path=":productID" element={<ProductDetails/>} />
           </Route>
           <Route path="about" element={<About />} />
           <Route path="cart" element={<Cart />} />
           <Route path="test" element={<Test />} />
           <Route path="*" element={<NotFound />} />
         </Route>
-      </Routes>
+        </Routes>
+      </CartProvider>
+    </BreakpointProvider>
   )
 }
 

@@ -4,24 +4,23 @@
   // o Allows users to remove products or update their quantities.
 
 import PropTypes from "prop-types";
-import Button from "../components/Button"
-function Cart ({cartItems, onDelete}) {
+import CartContents from "../components/cartcomponents/CartContents";
+
+
+function Cart () {
+
+
     return (
     <div>
-      <h1>This is the Cart</h1>
-      <p>{cartItems}</p>
-      <Button text="delete items" click={onDelete}/>
+    <h1>Your Cart</h1>
+      <CartContents />
     </div>
       );
 
   };
 
 
-Cart.propTypes = {
-   cartItems: PropTypes.array,
-   onDelete: PropTypes.func
-   };
+Cart.propTypes = {};
 
 export default Cart;
-
 

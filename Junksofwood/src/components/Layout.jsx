@@ -1,17 +1,17 @@
-import { Outlet, NavLink, useLocation} from "react-router-dom";
-import BreakpointProvider from "../utils/BreakpointProvider.jsx";
+import { Outlet, NavLink, useLocation } from "react-router-dom";
+import { useContext } from "react";
+import { CartContext } from '../utils/CartProvider';
 import FooterBar from './FooterBar';
 import PromoBanner from "./PromoBanner";
 import "../temp.css"
 
 
 const Layout = () => {
-
+    const { cartIcon, cartLength } = useContext(CartContext);
     const location = useLocation()
     console.log(location)
 
   return (
-    <BreakpointProvider>
         <div className = "container">
             <PromoBanner />
             <header>
@@ -29,7 +29,12 @@ const Layout = () => {
                                 <NavLink to="/about">About</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/cart">CART BUTTON</NavLink>
+                            <NavLink to="/cart">
+                                <span className="cart-icon">{cartIcon}</span>
+                                {(cartLength > 0) && (
+                                    <span className="cart-length">{cartLength}</span>)}
+                                {" "} CART
+                                </NavLink>
                             </li>
                         </ul>
                     </div>
@@ -40,7 +45,6 @@ const Layout = () => {
             </main>
             <FooterBar />
         </div>
-    </BreakpointProvider>
   )
 };
 

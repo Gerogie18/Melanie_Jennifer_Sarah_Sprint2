@@ -1,16 +1,16 @@
 /* Fonts */
 @font-face {
     font-family: 'Pacific Northwest';
-    src: url('./assets/fonts/pacific_northwest-webfont.woff2') format('woff2'),
-         url('./assets/fonts/pacific_northwest-webfont.woff') format('woff');
+    src: url('/assets/fonts/pacific_northwest-webfont.woff2') format('woff2'),
+         url('/assets/fonts/pacific_northwest-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Root Beer';
-    src: url('./assets/fonts/root_beer-webfont.woff2') format('woff2'),
-         url('./assets/fonts/root_beer-webfont.woff') format('woff');
+    src: url('/assets/fonts/root_beer-webfont.woff2') format('woff2'),
+         url('/assets/fonts/root_beer-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -105,6 +105,30 @@ main {
     text-align: center;
 }
 
+
+
+.img-container {
+    width: 50%; /* Adjust the width as needed */
+    margin: auto; /* Centers the container */
+    padding: 20px;
+    border: 1px solid #ccc; /* Adds a border around the container */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: adds shadow for better visibility */
+    text-align: center; /* Centers the image within the container */
+}
+
+img {
+    width: 100%; /* Makes the image fill the container */
+    height: auto; /* Maintains the aspect ratio */
+    border-radius: 10px; /* Optional: rounds the corners of the image */
+}
+
+
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+};
+
 /* Footer */
 footer {
     width: 100%;
@@ -187,4 +211,17 @@ button:focus {
 
 .promo-banner a:visited {
     color: var(--color-visited);
+}
+
+.cart-icon {
+    position: relative;
+  }
+  
+.cart-length {
+position: absolute;
+top: 0px;
+right: 0px;
+color: var(--color-primary);
+border-radius: 50%;
+font-size: larger;
 }

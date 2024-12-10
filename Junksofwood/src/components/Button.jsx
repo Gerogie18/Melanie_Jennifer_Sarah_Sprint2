@@ -4,7 +4,7 @@ const Button = ({text, click}) => {
     return (
         <button
             className="btn"
-            onClick={click}
+            onClick={() => {click}}
         >
             {text}
       </button>
@@ -13,7 +13,7 @@ const Button = ({text, click}) => {
   
   Button.propTypes = {
     text: PropTypes.string.isRequired,  // Defines 'text' as a required string
-    click: PropTypes.func.isRequired    // Defines 'click' as a required function
+    click: PropTypes.func    // Defines 'click' as a required function
   };
 
   export default Button
