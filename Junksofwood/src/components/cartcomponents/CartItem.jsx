@@ -12,11 +12,11 @@ const CartItem = memo(({ item }) => {
   const formatPriceTotal = (price, quantity) => {
     return `$${(price * quantity).toFixed(2)}`;
   }
-
+  console.log(`${item}`);
   return (
     <div key={item.id} className="cart-item">
       <img
-        src={`./src/assets/productimages${item.img.filepath}`}
+        src={`/assets/productimages${item.img.filepath}`}
         alt={item.img.alt}
         title={item.img.title}
       />
