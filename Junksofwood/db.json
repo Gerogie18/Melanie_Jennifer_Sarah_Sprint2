@@ -1325,20 +1325,6 @@
       "img": ""
     },
     {
-      "id": "0",
-      "quantity": 1,
-      "name": "Canada Brooch",
-      "price": 10,
-      "img": ""
-    },
-    {
-      "id": "0",
-      "quantity": 1,
-      "name": "Canada Brooch",
-      "price": 10,
-      "img": ""
-    },
-    {
       "id": "39",
       "quantity": 1,
       "name": "Rotted Keychain",
@@ -1353,35 +1339,6 @@
       "img": ""
     },
     {
-      "id": "0",
-      "quantity": 1,
-      "name": "Canada Brooch",
-      "price": 10,
-      "img": ""
-    },
-    {
-      "id": "0",
-      "quantity": 6,
-      "name": "Canada Brooch",
-      "price": 10,
-      "img": {
-        "title": "Canada Brooch - Card",
-        "filepath": "/brooches/CanadaBroochCard.jpg",
-        "alt": "Image of Canada Brooch on card"
-      }
-    },
-    {
-      "id": "0",
-      "quantity": 1,
-      "name": "Canada Brooch",
-      "price": 10,
-      "img": {
-        "title": "Canada Brooch - Card",
-        "filepath": "/brooches/CanadaBroochCard.jpg",
-        "alt": "Image of Canada Brooch on card"
-      }
-    },
-    {
       "id": "1",
       "quantity": 6,
       "name": "Rowhouse Brooch - Orange and Blue",
@@ -1390,6 +1347,17 @@
         "title": "Rowhouse Brooch - Orange and Blue",
         "filepath": "/brooches/RowhouseBroochPlate_OrangeBlue.jpg",
         "alt": "Image of Rowhouse Brooch - Orange and Blue"
+      }
+    },
+    {
+      "id": "6",
+      "quantity": 6,
+      "name": "Newfoundland Brooch - Natural",
+      "price": 10,
+      "img": {
+        "title": "Newfoundland Brooch - Card",
+        "filepath": "/brooches/NewfoundlandBroochCard.jpg",
+        "alt": "Image of Newfoundland Brooch on card"
       }
     }
   ],
