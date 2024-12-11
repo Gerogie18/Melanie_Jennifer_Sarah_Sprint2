@@ -21,16 +21,15 @@ const ProductLayout = ({categories, products}) => {
     }, [categories]);
   
 
-    useEffect(() => {  
-     let newproducts = products.filter(product => desiredCategories.includes(product.category))
-      setFilteredProducts(newproducts);
-    }, [products, desiredCategories]); // Dependency array ensures effect runs only when products change
-  
     useEffect(() => {
-      let newproducts = products.filter(product => desiredTags.includes(product.tags))
-       setFilteredProducts(newproducts); 
-     }, [desiredTags]); // Dependency array ensures effect runs only when desiredTags changes
-  
+      const newProducts = products.filter(product =>
+        desiredCategories.includes(product.category) &&
+        (desiredTags.length === 0 || product.tags.some(tag => desiredTags.includes(tag)))
+      );
+      setFilteredProducts(newProducts);
+    }, [products, desiredCategories, desiredTags]);
+
+
      
     function handleCheckboxChange(event, catID) {
       if (event.target.checked) {
@@ -41,33 +40,21 @@ const ProductLayout = ({categories, products}) => {
    }
 
 
-   function handleTagChange(tag) {
-      setDesiredTags(prev => prev.filter(id => id !== tag));
-      //also need to remove a div
-    }
-  
+  //  function handleTagChange(tag) {
+  //     setDesiredTags(prev => prev.filter(id => id !== tag));
+  //     //also need to remove a div
+  //   }
  
+ 
+    function handleSearchChange(event) {
+      const tags = event.target.value;
+      if (!tags.trim()) {
+        setDesiredTags([]); // Reset if search is empty
+      } else {
+        setDesiredTags(tags.split(',').map(tag => tag.trim())); // Assuming comma-separated tags
+      }
+    }
 
-
-   function handleSearchChange(event) {
-    let tags = event.target.value
-      setDesiredTags(prev => [...prev, tags]);
-      return(    
-        <>
-        {desiredTags.map((tag, index) => (
-          <div key={index}>
-            <label htmlFor={tag}>{tag}</label>
-            <input 
-            type="checkbox" 
-            id={tag} 
-            name={tag} 
-            onChange={() => handleTagChange(tag)}
-            checked={desiredCategories.includes(tag)}
-            />
-          </div>
-        ))}
-      </>)
-  }
 
   return (
     <>
@@ -87,7 +74,12 @@ const ProductLayout = ({categories, products}) => {
           </div>
         ))}
         <div>
-          <input type="search" placeholder="Search" className="search-bar" value={tags} onChange={handleSearchChange} />
+          <input 
+            type="search" 
+            placeholder="Search" 
+            className="search-bar" 
+            onChange={handleSearchChange} 
+            />
         </div>
 
       </div>
