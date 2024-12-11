@@ -26,7 +26,7 @@ const CartProvider = ({ children }) => {
   //testing:
   useEffect(() => {
     console.log('Testing: change to cart')
-    console.log(cart)
+    console.log(JSON.stringify(cart, null, 2));
   }, [cart])
 
   // Fetch cart upon reload

@@ -5,9 +5,14 @@ import RemoveFromCart from './RemoveFromCart.jsx';
 import UpdateCart from './UpdateCart.jsx';
 
 const CartDiv = ({ productInCart, product }) => {
+  
+  if (product === undefined) {
+    return <span class ='loading'>Loading...</span>;
+  };
+
   if (productInCart && productInCart.id !== product.id) {
-    console.log(`Product ID mismatched: ${product.id} ${productInCart.id}`);
-  }
+    console.error(`Product ID mismatched: ${product.id} ${productInCart.id}`);
+  };
 
   return (
     <div>

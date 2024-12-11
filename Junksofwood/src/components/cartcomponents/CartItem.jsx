@@ -10,8 +10,10 @@ const CartItem = memo(({ item }) => {
 
   const formatPriceTotal = (price, quantity) => {
     return `$${(price * quantity).toFixed(2)}`;
-  }
-  console.log(`${item}`);
+  };
+
+  console.log(`this is in the cart: ${JSON.stringify(item, null, 2)}`);
+  
   return (
     <div key={item.id} className="cart-item">
       <img
@@ -21,7 +23,7 @@ const CartItem = memo(({ item }) => {
       />
       <h3>{item.name}</h3>
       <p>{formatPrice(item.price)}</p>
-      <UpdateCart id={item.id} quantity={item.quantity} />
+      <UpdateCart id={item.id} itemQuantity={item.quantity} />
       <RemoveFromCart item={item} />
       <p>{formatPriceTotal(item.price, item.quantity)}</p>
     </div>

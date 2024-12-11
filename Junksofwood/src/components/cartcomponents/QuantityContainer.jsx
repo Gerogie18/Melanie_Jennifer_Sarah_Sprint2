@@ -2,7 +2,7 @@
 import PropTypes from 'prop-types';
 import { FaRegSquarePlus, FaRegSquareMinus } from "react-icons/fa6";
 
-const QuantityContainer = ({quantity, onChange, minQuantity, maxQuantity, size}) => {
+const QuantityContainer = ({quantity, onChange, minQuantity = 1, maxQuantity = 99 , size = '40px'}) => {
 
   const handleQuantityChange = (event) => {
     const newQuantity = parseInt(event.target.value);
@@ -57,6 +57,7 @@ const QuantityContainer = ({quantity, onChange, minQuantity, maxQuantity, size})
         type="number"
         min={minQuantity}
         max={maxQuantity}
+        defaultValue={quantity}
         value={quantity}
         onChange={handleQuantityChange}
         style={{
@@ -95,12 +96,6 @@ const QuantityContainer = ({quantity, onChange, minQuantity, maxQuantity, size})
 QuantityContainer.propTypes = {
   quantity: PropTypes.number.isRequired,
   onChange: PropTypes.func.isRequired
-};
-
-QuantityContainer.defaultProps = {
-  minQuantity: 1,
-  maxQuantity: 99,
-  size: '40px'
 };
 
 export default QuantityContainer;

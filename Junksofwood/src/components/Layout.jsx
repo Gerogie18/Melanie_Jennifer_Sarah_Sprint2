@@ -9,7 +9,7 @@ import "../temp.css"
 const Layout = () => {
     const { cartIcon, cartLength } = useContext(CartContext);
     const location = useLocation()
-    console.log(location)
+    console.log(JSON.stringify(location, null, 2));
 
   return (
         <div className = "container">
