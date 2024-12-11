@@ -32,5 +32,5 @@ return (
 export default RemoveFromCart
 
 RemoveFromCart.propTypes = {
-  id: PropTypes.number.isRequired
+  id: PropTypes.number
   };

@@ -36,7 +36,7 @@ const AddToCart = ({id, name, price, img }) => {
 export default AddToCart
 
 AddToCart.propTypes = {
-    id: PropTypes.string.isRequired,
+    id: PropTypes.number.isRequired,
     name: PropTypes.string.isRequired,
     price: PropTypes.number.isRequired,
     img: PropTypes.object.isRequired,

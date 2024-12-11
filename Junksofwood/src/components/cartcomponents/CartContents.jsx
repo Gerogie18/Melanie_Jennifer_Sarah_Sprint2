@@ -7,15 +7,19 @@ import ClearCart from './ClearCart.jsx';
 const CartContents = () => {
   const { cart } = useContext(CartContext);
 
+  if (!cart) {
+    return <div>Loading cart...</div>;
+  }
+
   return (
     <div className="cart-contents">
-      {cart?.map((item) => (
+      {cart.map((item) => (
         <CartItem key={item.id} item={item} />
       ))}
-      <div className="cart-actions">
+      {/* <div className="cart-actions">
         <FinalizeCart />
         <ClearCart />
-      </div>
+      </div> */}
     </div>
   );
 };

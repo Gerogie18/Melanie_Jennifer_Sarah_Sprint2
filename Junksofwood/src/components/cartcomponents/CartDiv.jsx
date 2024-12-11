@@ -1,4 +1,3 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 import AddToCart from './AddToCart.jsx';
 import RemoveFromCart from './RemoveFromCart.jsx';
@@ -7,7 +6,7 @@ import UpdateCart from './UpdateCart.jsx';
 const CartDiv = ({ productInCart, product }) => {
   
   if (product === undefined) {
-    return <span class ='loading'>Loading...</span>;
+    return <span className ='loading'>Loading...</span>;
   };
 
   if (productInCart && productInCart.id !== product.id) {
@@ -18,11 +17,11 @@ const CartDiv = ({ productInCart, product }) => {
     <div>
       {productInCart ? (
         <>
-          <UpdateCart id={productInCart.id} itemQuantity={productInCart.quantity} />
+          <UpdateCart id={Number(productInCart.id)} itemQuantity={productInCart.quantity} />
           <RemoveFromCart id={productInCart.id} />
         </>
       ) : (
-        <AddToCart id={product.id} name={product.name} price={product.price} img={product.images[0]} />
+        <AddToCart id={Number(product.id)} name={product.name} price={product.price} img={product.images[0]} />
       )}
     </div>
   );

@@ -3,6 +3,9 @@ import addItemSound from '/assets/sounds/navigation_selection-complete-celebrati
 import clearCartSound from '/assets/sounds/ui_tap-variant-01.ogg';
 import cartUpdateSound from '/assets/sounds/ui_refresh-feed.ogg';
 import { BsCart, BsCartFill } from "react-icons/bs";
+import PropTypes from 'prop-types';
+
+
 const CartContext = createContext();
 
 const CartProvider = ({ children }) => {
@@ -10,7 +13,7 @@ const CartProvider = ({ children }) => {
 
   //setting up the cart icon
   const cartisEmpty = cart.length === 0;
-  const [cartIcon, setCartIcon] = useState({cartisEmpty} ? <BsCart /> : <BsCartFill />)
+  const [cartIcon, setCartIcon] = useState(cartisEmpty ? <BsCart /> : <BsCartFill />)
   const cartLength = cart.length;
   console.log(cartLength)
   
@@ -58,7 +61,7 @@ const CartProvider = ({ children }) => {
     }
   };
 
-  const addToCart = async (id, quantity, name, price, img) => {
+  const addToCart = async (id, quantity=1, name, price, img) => {
     try {
       const response = await fetch("http://localhost:5005/cart", {
         method: "POST",
@@ -145,5 +148,8 @@ const CartProvider = ({ children }) => {
   );
 };
 
-export default CartProvider;
+CartProvider.propTypes = {
+  children: PropTypes.node.isRequired,
+};
+
 export { CartContext, CartProvider };

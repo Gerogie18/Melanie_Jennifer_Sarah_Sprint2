@@ -23,12 +23,14 @@ function ProductDetails() {
   const [cartProduct, setCartProduct] = useState(null);
 
   const imagePath = '/assets/productimages';
-  if (!productID) {
-    navigate('/shop');
-    return null;
-  }
+
 
   useEffect(() => {
+    if (!productID) {
+      navigate('/shop');
+      return null;
+    }
+
     const fetchProduct = async () => {
       try {
         const res = await fetch(`http://localhost:5005/products/${productID}`);
@@ -46,22 +48,12 @@ function ProductDetails() {
     };
 
     fetchProduct();
-  }, [productID]);
+  }, [productID, navigate]);
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error: {error}</p>;
 
 
-
-
-// function formatDescription(description) {
-//   return description.split('\n').map((line) => (
-//       <>
-//           {line}
-//           <br />
-//       </>
-//   ));
-// }
 
   return (
     <div>

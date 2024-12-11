@@ -3,7 +3,6 @@
   // o Shows the total price of the items in the cart.
   // o Allows users to remove products or update their quantities.
 
-import PropTypes from "prop-types";
 import CartContents from "../components/cartcomponents/CartContents";
 
 
@@ -20,7 +19,6 @@ function Cart () {
   };
 
 
-Cart.propTypes = {};
 
 export default Cart;
 
