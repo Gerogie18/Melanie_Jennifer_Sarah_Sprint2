@@ -1,227 +1,249 @@
 /* Fonts */
 @font-face {
-    font-family: 'Pacific Northwest';
-    src: url('/assets/fonts/pacific_northwest-webfont.woff2') format('woff2'),
-         url('/assets/fonts/pacific_northwest-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Pacific Northwest";
+  src: url("/assets/fonts/pacific_northwest-webfont.woff2") format("woff2"),
+    url("/assets/fonts/pacific_northwest-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Root Beer';
-    src: url('/assets/fonts/root_beer-webfont.woff2') format('woff2'),
-         url('/assets/fonts/root_beer-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Root Beer";
+  src: url("/assets/fonts/root_beer-webfont.woff2") format("woff2"),
+    url("/assets/fonts/root_beer-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* Root variables */
 :root {
-    --color-primary: #77b2df;
-    --color-secondary: #4f9eb6;
-    --color-background: #f9f9f9;
-    --color-focus: #242aea;
-    --color-font: #282b3f;
-    --color-hover: #4e6e88;
-    --color-border: #cccccc;
+  --color-primary: #0099a5;
+  --color-secondary: #4f9eb6;
+  --color-background: #f9f9f9;
+  --color-focus: #242aea;
+  --color-font: #282b3f;
+  --color-hover: #4e6e88;
+  --color-border: #cccccc;
 }
 
 /* Global reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Body styling */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: var(--color-background);
-    color: var(--color-font);
-    width: 100vw;
-    min-height: 100vh;
-    height: fit-content;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  font-family: "Arial", sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-font);
+  width: 100vw;
+  min-height: 100vh;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: "Pacific Northwest", Times, serif;
+  color: var(--color-primary);
+  font-size: xx-large;
+}
+
+h2 {
+  font-family: "Pacific Northwest", Times, serif;
+  color: var(--color-primary);
+  font-size: x-large;
+}
+
+h3 {
+  font-family: "Pacific Northwest", Times, serif;
+  color: var(--color-primary);
+  font-size: larger;
 }
 
 /* Container */
 .container {
-    width: 100vw; /* Full width of the viewport */
-    height: fit-content; /* Full height of the viewport */
-    min-height: 100vh; /* Minimum height of the viewport */
-    max-width: 1200px; /* Maximum width of the container */
-    display: flex; /* Flexbox for layout control */
-    flex-direction: column; /* Stack items vertically */
-    justify-content: space-between; /* Distribute items: top, middle, bottom */
-    align-items: center; /* Center items horizontally */
-    background-color: var(--color-background); /* Optional: Add background color */
-    padding: 1em; /* Add spacing inside the container */
-    box-sizing: border-box; /* Ensure padding is included in dimensions */
+  width: 100vw; /* Full width of the viewport */
+  height: fit-content; /* Full height of the viewport */
+  min-height: 100vh; /* Minimum height of the viewport */
+  /* max-width: 1200px; Maximum width of the container */
+  display: flex; /* Flexbox for layout control */
+  flex-direction: column; /* Stack items vertically */
+  justify-content: space-between; /* Distribute items: top, middle, bottom */
+  align-items: center; /* Center items horizontally */
+  background-color: var(
+    --color-background
+  ); /* Optional: Add background color */
+  padding: 1em; /* Add spacing inside the container */
+  box-sizing: border-box; /* Ensure padding is included in dimensions */
 }
-
 
 /* Navigation bar */
 nav {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1em 2em;
-    background-color: var(--color-primary);
-    color: var(--color-font);
-    font-family: 'Root Beer', Arial, Helvetica, sans-serif;
-    font-weight: bold   ;
-    border-bottom: 2px solid var(--color-border);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  background-color: var(--color-background);
+  color: #0099a5;
+  font-family: "Root Beer", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  border-bottom: 1px solid var(--color-border);
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
 }
 
 nav a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    margin: 0 1em;
-    transition: color 0.3s ease;
+  text-decoration: none;
+  color: #0099a5;
+  font-weight: bold;
+  letter-spacing: 0.125cap;
+  margin: 0 1em;
+  transition: color 0.3s ease;
 }
 
 nav a:hover {
-    color: var(--color-hover);
+  color: var(--color-hover);
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    gap: 1em;
+  list-style: none;
+  display: flex;
+  gap: 1em;
 }
 
 /* Main content */
 main {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-
-
 .img-container {
-    width: 50%; /* Adjust the width as needed */
-    margin: auto; /* Centers the container */
-    padding: 20px;
-    border: 1px solid #ccc; /* Adds a border around the container */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: adds shadow for better visibility */
-    text-align: center; /* Centers the image within the container */
+  width: 50%; /* Adjust the width as needed */
+  margin: auto; /* Centers the container */
+  padding: 20px;
+  border: 1px solid #ccc; /* Adds a border around the container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds shadow for better visibility */
+  text-align: center; /* Centers the image within the container */
 }
 
 img {
-    width: 100%; /* Makes the image fill the container */
-    height: auto; /* Maintains the aspect ratio */
-    border-radius: 10px; /* Optional: rounds the corners of the image */
+  width: 100%; /* Makes the image fill the container */
+  height: auto; /* Maintains the aspect ratio */
+  border-radius: 10px; /* Optional: rounds the corners of the image */
 }
 
-
-input[type="number"]::-webkit-inner-spin-button, 
-input[type="number"]::-webkit-outer-spin-button { 
-  -webkit-appearance: none; 
-  margin: 0; 
-};
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
 /* Footer */
 footer {
-    width: 100%;
-    background-color: var(--color-primary);
-    color: white;
-    text-align: center;
-    border-top: 2px solid var(--color-border);
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  background-color: var(--color-primary);
+  font-family: "root beer";
+  letter-spacing: 0.125cap;
+  color: white;
+  text-align: center;
+  border-top: 1px solid var(--color-border);
+  /* box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); */
 }
 
 /* Responsive design */
 @media (max-width: 768px) {
-    nav, footer {
-        flex-direction: column;
-        text-align: center;
-    }
+  nav,
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
 
-    nav ul {
-        flex-direction: column;
-        gap: 0.5em;
-    }
+  nav ul {
+    flex-direction: column;
+    gap: 0.5em;
+  }
 }
 
 :focus {
-    outline: none;
-    padding: 0.2em;
-    box-shadow: 0 0 0 2px var(--color-focus);
-    transition: box-shadow 0.2s ease-in-out;
-};
+  outline: none;
+  padding: 0.2em;
+  box-shadow: 0 0 0 2px var(--color-focus);
+  transition: box-shadow 0.2s ease-in-out;
+}
 
 button {
-    font-weight: bold;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    background-color: var(--color-primary);
-    color: var(--color-font);
-    transition: background-color 0.2s ease-in-out;
-};
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  background-color: var(--color-primary);
+  color: var(--color-font);
+  transition: background-color 0.2s ease-in-out;
+}
 
 button:hover {
-    background-color: var(--color-hover);
-    color: var(--color-font);
-    transition: background-color 0.2s ease-in-out;
-};
+  background-color: var(--color-hover);
+  color: var(--color-font);
+  transition: background-color 0.2s ease-in-out;
+}
 button:focus {
-    outline: none;
-    box-shadow: 0 0 0 2px var(--color-focus);
-    transition: box-shadow 0.2s ease-in-out;
-};
+  outline: none;
+  box-shadow: 0 0 0 2px var(--color-focus);
+  transition: box-shadow 0.2s ease-in-out;
+}
 
 /* Promo Banner Styles */
 .promo-banner {
-    width: 90%;
-    height: fit-content;
-    padding: 1em;
-    background-color: var(--color-secondary); /* Set a proper background */
-    color: var(--color-font); /* Ensure text color contrasts with background */
-    text-align: center; /* Optional: Center align text */
-    margin: 1em auto; /* Center promo-banner in the container */
-    border-radius: 8px; /* Optional: Add rounded corners for modern design */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for emphasis */
+  width: 100vw;
+  height: fit-content;
+  padding: 1em;
+  background-color: var(--color-primary); /* Set a proper background */
+  color: white; /* Ensure text color contrasts with background */
+  font-family: "root beer";
+  text-align: center; /* Optional: Center align text */
+  letter-spacing: 0.125cap;
+  /* margin: 1em auto; /* Center promo-banner in the container */
+  /* border-radius: 8px; Optional: Add rounded corners for modern design 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); Optional: Add shadow for emphasis */
 }
 
 /* Link Styles inside .promo-banner */
 .promo-banner a {
-    color: inherit;
-    text-decoration: none;
-    font-weight: bold; /* Optional: Make links bold for prominence */
+  color: inherit;
+  text-decoration: none;
+  font-weight: bold; /* Optional: Make links bold for prominence */
 }
 
 .promo-banner a:hover {
-    color: var(--color-hover);
-    text-decoration: underline;
+  color: var(--color-hover);
+  text-decoration: underline;
 }
 
 .promo-banner a:active {
-    color: var(--color-primary);
+  color: var(--color-primary);
 }
 
 .promo-banner a:visited {
-    color: var(--color-visited);
+  color: var(--color-visited);
 }
 
 .cart-icon {
-    position: relative;
-  }
-  
+  position: relative;
+}
+
 .cart-length {
-position: absolute;
-top: 0px;
-right: 0px;
-color: var(--color-primary);
-border-radius: 50%;
-font-size: larger;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  color: var(--color-primary);
+  border-radius: 50%;
+  font-size: larger;
 }
