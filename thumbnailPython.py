@@ -16,11 +16,14 @@ def generate_thumbnails(directory_path, thumbnail_size, output_directory):
     for filename in os.listdir(directory_path):
         if filename.endswith((".jpg", ".jpeg", ".png")):
             image_path = os.path.join(directory_path, filename)
-            with Image.open(image_path) as image:
-                image.thumbnail(thumbnail_size)
-                output_path = os.path.join(output_directory, filename)
-                image.save(output_path)
-                print(f"Thumbnail saved to {output_path}")
+            try:
+                with Image.open(image_path) as image:
+                    image.thumbnail(thumbnail_size)
+                    output_path = os.path.join(output_directory, filename+"_thumbnail.jpg")
+                    image.save(output_path)
+                    print(f"Thumbnail saved to {output_path}")
+            except Exception as e:
+                print(f"Error processing {filename}: {e}")
 
 # Example usage
 if __name__ == "__main__":
