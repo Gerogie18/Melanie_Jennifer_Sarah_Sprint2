@@ -1,32 +1,32 @@
 {
     "categories": [
         {
-            "id": 0,
-            "title": "Wooden Brooches",
+            "id": "0",
+            "title": "Brooches",
             "description": "Wooden Brooches are made from the finest quality of wood. They are handcrafted with love. They are perfect for any occasion and can be worn with any outfit.",
             "materials": ""
         },
         {
-            "id": 1,
-            "title": "Wooden Earrings",
+            "id": "1",
+            "title": "Earrings",
             "description": "Wooden Earrings are made from the finest quality of wood. They are handcrafted with love. They are perfect for any occasion and can be worn with any outfit.",
             "materials": ""
         },
         {
-            "id": 2,
-            "title": "Wooden Keychains",
+            "id": "2",
+            "title": "Keychains",
             "description": "Wooden Keychains are made from the finest quality of wood. They are handcrafted with love. They are perfect for any occasion and can be used to hold your keys.",
             "materials": ""
         },
         {
-            "id": 3,
-            "title": "Wooden Magnets",
+            "id": "3",
+            "title": "Magnets",
             "description": "Wooden Magnets are made from the finest quality of wood. They are handcrafted with love. They are perfect for any occasion and can be used to hold your notes.",
             "materials": ""
         },
         {
-            "id": 4,
-            "title": "Wooden Ornaments",
+            "id": "4",
+            "title": "Ornaments",
             "description": "Wooden Ornaments are made from the finest quality of wood. They are handcrafted with love. They are perfect for the holiday season for gifts and decorating your own tree.",
             "materials": ""
         }
@@ -36,7 +36,7 @@
             "name": "Canada Brooch",
             "category": "0",
             "price": 10,
-            "description": "",
+            "description": "Prime Minister Justin Trudeau sums up Canada best:\n\"From dogsledding in the Northwest Territories to surfing in Tofino, from the history of Old Quebec to the vibrancy of multicultural Toronto, from breathtakingly empty prairie skies to the warm welcome on George St in St John's, from the thrill of skiing in the Rockies to the serenity of paddling past a moose in Algonquin Park-there's nowhere else on earth that offers the range of adventures that await you in Canada.\"\nHome of hockey and Tim Hortons, 2017 marks the 150th anniversary of Canada's Confederation, making it 150 years we've been on the \"eh\" team.\nThese brooches are laser cut from oak plywood, about 2 inches in height. They have hand painted details and are finished with a varnish sealant with a silver c clasp brooch pin. Due to the handmade nature of this item, each piece will be slightly different from another.\nAll pieces are designed and produced by myself at my home studio in St. John's, Newfoundland.",
             "size": "",
             "tags": [
                 "Brooch",
@@ -57,13 +57,60 @@
                     "alt": "Image of Canada Brooch - Plate"
                 }
             ],
-            "id": 0
+            "id": "0",
+            "reviews": [
+                {
+                    "reviewId": "112",
+                    "comment": "It's okay, does the job but nothing to write home about. Three stars.",
+                    "rating": 3
+                },
+                {
+                    "reviewId": "275",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "285",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "257",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "253",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "252",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "138",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "192",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "269",
+                    "comment": "",
+                    "rating": 4
+                }
+            ]
         },
         {
             "name": "Rowhouse Brooch - Orange and Blue",
             "category": "0",
-            "price": 10,
-            "description": "",
+            "price": 20,
+            "description": "Lovingly nicknamed Jellybean Row, colourful row houses line the streets of downtown St Johns. Green, blue, purple, red, orange... Every colour you can imagine, sometimes matching, sometimes clashing, combined with sloping hills all come together to create a unique visual you're not likely to find anywhere else. \nThese brooches are laser cut from maple plywood, about 2 inches in height. They have hand painted details and are finished with a varnish sealant with a silver c clasp brooch pin. Due to the handmade nature of this item and keeping in the spirit of Jellybean Row, each piece will be slightly different from another. \nAll pieces are designed and produced by myself at my home studio in St. John's, Newfoundland.",
             "size": "",
             "tags": [
                 "Brooch",
@@ -79,13 +126,60 @@
                     "alt": "Image of Rowhouse Brooch - Orange and Blue"
                 }
             ],
-            "id": 1
+            "id": "1",
+            "reviews": [
+                {
+                    "reviewId": "195",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "163",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "272",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "324",
+                    "comment": "",
+                    "rating": 3
+                },
+                {
+                    "reviewId": "313",
+                    "comment": "",
+                    "rating": 3
+                },
+                {
+                    "reviewId": "321",
+                    "comment": "",
+                    "rating": 3
+                },
+                {
+                    "reviewId": "109",
+                    "comment": "I bought this as a gift, and it was a huge hit. Will purchase again for the next occasion.",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "316",
+                    "comment": "",
+                    "rating": 3
+                },
+                {
+                    "reviewId": "293",
+                    "comment": "",
+                    "rating": 4
+                }
+            ]
         },
         {
             "name": "Rowhouse Brooch - Purple and Yellow",
             "category": "0",
-            "price": 10,
-            "description": "",
+            "price": 20,
+            "description": "Lovingly nicknamed Jellybean Row, colourful row houses line the streets of downtown St Johns. Green, blue, purple, red, orange... Every colour you can imagine, sometimes matching, sometimes clashing, combined with sloping hills all come together to create a unique visual you're not likely to find anywhere else. \nThese brooches are laser cut from maple plywood, about 2 inches in height. They have hand painted details and are finished with a varnish sealant with a silver c clasp brooch pin. Due to the handmade nature of this item and keeping in the spirit of Jellybean Row, each piece will be slightly different from another. \nAll pieces are designed and produced by myself at my home studio in St. John's, Newfoundland.",
             "size": "",
             "tags": [
                 "Brooch",
@@ -101,13 +195,60 @@
                     "alt": "Image of Rowhouse Brooch - Purple and Yellow"
                 }
             ],
-            "id": 2
+            "id": "2",
+            "reviews": [
+                {
+                    "reviewId": "275",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "148",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "178",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "130",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "146",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "229",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "157",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "247",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "108",
+                    "comment": "Super cute and gets lots of compliments every time I wear it out.",
+                    "rating": 5
+                }
+            ]
         },
         {
             "name": "Rowhouse Brooch - Red and Purple",
             "category": "0",
             "price": 10,
-            "description": "",
+            "description": "Lovingly nicknamed Jellybean Row, colourful row houses line the streets of downtown St Johns. Green, blue, purple, red, orange... Every colour you can imagine, sometimes matching, sometimes clashing, combined with sloping hills all come together to create a unique visual you're not likely to find anywhere else. \nThese brooches are laser cut from maple plywood, about 2 inches in height. They have hand painted details and are finished with a varnish sealant with a silver c clasp brooch pin. Due to the handmade nature of this item and keeping in the spirit of Jellybean Row, each piece will be slightly different from another. \nAll pieces are designed and produced by myself at my home studio in St. John's, Newfoundland.",
             "size": "",
             "tags": [
                 "Brooch",
@@ -123,13 +264,65 @@
                     "alt": "Image of Rowhouse Brooch - Red and Purple"
                 }
             ],
-            "id": 3
+            "id": "3",
+            "reviews": [
+                {
+                    "reviewId": "127",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "261",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "226",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "269",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "248",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "316",
+                    "comment": "",
+                    "rating": 3
+                },
+                {
+                    "reviewId": "300",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "210",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "208",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "197",
+                    "comment": "",
+                    "rating": 5
+                }
+            ]
         },
         {
             "name": "Labrador Brooch - Natural",
             "category": "0",
-            "price": 10,
-            "description": "",
+            "price": 15,
+            "description": "The Newfoundland and Labrador Labrador Region page says it the best:\n\"Labrador, The Big Land, one of the last untamed, unspoiled places left on earth. It stretches from the Strait of Belle Isle in the south, to Cape Chidley in the far north, boasting towering mountains, massive rock faces and an infinite supply of lakes and rivers, not to mention waters seasonally teeming with whales and icebergs. Here, you'll find plenty of fresh air, crystal clear water and truly authentic people.\"\nIt's a place that those who call home love fiercely, and a place that visitors wish they could call home. No matter if you're a Livyer or a CFA (Come From Away), with this Labrador map brooch showcasing Labrador City, you can take a little piece of The Big Land with you wherever you go.\nThese brooches are laser cut from oak plywood, about 2 inches in height. They have hand painted details and are finished with a varnish sealant with a silver c clasp brooch pin. Due to the handmade nature of this item, each piece will be slightly different from another.\nAll pieces are designed and produced by myself at my home studio in St. John's, Newfoundland.",
             "size": "",
             "tags": [
                 "Brooch",
@@ -148,13 +341,30 @@
                     "alt": "Image of Labrador Brooch - Plate"
                 }
             ],
-            "id": 4
+            "id": "4",
+            "reviews": [
+                {
+                    "reviewId": "190",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "134",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "258",
+                    "comment": "",
+                    "rating": 4
+                }
+            ]
         },
         {
             "name": "Labrador Brooch - Stained",
             "category": "0",
             "price": 10,
-            "description": "",
+            "description": "The Newfoundland and Labrador Labrador Region page says it the best:\n\"Labrador, The Big Land, one of the last untamed, unspoiled places left on earth. It stretches from the Strait of Belle Isle in the south, to Cape Chidley in the far north, boasting towering mountains, massive rock faces and an infinite supply of lakes and rivers, not to mention waters seasonally teeming with whales and icebergs. Here, you'll find plenty of fresh air, crystal clear water and truly authentic people.\"\nIt's a place that those who call home love fiercely, and a place that visitors wish they could call home. No matter if you're a Livyer or a CFA (Come From Away), with this Labrador map brooch showcasing Labrador City, you can take a little piece of The Big Land with you wherever you go.\nThese brooches are laser cut from oak plywood, about 2 inches in height. They have hand painted details and are finished with a varnish sealant with a silver c clasp brooch pin. Due to the handmade nature of this item, each piece will be slightly different from another.\nAll pieces are designed and produced by myself at my home studio in St. John's, Newfoundland.",
             "size": "",
             "tags": [
                 "Brooch",
@@ -174,13 +384,30 @@
                     "alt": "Image of Labrador Brooch - Plate"
                 }
             ],
-            "id": 5
+            "id": "5",
+            "reviews": [
+                {
+                    "reviewId": "295",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "297",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "323",
+                    "comment": "",
+                    "rating": 3
+                }
+            ]
         },
         {
             "name": "Newfoundland Brooch - Natural",
             "category": "0",
             "price": 10,
-            "description": "",
+            "description": "The Newfoundland and Labrador Tourism page says it the best:\n\"This is where the sun rises first. Where Vikings landed over 1,000 years ago. This place is home to the oldest settlement and the oldest city in North America, but is the youngest province of Canada. A vast land, with a relatively small population, Newfoundland and Labrador has some of the friendliest people you'll ever meet.\"\nIt's a place that those who call home love fiercely, and a place that visitors wish they could call home. No matter if you're a Livyer or a CFA (Come From Away), with this Newfoundland map brooch showcasing the capital St Johns, you can take a little piece of home with you wherever you go.\nThese brooches are laser cut from meranti plywood, about 2 inches in height. They have hand painted details and are finished with a varnish sealant with a silver c clasp brooch pin. Due to the handmade nature of this item, each piece will be slightly different from another.\nAll pieces are designed and produced by myself at my home studio in St. John's, Newfoundland.",
             "size": "",
             "tags": [
                 "Brooch",
@@ -199,13 +426,45 @@
                     "alt": "Image of Newfoundland Brooch - Plate"
                 }
             ],
-            "id": 6
+            "id": "6",
+            "reviews": [
+                {
+                    "reviewId": "286",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "112",
+                    "comment": "It's okay, does the job but nothing to write home about. Three stars.",
+                    "rating": 3
+                },
+                {
+                    "reviewId": "134",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "221",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "330",
+                    "comment": "",
+                    "rating": 3
+                },
+                {
+                    "reviewId": "185",
+                    "comment": "",
+                    "rating": 5
+                }
+            ]
         },
         {
             "name": "Newfoundland Brooch - Stained",
             "category": "0",
             "price": 10,
-            "description": "",
+            "description": "The Newfoundland and Labrador Tourism page says it the best:\n\"This is where the sun rises first. Where Vikings landed over 1,000 years ago. This place is home to the oldest settlement and the oldest city in North America, but is the youngest province of Canada. A vast land, with a relatively small population, Newfoundland and Labrador has some of the friendliest people you'll ever meet.\"\nIt's a place that those who call home love fiercely, and a place that visitors wish they could call home. No matter if you're a Livyer or a CFA (Come From Away), with this Newfoundland map brooch showcasing the capital St Johns, you can take a little piece of home with you wherever you go.\nThese brooches are laser cut from meranti plywood, about 2 inches in height. They have hand painted details and are finished with a varnish sealant with a silver c clasp brooch pin. Due to the handmade nature of this item, each piece will be slightly different from another.\nAll pieces are designed and produced by myself at my home studio in St. John's, Newfoundland.",
             "size": "",
             "tags": [
                 "Brooch",
@@ -225,13 +484,50 @@
                     "alt": "Image of Newfoundland Brooch - Plate"
                 }
             ],
-            "id": 7
+            "id": "7",
+            "reviews": [
+                {
+                    "reviewId": "130",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "173",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "293",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "265",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "134",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "239",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "155",
+                    "comment": "",
+                    "rating": 5
+                }
+            ]
         },
         {
             "name": "Puffin Brooch",
             "category": "0",
             "price": 10,
-            "description": "",
+            "description": "Beautiful maple stained Atlantic puffin earrings laser cut from Baltic birch. \nThe Atlantic puffin is the official bird of our home province of Newfoundland and Labrador. These little seabirds are only found in the Atlantic ocean and come to Newfoundland each year to nest. \nJust like the rest of us Newfoundlanders, though we may roam far from home, we always find our way back. \nStanding at just about an inch high, these little birds are on nickel-free, silver finish posts and although they are post backed stud earrings, they are long and do dangle a little bit.",
             "size": "",
             "tags": [
                 "Brooch",
@@ -245,13 +541,40 @@
                     "alt": "Image of Puffin Brooch - Plate"
                 }
             ],
-            "id": 8
+            "id": "8",
+            "reviews": [
+                {
+                    "reviewId": "245",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "253",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "298",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "329",
+                    "comment": "",
+                    "rating": 3
+                },
+                {
+                    "reviewId": "104",
+                    "comment": "Pretty good overall, but it arrived with a small scratch. Customer service was helpful, though.",
+                    "rating": 4
+                }
+            ]
         },
         {
             "name": "Partridgeberry Earrings",
             "category": "1",
             "price": 10,
-            "description": "",
+            "description": "Berry picking is a well-loved tradition in Newfoundland. No need to go to a farm or a u-pick, just grab a bucket or two and wander out into the woods and pick your own! \nWe've got orange bakeapples (also known as cloudberries outside of Newfoundland), red partridgeberries (also known as lingonberries outside of Newfoundland), and of course, blue blueberries! \nThese earrings are laser cut from Baltic birch plywood, about half an inch in height, handpainted, and finished with a varnish sealant. The posts and backs are silver plated and nickel free. Due to the handmade nature of this item, each piece will be slightly different from another. \nAll pieces are designed and produced by myself at my home studio in St. John's, Newfoundland.",
             "size": "",
             "tags": [
                 "Earrings",
@@ -271,13 +594,60 @@
                     "alt": "Image of Partridgeberry Earrings - Plate"
                 }
             ],
-            "id": 9
+            "id": "9",
+            "reviews": [
+                {
+                    "reviewId": "272",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "268",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "323",
+                    "comment": "",
+                    "rating": 3
+                },
+                {
+                    "reviewId": "243",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "293",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "137",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "307",
+                    "comment": "",
+                    "rating": 3
+                },
+                {
+                    "reviewId": "145",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "196",
+                    "comment": "",
+                    "rating": 5
+                }
+            ]
         },
         {
             "name": "Bakeapple Earrings",
             "category": "1",
             "price": 10,
-            "description": "",
+            "description": "Berry picking is a well-loved tradition in Newfoundland. No need to go to a farm or a u-pick, just grab a bucket or two and wander out into the woods and pick your own! \nWe've got orange bakeapples (also known as cloudberries outside of Newfoundland), red partridgeberries (also known as lingonberries outside of Newfoundland), and of course, blue blueberries! \nThese earrings are laser cut from Baltic birch plywood, about half an inch in height, handpainted, and finished with a varnish sealant. The posts and backs are silver plated and nickel free. Due to the handmade nature of this item, each piece will be slightly different from another. \nAll pieces are designed and produced by myself at my home studio in St. John's, Newfoundland.",
             "size": "",
             "tags": [
                 "Earrings",
@@ -292,13 +662,65 @@
                     "alt": "Image of Bakeapple Earrings - Plate"
                 }
             ],
-            "id": 10
+            "id": "10",
+            "reviews": [
+                {
+                    "reviewId": "213",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "186",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "321",
+                    "comment": "",
+                    "rating": 3
+                },
+                {
+                    "reviewId": "225",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "307",
+                    "comment": "",
+                    "rating": 3
+                },
+                {
+                    "reviewId": "221",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "171",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "236",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "160",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "200",
+                    "comment": "",
+                    "rating": 5
+                }
+            ]
         },
         {
             "name": "Blueberry Earrings",
             "category": "1",
             "price": 10,
-            "description": "",
+            "description": "Berry picking is a well-loved tradition in Newfoundland. No need to go to a farm or a u-pick, just grab a bucket or two and wander out into the woods and pick your own! \nWe've got orange bakeapples (also known as cloudberries outside of Newfoundland), red partridgeberries (also known as lingonberries outside of Newfoundland), and of course, blue blueberries! \nThese earrings are laser cut from Baltic birch plywood, about half an inch in height, handpainted, and finished with a varnish sealant. The posts and backs are silver plated and nickel free. Due to the handmade nature of this item, each piece will be slightly different from another. \nAll pieces are designed and produced by myself at my home studio in St. John's, Newfoundland.",
             "size": "",
             "tags": [
                 "Earrings",
@@ -313,13 +735,35 @@
                     "alt": "Image of Blueberry Earrings - Plate"
                 }
             ],
-            "id": 11
+            "id": "11",
+            "reviews": [
+                {
+                    "reviewId": "234",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "281",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "304",
+                    "comment": "",
+                    "rating": 3
+                },
+                {
+                    "reviewId": "285",
+                    "comment": "",
+                    "rating": 4
+                }
+            ]
         },
         {
             "name": "Casette Earrings",
             "category": "1",
             "price": 10,
-            "description": "",
+            "description": "These earrings are laser cut from oak plywood, about half an inch in height. They are finished with a varnish sealant and mounted to nickel free, stainless steel, silver posts. Due to the handmade nature of this item, each piece will be slightly different from another. \nAll pieces are designed and produced by myself at my home studio in St. John's, Newfoundland.",
             "size": "",
             "tags": [
                 "Earrings",
@@ -333,13 +777,30 @@
                     "alt": "Image of Casette Earrings - Plate"
                 }
             ],
-            "id": 12
+            "id": "12",
+            "reviews": [
+                {
+                    "reviewId": "253",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "105",
+                    "comment": "This is now my favorite item in my collection. Highly recommend to anyone looking for quality!",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "275",
+                    "comment": "",
+                    "rating": 4
+                }
+            ]
         },
         {
             "name": "Diamond Earrings",
             "category": "1",
             "price": 10,
-            "description": "",
+            "description": "These earrings are laser cut from oak plywood, about half an inch in height. They are finished with a varnish sealant and mounted to nickel free, stainless steel, silver posts. Due to the handmade nature of this item, each piece will be slightly different from another. \nAll pieces are designed and produced by myself at my home studio in St. John's, Newfoundland.",
             "size": "",
             "tags": [
                 "Earrings",
@@ -358,13 +819,60 @@
                     "alt": "Image of Diamond Earrings on card"
                 }
             ],
-            "id": 13
+            "id": "13",
+            "reviews": [
+                {
+                    "reviewId": "319",
+                    "comment": "",
+                    "rating": 3
+                },
+                {
+                    "reviewId": "234",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "103",
+                    "comment": "Exceeded my expectations! I will definitely be buying more products from this line.",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "318",
+                    "comment": "",
+                    "rating": 3
+                },
+                {
+                    "reviewId": "121",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "268",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "173",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "329",
+                    "comment": "",
+                    "rating": 3
+                },
+                {
+                    "reviewId": "223",
+                    "comment": "",
+                    "rating": 4
+                }
+            ]
         },
         {
             "name": "Hotdog Earring",
             "category": "1",
             "price": 10,
-            "description": "",
+            "description": "These earrings are laser cut from oak plywood, about 1/2\" in height and 1/4\" thick. They are finished with a varnish sealant and mounted to nickel free, stainless steel, silver posts. Due to the handmade nature of this item, each piece will be slightly different from another. \nAll pieces are designed and produced by myself at my home studio in Newfoundland.",
             "size": "",
             "tags": [
                 "Earrings",
@@ -383,13 +891,40 @@
                     "alt": "Image of Hotdog Earrings on card"
                 }
             ],
-            "id": 14
+            "id": "14",
+            "reviews": [
+                {
+                    "reviewId": "123",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "142",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "170",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "306",
+                    "comment": "",
+                    "rating": 3
+                },
+                {
+                    "reviewId": "237",
+                    "comment": "",
+                    "rating": 4
+                }
+            ]
         },
         {
             "name": "Labrador Earrings",
             "category": "1",
             "price": 10,
-            "description": "",
+            "description": "The Newfoundland and Labrador Labrador Region page says it the best:\n\"Labrador, The Big Land, one of the last untamed, unspoiled places left on earth. It stretches from the Strait of Belle Isle in the south, to Cape Chidley in the far north, boasting towering mountains, massive rock faces and an infinite supply of lakes and rivers, not to mention waters seasonally teeming with whales and icebergs. Here, you'll find plenty of fresh air, crystal clear water and truly authentic people.\"\nIt's a place that those who call home love fiercely, and a place that visitors wish they could call home. No matter if you're a Livyer or a CFA (Come From Away), with this Labrador map brooch showcasing Labrador City, you can take a little piece of The Big Land with you wherever you go.\nThese brooches are laser cut from oak plywood, about 2 inches in height. They have hand painted details and are finished with a varnish sealant. The posts and backs are silver plated and nickel free. Due to the handmade nature of this item, each piece will be slightly different from another.\nAll pieces are designed and produced by myself at my home studio in St. John's, Newfoundland.",
             "size": "",
             "tags": [
                 "Earrings",
@@ -413,13 +948,40 @@
                     "alt": "Image of Labrador Earrings - Plate - Dime"
                 }
             ],
-            "id": 15
+            "id": "15",
+            "reviews": [
+                {
+                    "reviewId": "255",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "243",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "182",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "203",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "300",
+                    "comment": "",
+                    "rating": 4
+                }
+            ]
         },
         {
             "name": "Leaf Earring - Green",
             "category": "1",
             "price": 10,
-            "description": "",
+            "description": "These earrings are laser cut from oak plywood, about half an inch in height. They are handpainted and finished with a varnish sealant and mounted to nickel free, stainless steel, silver posts. Due to the handmade nature of this item, each piece will be slightly different from another.",
             "size": "",
             "tags": [
                 "Earrings",
@@ -439,13 +1001,60 @@
                     "alt": "Image of Leaf Earrings on card"
                 }
             ],
-            "id": 16
+            "id": "16",
+            "reviews": [
+                {
+                    "reviewId": "235",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "161",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "246",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "292",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "192",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "136",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "149",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "135",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "323",
+                    "comment": "",
+                    "rating": 3
+                }
+            ]
         },
         {
             "name": "Leaf Earring - Red",
             "category": "1",
             "price": 10,
-            "description": "",
+            "description": "These earrings are laser cut from oak plywood, about half an inch in height. They are handpainted and finished with a varnish sealant and mounted to nickel free, stainless steel, silver posts. Due to the handmade nature of this item, each piece will be slightly different from another.",
             "size": "",
             "tags": [
                 "Earrings",
@@ -465,13 +1074,55 @@
                     "alt": "Image of Leaf Earrings - Plate - Dime"
                 }
             ],
-            "id": 17
+            "id": "17",
+            "reviews": [
+                {
+                    "reviewId": "206",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "325",
+                    "comment": "",
+                    "rating": 3
+                },
+                {
+                    "reviewId": "136",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "311",
+                    "comment": "",
+                    "rating": 3
+                },
+                {
+                    "reviewId": "283",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "294",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "318",
+                    "comment": "",
+                    "rating": 3
+                },
+                {
+                    "reviewId": "263",
+                    "comment": "",
+                    "rating": 4
+                }
+            ]
         },
         {
             "name": "Leaf Earring - Yellow",
             "category": "1",
             "price": 10,
-            "description": "",
+            "description": "These earrings are laser cut from oak plywood, about half an inch in height. They are handpainted and finished with a varnish sealant and mounted to nickel free, stainless steel, silver posts. Due to the handmade nature of this item, each piece will be slightly different from another.",
             "size": "",
             "tags": [
                 "Earrings",
@@ -491,13 +1142,65 @@
                     "alt": "Image of Leaf Earrings - Plate - Dime"
                 }
             ],
-            "id": 18
+            "id": "18",
+            "reviews": [
+                {
+                    "reviewId": "227",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "309",
+                    "comment": "",
+                    "rating": 3
+                },
+                {
+                    "reviewId": "213",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "327",
+                    "comment": "",
+                    "rating": 3
+                },
+                {
+                    "reviewId": "306",
+                    "comment": "",
+                    "rating": 3
+                },
+                {
+                    "reviewId": "272",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "186",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "103",
+                    "comment": "Exceeded my expectations! I will definitely be buying more products from this line.",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "271",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "325",
+                    "comment": "",
+                    "rating": 3
+                }
+            ]
         },
         {
             "name": "Leaf Earring - Orange",
             "category": "1",
             "price": 10,
-            "description": "",
+            "description": "These earrings are laser cut from oak plywood, about half an inch in height. They are handpainted and finished with a varnish sealant and mounted to nickel free, stainless steel, silver posts. Due to the handmade nature of this item, each piece will be slightly different from another.",
             "size": "",
             "tags": [
                 "Earrings",
@@ -517,13 +1220,40 @@
                     "alt": "Image of Leaf Earrings - Plate - Dime"
                 }
             ],
-            "id": 19
+            "id": "19",
+            "reviews": [
+                {
+                    "reviewId": "168",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "188",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "210",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "327",
+                    "comment": "",
+                    "rating": 3
+                },
+                {
+                    "reviewId": "174",
+                    "comment": "",
+                    "rating": 5
+                }
+            ]
         },
         {
             "name": "Maple Leaf Earrings - Natural",
             "category": "1",
             "price": 10,
-            "description": "",
+            "description": "These earrings are laser cut from oak plywood, about 1/2\" in height and 1/4\" thick. They are finished with a varnish sealant and mounted to nickel free, stainless steel, silver posts. Due to the handmade nature of this item, each piece will be slightly different from another. \nAll pieces are designed and produced by myself at my home studio in Newfoundland.",
             "size": "",
             "tags": [
                 "Earrings",
@@ -542,13 +1272,60 @@
                     "alt": "Image of Maple Leaf Earrings on card"
                 }
             ],
-            "id": 20
+            "id": "20",
+            "reviews": [
+                {
+                    "reviewId": "155",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "166",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "164",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "215",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "145",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "108",
+                    "comment": "Super cute and gets lots of compliments every time I wear it out.",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "102",
+                    "comment": "Decent quality for the price, but the color was a bit different from what I expected.",
+                    "rating": 3
+                },
+                {
+                    "reviewId": "221",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "110",
+                    "comment": "The size was perfect, exactly as described. Five stars for accuracy!",
+                    "rating": 5
+                }
+            ]
         },
         {
             "name": "Maple Leaf Earrings - Red",
             "category": "1",
             "price": 10,
-            "description": "",
+            "description": "These earrings are laser cut from oak plywood, about 1/2\" in height and 1/4\" thick. They are finished with a varnish sealant and mounted to nickel free, stainless steel, silver posts. Due to the handmade nature of this item, each piece will be slightly different from another. \nAll pieces are designed and produced by myself at my home studio in Newfoundland.",
             "size": "",
             "tags": [
                 "Earrings",
@@ -568,13 +1345,30 @@
                     "alt": "Image of Red Maple Leaf Earrings on card"
                 }
             ],
-            "id": 21
+            "id": "21",
+            "reviews": [
+                {
+                    "reviewId": "291",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "211",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "145",
+                    "comment": "",
+                    "rating": 5
+                }
+            ]
         },
         {
             "name": "Newfoundland Earrings",
             "category": "1",
             "price": 10,
-            "description": "",
+            "description": "The Newfoundland and Labrador Tourism page says it the best:\n\"This is where the sun rises first. Where Vikings landed over 1,000 years ago. This place is home to the oldest settlement and the oldest city in North America, but is the youngest province of Canada. A vast land, with a relatively small population, Newfoundland and Labrador has some of the friendliest people you'll ever meet.\"\nIt's a place that those who call home love fiercely, and a place that visitors wish they could call home. No matter if you're a Livyer or a CFA (Come From Away), with this Newfoundland map brooch showcasing the capital St Johns, you can take a little piece of home with you wherever you go.\nThese earrings are laser cut from maple plywood, about an inch and a half in height, hand painted, and finished with a varnish sealant. The posts and backs are silver plated and nickel free. Due to the handmade nature of this item, each piece will be slightly different from another.\nAll pieces are designed and produced by myself at my home studio in St. John's, Newfoundland.",
             "size": "",
             "tags": [
                 "Earrings",
@@ -593,7 +1387,44 @@
                     "alt": "Image of Newfoundland Earrings - Plate"
                 }
             ],
-            "id": 22
+            "id": "22",
+            "reviews": [
+                {
+                    "reviewId": "297",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "317",
+                    "comment": "",
+                    "rating": 3
+                },
+                {
+                    "reviewId": "171",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "183",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "165",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "299",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "115",
+                    "comment": "I had higher expectations based on the reviews. It's fine but nothing spectacular.",
+                    "rating": 3
+                }
+            ]
         },
         {
             "name": "Newfoundland and Labrador Earrings",
@@ -614,13 +1445,50 @@
                     "alt": "Image of Newfoundland and Labrador Earrings - Plate"
                 }
             ],
-            "id": 23
+            "id": "23",
+            "reviews": [
+                {
+                    "reviewId": "111",
+                    "comment": "Sadly, it broke after just a few uses. Not sure I'd risk buying again.",
+                    "rating": 1
+                },
+                {
+                    "reviewId": "319",
+                    "comment": "",
+                    "rating": 3
+                },
+                {
+                    "reviewId": "167",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "120",
+                    "comment": "Perfect! Just as pictured and described. It's always a gamble ordering online, but this was a win.",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "284",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "299",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "317",
+                    "comment": "",
+                    "rating": 3
+                }
+            ]
         },
         {
             "name": "Moonkitties Earrings",
             "category": "1",
             "price": 10,
-            "description": "",
+            "description": "These earrings are laser cut from oak plywood, about 1/2\" in height and 1/4\" thick. They are finished with a varnish sealant and mounted to nickel free, stainless steel, silver posts. Due to the handmade nature of this item, each piece will be slightly different from another. \nAll pieces are designed and produced by myself at my home studio in Newfoundland.",
             "size": "",
             "tags": [
                 "Earrings",
@@ -639,13 +1507,55 @@
                     "alt": "Image of Moonkitties Earrings on card"
                 }
             ],
-            "id": 24
+            "id": "24",
+            "reviews": [
+                {
+                    "reviewId": "220",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "276",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "240",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "307",
+                    "comment": "",
+                    "rating": 3
+                },
+                {
+                    "reviewId": "269",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "209",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "183",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "205",
+                    "comment": "",
+                    "rating": 5
+                }
+            ]
         },
         {
             "name": "Pineapple Earrings",
             "category": "1",
             "price": 10,
-            "description": "",
+            "description": "These earrings are laser cut from oak plywood, about 1/2\" in height and 1/4\" thick. They are finished with a varnish sealant and mounted to nickel free, stainless steel, silver posts. Due to the handmade nature of this item, each piece will be slightly different from another. \nAll pieces are designed and produced by myself at my home studio in Newfoundland.",
             "size": "",
             "tags": [
                 "Earrings",
@@ -664,13 +1574,55 @@
                     "alt": "Image of Pineapple Earrings on card"
                 }
             ],
-            "id": 25
+            "id": "25",
+            "reviews": [
+                {
+                    "reviewId": "196",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "150",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "304",
+                    "comment": "",
+                    "rating": 3
+                },
+                {
+                    "reviewId": "237",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "140",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "138",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "127",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "300",
+                    "comment": "",
+                    "rating": 4
+                }
+            ]
         },
         {
             "name": "Planner Earrings",
             "category": "1",
             "price": 10,
-            "description": "",
+            "description": "These earrings are laser cut from oak plywood, about 1/2\" in height and 1/4\" thick. They are finished with a varnish sealant and mounted to nickel free, stainless steel, silver posts. Due to the handmade nature of this item, each piece will be slightly different from another. \nAll pieces are designed and produced by myself at my home studio in Newfoundland.",
             "size": "",
             "tags": [
                 "Earrings",
@@ -689,13 +1641,30 @@
                     "alt": "Image of Planner Earrings - Plate - Dime"
                 }
             ],
-            "id": 26
+            "id": "26",
+            "reviews": [
+                {
+                    "reviewId": "288",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "173",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "319",
+                    "comment": "",
+                    "rating": 3
+                }
+            ]
         },
         {
             "name": "Ships Wheel Earrings",
             "category": "1",
             "price": 10,
-            "description": "",
+            "description": "These earrings are laser cut from oak plywood, about 1/2\" in height and 1/4\" thick. They are finished with a varnish sealant and mounted to nickel free, stainless steel, silver posts. Due to the handmade nature of this item, each piece will be slightly different from another. \nAll pieces are designed and produced by myself at my home studio in Newfoundland.",
             "size": "",
             "tags": [
                 "Earrings",
@@ -714,7 +1683,106 @@
                     "alt": "Image of Ships Wheel Earrings on card"
                 }
             ],
-            "id": 27
+            "id": "27",
+            "reviews": [
+                {
+                    "reviewId": "260",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "149",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "232",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "142",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "146",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "187",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "163",
+                    "comment": "",
+                    "rating": 5
+                }
+            ]
+        },
+        {
+            "name": "Strawberry Earrings",
+            "category": "1",
+            "price": 10,
+            "description": "These earrings are laser cut from oak plywood, about 1/2\" in height and 1/4\" thick. They are finished with a varnish sealant and mounted to nickel free, stainless steel, silver posts. Due to the handmade nature of this item, each piece will be slightly different from another. \nAll pieces are designed and produced by myself at my home studio in Newfoundland.",
+            "size": "",
+            "tags": [
+                "Earrings",
+                "Wood",
+                "Strawberry"
+            ],
+            "images": [
+                {
+                    "title": "Strawberry Earrings - Plate",
+                    "filepath": "/earrings/StrawberryEarringPlate.jpg",
+                    "alt": "Image of Strawberry Earrings - Plate"
+                },
+                {
+                    "title": "Strawberry Earrings - Card",
+                    "filepath": "/earrings/StrawberryEarringCard.jpg",
+                    "alt": "Image of Strawberry Earrings on card"
+                }
+            ],
+            "id": "28",
+            "reviews": [
+                {
+                    "reviewId": "147",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "179",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "200",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "154",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "276",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "116",
+                    "comment": "Incredible attention to detail and excellent customer service. I'm very satisfied.",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "254",
+                    "comment": "",
+                    "rating": 4
+                }
+            ]
         },
         {
             "name": "Strawberry Earrings",
@@ -739,38 +1807,65 @@
                     "alt": "Image of Strawberry Earrings on card"
                 }
             ],
-            "id": 28
-        },
-        {
-            "name": "Strawberry Earrings",
-            "category": "1",
-            "price": 10,
-            "description": "",
-            "size": "",
-            "tags": [
-                "Earrings",
-                "Wood",
-                "Strawberry"
-            ],
-            "images": [
+            "id": "29",
+            "reviews": [
                 {
-                    "title": "Strawberry Earrings - Plate",
-                    "filepath": "/earrings/StrawberryEarringPlate.jpg",
-                    "alt": "Image of Strawberry Earrings - Plate"
+                    "reviewId": "320",
+                    "comment": "",
+                    "rating": 3
                 },
                 {
-                    "title": "Strawberry Earrings - Card",
-                    "filepath": "/earrings/StrawberryEarringCard.jpg",
-                    "alt": "Image of Strawberry Earrings on card"
+                    "reviewId": "166",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "265",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "215",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "319",
+                    "comment": "",
+                    "rating": 3
+                },
+                {
+                    "reviewId": "117",
+                    "comment": "Colors are vibrant, and the design is unique. Stands out beautifully!",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "227",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "257",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "300",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "165",
+                    "comment": "",
+                    "rating": 5
                 }
-            ],
-            "id": 29
+            ]
         },
         {
             "name": "Succulent Earrings",
             "category": "1",
             "price": 10,
-            "description": "",
+            "description": "These earrings are laser cut from oak plywood, about 1/2\" in height and 1/4\" thick. They are finished with a varnish sealant and mounted to nickel free, stainless steel, silver posts. Due to the handmade nature of this item, each piece will be slightly different from another. \nAll pieces are designed and produced by myself at my home studio in Newfoundland.",
             "size": "",
             "tags": [
                 "Earrings",
@@ -789,13 +1884,30 @@
                     "alt": "Image of Succulent Earrings on card"
                 }
             ],
-            "id": 30
+            "id": "30",
+            "reviews": [
+                {
+                    "reviewId": "123",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "269",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "228",
+                    "comment": "",
+                    "rating": 4
+                }
+            ]
         },
         {
             "name": "Sushi Earrings",
             "category": "1",
             "price": 10,
-            "description": "",
+            "description": "These earrings are laser cut from oak plywood, about 1/2\" in height and 1/4\" thick. They are finished with a varnish sealant and mounted to nickel free, stainless steel, silver posts. Due to the handmade nature of this item, each piece will be slightly different from another. \nAll pieces are designed and produced by myself at my home studio in Newfoundland.",
             "size": "",
             "tags": [
                 "Earrings",
@@ -814,13 +1926,60 @@
                     "alt": "Image of Sushi Earrings on card"
                 }
             ],
-            "id": 31
+            "id": "31",
+            "reviews": [
+                {
+                    "reviewId": "208",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "163",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "247",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "226",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "293",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "313",
+                    "comment": "",
+                    "rating": 3
+                },
+                {
+                    "reviewId": "228",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "256",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "165",
+                    "comment": "",
+                    "rating": 5
+                }
+            ]
         },
         {
             "name": "Terrarium Earrings",
             "category": "1",
             "price": 10,
-            "description": "",
+            "description": "These earrings are laser cut from oak plywood, about 1/2\" in height and 1/4\" thick. They are finished with a varnish sealant and mounted to nickel free, stainless steel, silver posts. Due to the handmade nature of this item, each piece will be slightly different from another. \nAll pieces are designed and produced by myself at my home studio in Newfoundland.",
             "size": "",
             "tags": [
                 "Earrings",
@@ -839,13 +1998,30 @@
                     "alt": "Image of Terrarium Earrings on card"
                 }
             ],
-            "id": 32
+            "id": "32",
+            "reviews": [
+                {
+                    "reviewId": "210",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "143",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "190",
+                    "comment": "",
+                    "rating": 5
+                }
+            ]
         },
         {
             "name": "Togo Cup Earrings",
             "category": "1",
             "price": 10,
-            "description": "",
+            "description": "These earrings are laser cut from oak plywood, about 1/2\" in height and 1/4\" thick. They are finished with a varnish sealant and mounted to nickel free, stainless steel, silver posts. Due to the handmade nature of this item, each piece will be slightly different from another. \nAll pieces are designed and produced by myself at my home studio in Newfoundland.",
             "size": "",
             "tags": [
                 "Earrings",
@@ -866,13 +2042,65 @@
                     "alt": "Image of Togo Cup Earrings on card"
                 }
             ],
-            "id": 33
+            "id": "33",
+            "reviews": [
+                {
+                    "reviewId": "329",
+                    "comment": "",
+                    "rating": 3
+                },
+                {
+                    "reviewId": "140",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "318",
+                    "comment": "",
+                    "rating": 3
+                },
+                {
+                    "reviewId": "170",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "120",
+                    "comment": "Perfect! Just as pictured and described. It's always a gamble ordering online, but this was a win.",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "201",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "104",
+                    "comment": "Pretty good overall, but it arrived with a small scratch. Customer service was helpful, though.",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "150",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "197",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "158",
+                    "comment": "",
+                    "rating": 5
+                }
+            ]
         },
         {
             "name": "Whale Tail Earrings",
             "category": "1",
             "price": 10,
-            "description": "",
+            "description": "Newfoundland is one of the best places to go whale watching in the world, with people flocking to Newfoundland in hopes of a glimpse of that iconic whale tail. With over 22 species of whale visiting our coasts between May and September, these majestic beasts frolick and play in our waters, creating a spectacle for us to enjoy. \nFrom minke whales to blue whales and even orca, Newfoundland is also home to the world's largest population of humpbacks. The humpback fluke is a common sight on our shores, and is represented here in this earring!\nThese earrings are laser cut from maple plywood, about an inch in height, and finished with a varnish sealant. The posts and backs are silver plated and nickel free. Due to the handmade nature of this item, each piece will be slightly different from another.\nAll pieces are designed and produced by myself at my home studio in St. John's, Newfoundland.",
             "size": "",
             "tags": [
                 "Earrings",
@@ -891,13 +2119,45 @@
                     "alt": "Image of Whale Tail Earrings on card"
                 }
             ],
-            "id": 34
+            "id": "34",
+            "reviews": [
+                {
+                    "reviewId": "107",
+                    "comment": "Took a little longer to arrive than I anticipated, but it was well worth the wait!",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "199",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "301",
+                    "comment": "",
+                    "rating": 3
+                },
+                {
+                    "reviewId": "101",
+                    "comment": "Absolutely love it! The craftsmanship is top-notch and it's even more beautiful in person.",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "179",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "230",
+                    "comment": "",
+                    "rating": 4
+                }
+            ]
         },
         {
             "name": "Best Kind Keychain",
             "category": "2",
             "price": 10,
-            "description": "",
+            "description": "BEST KIND\nTranslation: General approval; in the best state or condition.\nInfluenced by mostly Western England and Southern Island accents (with a little French and Aboriginal thrown in), there are more varieties of English spoken in Newfoundland and Labrador than anywhere else in the world. \nIt's more than just accents too: we've got our very own dictionary and encyclopedia. The Dictionary of Newfoundland English was first published in 1982 and contains hundreds of words and phrases you'll find nowhere else.\nThese keychains are laser cut from oak plywood, about 2 inches in height. They are finished with a varnish sealant with a silver finish keychain. Due to the handmade nature of this item, each piece will be slightly different from another.\nAll pieces are designed and produced by myself at my home studio in St. John's, Newfoundland.",
             "size": "",
             "tags": [
                 "Keychains",
@@ -916,13 +2176,60 @@
                     "alt": "Image of Best Kind Keychain - Tag"
                 }
             ],
-            "id": 35
+            "id": "35",
+            "reviews": [
+                {
+                    "reviewId": "216",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "294",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "308",
+                    "comment": "",
+                    "rating": 3
+                },
+                {
+                    "reviewId": "189",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "221",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "271",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "222",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "238",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "123",
+                    "comment": "",
+                    "rating": 5
+                }
+            ]
         },
         {
             "name": "Dies at You Keychain",
             "category": "2",
             "price": 10,
-            "description": "",
+            "description": "I DIES AT YOU\nTranslation: You really crack me up! \nInfluenced by mostly Western England and Southern Island accents (with a little French and Aboriginal thrown in), there are more varieties of English spoken in Newfoundland and Labrador than anywhere else in the world. \nIt's more than just accents too: we've got our very own dictionary and encyclopedia. The Dictionary of Newfoundland English was first published in 1982 and contains hundreds of words and phrases you'll find nowhere else.\nThese keychains are laser cut from oak plywood, about 2 inches in height. They are finished with a varnish sealant with a silver finish keychain. Due to the handmade nature of this item, each piece will be slightly different from another.\nAll pieces are designed and produced by myself at my home studio in St. John's, Newfoundland.",
             "size": "",
             "tags": [
                 "Keychains",
@@ -941,13 +2248,40 @@
                     "alt": "Image of Dies at You Keychain - Tag"
                 }
             ],
-            "id": 36
+            "id": "36",
+            "reviews": [
+                {
+                    "reviewId": "131",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "228",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "300",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "278",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "108",
+                    "comment": "Super cute and gets lots of compliments every time I wear it out.",
+                    "rating": 5
+                }
+            ]
         },
         {
             "name": "Half Cut Keychain",
             "category": "2",
             "price": 10,
-            "description": "",
+            "description": "HALF CUT\nTranslation: Well on the way to being really drunk. \nInfluenced by mostly Western England and Southern Island accents (with a little French and Aboriginal thrown in), there are more varieties of English spoken in Newfoundland and Labrador than anywhere else in the world. \nIt's more than just accents too: we've got our very own dictionary and encyclopedia. The Dictionary of Newfoundland English was first published in 1982 and contains hundreds of words and phrases you'll find nowhere else.\nThese keychains are laser cut from oak plywood, about 2 inches in height. They are finished with a varnish sealant with a silver finish keychain. Due to the handmade nature of this item, each piece will be slightly different from another.\nAll pieces are designed and produced by myself at my home studio in St. John's, Newfoundland.",
             "size": "",
             "tags": [
                 "Keychains",
@@ -966,13 +2300,45 @@
                     "alt": "Image of Half Cut Keychain - Tag"
                 }
             ],
-            "id": 37
+            "id": "37",
+            "reviews": [
+                {
+                    "reviewId": "227",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "208",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "280",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "181",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "271",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "273",
+                    "comment": "",
+                    "rating": 4
+                }
+            ]
         },
         {
             "name": "Proper 'Ting Keychain",
             "category": "2",
             "price": 10,
-            "description": "",
+            "description": "PROPER TING\nTranslation: You're doing the right thing.\nInfluenced by mostly Western England and Southern Island accents (with a little French and Aboriginal thrown in), there are more varieties of English spoken in Newfoundland and Labrador than anywhere else in the world. \nIt's more than just accents too: we've got our very own dictionary and encyclopedia. The Dictionary of Newfoundland English was first published in 1982 and contains hundreds of words and phrases you'll find nowhere else.\nThese keychains are laser cut from oak plywood, about 2 inches in height. They are finished with a varnish sealant with a silver finish keychain. Due to the handmade nature of this item, each piece will be slightly different from another.\nAll pieces are designed and produced by myself at my home studio in St. John's, Newfoundland.",
             "size": "",
             "tags": [
                 "Keychains",
@@ -992,13 +2358,55 @@
                     "alt": "Image of Proper 'Ting Keychain - Tag"
                 }
             ],
-            "id": 38
+            "id": "38",
+            "reviews": [
+                {
+                    "reviewId": "209",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "187",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "183",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "281",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "220",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "117",
+                    "comment": "Colors are vibrant, and the design is unique. Stands out beautifully!",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "207",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "177",
+                    "comment": "",
+                    "rating": 5
+                }
+            ]
         },
         {
             "name": "Rotted Keychain",
             "category": "2",
             "price": 10,
-            "description": "",
+            "description": "ROTTED \nTranslation: A sour mood.\nInfluenced by mostly Western England and Southern Island accents (with a little French and Aboriginal thrown in), there are more varieties of English spoken in Newfoundland and Labrador than anywhere else in the world. \nIt's more than just accents too: we've got our very own dictionary and encyclopedia. The Dictionary of Newfoundland English was first published in 1982 and contains hundreds of words and phrases you'll find nowhere else.\nThese keychains are laser cut from oak plywood, about 2 inches in height. They are finished with a varnish sealant with a silver finish keychain. Due to the handmade nature of this item, each piece will be slightly different from another.\nAll pieces are designed and produced by myself at my home studio in St. John's, Newfoundland.",
             "size": "",
             "tags": [
                 "Keychains",
@@ -1017,13 +2425,35 @@
                     "alt": "Image of Rotted Keychain - Tag"
                 }
             ],
-            "id": 39
+            "id": "39",
+            "reviews": [
+                {
+                    "reviewId": "205",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "227",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "145",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "318",
+                    "comment": "",
+                    "rating": 3
+                }
+            ]
         },
         {
             "name": "Some Crooked Keychain",
             "category": "2",
             "price": 10,
-            "description": "",
+            "description": "SOME CROOKED \nTranslation: Very ill-tempered, cross, or cranky.\nInfluenced by mostly Western England and Southern Island accents (with a little French and Aboriginal thrown in), there are more varieties of English spoken in Newfoundland and Labrador than anywhere else in the world. \nIt's more than just accents too: we've got our very own dictionary and encyclopedia. The Dictionary of Newfoundland English was first published in 1982 and contains hundreds of words and phrases you'll find nowhere else.\nThese keychains are laser cut from oak plywood, about 2 inches in height. They are finished with a varnish sealant with a silver finish keychain. Due to the handmade nature of this item, each piece will be slightly different from another.\nAll pieces are designed and produced by myself at my home studio in St. John's, Newfoundland.",
             "size": "",
             "tags": [
                 "Keychains",
@@ -1042,13 +2472,30 @@
                     "alt": "Image of Some Crooked Keychain - Tag"
                 }
             ],
-            "id": 40
+            "id": "40",
+            "reviews": [
+                {
+                    "reviewId": "185",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "326",
+                    "comment": "",
+                    "rating": 3
+                },
+                {
+                    "reviewId": "271",
+                    "comment": "",
+                    "rating": 4
+                }
+            ]
         },
         {
             "name": "Townie Keychain",
             "category": "2",
             "price": 10,
-            "description": "",
+            "description": "TOWNIE \nTranslation: A native of St. John's, the opposite of a BAYMAN. \nInfluenced by mostly Western England and Southern Island accents (with a little French and Aboriginal thrown in), there are more varieties of English spoken in Newfoundland and Labrador than anywhere else in the world. \nIt's more than just accents too: we've got our very own dictionary and encyclopedia. The Dictionary of Newfoundland English was first published in 1982 and contains hundreds of words and phrases you'll find nowhere else.\nThese keychains are laser cut from oak plywood, about 2 inches in height. They are finished with a varnish sealant with a silver finish keychain. Due to the handmade nature of this item, each piece will be slightly different from another.\nAll pieces are designed and produced by myself at my home studio in St. John's, Newfoundland.",
             "size": "",
             "tags": [
                 "Keychains",
@@ -1067,13 +2514,30 @@
                     "alt": "Image of Townie Keychain - Tag"
                 }
             ],
-            "id": 41
+            "id": "41",
+            "reviews": [
+                {
+                    "reviewId": "322",
+                    "comment": "",
+                    "rating": 3
+                },
+                {
+                    "reviewId": "242",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "163",
+                    "comment": "",
+                    "rating": 5
+                }
+            ]
         },
         {
             "name": "RowHouse Magnet",
             "category": "3",
             "price": 10,
-            "description": "",
+            "description": "Lovingly nicknamed Jellybean Row, colourful row houses line the streets of downtown St Johns. Green, blue, purple, red, orange... Every colour you can imagine, sometimes matching, sometimes clashing, combined with sloping hills all come together to create a unique visual you're not likely to find anywhere else. \nThese magnets are laser cut from maple plywood, about 2 inches in height. They have hand painted details and are finished with a varnish sealant with magnet on the back. Due to the handmade nature of this item and keeping in the spirit of Jellybean Row, each piece will be slightly different from another. Colours will be sent at random.\nAll pieces are designed and produced by myself at my home studio in St. John's, Newfoundland.",
             "size": "",
             "tags": [
                 "Magnets",
@@ -1096,13 +2560,55 @@
                     "alt": "Image of RowHouse Magnet"
                 }
             ],
-            "id": 42
+            "id": "42",
+            "reviews": [
+                {
+                    "reviewId": "165",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "160",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "126",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "277",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "153",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "135",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "166",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "270",
+                    "comment": "",
+                    "rating": 4
+                }
+            ]
         },
         {
             "name": "Best Kind Ornament",
             "category": "4",
             "price": 10,
-            "description": "",
+            "description": "BEST KIND\nTranslation: Colloquial formula indicating general approval; in the best state or condition; FINEST KIND. \nInfluenced by mostly Western England and Southern Island accents (with a little French and Aboriginal thrown in), there are more varieties of English spoken in Newfoundland and Labrador than anywhere else in the world. \nIt's more than just accents too: we've got our very own dictionary and encyclopedia. The Dictionary of Newfoundland English was first published in 1982 and contains hundreds of words and phrases you'll find nowhere else.\nThese ornaments are laser cut from oak plywood, about 2 inches in height. They are finished with a varnish sealant with Newfoundland Tartan bow. Due to the handmade nature of this item, each piece will be slightly different from another.\nAll pieces are designed and produced by myself at my home studio in St. John's, Newfoundland.",
             "size": "",
             "tags": [
                 "Ornaments",
@@ -1121,13 +2627,65 @@
                     "alt": "Image of Best Kind Ornament - Detail"
                 }
             ],
-            "id": 43
+            "id": "43",
+            "reviews": [
+                {
+                    "reviewId": "329",
+                    "comment": "",
+                    "rating": 3
+                },
+                {
+                    "reviewId": "318",
+                    "comment": "",
+                    "rating": 3
+                },
+                {
+                    "reviewId": "186",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "255",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "154",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "113",
+                    "comment": "Impressed by the quality and the eco-friendly packaging. Great job on sustainability!",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "159",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "123",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "312",
+                    "comment": "",
+                    "rating": 3
+                },
+                {
+                    "reviewId": "241",
+                    "comment": "",
+                    "rating": 4
+                }
+            ]
         },
         {
             "name": "Dies at You Ornament",
             "category": "4",
             "price": 10,
-            "description": "",
+            "description": "I DIES AT YOU\nTranslation: You really crack me up!\nInfluenced by mostly Western England and Southern Island accents (with a little French and Aboriginal thrown in), there are more varieties of English spoken in Newfoundland and Labrador than anywhere else in the world. \nIt's more than just accents too: we've got our very own dictionary and encyclopedia. The Dictionary of Newfoundland English was first published in 1982 and contains hundreds of words and phrases you'll find nowhere else.\nThese ornaments are laser cut from oak plywood. They are finished with a varnish sealant with Newfoundland Tartan bow. Due to the handmade nature of this item, each piece will be slightly different from another.\nAll pieces are designed and produced by myself at my home studio in St. John's, Newfoundland.",
             "size": "",
             "tags": [
                 "Ornaments",
@@ -1146,13 +2704,55 @@
                     "alt": "Image of Dies at You Ornament - Detail"
                 }
             ],
-            "id": 44
+            "id": "44",
+            "reviews": [
+                {
+                    "reviewId": "285",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "233",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "283",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "197",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "252",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "161",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "190",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "329",
+                    "comment": "",
+                    "rating": 3
+                }
+            ]
         },
         {
             "name": "Mummers Ornament",
             "category": "4",
             "price": 10,
-            "description": "",
+            "description": "ANY MUMMERS 'LOWED IN?\nTranslation: An elaborately costumed and disguised person who participates in various group activities at Christmas. Are they allowed in?\nInfluenced by mostly Western England and Southern Island accents (with a little French and Aboriginal thrown in), there are more varieties of English spoken in Newfoundland and Labrador than anywhere else in the world. \nIt's more than just accents too: we've got our very own dictionary and encyclopedia. The Dictionary of Newfoundland English was first published in 1982 and contains hundreds of words and phrases you'll find nowhere else.\nThese ornaments are laser cut from oak plywood, about 2 inches in height. They are finished with a varnish sealant with Newfoundland Tartan bow. Due to the handmade nature of this item, each piece will be slightly different from another.\nAll pieces are designed and produced by myself at my home studio in St. John's, Newfoundland.",
             "size": "",
             "tags": [
                 "Ornaments",
@@ -1171,13 +2771,40 @@
                     "alt": "Image of Mummers Ornament - Detail"
                 }
             ],
-            "id": 45
+            "id": "45",
+            "reviews": [
+                {
+                    "reviewId": "143",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "211",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "141",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "248",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "268",
+                    "comment": "",
+                    "rating": 4
+                }
+            ]
         },
         {
             "name": "Oh Me Nerves Ornament",
             "category": "4",
             "price": 10,
-            "description": "",
+            "description": "OH ME NERVES\nTranslation: Slang for being annoyed, pestered, irritated. Another way of saying \"that gets on my nerves\" or \"my patience is gone\". \nInfluenced by mostly Western England and Southern Island accents (with a little French and Aboriginal thrown in), there are more varieties of English spoken in Newfoundland and Labrador than anywhere else in the world. \nIt's more than just accents too: we've got our very own dictionary and encyclopedia. The Dictionary of Newfoundland English was first published in 1982 and contains hundreds of words and phrases you'll find nowhere else.\nThese ornaments are laser cut from oak plywood, about 2 inches in height. They are finished with a varnish sealant with Newfoundland Tartan bow. Due to the handmade nature of this item, each piece will be slightly different from another.\nAll pieces are designed and produced by myself at my home studio in St. John's, Newfoundland.\n",
             "size": "",
             "tags": [
                 "Ornaments",
@@ -1197,13 +2824,45 @@
                     "alt": "Image of Oh Me Nerves Ornament - Detail"
                 }
             ],
-            "id": 46
+            "id": "46",
+            "reviews": [
+                {
+                    "reviewId": "298",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "271",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "299",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "318",
+                    "comment": "",
+                    "rating": 3
+                },
+                {
+                    "reviewId": "224",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "193",
+                    "comment": "",
+                    "rating": 5
+                }
+            ]
         },
         {
             "name": "Rant and Roar Ornament",
             "category": "4",
             "price": 10,
-            "description": "",
+            "description": "RANT AND ROAR\nTranslation: From the song Rant And Roar: \"We'll rant and we'll roar like true Newfoundlanders\".\nInfluenced by mostly Western England and Southern Island accents (with a little French and Aboriginal thrown in), there are more varieties of English spoken in Newfoundland and Labrador than anywhere else in the world. \nIt's more than just accents too: we've got our very own dictionary and encyclopedia. The Dictionary of Newfoundland English was first published in 1982 and contains hundreds of words and phrases you'll find nowhere else.\nThese ornaments are laser cut from oak plywood, about 2 inches in height. They are finished with a varnish sealant with Newfoundland Tartan bow. Due to the handmade nature of this item, each piece will be slightly different from another.\nAll pieces are designed and produced by myself at my home studio in St. John's, Newfoundland.",
             "size": "",
             "tags": [
                 "Ornaments",
@@ -1222,13 +2881,55 @@
                     "alt": "Image of Rant and Roar Ornament - Detail"
                 }
             ],
-            "id": 47
+            "id": "47",
+            "reviews": [
+                {
+                    "reviewId": "165",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "274",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "159",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "119",
+                    "comment": "Delivery was quick, and the product was well-packaged. No complaints here!",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "284",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "113",
+                    "comment": "Impressed by the quality and the eco-friendly packaging. Great job on sustainability!",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "114",
+                    "comment": "The material is sturdy and feels like it will last a long time. Also, very stylish.",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "182",
+                    "comment": "",
+                    "rating": 5
+                }
+            ]
         },
         {
             "name": "Tibbs Eve Ornament",
             "category": "4",
             "price": 10,
-            "description": "",
+            "description": "TIBB'S EVE\nTranslation: A celebration held on December 23 originating on the south coast of Newfoundland on the first night during Advent when it was appropriate to have a drink.\nInfluenced by mostly Western England and Southern Island accents (with a little French and Aboriginal thrown in), there are more varieties of English spoken in Newfoundland and Labrador than anywhere else in the world. \nIt's more than just accents too: we've got our very own dictionary and encyclopedia. The Dictionary of Newfoundland English was first published in 1982 and contains hundreds of words and phrases you'll find nowhere else.\nThese ornaments are laser cut from oak plywood, about 2 inches in height. They are finished with a varnish sealant with Newfoundland Tartan bow. Due to the handmade nature of this item, each piece will be slightly different from another.\nAll pieces are designed and produced by myself at my home studio in St. John's, Newfoundland.\n",
             "size": "",
             "tags": [
                 "Ornaments",
@@ -1247,13 +2948,50 @@
                     "alt": "Image of Tibbs Eve Ornament - Detail"
                 }
             ],
-            "id": 48
+            "id": "48",
+            "reviews": [
+                {
+                    "reviewId": "238",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "314",
+                    "comment": "",
+                    "rating": 3
+                },
+                {
+                    "reviewId": "232",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "147",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "132",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "326",
+                    "comment": "",
+                    "rating": 3
+                },
+                {
+                    "reviewId": "117",
+                    "comment": "Colors are vibrant, and the design is unique. Stands out beautifully!",
+                    "rating": 5
+                }
+            ]
         },
         {
             "name": "Whatta Y'at Ornament",
             "category": "4",
             "price": 10,
-            "description": "",
+            "description": "WHATTA Y'AT\nTranslation: What're you doing?\nInfluenced by mostly Western England and Southern Island accents (with a little French and Aboriginal thrown in), there are more varieties of English spoken in Newfoundland and Labrador than anywhere else in the world. \nIt's more than just accents too: we've got our very own dictionary and encyclopedia. The Dictionary of Newfoundland English was first published in 1982 and contains hundreds of words and phrases you'll find nowhere else.\nThese ornaments are laser cut from oak plywood, about 2 inches in height. They are finished with a varnish sealant with Newfoundland Tartan bow. Due to the handmade nature of this item, each piece will be slightly different from another.\nAll pieces are designed and produced by myself at my home studio in St. John's, Newfoundland.\n",
             "size": "",
             "tags": [
                 "Ornaments",
@@ -1274,13 +3012,55 @@
                     "alt": "Image of Whatta Y'at Ornament - Detail"
                 }
             ],
-            "id": 49
+            "id": "49",
+            "reviews": [
+                {
+                    "reviewId": "159",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "325",
+                    "comment": "",
+                    "rating": 3
+                },
+                {
+                    "reviewId": "125",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "269",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "132",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "230",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "312",
+                    "comment": "",
+                    "rating": 3
+                },
+                {
+                    "reviewId": "322",
+                    "comment": "",
+                    "rating": 3
+                }
+            ]
         },
         {
             "name": "Yes B'y",
             "category": "4",
             "price": 10,
-            "description": "",
+            "description": "YES B'Y\nTranslation: An expression Newfoundlanders use which could show the emotions of amazement, disbelief, agreement, etc. and also can be very sarcastic.\nInfluenced by mostly Western England and Southern Island accents (with a little French and Aboriginal thrown in), there are more varieties of English spoken in Newfoundland and Labrador than anywhere else in the world. \nIt's more than just accents too: we've got our very own dictionary and encyclopedia. The Dictionary of Newfoundland English was first published in 1982 and contains hundreds of words and phrases you'll find nowhere else.\nThese ornaments are laser cut from oak plywood, about 2 inches in height. They are finished with a varnish sealant with Newfoundland Tartan bow. Due to the handmade nature of this item, each piece will be slightly different from another.\nAll pieces are designed and produced by myself at my home studio in St. John's, Newfoundland.\n",
             "size": "",
             "tags": [
                 "Ornaments",
@@ -1299,7 +3079,49 @@
                     "alt": "Image of Yes B'y Ornament - Detail"
                 }
             ],
-            "id": 50
+            "id": "50",
+            "reviews": [
+                {
+                    "reviewId": "275",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "286",
+                    "comment": "",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "107",
+                    "comment": "Took a little longer to arrive than I anticipated, but it was well worth the wait!",
+                    "rating": 4
+                },
+                {
+                    "reviewId": "154",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "126",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "116",
+                    "comment": "Incredible attention to detail and excellent customer service. I'm very satisfied.",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "195",
+                    "comment": "",
+                    "rating": 5
+                },
+                {
+                    "reviewId": "223",
+                    "comment": "",
+                    "rating": 4
+                }
+            ]
         }
     ],
     "cart": [],
