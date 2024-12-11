@@ -10,12 +10,10 @@ const UpdateCart = (id, itemQuantity) => {
   
   const handleClick = () => {
     if (quantity === 0) {
-      removeFromCart(id),
-      console.log(`Removed from cart: ${id}`);
+      removeFromCart(id);
     }
     else if (quantity > 0) {
-      updateQuantity(id, quantity, setQuantity),
-      console.log(`Added to cart: ${id} ${quantity}`);
+      updateQuantity(id, quantity, setQuantity);
     }
   }
 
