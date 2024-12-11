@@ -54,8 +54,6 @@ function ProductDetails() {
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error: {error}</p>;
 
-  console.log("Product ID:", product);
-  console.log(`${imagePath}${product.images[0].filepath}`)
 
 
 
