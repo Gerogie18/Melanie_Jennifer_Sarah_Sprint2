@@ -1,8 +1,3 @@
-// This needs to look a little like the componant I called "delete" 
-// We need the state variables and functions defined here 
-// and then passed as props to different components. TO MAKE THEM GLOBAL...
-// We also need to routing (mostly done here)
-
 
 // Here are the functions we need: 
 // A mock server using JSON Server is implemented to handle data interactions. This fake API simulates the following endpoints:
@@ -28,23 +23,17 @@ import NotFound from "./pages/NotFound";
 
 function App() {
 
-  // const [productList, setProductList] = useState([])
-  // const [addedProducts, setAddedProducts] = useState(null); // Track products added to cart
   const location = useLocation();
   const [categories, setCategories] = useState([]);
   const [products, setProducts] = useState([]);
-  //const [product, setProduct] = useState([]);
-  const { fetchCart} = useContext(CartContext);
+  const { fetchCart } = useContext(CartContext);
 
     // Put the products fetched from the server in a products array...
     useEffect(() => {
       fetchCart()
       const getData = async () => {
-        const productsFromServer = await fetchProducts(); // this is an object ( {} )
-        const categoriesFromServer = await fetchCategories(); // this is an array ( [] )
-
-        //const productsArray = Object.values(productsFromServer); // Convert object to array
-
+        const productsFromServer = await fetchProducts();
+        const categoriesFromServer = await fetchCategories();
         setProducts(productsFromServer);
         setCategories(categoriesFromServer);
       };
@@ -65,26 +54,6 @@ function App() {
       const data = await res.json();
       return data;
     };  
-
- //   fetch ONE Product from Product from the server...
-
-  // useEffect(() => {
-  //   const fetchProduct = async (id) => {
-  //     try {
-  //       const response = await fetch(`http://localhost:5005/products/${id}`);
-  //       const data = await response.json();
-        
-  //       if (data.name) {
-  //         setProduct([data.name]);  // Set category array with the title
-  //       }
-
-  //     } catch (error) {
-  //       console.error('Failed to fetch data:', error);
-  //     }
-  //   };
-
-  //   fetchProduct();
-  // }, []);  // Empty dependency array to run only once on component mount
 
 
   return (

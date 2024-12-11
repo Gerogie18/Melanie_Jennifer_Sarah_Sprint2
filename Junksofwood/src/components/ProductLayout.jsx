@@ -7,6 +7,7 @@ const ProductLayout = ({categories, products}) => {
 
   const [filteredProducts, setFilteredProducts] = useState(products);
   const [desiredCategories, setDesiredCategories] = useState([]); 
+  const [desiredTags, setDesiredTags] = useState([]); 
 
 
   const catIDs = [];
@@ -19,15 +20,17 @@ const ProductLayout = ({categories, products}) => {
       setDesiredCategories(catIDs);
     }, [categories]);
   
-    
 
     useEffect(() => {
-    
-     let newproducts = products.filter(product => desiredCategories.includes(product.category))
-      setFilteredProducts(newproducts); // Set to products or apply filtering logic
-    }, [products, desiredCategories]); // Dependency array ensures effect runs only when products change
-  
-  
+      const newProducts = products.filter(product =>
+        desiredCategories.includes(product.category) &&
+        (desiredTags.length === 0 || product.tags.some(tag => desiredTags.includes(tag)))
+      );
+      setFilteredProducts(newProducts);
+    }, [products, desiredCategories, desiredTags]);
+
+
+     
     function handleCheckboxChange(event, catID) {
       if (event.target.checked) {
         setDesiredCategories(prev => [...prev, catID]);
@@ -37,30 +40,54 @@ const ProductLayout = ({categories, products}) => {
    }
 
 
+  //  function handleTagChange(tag) {
+  //     setDesiredTags(prev => prev.filter(id => id !== tag));
+  //     //also need to remove a div
+  //   }
+ 
+ 
+    function handleSearchChange(event) {
+      const tags = event.target.value;
+      if (!tags.trim()) {
+        setDesiredTags([]); // Reset if search is empty
+      } else {
+        setDesiredTags(tags.split(',').map(tag => tag.trim())); // Assuming comma-separated tags
+      }
+    }
+
+
   return (
     <>
-        <h1>Shop</h1>
-        <div className = "categorySelection">
+      <h1>Shop</h1>
+      <div className = "categorySelection">
         <p>This should be a sidebar</p>
         {categories.map((category) => (
           <div key={category.id}>
-          <label htmlFor={category.id}>{category.title}</label>
-          <input 
-          type="checkbox" 
-          id={category.id} 
-          name={category.id} 
-          onChange={(event) => handleCheckboxChange(event, category.id)}
-          checked={desiredCategories.includes(category.id)}
-          />
+            <label htmlFor={category.id}>{category.title}</label>
+            <input 
+            type="checkbox" 
+            id={category.id} 
+            name={category.id} 
+            onChange={(event) => handleCheckboxChange(event, category.id)}
+            checked={desiredCategories.includes(category.id)}
+            />
           </div>
         ))}
-        </div>
-
         <div>
-            <Outlet context={{ filteredProducts }}/>
+          <input 
+            type="search" 
+            placeholder="Search" 
+            className="search-bar" 
+            onChange={handleSearchChange} 
+            />
         </div>
-    </>
 
+      </div>
+
+      <div>
+            <Outlet context={{ filteredProducts }}/>
+      </div>
+    </>
   )
 };
 
