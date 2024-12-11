@@ -22,14 +22,11 @@ function ProductDetails() {
   const { productInCart } = useContext(CartContext);
   const [cartProduct, setCartProduct] = useState(null);
 
-  useEffect(() => {
-    if (productID) {
-      navigate(`/shop/${productID}`);
-    } else {
-      navigate('/shop');
-    }
-  }, [navigate]);
   const imagePath = '/assets/productimages';
+  if (!productID) {
+    navigate('/shop');
+    return null;
+  }
 
   useEffect(() => {
     const fetchProduct = async () => {
