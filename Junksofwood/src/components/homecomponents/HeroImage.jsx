@@ -5,8 +5,8 @@ function HeroImage(){
             <div className="hero_img_container">
                 <div className="hero_img">
                     <img
-                        src={"../assets/productimages/magnets/RowhouseMagnetWood.jpg"} 
-                        alt={"Hero Image"} /> Here is where we should place a Hero Image
+                        src={"/assets/marketingimages/meghanphotoshoot/meghannewfoundland.jpg"} 
+                        alt={"Image of Model in front of red and yellow building wearing Junks of wood Newfoundland Earrings"} /> Here is where we should place a Hero Image
                 </div>
             </div>
         </section>)
