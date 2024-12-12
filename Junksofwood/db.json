@@ -3124,62 +3124,6 @@
       ]
     }
   ],
-  "cart": [
-    {
-      "id": 0,
-      "quantity": 1,
-      "name": "Canada Brooch",
-      "price": 10,
-      "img": {
-        "title": "Canada Brooch - Card",
-        "filepath": "/brooches/CanadaBroochCard.jpg",
-        "alt": "Image of Canada Brooch on card"
-      }
-    },
-    {
-      "id": 1,
-      "quantity": 1,
-      "name": "Rowhouse Brooch - Orange and Blue",
-      "price": 20,
-      "img": {
-        "title": "Rowhouse Brooch - Orange and Blue",
-        "filepath": "/brooches/RowhouseBroochPlate_OrangeBlue.jpg",
-        "alt": "Image of Rowhouse Brooch - Orange and Blue"
-      }
-    },
-    {
-      "id": 31,
-      "quantity": 1,
-      "name": "Sushi Earrings",
-      "price": 10,
-      "img": {
-        "title": "Sushi Earrings - Plate",
-        "filepath": "/earrings/SushiEarringPlate.jpg",
-        "alt": "Image of Sushi Earrings - Plate"
-      }
-    },
-    {
-      "id": 39,
-      "quantity": 1,
-      "name": "Rotted Keychain",
-      "price": 10,
-      "img": {
-        "title": "Rotted Keychain - Plate",
-        "filepath": "/keychains/RottedKeychainPlate.jpg",
-        "alt": "Image of Rotted Keychain - Plate"
-      }
-    },
-    {
-      "id": 0,
-      "quantity": 1,
-      "name": "Canada Brooch",
-      "price": 10,
-      "img": {
-        "title": "Canada Brooch - Card",
-        "filepath": "/brooches/CanadaBroochCard.jpg",
-        "alt": "Image of Canada Brooch on card"
-      }
-    }
-  ],
+  "cart": [],
   "orders": []
 }
