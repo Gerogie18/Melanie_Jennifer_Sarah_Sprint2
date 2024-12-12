@@ -9,11 +9,6 @@ const ProductLayout = ({categories, products}) => {
   const [desiredCategories, setDesiredCategories] = useState([]); 
   const [desiredTags, setDesiredTags] = useState([]); 
 
-
-  const catIDs = [];
-  categories.forEach(category => {
-    catIDs.push(category.id)});
-
     useEffect(() => {
       // Initialize desiredCategories on mount
       const catIDs = categories.map(category => category.id);
@@ -59,8 +54,9 @@ const ProductLayout = ({categories, products}) => {
   return (
     <>
       <h1>Shop</h1>
-      <div className = "categorySelection">
-        <p>This should be a sidebar</p>
+      <div id="filter_selection" className = "filter_selection">
+        <h3>Filters</h3>
+        <h4>Categories</h4>
         {categories.map((category) => (
           <div key={category.id}>
             <label htmlFor={category.id}>{category.title}</label>
@@ -73,6 +69,7 @@ const ProductLayout = ({categories, products}) => {
             />
           </div>
         ))}
+        <h4>Search (or Tags?)</h4>
         <div>
           <input 
             type="search" 

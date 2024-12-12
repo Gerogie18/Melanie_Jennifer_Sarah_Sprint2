@@ -10,6 +10,10 @@ const Shop = () => {
     navigate(`/shop/${productId}`);
   };
 
+  // const handleCategoryClick = (categoryId) => {
+  //   navigate(`/shop/${categoryId}`);
+  // };
+
   return (
     <div>
       {filteredProducts.map((product) => (

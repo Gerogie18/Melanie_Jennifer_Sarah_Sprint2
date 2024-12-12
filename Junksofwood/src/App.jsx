@@ -16,6 +16,7 @@ import Home from "./pages/Home";
 import ProductLayout from "./components/ProductLayout";
 import Shop from "./pages/Shop";
 import ProductDetails from "./components/ProductDetails";
+import CategoryDetails from "./components/CategoryDetails";
 import About from "./pages/About";
 import Cart from "./pages/Cart";
 import Test from "./pages/Test";
@@ -65,6 +66,7 @@ function App() {
           <Route path="shop" element={<ProductLayout categories={categories} products={products}/>} >
             <Route index element={<Shop products={products}/>} />
             <Route path=":productID" element={<ProductDetails/>} />
+            <Route path=":categoryID" element={<CategoryDetails/>} />
           </Route>
           <Route path="about" element={<About />} />
           <Route path="cart" element={<Cart />} />

@@ -3126,6 +3126,17 @@
   ],
   "cart": [
     {
+      "id": 0,
+      "quantity": 1,
+      "name": "Canada Brooch",
+      "price": 10,
+      "img": {
+        "title": "Canada Brooch - Card",
+        "filepath": "/brooches/CanadaBroochCard.jpg",
+        "alt": "Image of Canada Brooch on card"
+      }
+    },
+    {
       "id": 1,
       "quantity": 1,
       "name": "Rowhouse Brooch - Orange and Blue",
@@ -3137,91 +3148,25 @@
       }
     },
     {
-      "id": 2,
+      "id": 31,
       "quantity": 1,
-      "name": "Rowhouse Brooch - Purple and Yellow",
-      "price": 20,
+      "name": "Sushi Earrings",
+      "price": 10,
       "img": {
-        "title": "Rowhouse Brooch - Purple and Yellow",
-        "filepath": "/brooches/RowhouseBroochPlate_PurpleYellow.jpg",
-        "alt": "Image of Rowhouse Brooch - Purple and Yellow"
+        "title": "Sushi Earrings - Plate",
+        "filepath": "/earrings/SushiEarringPlate.jpg",
+        "alt": "Image of Sushi Earrings - Plate"
       }
     },
     {
-      "id": 5,
+      "id": 39,
       "quantity": 1,
-      "name": "Labrador Brooch - Stained",
+      "name": "Rotted Keychain",
       "price": 10,
       "img": {
-        "title": "Labrador Brooch - Card",
-        "filepath": "/brooches/LabradorBroochCard.jpg",
-        "alt": "Image of Labrador Brooch on card"
-      }
-    },
-    {
-      "id": 6,
-      "quantity": 1,
-      "name": "Newfoundland Brooch - Natural",
-      "price": 10,
-      "img": {
-        "title": "Newfoundland Brooch - Card",
-        "filepath": "/brooches/NewfoundlandBroochCard.jpg",
-        "alt": "Image of Newfoundland Brooch on card"
-      }
-    },
-    {
-      "id": 6,
-      "quantity": 1,
-      "name": "Newfoundland Brooch - Natural",
-      "price": 10,
-      "img": {
-        "title": "Newfoundland Brooch - Card",
-        "filepath": "/brooches/NewfoundlandBroochCard.jpg",
-        "alt": "Image of Newfoundland Brooch on card"
-      }
-    },
-    {
-      "id": 12,
-      "quantity": 1,
-      "name": "Casette Earrings",
-      "price": 10,
-      "img": {
-        "title": "Casette Earrings - Plate",
-        "filepath": "/earrings/CasetteEarringPlate.jpg",
-        "alt": "Image of Casette Earrings - Plate"
-      }
-    },
-    {
-      "id": 6,
-      "quantity": 1,
-      "name": "Newfoundland Brooch - Natural",
-      "price": 10,
-      "img": {
-        "title": "Newfoundland Brooch - Card",
-        "filepath": "/brooches/NewfoundlandBroochCard.jpg",
-        "alt": "Image of Newfoundland Brooch on card"
-      }
-    },
-    {
-      "id": 21,
-      "quantity": 1,
-      "name": "Maple Leaf Earrings - Red",
-      "price": 10,
-      "img": {
-        "title": "Red Maple Leaf Earrings - Plate",
-        "filepath": "/earrings/MapleLeafEarringPlate_Red.jpg",
-        "alt": "Image of Red Maple Leaf Earrings - Plate"
-      }
-    },
-    {
-      "id": 16,
-      "quantity": 1,
-      "name": "Leaf Earring - Green",
-      "price": 10,
-      "img": {
-        "title": "Leaf Earrings - Plate",
-        "filepath": "/earrings/LeafEarringPlate_Green.jpg",
-        "alt": "Image of Leaf Earrings - Plate"
+        "title": "Rotted Keychain - Plate",
+        "filepath": "/keychains/RottedKeychainPlate.jpg",
+        "alt": "Image of Rotted Keychain - Plate"
       }
     }
   ],
