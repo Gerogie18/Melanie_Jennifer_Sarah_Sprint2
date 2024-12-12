@@ -13,10 +13,10 @@ import BreakpointProvider from "./utils/BreakpointProvider.jsx";
 import { CartProvider, CartContext } from './utils/CartProvider';
 import Layout from "./components/Layout"
 import Home from "./pages/Home";
-import ProductLayout from "./components/ProductLayout";
+import ShopLayout from "./components/shopcomponents/ShopLayout";
 import Shop from "./pages/Shop";
-import ProductDetails from "./components/ProductDetails";
-import CategoryDetails from "./components/CategoryDetails";
+import ProductDetails from "./components/shopcomponents/ProductDetails";
+import CategoryDetails from "./components/shopcomponents/CategoryDetails";
 import About from "./pages/About";
 import Cart from "./pages/Cart";
 import Test from "./pages/Test";
@@ -63,7 +63,7 @@ function App() {
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="shop" element={<ProductLayout categories={categories} products={products}/>} >
+          <Route path="shop" element={<ShopLayout categories={categories} products={products}/>} >
             <Route index element={<Shop products={products}/>} />
             <Route path=":productID" element={<ProductDetails/>} />
             <Route path=":categoryID" element={<CategoryDetails/>} />

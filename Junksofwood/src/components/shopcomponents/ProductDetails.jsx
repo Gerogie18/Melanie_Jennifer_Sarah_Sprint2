@@ -8,10 +8,10 @@
 
 import { useContext, useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { CartContext } from '../utils/CartProvider';
-import CartDiv from './cartcomponents/CartDiv.jsx';
+import { CartContext } from '../../utils/CartProvider';
+import CartDiv from '../cartcomponents/CartDiv';
 import PropTypes from 'prop-types';
-import formatDescription from '../utils/formatDescription';
+import formatDescription from '../../utils/formatDescription';
 
 function ProductDetails() {
   const { productID } = useParams();

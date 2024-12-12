@@ -3168,6 +3168,17 @@
         "filepath": "/keychains/RottedKeychainPlate.jpg",
         "alt": "Image of Rotted Keychain - Plate"
       }
+    },
+    {
+      "id": 0,
+      "quantity": 1,
+      "name": "Canada Brooch",
+      "price": 10,
+      "img": {
+        "title": "Canada Brooch - Card",
+        "filepath": "/brooches/CanadaBroochCard.jpg",
+        "alt": "Image of Canada Brooch on card"
+      }
     }
   ],
   "orders": []
