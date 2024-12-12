@@ -3,14 +3,15 @@ import PropTypes from 'prop-types';
 
 function ProductCard({ product, onClick }) {
 
-    const imagePath = '/assets/productimages';
+    const imagePath = '/assets/productthumbnails';
+    const imageSuffix = '_thumbnail.jpg'
 
     return (
         <div className="img-container">
             <h3>{product.name}</h3>
             <div className="img">
                 <img
-                    src={imagePath + product.images[0].filepath}
+                    src={imagePath + product.images[0].filepath + imageSuffix}
                     alt={product.images[0].alt}
                     onClick={onClick} />
             </div>
