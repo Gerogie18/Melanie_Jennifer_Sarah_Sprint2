@@ -62,12 +62,17 @@ function ProductDetails() {
         
         {product.images && (
           <div className="img-container">
-              <img 
-              src={imagePath + product.images[0].filepath} 
-              alt={product.images[0].alt} 
-              title={product.images[0].title} />
+            {product.images.map((image, index) => (
+              <div className="img" key={`${productID}-${index}`}> 
+                <img 
+                  src={imagePath + image.filepath} 
+                  alt={image.alt} 
+                  title={image.title} 
+                />
+              </div>
+            ))}
           </div>
-          )}
+        )}
       
         <p id="para">
           {formatDescription(product.description)}
