@@ -8,9 +8,9 @@ function SearchForm() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    setSearchParams({ q: searchQuery });
     const currentParams = new URLSearchParams(searchParams);
     currentParams.set("q", searchQuery);
+    setSearchParams(currentParams);
     navigate(`/shop?${currentParams.toString()}`);
   };
 

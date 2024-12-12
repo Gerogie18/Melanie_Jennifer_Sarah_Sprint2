@@ -1,8 +1,7 @@
 import { useNavigate, useSearchParams } from "react-router-dom";
-
 import PropTypes from 'prop-types';
 
-function CategoryForm({key, categoryId, label}) {
+function CategoryForm({ categoryId, label }) {
   const [searchParams, setSearchParams] = useSearchParams();
   const navigate = useNavigate();
 
@@ -19,16 +18,16 @@ function CategoryForm({key, categoryId, label}) {
     }
     searchParams.set("cat", newCategories.join(","));
     navigate(`?${searchParams.toString()}`);
-    }
+  }
 
 
   return (
-    <div key={key}>
+    <div key={`cat-cbform${categoryId}`}>
       <label htmlFor={categoryId}>{label}</label>
-      <input 
-        type="checkbox" 
-        id={categoryId} 
-        name={categoryId} 
+      <input
+        type="checkbox"
+        id={categoryId}
+        name={categoryId}
         onChange={handleCheckboxChange}
       />
     </div>
@@ -36,7 +35,6 @@ function CategoryForm({key, categoryId, label}) {
 }
 
 CategoryForm.propTypes = {
-  key: PropTypes.string.isRequired,
   categoryId: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,
 };
