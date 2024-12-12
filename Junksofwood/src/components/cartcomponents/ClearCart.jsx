@@ -6,8 +6,12 @@ const ClearCart = () => {
     const { clearCart } = useContext(CartContext);
     
     const handleClick = () => {
-        clearCart(),
+      try {
+        clearCart();
         console.log('Cart cleared');
+      } catch (error) {
+        console.error('Error clearing cart:', error);
+      }
     }
 
   return (

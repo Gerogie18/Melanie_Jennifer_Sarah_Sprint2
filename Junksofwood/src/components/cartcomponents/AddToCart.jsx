@@ -9,9 +9,10 @@ const AddToCart = ({id, name, price, img }) => {
     const [quantity, setQuantity] = useState(1);
     
     const handleClick = () => {
-        addToCart(id, quantity, name, price, img),
-        console.log(`Added to cart: ${name} ${quantity}`);
-    };
+        addToCart({ id, quantity, name, price, img }),
+        console.log(`Adding to cart: ${id}, ${quantity}, ${name}, ${price}, ${img}`);
+        console.log(`Added to cart: ${name} (${quantity})`);
+      };
 
   return (
     <div className="add-container">
@@ -36,7 +37,7 @@ const AddToCart = ({id, name, price, img }) => {
 export default AddToCart
 
 AddToCart.propTypes = {
-    id: PropTypes.number.isRequired,
+    id: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     price: PropTypes.number.isRequired,
     img: PropTypes.object.isRequired,

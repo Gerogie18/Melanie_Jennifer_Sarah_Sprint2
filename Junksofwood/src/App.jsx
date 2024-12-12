@@ -10,7 +10,7 @@
 import { useState, useEffect, useContext } from "react"
 import { Routes, Route, useLocation } from "react-router-dom";
 import BreakpointProvider from "./utils/BreakpointProvider.jsx";
-import { CartProvider, CartContext } from './utils/CartProvider';
+import { CartContext } from './utils/CartProvider';
 import Layout from "./components/Layout"
 import Home from "./pages/Home";
 import ShopLayout from "./components/shopcomponents/ShopLayout";
@@ -31,7 +31,6 @@ function App() {
 
     // Put the products fetched from the server in a products array...
     useEffect(() => {
-      fetchCart()
       const getData = async () => {
         const productsFromServer = await fetchProducts();
         const categoriesFromServer = await fetchCategories();
@@ -59,7 +58,6 @@ function App() {
 
   return (
     <BreakpointProvider>
-     <CartProvider>
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
@@ -74,7 +72,6 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Route>
         </Routes>
-      </CartProvider>
     </BreakpointProvider>
   )
 }
