@@ -1,9 +1,32 @@
 import { useOutletContext, useNavigate } from 'react-router-dom';
+import { useState } from 'react';
 import ProductCard from '../components/shopcomponents/ProductCard';
 
 const Shop = () => {
   const navigate = useNavigate();
   const { filteredProducts } = useOutletContext();
+  const [currentPage, setCurrentPage] = useState(1);
+  const productsPerPage = 9;
+
+  const indexOfLastProduct = currentPage * productsPerPage;
+  const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
+  const currentProducts = filteredProducts.slice(indexOfFirstProduct, indexOfLastProduct);
+
+  const handleNextPage = () => {
+    if (indexOfLastProduct < filteredProducts.length) {
+      setCurrentPage(currentPage + 1);
+    }
+  };
+
+  const handlePrevPage = () => {
+    if (indexOfLastProduct > filteredProducts.length) {
+      setCurrentPage(currentPage - 1);
+    }
+  };
+
+  // const handleDisplayAll = () => {
+  //   setCurrentPage(Math.ceil(filteredProducts.length / productsPerPage));
+  // };
 
   console.log('Received products:', filteredProducts);  // Check what's being received
 
@@ -17,13 +40,22 @@ const Shop = () => {
 
   return (
     <div>
-      {filteredProducts.map((product) => (
+      {currentProducts.map((product) => (
         <ProductCard 
           key={product.id} 
           product={product} 
           onClick={() => handleProductClick(product.id)} 
         />
       ))}
+      <div>
+        {indexOfLastProduct < filteredProducts.length && (
+          <button onClick={handlePrevPage}>Back</button>
+        )}
+        {indexOfLastProduct < filteredProducts.length && (
+          <button onClick={handleNextPage}>Next</button>
+        )}
+        {/* <button onClick={handleDisplayAll}>Display All</button> */}
+      </div>
     </div>
   );
 };

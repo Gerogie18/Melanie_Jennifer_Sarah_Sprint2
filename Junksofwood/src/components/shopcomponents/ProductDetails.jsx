@@ -14,6 +14,16 @@ import PropTypes from 'prop-types';
 import formatDescription from '../../utils/formatDescription';
 
 function ProductDetails() {
+  const handleBack = () => {
+    navigate('/shop');
+  };
+
+  useEffect(() => {
+    window.addEventListener('popstate', handleBack);
+    return () => {
+      window.removeEventListener('popstate', handleBack);
+    };
+  }, []);
   console.log('Product Details');
   const { productID } = useParams();
   const navigate = useNavigate();
