@@ -1263,12 +1263,12 @@
       "images": [
         {
           "title": "Maple Leaf Earrings - Plate",
-          "filepath": "/earrings/MapleLeafEarringPlate_Natural.jpg",
+          "filepath": "/earrings/MapleleafEarringPlate_Natural.jpg",
           "alt": "Image of Maple Leaf Earrings - Plate"
         },
         {
           "title": "Maple Leaf Earrings - Card",
-          "filepath": "/earrings/MapleLeafEarringCard_Natural.jpg",
+          "filepath": "/earrings/MapleleafEarringCard_Natural.jpg",
           "alt": "Image of Maple Leaf Earrings on card"
         }
       ],
@@ -1336,12 +1336,12 @@
       "images": [
         {
           "title": "Red Maple Leaf Earrings - Plate",
-          "filepath": "/earrings/MapleLeafEarringPlate_Red.jpg",
+          "filepath": "/earrings/MapleleafEarringPlate_Red.jpg",
           "alt": "Image of Red Maple Leaf Earrings - Plate"
         },
         {
           "title": "Red Maple Leaf Earrings - Card",
-          "filepath": "/earrings/MapleLeafEarringCard_Red.jpg",
+          "filepath": "/earrings/MapleleafEarringCard_Red.jpg",
           "alt": "Image of Red Maple Leaf Earrings on card"
         }
       ],
@@ -1383,7 +1383,7 @@
         },
         {
           "title": "Newfoundland Earrings - Plate",
-          "filepath": "/earrings/MapEarringPlate_Newfoundlandmap_.jpg",
+          "filepath": "/earrings/MapEarringPlate_Newfoundland.jpg",
           "alt": "Image of Newfoundland Earrings - Plate"
         }
       ],
@@ -2033,12 +2033,12 @@
       "images": [
         {
           "title": "Togo Cup Earrings - Plate",
-          "filepath": "/earrings/TogoCupEarringPlate.jpg",
+          "filepath": "/earrings/TogocupEarringPlate.jpg",
           "alt": "Image of Togo Cup Earrings - Plate"
         },
         {
           "title": "Togo Cup Earrings - Card",
-          "filepath": "/earrings/TogoCupEarringCard.jpg",
+          "filepath": "/earrings/TogocupEarringCard.jpg",
           "alt": "Image of Togo Cup Earrings on card"
         }
       ],
@@ -2110,12 +2110,12 @@
       "images": [
         {
           "title": "Whale Tail Earrings - Plate",
-          "filepath": "/earrings/WhaleTailEarringPlate.jpg",
+          "filepath": "/earrings/WhaletailEarringPlate.jpg",
           "alt": "Image of Whale Tail Earrings - Plate"
         },
         {
           "title": "Whale Tail Earrings - Card",
-          "filepath": "/earrings/WhaleTailEarringCard.jpg",
+          "filepath": "/earrings/WhaletailEarringCard.jpg",
           "alt": "Image of Whale Tail Earrings on card"
         }
       ],
@@ -3003,7 +3003,7 @@
       "images": [
         {
           "title": "Whatta Y'at Ornament - Plate",
-          "filepath": "/ornaments/WhattyaOrnamentPlate.jpg",
+          "filepath": "/ornaments/WhattayaOrnamentPlate.jpg",
           "alt": "Image of Whatta Y'at Ornament - Plate"
         },
         {

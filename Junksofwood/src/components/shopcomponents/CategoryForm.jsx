@@ -1,5 +1,8 @@
 import { useNavigate, useSearchParams } from "react-router-dom";
 import PropTypes from 'prop-types';
+import { useEffect } from "react";
+
+
 
 function CategoryForm({ categoryId, label }) {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -19,7 +22,15 @@ function CategoryForm({ categoryId, label }) {
     searchParams.set("cat", newCategories.join(","));
     navigate(`?${searchParams.toString()}`);
   }
-
+  useEffect(() => {
+    const catParam = searchParams.get("cat");
+    const currentCategories = catParam ? catParam.split(",") : [];
+    if (!currentCategories.includes(categoryId)) {
+      currentCategories.push(categoryId);
+      searchParams.set("cat", currentCategories.join(","));
+      setSearchParams(searchParams);
+    }
+  }, []);
 
   return (
     <div key={`cat-cbform${categoryId}`}>
@@ -29,6 +40,7 @@ function CategoryForm({ categoryId, label }) {
         id={categoryId}
         name={categoryId}
         onChange={handleCheckboxChange}
+        checked={searchParams.get("cat")?.split(",").includes(categoryId)}
       />
     </div>
   );
