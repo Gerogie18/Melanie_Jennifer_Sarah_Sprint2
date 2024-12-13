@@ -88,7 +88,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1em 2em;
+  padding: 0.5em 2em;
   background-color: var(--color-background);
   color: #0099a5;
   font-family: "Root Beer", Arial, Helvetica, sans-serif;
@@ -126,6 +126,34 @@ main {
   text-align: center;
 }
 
+/* Home Page */
+.hero_img_container {
+  display: center;
+  text-align: center; /* Centers the image within the container */
+  height: 45vh;
+  width: 100vw;
+  border-radius: none !important; /* Override any other border-radius */
+  margin-bottom: 20px;
+  overflow: hidden; /* Hide any overflow */
+}
+
+.hero_img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: none !important; /* Override any other border-radius */
+}
+
+.descrpt {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--color-font);
+  padding: 20px;
+  margin-left: 160px;
+  margin-right: 160px;
+  margin-bottom: 10px;
+}
+
 /* Images  */
 .img-container {
   width: 50%; /* Adjust the width as needed */
@@ -142,37 +170,12 @@ img {
   border-radius: 10px; /* Optional: rounds the corners of the image */
 }
 
-/* Home Page */
-.hero_img_container {
-  display: center;
-  text-align: center; /* Centers the image within the container */
-  height: 50vh;
-  width: 100%;
-  border-radius: 0;
-}
-
-.hero_img {
-  width: 100%;
-  object-fit: contain;
-  border-radius: 0;
-}
-
-.descrpt {
-  font-size: 16px;
-  font-family: Arial, Helvetica, sans-serif;
-  color: var(--color-font);
-  padding: 20px;
-  margin-left: 160px;
-  margin-right: 160px;
-  margin-bottom: 10px;
-}
-
 .arrivals_img {
   width: calc(
     33.333% - 20px
   ); /* Adjust the width to fit three images in a row, accounting for the gap */
   height: auto; /* Maintains the aspect ratio */
-  border-radius: 5px; /* Optional: rounds the corners of the image */
+  border-radius: 10px; /* Optional: rounds the corners of the image */
 }
 
 .arrivals_img_container {
@@ -184,6 +187,7 @@ img {
   border: 1px solid #ccc; /* Adds a border around the container */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds shadow for better visibility */
   text-align: center; /* Centers the image within the container */
+  border-radius: 10px; /* Optional: rounds the corners of the image */
 }
 
 .category_img_container {
@@ -195,6 +199,7 @@ img {
   border: 1px solid #ccc; /* Adds a border around the container */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds shadow for better visibility */
   text-align: center; /* Centers the image within the container */
+  border-radius: 10px; /* Optional: rounds the corners of the image */
 }
 
 .category_img {
@@ -269,7 +274,7 @@ button:focus {
 .promo-banner {
   width: 100vw;
   height: fit-content;
-  padding: 1em;
+  padding: 0.5em;
   background-color: var(--color-primary); /* Set a proper background */
   color: white; /* Ensure text color contrasts with background */
   font-family: "root beer";

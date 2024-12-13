@@ -1,12 +1,13 @@
 import React from 'react'
 import { NavLink } from "react-router-dom";
-import { FaCopyright } from "react-icons/fa";
+// import { FaRegCopyright } from "react-icons/fa6";
+import { PiCopyright } from "react-icons/pi";
 
 const FooterBar = () => {
   return (
     <footer>
       <span>
-        <FaCopyright /> Copyright JunksofWood 2024
+        <PiCopyright /> Copyright 2024 Junks of Wood. All Rights Reserved.
       </span>
       <NavLink to="/test" style={{textdecoration: 'none'}}>
         <button  style={{padding: '5px,', marginLeft: "20px"}}>Test</button>
