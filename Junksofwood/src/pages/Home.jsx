@@ -6,10 +6,10 @@ import LatestArrivals from "../components/homecomponents/LatestArrivals";
 const Home = () => {
   return (
     <div>
-      <h1>This is the home page</h1>
       <HeroImage></HeroImage>
+       <LatestArrivals></LatestArrivals>
       <CategorySection></CategorySection>
-      <LatestArrivals></LatestArrivals>
+     
     </div>
     )
 };
