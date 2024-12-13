@@ -18,7 +18,7 @@ const CartItem = memo(({ item }) => {
   return (
     <div key={item.id} className="cart-item">
       <img
-        src={`/assets/productimages${item.img.filepath}`}
+        src={`/assets/productthumbnails/${item.img.filepath}_thumbnail.jpg`}
         alt={item.img.alt}
         title={item.img.title}
       />
