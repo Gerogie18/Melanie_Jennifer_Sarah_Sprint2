@@ -18,9 +18,9 @@ function CategoryDetails(categoryID) {
 
     const fetchCategory = async () => {
       try {
-        const res = await fetch(`http://localhost:5005/categories/${categoryID}`);
+        const res = await fetch(`http://localhost:5005/categories/0`);
         if (!res.ok) {
-          throw new Error('Product not found');
+          throw new Error('Category not found');
         }
         const data = await res.json();
         setCategory(data);

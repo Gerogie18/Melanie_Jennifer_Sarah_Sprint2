@@ -31,7 +31,7 @@ const Shop = () => {
   console.log('Received products:', filteredProducts);  // Check what's being received
 
   const handleProductClick = (productId) => {
-    navigate(`/shop/${productId}`);
+    navigate(`/shop/product/${productId}`);
   };
 
   if (filteredProducts.length === 0) {
