@@ -3,12 +3,12 @@ import { CartContext } from '../../utils/CartProvider.jsx';
 import PropTypes from 'prop-types';
 import { IoBagRemove } from "react-icons/io5";
 
-const RemoveFromCart = (id) => {
+const RemoveFromCart = ( {id} ) => {
   const { removeFromCart } = useContext(CartContext);
 
   
   const handleClick = () => {
-    removeFromCart(id),
+    removeFromCart( {id} ),
     console.log(`Removed from cart: ${id}`);
   }
 
@@ -32,5 +32,5 @@ return (
 export default RemoveFromCart
 
 RemoveFromCart.propTypes = {
-  id: PropTypes.number
+  id: PropTypes.string
   };

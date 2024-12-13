@@ -6,7 +6,7 @@
     // § Available quantity
 // o Option to add the product to the cart.
 
-import { useContext, useState, useEffect } from 'react';
+import { useContext, useState, useEffect, useMemo } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { CartContext } from '../../utils/CartProvider';
 import CartDiv from '../cartcomponents/CartDiv';
@@ -14,13 +14,15 @@ import PropTypes from 'prop-types';
 import formatDescription from '../../utils/formatDescription';
 
 function ProductDetails() {
+  console.log('Product Details');
   const { productID } = useParams();
   const navigate = useNavigate();
   const [product, setProduct] = useState({});
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const { productInCart } = useContext(CartContext);
-  const [cartProduct, setCartProduct] = useState(null);
+  const { productInCart, cartChanged } = useContext(CartContext);
+  //the product in cart changes when the productID or cart changes
+  const cartProduct = useMemo(() => productInCart(productID), [productID, cartChanged]);
 
   const imagePath = '/assets/productimages';
 
@@ -40,19 +42,16 @@ function ProductDetails() {
         const data = await res.json();
         setProduct(data);
         setLoading(false);
-        setCartProduct(productInCart(productID));
       } catch (error) {
         setError(error.message);
         setLoading(false);
       }
     };
-
     fetchProduct();
   }, [productID, navigate]);
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error: {error}</p>;
-
 
 
   return (
@@ -78,7 +77,7 @@ function ProductDetails() {
           {formatDescription(product.description)}
         </p>
         <p>Price: ${product.price}</p>
-        <CartDiv productInCart={cartProduct} product={product} />
+        <CartDiv key={cartChanged} isLoading={loading} productInCart={cartProduct} product={product} />
       </div>
     </div>
   );

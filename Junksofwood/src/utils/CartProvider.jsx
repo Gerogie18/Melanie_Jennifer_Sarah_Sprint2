@@ -24,8 +24,13 @@ const CartProvider = ({ children }) => {
   }, [cartisEmpty])
 
   const productInCart = (productId) => {
-    console.log(productId);
-    return cart.find((item) => item.id === productId) || null;
+    if (cart.length > 0) {
+      console.log('Checking if product is in cart - productId:', productId);
+      // Ensure productId is of the same type as item.id (e.g., Number)
+      return cart.find((item) => item.id === productId) || null;
+    } else {
+      return null;
+    }
   };
 
   //testing:
@@ -150,10 +155,9 @@ const CartProvider = ({ children }) => {
     }
   };
 
-  const removeFromCart = async ( { id } ) => {
-    const index = cart.findIndex((item) => item.id === id);
+  const removeFromCart = async ({ id }) => {
     try {
-      const response = await fetch(`http://localhost:5005/cart/${index}`, {
+      const response = await fetch(`http://localhost:5005/cart/${id}`, {
         method: "DELETE",
         headers: { "Content-Type": "application/json" },
       });
@@ -163,7 +167,11 @@ const CartProvider = ({ children }) => {
       }
   
       const updatedCart = await response.json();
-      setCart(updatedCart);
+      if (cartLength !== 1) {
+        setCart(updatedCart);
+      } else {
+        setCart([]);
+      }
       new Audio(clearCartSound).play();
     } catch (error) {
       console.error("Error deleting item from cart:", error);
@@ -190,7 +198,7 @@ const CartProvider = ({ children }) => {
   };
 
   return (
-    <CartContext.Provider value={{ cart, setCart, clearCart, addToCart, updateQuantity }}>
+    <CartContext.Provider value={{ cart, cartLength, cartIcon, cartChanged, productInCart, setCart, clearCart, addToCart, removeFromCart, updateQuantity, finalizeCart}}>
       {children}
     </CartContext.Provider>
   );

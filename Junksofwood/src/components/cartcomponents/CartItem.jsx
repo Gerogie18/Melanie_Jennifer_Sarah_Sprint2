@@ -14,6 +14,7 @@ const CartItem = memo(({ item }) => {
 
   console.log(`this is in the cart: ${JSON.stringify(item, null, 2)}`);
   
+  
   return (
     <div key={item.id} className="cart-item">
       <img
@@ -23,8 +24,8 @@ const CartItem = memo(({ item }) => {
       />
       <h3>{item.name}</h3>
       <p>{formatPrice(item.price)}</p>
-      <UpdateCart id={Number(item.id)} itemQuantity={item.quantity} />
-      <RemoveFromCart item={item} />
+      <UpdateCart id={item.id} itemQuantity={item.quantity} />
+      <RemoveFromCart id={item.id}/>
       <p>{formatPriceTotal(item.price, item.quantity)}</p>
     </div>
   );
@@ -34,7 +35,7 @@ CartItem.displayName = 'CartItem';
 
 CartItem.propTypes = {
   item: PropTypes.shape({
-    id: PropTypes.number.isRequired,
+    id: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     price: PropTypes.number.isRequired,
     quantity: PropTypes.number.isRequired,

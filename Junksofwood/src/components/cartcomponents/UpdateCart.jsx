@@ -10,15 +10,17 @@ const UpdateCart = ({ id, itemQuantity }) => {
 
   const handleClick = () => {
     if (quantity === 0) {
-      removeFromCart(id);
+      console.log(`Removed from cart: ${id}`);
+      removeFromCart( {id} );
     } else if (quantity > 0) {
       try {
-        updateQuantity(id, quantity);
+        console.log(`Updating quantity: ${id}, ${quantity}`);
+        updateQuantity({ id, quantity });
       } catch (error) {
         console.error('Error updating quantity:', error);
       }
     }
-  }
+  };
 
   return (
     <div className="update-container">
@@ -45,6 +47,6 @@ const UpdateCart = ({ id, itemQuantity }) => {
 export default UpdateCart
 
 UpdateCart.propTypes = {
-  id: PropTypes.number.isRequired,
+  id: PropTypes.string.isRequired,
   itemQuantity: PropTypes.number.isRequired,
 };

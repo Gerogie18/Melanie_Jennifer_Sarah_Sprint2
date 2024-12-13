@@ -19,7 +19,7 @@ const CartDiv = ({ productInCart, product, isLoading }) => {
     <div>
       {productInCart && productInCart.id === product.id ? (
         <>
-          <UpdateCart id={Number(productInCart.id)} itemQuantity={productInCart.quantity} />
+          <UpdateCart id={productInCart.id} itemQuantity={productInCart.quantity} />
           <RemoveFromCart id={productInCart.id} />
         </>
       ) : (
