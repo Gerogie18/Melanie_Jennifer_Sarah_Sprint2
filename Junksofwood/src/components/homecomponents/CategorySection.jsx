@@ -2,7 +2,10 @@ function CategorySection(){
 
     return (
         <section id="category_section">
-            <h2>Category Section</h2>
+            <h1>Categories</h1>
+            <div className="descrpt"><p>Words go here, Melanie needs to think of Words<br></br>
+            Lots of words Lots of words Lots of words Lots of words Lots of words <br></br> Lots of words Lots of words Lots of words Lots of words Lots of words <br></br>Lots of words Lots of words Lots of words Lots of words</p>
+                </div>
             <div className="category_img_container">
                 <div className="category_img">
                     <img

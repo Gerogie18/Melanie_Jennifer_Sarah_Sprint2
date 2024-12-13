@@ -22,7 +22,7 @@
   --color-background: #f9f9f9;
   --color-focus: #242aea;
   --color-font: #282b3f;
-  --color-hover: #4e6e88;
+  --color-hover: #54ced1;
   --color-border: #cccccc;
 }
 
@@ -50,6 +50,7 @@ h1 {
   font-family: "Pacific Northwest", Times, serif;
   color: var(--color-primary);
   font-size: xx-large;
+  margin-top: 40px;
 }
 
 h2 {
@@ -125,7 +126,6 @@ main {
   text-align: center;
 }
 
-
 /* Images  */
 .img-container {
   width: 50%; /* Adjust the width as needed */
@@ -142,14 +142,38 @@ img {
   border-radius: 10px; /* Optional: rounds the corners of the image */
 }
 
-
 /* Home Page */
-.arrivals_img {
-  width: calc(33.333% - 20px); /* Adjust the width to fit three images in a row, accounting for the gap */
-  height: auto; /* Maintains the aspect ratio */
-  border-radius: 10px; /* Optional: rounds the corners of the image */
+.hero_img_container {
+  display: center;
+  text-align: center; /* Centers the image within the container */
+  height: 50vh;
+  width: 100%;
+  border-radius: 0;
 }
 
+.hero_img {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 0;
+}
+
+.descrpt {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--color-font);
+  padding: 20px;
+  margin-left: 160px;
+  margin-right: 160px;
+  margin-bottom: 10px;
+}
+
+.arrivals_img {
+  width: calc(
+    33.333% - 20px
+  ); /* Adjust the width to fit three images in a row, accounting for the gap */
+  height: auto; /* Maintains the aspect ratio */
+  border-radius: 5px; /* Optional: rounds the corners of the image */
+}
 
 .arrivals_img_container {
   display: flex;
@@ -161,9 +185,6 @@ img {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds shadow for better visibility */
   text-align: center; /* Centers the image within the container */
 }
-
-
-
 
 .category_img_container {
   display: flex;
@@ -177,11 +198,12 @@ img {
 }
 
 .category_img {
-  width: calc(33.333% - 20px); /* Adjust the width to fit three images in a row, accounting for the gap */
+  width: calc(
+    33.333% - 20px
+  ); /* Adjust the width to fit three images in a row, accounting for the gap */
   height: auto; /* Maintains the aspect ratio */
   border-radius: 10px; /* Optional: rounds the corners of the image */
 }
-
 
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
