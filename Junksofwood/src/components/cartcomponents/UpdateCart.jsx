@@ -4,7 +4,7 @@ import QuantityContainer from './QuantityContainer';
 import PropTypes from 'prop-types';
 import { IoBagCheck } from "react-icons/io5";
 
-const UpdateCart = ({ id, itemQuantity }) => {
+const UpdateCart = ({ id, itemQuantity, maxQuantity }) => {
   const { updateQuantity, removeFromCart } = useContext(CartContext);
   const [quantity, setQuantity] = useState(itemQuantity);
 
@@ -24,7 +24,7 @@ const UpdateCart = ({ id, itemQuantity }) => {
 
   return (
     <div className="update-container">
-      <QuantityContainer quantity={quantity} onChange={setQuantity} minQuantity={0} />
+      <QuantityContainer quantity={quantity} onChange={setQuantity} minQuantity={0} maxQuantity={maxQuantity} />
       <button
         className='update-button'
         title='Update Cart'
@@ -49,4 +49,5 @@ export default UpdateCart
 UpdateCart.propTypes = {
   id: PropTypes.string.isRequired,
   itemQuantity: PropTypes.number.isRequired,
+  maxQuantity: PropTypes.number.isRequired
 };
