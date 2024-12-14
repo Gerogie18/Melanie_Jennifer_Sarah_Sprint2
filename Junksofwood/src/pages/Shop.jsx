@@ -1,28 +1,55 @@
-import { useOutletContext } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useOutletContext, useNavigate } from 'react-router-dom';
 import ProductCard from '../components/shopcomponents/ProductCard';
 
 const Shop = () => {
 
   const { filteredProducts } = useOutletContext();
-  const [currentPage, setCurrentPage] = useState(1);
-  const productsPerPage = 9;
+  // Constants for back navigation
+  const navigate = useNavigate();
+  const [previousPage, setPreviousPage] = useState(null);
 
-  const indexOfLastProduct = currentPage * productsPerPage;
+  // Constants (state, function, etc) for handle products per page
+  const [currentImages, setCurrentImages] = useState(1);
+  const productsPerPage = 9;
+  const indexOfLastProduct = currentImages * productsPerPage;
   const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
   const currentProducts = filteredProducts.slice(indexOfFirstProduct, indexOfLastProduct);
-
-  const handleNextPage = () => {
+  
+  const handleNext = () => {
     if (indexOfLastProduct < filteredProducts.length) {
-      setCurrentPage(currentPage + 1);
+      setCurrentImages(currentImages + 1);
     }
   };
 
-  const handlePrevPage = () => {
+  const handlePrev = () => {
     if (indexOfLastProduct > filteredProducts.length) {
-      setCurrentPage(currentPage - 1);
+      setCurrentImages(currentImages - 1);
     }
   };
+
+
+  // Handles back navigation 
+  useEffect(() => {
+    // Store the previous page URL when the component mounts
+    const prevPage = document.referrer;
+    setPreviousPage(prevPage);
+
+    const handleBackNavigation = (event) => {
+      if (previousPage) {
+        window.location.href = previousPage;
+      } else {
+        navigate('/');
+      }
+    };
+
+    window.addEventListener('popstate', handleBackNavigation);
+
+    return () => {
+      window.removeEventListener('popstate', handleBackNavigation);
+    };
+  }, [previousPage, navigate]);
+
 
   // const handleDisplayAll = () => {
   //   setCurrentPage(Math.ceil(filteredProducts.length / productsPerPage));
@@ -30,9 +57,6 @@ const Shop = () => {
 
   console.log('Received products:', filteredProducts);  // Check what's being received
 
-  // const handleProductClick = (productId) => {
-  //   navigate(`/shop/product/${productId}`);
-  // };
 
   if (filteredProducts.length === 0) {
     return <div>No products found.</div>;  // Handle empty state
@@ -48,10 +72,10 @@ const Shop = () => {
       ))}
       <div>
         {indexOfLastProduct < filteredProducts.length && (
-          <button onClick={handlePrevPage}>Back</button>
+          <button onClick={handlePrev}>Back</button>
         )}
         {indexOfLastProduct < filteredProducts.length && (
-          <button onClick={handleNextPage}>Next</button>
+          <button onClick={handleNext}>Next</button>
         )}
         {/* <button onClick={handleDisplayAll}>Display All</button> */}
       </div>
@@ -60,90 +84,3 @@ const Shop = () => {
 };
 
 export default Shop;
-
-
-
-
-
-
-// import { useState, useEffect } from 'react';
-// import { useOutletContext, useNavigate, useSearchParams } from 'react-router-dom';
-// import ProductCard from '../components/shopcomponents/ProductCard';
-// import PropTypes from 'prop-types';
-
-// /**
-//  * Filters the products based on desired categories and tags.
-//  * 
-//  * @param {Array} products - The list of products to filter.
-//  * @param {Array} desiredCategories - The categories to filter by.
-//  * @param {Array} desiredTags - The tags to filter by.
-//  * @param {Function} setFilteredProducts - The function to set the filtered products.
-//  */
-// // function filterProducts(products, desiredCategories, desiredTags, setFilteredProducts) {
-// //   const newProducts = products.filter(product =>
-// //     desiredCategories.includes(product.category) &&
-// //     (desiredTags.length === 0 || product.tags.some(tag => desiredTags.includes(tag)))
-// //   );
-// //   setFilteredProducts(newProducts);
-// // }
-
-// const Shop = () => {
-//   const navigate = useNavigate();
-//   const { products } = useOutletContext();
-
-
-//   // const [filteredProducts, setFilteredProducts] = useState(products || []);
-//   // const [searchParams, setSearchParams] = useSearchParams();
-
-
-//   const handleProductClick = (productId) => {
-//     navigate(`/shop/${productId}`);
-//   };
-
-//   // useEffect(() => {
-//   //   const desiredCategories = searchParams.get('category')?.split(',') || [];
-//   //   const desiredTags = searchParams.get('tag')?.split(',') || [];
-
-//   //   const newSearchParams = new URLSearchParams();
-//   //   if (desiredCategories.length > 0) {
-//   //     newSearchParams.set('category', desiredCategories.join(','));
-//   //   }
-//   //   if (desiredTags.length > 0) {
-//   //     newSearchParams.set('tag', desiredTags.join(','));
-//   //   }
-
-//   //   if (newSearchParams.toString() !== searchParams.toString()) {
-//   //     setSearchParams(newSearchParams);
-//   //   }
-//   // }, []);
-
-  
-
-//   // useEffect(() => {
-//   //   const desiredCategories = searchParams.get('category')?.split(',') || [];
-//   //   const desiredTags = searchParams.get('tag')?.split(',') ?? [];
-  
-//   //   filterProducts(products, desiredCategories, desiredTags, setFilteredProducts);
-  
-//   // }, [searchParams, products]);
-
-
-
-
-//     return (
-//       <div>
-//         {filteredProducts.map((product) => (
-//           <ProductCard 
-//             key={product.id} 
-//             product={product} 
-//             onClick={() => handleProductClick(product.id)} 
-//           />
-//         ))}
-//       </div>
-//     );
-//   }
-// Shop.propTypes = {
-//   products: PropTypes.array.isRequired,
-
-// };
-// export default Shop;

@@ -14,20 +14,20 @@ import PropTypes from 'prop-types';
 import formatDescription from '../../utils/formatDescription';
 
 function ProductDetails() {
-  const handleBack = () => {
-    navigate('/shop');
-  };
-
+  const navigate = useNavigate();
   useEffect(() => {
+    const handleBack = () => {
+      navigate('/shop');
+    };
+
     window.addEventListener('popstate', handleBack);
     return () => {
       window.removeEventListener('popstate', handleBack);
     };
-  }, []);
+  }, [navigate]);
   
   console.log('Product Details');
   const { productID } = useParams();
-  const navigate = useNavigate();
   const [product, setProduct] = useState({});
   const [stockQty, setStockQty] = useState(0);
   const [loading, setLoading] = useState(true);
@@ -78,12 +78,6 @@ function ProductDetails() {
     fetchProduct();
     fetchStockQty();
   }, [productID, navigate]);
-
-
-
-
-
-
 
 
   if (loading) return <p>Loading...</p>;
