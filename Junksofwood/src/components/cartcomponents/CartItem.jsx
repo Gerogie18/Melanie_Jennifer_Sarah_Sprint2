@@ -2,7 +2,6 @@ import { memo } from 'react';
 import PropTypes from 'prop-types';
 import UpdateCart from './UpdateCart';
 import RemoveFromCart from './RemoveFromCart';
-import ProductCard from '../shopcomponents/ProductCard';
 
 const CartItem = memo(({ item }) => {
   const formatPrice = (price) => {
