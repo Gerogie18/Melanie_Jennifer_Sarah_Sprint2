@@ -3126,14 +3126,14 @@
   ],
   "cart": [
     {
-      "id": "50",
-      "quantity": 1,
-      "name": "Yes B'y",
+      "id": "45",
+      "quantity": 6,
+      "name": "Mummers Ornament",
       "price": 10,
       "img": {
-        "title": "Yes B'y Ornament - Plate",
-        "filepath": "/ornaments/YesbyOrnamentPlate.jpg",
-        "alt": "Image of Yes B'y Ornament - Plate"
+        "title": "Mummers Ornament - Plate",
+        "filepath": "/ornaments/MummersOrnamentPlate.jpg",
+        "alt": "Image of Mummers Ornament - Plate"
       }
     }
   ],
