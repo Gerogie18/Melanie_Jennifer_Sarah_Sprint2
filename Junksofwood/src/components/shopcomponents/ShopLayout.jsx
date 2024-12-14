@@ -27,6 +27,7 @@ function ShopLayout({ categories, products }) {
   const [desiredCategories, setDesiredCategories] = useState([]);
   const [desiredTags, setDesiredTags] = useState([]);
   const [searchQuery, setSearchQuery] = useState(searchParams.get("q") || "");
+  const allCategoryIDs = categories.map(category => category.id);
 
   useEffect(() => {
     const categoryParam = searchParams.get('cat');
@@ -53,7 +54,7 @@ function ShopLayout({ categories, products }) {
           <div id="category-options">
             <h3>Categories</h3>
             {categories.map(category => (
-              <CategoryForm key={category.id} categoryId={category.id} label={category.title} />
+              <CategoryForm key={category.id} categoryId={category.id} label={category.title} allCategoryIDs={allCategoryIDs}/>
             ))}
           </div>
           <div>

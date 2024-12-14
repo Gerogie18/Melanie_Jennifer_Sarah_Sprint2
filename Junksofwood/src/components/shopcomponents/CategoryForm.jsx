@@ -4,16 +4,15 @@ import { useEffect } from "react";
 
 
 
-function CategoryForm({ categoryId, label }) {
+function CategoryForm({ categoryId, label, allCategoryIDs }) {
   const [searchParams, setSearchParams] = useSearchParams();
   const navigate = useNavigate();
+  const catParam = searchParams.get("cat");
+  const currentCategories = catParam ? catParam.split(",") : [];
 
   // This function handles the change event for the category checkbox
   const handleCheckboxChange = (event) => {
-    const catParam = searchParams.get("cat");
-    const currentCategories = catParam ? catParam.split(",") : [];
     let newCategories;
-
     if (event.target.checked) {
       newCategories = [...currentCategories, categoryId];
     } else {
@@ -22,12 +21,17 @@ function CategoryForm({ categoryId, label }) {
     searchParams.set("cat", newCategories.join(","));
     navigate(`?${searchParams.toString()}`);
   }
+
   useEffect(() => {
-    const catParam = searchParams.get("cat");
-    const currentCategories = catParam ? catParam.split(",") : [];
-    if (!currentCategories.includes(categoryId)) {
-      currentCategories.push(categoryId);
-      searchParams.set("cat", currentCategories.join(","));
+
+    // if (!currentCategories.includes(categoryId)) {
+    //   currentCategories.push(categoryId);
+    //   searchParams.set("cat", currentCategories.join(","));
+    //   setSearchParams(searchParams);
+    if (currentCategories.length === 0) {
+      // Assuming categories is an array of all category IDs
+      //const allCategories = allCategoryIDs.map(category => category.id);
+      searchParams.set("cat", allCategoryIDs.join(","));
       setSearchParams(searchParams);
     }
   }, []);
@@ -49,6 +53,7 @@ function CategoryForm({ categoryId, label }) {
 CategoryForm.propTypes = {
   categoryId: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,
+  allCategoryIDs: PropTypes.array.isRequired,
 };
 
 export default CategoryForm;
