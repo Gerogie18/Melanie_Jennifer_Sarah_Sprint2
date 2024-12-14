@@ -21,15 +21,7 @@ const AddToCart = ({id, name, price, img, maxQuantity }) => {
             className='add-button'
             title='Add to cart'
             onClick={handleClick}
-            style={{
-                backgroundColor: 'none',
-                border: 'none',
-                color: 'blue',
-                cursor: 'pointer',
-                padding: '1em',
-                borderRadius: '5px',
-                fontSize: '1.2em',
-            }}><BsBagPlusFill /></button>
+            ><BsBagPlusFill /></button>
     </div>
   )
 }

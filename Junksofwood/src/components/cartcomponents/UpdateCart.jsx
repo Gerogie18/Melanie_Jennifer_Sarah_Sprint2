@@ -29,15 +29,6 @@ const UpdateCart = ({ id, itemQuantity, maxQuantity }) => {
         className='update-button'
         title='Update Cart'
         onClick={handleClick}
-        style={{
-          backgroundColor: 'none',
-          border: 'none',
-          color: 'green',
-          cursor: 'pointer',
-          padding: '1em',
-          borderRadius: '5px',
-          fontSize: '1.2em',
-        }}
       ><IoBagCheck /></button>
 
     </div>

@@ -60,6 +60,7 @@ const CartProvider = ({ children }) => {
         total += cart[i].price * cart[i].quantity;
       }
       return total;
+      console.log('Total:', total);
     }
 
   // Fetch the current cart from the server

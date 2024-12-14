@@ -17,15 +17,7 @@ return (
           className='update-button'
           title='Remove from Cart'
           onClick={handleClick}
-          style={{
-              backgroundColor: 'none',
-              border: 'none',
-              color: 'red',
-              cursor: 'pointer',
-              padding: '1em',
-              borderRadius: '5px',
-              fontSize: '1.2em',
-          }}><IoBagRemove /></button>
+          ><IoBagRemove /></button>
 )
 }
 

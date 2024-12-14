@@ -8,6 +8,7 @@ const CartContents = () => {
   const { cart, cartLength, cartTotal } = useContext(CartContext);
 
   const formatTotal = (cartTotal) => {
+    console.log(cartTotal);
     return `$${cartTotal.toFixed(2)}`;
   };
 
@@ -30,7 +31,7 @@ const CartContents = () => {
     <div className='cart-contents'>
      <h2>Shopping Cart</h2>
      {cartContents()}
-     {cartLength > 0 && <span>formatTotal</span>}
+     {cartLength > 0 && <span>{formatTotal}</span>}
         <div className="cart-buttons">
         <FinalizeCart />
         <ClearCart />
