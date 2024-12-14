@@ -1,9 +1,9 @@
-import { useOutletContext, useNavigate } from 'react-router-dom';
+import { useOutletContext } from 'react-router-dom';
 import { useState } from 'react';
 import ProductCard from '../components/shopcomponents/ProductCard';
 
 const Shop = () => {
-  const navigate = useNavigate();
+
   const { filteredProducts } = useOutletContext();
   const [currentPage, setCurrentPage] = useState(1);
   const productsPerPage = 9;
@@ -30,9 +30,9 @@ const Shop = () => {
 
   console.log('Received products:', filteredProducts);  // Check what's being received
 
-  const handleProductClick = (productId) => {
-    navigate(`/shop/product/${productId}`);
-  };
+  // const handleProductClick = (productId) => {
+  //   navigate(`/shop/product/${productId}`);
+  // };
 
   if (filteredProducts.length === 0) {
     return <div>No products found.</div>;  // Handle empty state
@@ -43,8 +43,7 @@ const Shop = () => {
       {currentProducts.map((product) => (
         <ProductCard 
           key={product.id} 
-          product={product} 
-          onClick={() => handleProductClick(product.id)} 
+          product={product}  
         />
       ))}
       <div>

@@ -416,3 +416,37 @@ button:focus {
   transform: translateY(-0.5rem);
 }
 
+/* Shop Container */
+.shop-container {
+  display: flex;
+  flex-direction: row; /* Arrange children in a row */
+  width: 100%;
+  min-height: 100vh; /* Ensure it takes the full height of the viewport */
+  border-style: double;
+  border-color: #0099a5;
+}
+
+/* Shop Sidebar */
+.shop-sidebar {
+  width: 25%; /* Adjust the width as needed */
+  background-color: var(--color-background); /* Optional: Add background color */
+  padding: 1em; /* Add padding for spacing */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for emphasis */
+  border-right: 1px solid var(--color-border); /* Optional: Add border to separate from content */
+}
+
+/* Shop Contents */
+.shop-contents {
+  width: 75%; /* Adjust the width as needed */
+  padding: 1em; /* Add padding for spacing */
+  background-color: var(--color-background); /* Optional: Add background color */
+  display: flex; 
+  flex-direction: row; /* Arrange children in a row */
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.shop-contents .product-container {
+width: calc(33.333% - 1em); /* Adjust the width to fit three images in a row, accounting for the gap */
+margin-bottom: 1em; /* Add spacing between rows */
+}
