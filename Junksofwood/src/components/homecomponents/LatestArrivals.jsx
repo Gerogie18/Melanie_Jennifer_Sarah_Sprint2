@@ -29,7 +29,7 @@ function LatestArrivals() {
         <div className="arrivals_img">
           <img
             src={
-              "../assets/productthumbnails/ornaments/TibbsOrnamentPlate.jpg_thumbnail.jpg"
+              "../assets/thumbnails/ornaments/TibbsOrnamentPlate_thumbnail.jpg"
             }
             alt={"product image"}
           />
@@ -37,7 +37,7 @@ function LatestArrivals() {
         <div className="arrivals_img">
           <img
             src={
-              "../assets/productthumbnails/ornaments/MummersOrnamentPlate.jpg_thumbnail.jpg"
+              "../assets/thumbnails/ornaments/MummersOrnamentPlate_thumbnail.jpg"
             }
             alt={"product image"}
           ></img>
@@ -45,7 +45,7 @@ function LatestArrivals() {
         <div className="arrivals_img">
           <img
             src={
-              "../assets/productthumbnails/ornaments/YesbyOrnamentPlate.jpg_thumbnail.jpg"
+              "../assets/thumbnails/ornaments/YesbyOrnamentPlate_thumbnail.jpg"
             }
             alt={"product image"}
           ></img>

@@ -28,7 +28,7 @@ function CategorySection() {
         <div className="category_img">
           <img
             src={
-              "../assets/productthumbnails/brooches/PuffinBroochPlate2.jpg_thumbnail.jpg"
+              "../assets/thumbnails/brooches/PuffinBroochPlate2_thumbnail.jpg"
             }
             alt={"product image"}
           ></img>
@@ -36,7 +36,7 @@ function CategorySection() {
         <div className="category_img">
           <img
             src={
-              "../assets/productthumbnails/earrings/MoonkittiesEarringCard.jpg_thumbnail.jpg"
+              "../assets/thumbnails/earrings/MoonkittiesEarringCard_thumbnail.jpg"
             }
             alt={"product image"}
           ></img>
@@ -44,7 +44,7 @@ function CategorySection() {
         <div className="category_img">
           <img
             src={
-              "../assets/productthumbnails/keychains/RottedKeychainPlateTag.jpg_thumbnail.jpg"
+              "../assets/thumbnails/keychains/RottedKeychainPlateTag_thumbnail.jpg"
             }
             alt={"product image"}
           ></img>
