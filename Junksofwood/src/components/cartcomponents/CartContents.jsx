@@ -32,10 +32,7 @@ const CartContents = () => {
      <h2>Shopping Cart</h2>
      {cartContents()}
      {cartLength > 0 && <span>{formatTotal}</span>}
-        <div className="cart-buttons">
-        <FinalizeCart />
         <ClearCart />
-        </div>
     </div>
   );
 };
