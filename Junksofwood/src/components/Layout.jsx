@@ -29,7 +29,7 @@ const Layout = () => {
                                 <NavLink to="/about">About</NavLink>
                             </li>
                             <li>
-                            <NavLink to="/cart">
+                            <NavLink to="/checkout">
                                 <span className="cart-icon">{cartIcon}</span>
                                 {(cartLength > 0) && (
                                     <span className="cart-length">{cartLength}</span>)}

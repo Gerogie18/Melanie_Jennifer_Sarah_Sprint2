@@ -18,7 +18,7 @@ import Shop from "./pages/Shop";
 import ProductDetails from "./components/shopcomponents/ProductDetails";
 import CategoryDetails from "./components/shopcomponents/CategoryDetails";
 import About from "./pages/About";
-import Cart from "./pages/Cart";
+import Checkout from "./pages/Checkout";
 import Test from "./pages/Test";
 import NotFound from "./pages/NotFound";
 
@@ -67,7 +67,7 @@ function App() {
             <Route path=":categoryID" element={<CategoryDetails/>} />
           </Route>
           <Route path="about" element={<About />} />
-          <Route path="cart" element={<Cart />} />
+          <Route path="checkout" element={<Checkout />} />
           <Route path="test" element={<Test />} />
           <Route path="*" element={<NotFound />} />
         </Route>
