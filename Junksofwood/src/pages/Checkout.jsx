@@ -8,17 +8,29 @@
   // o Option to proceed with payment or simulate the checkout process.
   // o Simple confirmation message upon checkout.
 
+import { useContext } from 'react'
 import PropTypes from "prop-types";
-import Slides from "../components/Slides.jsx";
+//import Slider from "../components/Slider.jsx";
+//import CartItem from "../components/CartItem.jsx";
+//import CheckoutAddressForm from "../components/checkoutcomponents/CheckoutAddressForm.jsx";
+//import CheckoutPersonalForm from "../components/checkoutcomponents/CheckoutPersonalForm.jsx";
+//import CheckoutFinal from "../components/checkoutcomponents/CheckoutFinal.jsx";
+//import CheckoutLoading from "../components/checkoutcomponents/CheckoutLoading.jsx";
+//import { CartContext } from "../utils/CartProvider.jsx";
 
-const Checkout = ({cartItems}) => {
-    return (
-    <div>
-      <h1>Checkout</h1>
-      <p>{cartItems}</p>;
+const Checkout = () => {
+  const { checkoutFinilized } = useContext(CartContext);
+
+  if (checkoutFinilized) { 
+
+    return <CheckoutLoading />;
+  }
+  return (
+    <div className='checkout-container'>
+      <p> oopsie </p>
     </div>
-    )
-  };
+  )
+};
   
 Checkout.propTypes = {
   cartItems: PropTypes.array.isRequired
