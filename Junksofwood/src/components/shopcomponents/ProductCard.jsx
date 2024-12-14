@@ -22,14 +22,13 @@ function ProductCard({ product }) {
                 <img
                     src={imagePath + getFileName(product.images[0].filepath) + imageSuffix}
                     alt={product.images[0].alt}
-                    onClick={handleProductClick(product.id)} />
+                    onClick={() => handleProductClick(product.id)} />
             </div>
         </div>
     );
 }    
     ProductCard.propTypes = {
-      product: PropTypes.object.isRequired,
-      onClick: PropTypes.func.isRequired,
+      product: PropTypes.object.isRequired
     };
 
 export default ProductCard
