@@ -1,10 +1,10 @@
-import { useEffect } from 'react';
+//import { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import AddToCart from './AddToCart.jsx';
 import RemoveFromCart from './RemoveFromCart.jsx';
 import UpdateCart from './UpdateCart.jsx';
 
-const CartDiv = ({ productInCart, product, isLoading }) => {
+const CartDiv = ({ productInCart, product, isLoading, stockQty }) => {
   console.log('CartDiv');
 
   if (isLoading || !product) {
@@ -19,11 +19,11 @@ const CartDiv = ({ productInCart, product, isLoading }) => {
     <div>
       {productInCart && productInCart.id === product.id ? (
         <>
-          <UpdateCart maxQuantity={product.stockQuantity} id={productInCart.id} itemQuantity={productInCart.quantity} />
+          <UpdateCart maxQuantity={stockQty} id={productInCart.id} itemQuantity={productInCart.quantity} />
           <RemoveFromCart id={productInCart.id} />
         </>
       ) : (
-        <AddToCart maxQuantity={product.stockQuantity}id={product.id} name={product.name} price={product.price} img={product.images[0]} />
+        <AddToCart maxQuantity={stockQty}id={product.id} name={product.name} price={product.price} img={product.images[0]} />
       )}
     </div>
   );
@@ -32,6 +32,8 @@ const CartDiv = ({ productInCart, product, isLoading }) => {
 CartDiv.propTypes = {
   productInCart: PropTypes.object,
   product: PropTypes.object.isRequired,
+  isLoading: PropTypes.bool,
+  stockQty: PropTypes.number.isRequired,
 };
 
 export default CartDiv;

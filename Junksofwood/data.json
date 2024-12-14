@@ -1263,12 +1263,12 @@
             "images": [
                 {
                     "title": "Maple Leaf Earrings - Plate",
-                    "filepath": "/earrings/MapleLeafEarringPlate_Natural.jpg",
+                    "filepath": "/earrings/MapleleafEarringPlate_Natural.jpg",
                     "alt": "Image of Maple Leaf Earrings - Plate"
                 },
                 {
                     "title": "Maple Leaf Earrings - Card",
-                    "filepath": "/earrings/MapleLeafEarringCard_Natural.jpg",
+                    "filepath": "/earrings/MapleleafEarringCard_Natural.jpg",
                     "alt": "Image of Maple Leaf Earrings on card"
                 }
             ],
@@ -1336,12 +1336,12 @@
             "images": [
                 {
                     "title": "Red Maple Leaf Earrings - Plate",
-                    "filepath": "/earrings/MapleLeafEarringPlate_Red.jpg",
+                    "filepath": "/earrings/MapleleafEarringPlate_Red.jpg",
                     "alt": "Image of Red Maple Leaf Earrings - Plate"
                 },
                 {
                     "title": "Red Maple Leaf Earrings - Card",
-                    "filepath": "/earrings/MapleLeafEarringCard_Red.jpg",
+                    "filepath": "/earrings/MapleleafEarringCard_Red.jpg",
                     "alt": "Image of Red Maple Leaf Earrings on card"
                 }
             ],
@@ -1383,7 +1383,7 @@
                 },
                 {
                     "title": "Newfoundland Earrings - Plate",
-                    "filepath": "/earrings/MapEarringPlate_Newfoundlandmap_.jpg",
+                    "filepath": "/earrings/MapEarringPlate_Newfoundland.jpg",
                     "alt": "Image of Newfoundland Earrings - Plate"
                 }
             ],
@@ -1674,12 +1674,12 @@
             "images": [
                 {
                     "title": "Ships Wheel Earrings - Plate",
-                    "filepath": "/earrings/ShipsWheelEarringPlate.jpg",
+                    "filepath": "/earrings/ShipswheelEarringPlate.jpg",
                     "alt": "Image of Ships Wheel Earrings - Plate"
                 },
                 {
                     "title": "Ships Wheel Earrings - Card",
-                    "filepath": "/earrings/ShipsWheelEarringCard.jpg",
+                    "filepath": "/earrings/ShipswheelEarringCard.jpg",
                     "alt": "Image of Ships Wheel Earrings on card"
                 }
             ],
@@ -2033,12 +2033,12 @@
             "images": [
                 {
                     "title": "Togo Cup Earrings - Plate",
-                    "filepath": "/earrings/TogoCupEarringPlate.jpg",
+                    "filepath": "/earrings/TogocupEarringPlate.jpg",
                     "alt": "Image of Togo Cup Earrings - Plate"
                 },
                 {
                     "title": "Togo Cup Earrings - Card",
-                    "filepath": "/earrings/TogoCupEarringCard.jpg",
+                    "filepath": "/earrings/TogocupEarringCard.jpg",
                     "alt": "Image of Togo Cup Earrings on card"
                 }
             ],
@@ -2110,12 +2110,12 @@
             "images": [
                 {
                     "title": "Whale Tail Earrings - Plate",
-                    "filepath": "/earrings/WhaleTailEarringPlate.jpg",
+                    "filepath": "/earrings/WhaletailEarringPlate.jpg",
                     "alt": "Image of Whale Tail Earrings - Plate"
                 },
                 {
                     "title": "Whale Tail Earrings - Card",
-                    "filepath": "/earrings/WhaleTailEarringCard.jpg",
+                    "filepath": "/earrings/WhaletailEarringCard.jpg",
                     "alt": "Image of Whale Tail Earrings on card"
                 }
             ],
@@ -3003,7 +3003,7 @@
             "images": [
                 {
                     "title": "Whatta Y'at Ornament - Plate",
-                    "filepath": "/ornaments/WhattyaOrnamentPlate.jpg",
+                    "filepath": "/ornaments/WhattayaOrnamentPlate.jpg",
                     "alt": "Image of Whatta Y'at Ornament - Plate"
                 },
                 {
@@ -3124,6 +3124,280 @@
             ]
         }
     ],
-    "cart": [],
-    "orders": []
+    "cart": [
+        {
+            "id": "50",
+            "quantity": 1,
+            "name": "Yes B'y",
+            "price": 10,
+            "img": {
+                "title": "Yes B'y Ornament - Plate",
+                "filepath": "/ornaments/YesbyOrnamentPlate.jpg",
+                "alt": "Image of Yes B'y Ornament - Plate"
+            }
+        }
+    ],
+    "orders": [],
+    "stock": [
+        {
+            "stockID": "0",
+            "productID": "0",
+            "stockQTY": 83
+        },
+        {
+            "stockID": "1",
+            "productID": "1",
+            "stockQTY": 19
+        },
+        {
+            "stockID": "2",
+            "productID": "2",
+            "stockQTY": 85
+        },
+        {
+            "stockID": "3",
+            "productID": "3",
+            "stockQTY": 4
+        },
+        {
+            "stockID": "4",
+            "productID": "4",
+            "stockQTY": 44
+        },
+        {
+            "stockID": "5",
+            "productID": "5",
+            "stockQTY": 28
+        },
+        {
+            "stockID": "6",
+            "productID": "6",
+            "stockQTY": 85
+        },
+        {
+            "stockID": "7",
+            "productID": "7",
+            "stockQTY": 51
+        },
+        {
+            "stockID": "8",
+            "productID": "8",
+            "stockQTY": 45
+        },
+        {
+            "stockID": "9",
+            "productID": "9",
+            "stockQTY": 46
+        },
+        {
+            "stockID": "10",
+            "productID": "10",
+            "stockQTY": 74
+        },
+        {
+            "stockID": "11",
+            "productID": "11",
+            "stockQTY": 75
+        },
+        {
+            "stockID": "12",
+            "productID": "12",
+            "stockQTY": 88
+        },
+        {
+            "stockID": "13",
+            "productID": "13",
+            "stockQTY": 66
+        },
+        {
+            "stockID": "14",
+            "productID": "14",
+            "stockQTY": 62
+        },
+        {
+            "stockID": "15",
+            "productID": "15",
+            "stockQTY": 73
+        },
+        {
+            "stockID": "16",
+            "productID": "16",
+            "stockQTY": 44
+        },
+        {
+            "stockID": "17",
+            "productID": "17",
+            "stockQTY": 78
+        },
+        {
+            "stockID": "18",
+            "productID": "18",
+            "stockQTY": 74
+        },
+        {
+            "stockID": "19",
+            "productID": "19",
+            "stockQTY": 37
+        },
+        {
+            "stockID": "20",
+            "productID": "20",
+            "stockQTY": 39
+        },
+        {
+            "stockID": "21",
+            "productID": "21",
+            "stockQTY": 75
+        },
+        {
+            "stockID": "22",
+            "productID": "22",
+            "stockQTY": 11
+        },
+        {
+            "stockID": "23",
+            "productID": "23",
+            "stockQTY": 26
+        },
+        {
+            "stockID": "24",
+            "productID": "24",
+            "stockQTY": 98
+        },
+        {
+            "stockID": "25",
+            "productID": "25",
+            "stockQTY": 16
+        },
+        {
+            "stockID": "26",
+            "productID": "26",
+            "stockQTY": 7
+        },
+        {
+            "stockID": "27",
+            "productID": "27",
+            "stockQTY": 28
+        },
+        {
+            "stockID": "28",
+            "productID": "28",
+            "stockQTY": 41
+        },
+        {
+            "stockID": "29",
+            "productID": "29",
+            "stockQTY": 63
+        },
+        {
+            "stockID": "30",
+            "productID": "30",
+            "stockQTY": 18
+        },
+        {
+            "stockID": "31",
+            "productID": "31",
+            "stockQTY": 69
+        },
+        {
+            "stockID": "32",
+            "productID": "32",
+            "stockQTY": 82
+        },
+        {
+            "stockID": "33",
+            "productID": "33",
+            "stockQTY": 27
+        },
+        {
+            "stockID": "34",
+            "productID": "34",
+            "stockQTY": 19
+        },
+        {
+            "stockID": "35",
+            "productID": "35",
+            "stockQTY": 13
+        },
+        {
+            "stockID": "36",
+            "productID": "36",
+            "stockQTY": 7
+        },
+        {
+            "stockID": "37",
+            "productID": "37",
+            "stockQTY": 93
+        },
+        {
+            "stockID": "38",
+            "productID": "38",
+            "stockQTY": 25
+        },
+        {
+            "stockID": "39",
+            "productID": "39",
+            "stockQTY": 28
+        },
+        {
+            "stockID": "40",
+            "productID": "40",
+            "stockQTY": 32
+        },
+        {
+            "stockID": "41",
+            "productID": "41",
+            "stockQTY": 50
+        },
+        {
+            "stockID": "42",
+            "productID": "42",
+            "stockQTY": 30
+        },
+        {
+            "stockID": "43",
+            "productID": "43",
+            "stockQTY": 7
+        },
+        {
+            "stockID": "44",
+            "productID": "44",
+            "stockQTY": 77
+        },
+        {
+            "stockID": "45",
+            "productID": "45",
+            "stockQTY": 37
+        },
+        {
+            "stockID": "46",
+            "productID": "46",
+            "stockQTY": 95
+        },
+        {
+            "stockID": "47",
+            "productID": "47",
+            "stockQTY": 92
+        },
+        {
+            "stockID": "48",
+            "productID": "48",
+            "stockQTY": 82
+        },
+        {
+            "stockID": "49",
+            "productID": "49",
+            "stockQTY": 53
+        },
+        {
+            "stockID": "50",
+            "productID": "50",
+            "stockQTY": 1
+        },
+        {
+            "stockID": "51",
+            "productID": "51",
+            "stockQTY": 20
+        }
+    ]
 }
