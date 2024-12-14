@@ -3126,6 +3126,7 @@
   ],
   "cart": [
     {
+<<<<<<< Updated upstream
       "id": "45",
       "quantity": 6,
       "name": "Mummers Ornament",
@@ -3395,4 +3396,18 @@
       "stockQTY": 1
     }
   ]
+=======
+      "id": "9",
+      "quantity": 1,
+      "name": "Partridgeberry Earrings",
+      "price": 10,
+      "img": {
+        "title": "Partridgeberry Earrings - Card",
+        "filepath": "/earrings/BerryEarringCard_Partridgeberry.jpg",
+        "alt": "Image of Partridgeberry Earrings on card"
+      }
+    }
+  ],
+  "orders": []
+>>>>>>> Stashed changes
 }

@@ -137,7 +137,7 @@ main {
   overflow: hidden; /* Hide any overflow */
 }
 
-.hero_img{
+.hero_img {
   width: 100%;
   border-radius: 0;
 }
@@ -158,6 +158,13 @@ main {
   margin-left: 160px;
   margin-right: 160px;
   margin-bottom: 10px;
+}
+
+.descrpt button {
+  color: white;
+  margin-top: 20px;
+  font-family: "root beer";
+  letter-spacing: 0.125cap;
 }
 
 /* Images  */
@@ -186,7 +193,9 @@ img {
 
 .arrivals_img_container {
   display: flex;
+  width: 80vw;
   justify-content: space-between;
+  margin: auto;
   flex-wrap: wrap;
   gap: 20px; /* Adjust the gap between images as needed */
   padding: 20px;
@@ -198,7 +207,9 @@ img {
 
 .category_img_container {
   display: flex;
+  width: 80vw;
   justify-content: space-between;
+  margin: auto;
   flex-wrap: wrap;
   gap: 20px; /* Adjust the gap between images as needed */
   padding: 20px;
@@ -224,6 +235,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 /* Footer */
 footer {
+  margin-top: 40px;
   width: 100%;
   background-color: var(--color-primary);
   font-family: "root beer";
