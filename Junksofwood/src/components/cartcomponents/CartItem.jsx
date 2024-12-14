@@ -24,7 +24,6 @@ const CartItem = memo(({ item }) => {
         title={item.img.title}
       />
       <h3>{item.name}</h3>
-      <ProductCard  product={item} />
       <p>{formatPrice(item.price)}</p>
       <UpdateCart id={item.id} itemQuantity={item.quantity} />
       <RemoveFromCart id={item.id}/>

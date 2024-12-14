@@ -18,7 +18,6 @@ function ProductCard({ product }) {
         <div className="product-container">
             <h3>{product.name}</h3>
             <div className="img">
-                // change made to prevent whitescreen
                 {product.images && product.images.length > 0 ? (
                     <img
                         src={
