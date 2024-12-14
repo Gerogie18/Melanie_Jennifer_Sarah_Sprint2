@@ -1,11 +1,10 @@
-
 import { useNavigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 function ProductCard({ product }) {
     const navigate = useNavigate();
     const imagePath = '/assets/thumbnails/';
-    const imageSuffix = '_thumbnail.jpg'
+    const imageSuffix = '_thumbnail.jpg';
 
     const getFileName = (filename) => {
         return filename.substring(0, filename.lastIndexOf('.'));
@@ -19,16 +18,36 @@ function ProductCard({ product }) {
         <div className="product-container">
             <h3>{product.name}</h3>
             <div className="img">
-                <img
-                    src={imagePath + getFileName(product.images[0].filepath) + imageSuffix}
-                    alt={product.images[0].alt}
-                    onClick={() => handleProductClick(product.id)} />
+                // change made to prevent whitescreen
+                {product.images && product.images.length > 0 ? (
+                    <img
+                        src={
+                            imagePath +
+                            getFileName(product.images[0].filepath) +
+                            imageSuffix
+                        }
+                        alt={product.images[0].alt}
+                        onClick={() => handleProductClick(product.id)}
+                    />
+                ) : (
+                    <p>No image available</p>
+                )}
             </div>
         </div>
     );
-}    
-    ProductCard.propTypes = {
-      product: PropTypes.object.isRequired
-    };
+}
 
-export default ProductCard
+ProductCard.propTypes = {
+    product: PropTypes.shape({
+        id: PropTypes.number.isRequired,
+        name: PropTypes.string.isRequired,
+        images: PropTypes.arrayOf(
+            PropTypes.shape({
+                filepath: PropTypes.string.isRequired,
+                alt: PropTypes.string.isRequired,
+            })
+        ),
+    }).isRequired,
+};
+
+export default ProductCard;
