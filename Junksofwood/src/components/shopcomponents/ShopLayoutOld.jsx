@@ -8,7 +8,7 @@ function ShopLayout({ categories, products }) {
   const [filteredProducts, setFilteredProducts] = useState(products);
   const [desiredCategories, setDesiredCategories] = useState([]);
   const [desiredTags, setDesiredTags] = useState([]);
-
+// comment
   useEffect(() => {
     // Initialize desiredCategories on mount
     const catIDs = categories.map(category => category.id);
