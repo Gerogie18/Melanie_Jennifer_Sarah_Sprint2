@@ -5,7 +5,7 @@ const PromoBanner = () => {
   return (
     <div className='promo-banner'>
       <Link to="/shop">
-        This is a promotion
+        Our holiday ornaments with make great gifts - Crafted in Newfoundland
       </Link>
     </div>
   )
