@@ -47,23 +47,23 @@ function ShopLayout({ categories, products }) {
       <div id="shop-header"> 
         <h1>Shop</h1>
       </div>
-    <div id="shop-container" className="shop-container">
-    <div id="shop-sidebar" className="shop-sidebar">
-        <h2>Filter</h2>
-        <div id="category-options">
-          <h3>Categories</h3>
-          {categories.map(category => (
-            <CategoryForm key={category.id} categoryId={category.id} label={category.title} />
-          ))}
+      <div id="shop-container" className="shop-container">
+        <div id="shop-sidebar" className="shop-sidebar">
+          <h2>Filter</h2>
+          <div id="category-options">
+            <h3>Categories</h3>
+            {categories.map(category => (
+              <CategoryForm key={category.id} categoryId={category.id} label={category.title} />
+            ))}
+          </div>
+          <div>
+            <SearchForm />
+          </div>
         </div>
-        <div>
-          <SearchForm />
-        </div>
-      </div>
-      <div id="shop-contents" className="shop-contents">
+        <div id="shop-contents" className="shop-contents">
         <Outlet context={{ filteredProducts }} />
+        </div>
       </div>
-    </div>
     </section>
   );
 }

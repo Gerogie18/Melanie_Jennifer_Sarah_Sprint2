@@ -3140,259 +3140,259 @@
   "orders": [],
   "stock": [
     {
-        "id": "0",
-        "productID": "0",
-        "stockQTY": 83
+      "id": "0",
+      "productID": "0",
+      "stockQTY": 83
     },
     {
-        "id": "1",
-        "productID": "1",
-        "stockQTY": 19
+      "id": "1",
+      "productID": "1",
+      "stockQTY": 19
     },
     {
-        "id": "2",
-        "productID": "2",
-        "stockQTY": 85
+      "id": "2",
+      "productID": "2",
+      "stockQTY": 85
     },
     {
-        "id": "3",
-        "productID": "3",
-        "stockQTY": 4
+      "id": "3",
+      "productID": "3",
+      "stockQTY": 4
     },
     {
-        "id": "4",
-        "productID": "4",
-        "stockQTY": 44
+      "id": "4",
+      "productID": "4",
+      "stockQTY": 44
     },
     {
-        "id": "5",
-        "productID": "5",
-        "stockQTY": 28
+      "id": "5",
+      "productID": "5",
+      "stockQTY": 28
     },
     {
-        "id": "6",
-        "productID": "6",
-        "stockQTY": 85
+      "id": "6",
+      "productID": "6",
+      "stockQTY": 85
     },
     {
-        "id": "7",
-        "productID": "7",
-        "stockQTY": 51
+      "id": "7",
+      "productID": "7",
+      "stockQTY": 51
     },
     {
-        "id": "8",
-        "productID": "8",
-        "stockQTY": 45
+      "id": "8",
+      "productID": "8",
+      "stockQTY": 45
     },
     {
-        "id": "9",
-        "productID": "9",
-        "stockQTY": 46
+      "id": "9",
+      "productID": "9",
+      "stockQTY": 46
     },
     {
-        "id": "10",
-        "productID": "10",
-        "stockQTY": 74
+      "id": "10",
+      "productID": "10",
+      "stockQTY": 74
     },
     {
-        "id": "11",
-        "productID": "11",
-        "stockQTY": 75
+      "id": "11",
+      "productID": "11",
+      "stockQTY": 75
     },
     {
-        "id": "12",
-        "productID": "12",
-        "stockQTY": 88
+      "id": "12",
+      "productID": "12",
+      "stockQTY": 88
     },
     {
-        "id": "13",
-        "productID": "13",
-        "stockQTY": 66
+      "id": "13",
+      "productID": "13",
+      "stockQTY": 66
     },
     {
-        "id": "14",
-        "productID": "14",
-        "stockQTY": 62
+      "id": "14",
+      "productID": "14",
+      "stockQTY": 62
     },
     {
-        "id": "15",
-        "productID": "15",
-        "stockQTY": 73
+      "id": "15",
+      "productID": "15",
+      "stockQTY": 73
     },
     {
-        "id": "16",
-        "productID": "16",
-        "stockQTY": 44
+      "id": "16",
+      "productID": "16",
+      "stockQTY": 44
     },
     {
-        "id": "17",
-        "productID": "17",
-        "stockQTY": 78
+      "id": "17",
+      "productID": "17",
+      "stockQTY": 78
     },
     {
-        "id": "18",
-        "productID": "18",
-        "stockQTY": 74
+      "id": "18",
+      "productID": "18",
+      "stockQTY": 74
     },
     {
-        "id": "19",
-        "productID": "19",
-        "stockQTY": 37
+      "id": "19",
+      "productID": "19",
+      "stockQTY": 37
     },
     {
-        "id": "20",
-        "productID": "20",
-        "stockQTY": 39
+      "id": "20",
+      "productID": "20",
+      "stockQTY": 39
     },
     {
-        "id": "21",
-        "productID": "21",
-        "stockQTY": 75
+      "id": "21",
+      "productID": "21",
+      "stockQTY": 75
     },
     {
-        "id": "22",
-        "productID": "22",
-        "stockQTY": 11
+      "id": "22",
+      "productID": "22",
+      "stockQTY": 11
     },
     {
-        "id": "23",
-        "productID": "23",
-        "stockQTY": 26
+      "id": "23",
+      "productID": "23",
+      "stockQTY": 26
     },
     {
-        "id": "24",
-        "productID": "24",
-        "stockQTY": 98
+      "id": "24",
+      "productID": "24",
+      "stockQTY": 98
     },
     {
-        "id": "25",
-        "productID": "25",
-        "stockQTY": 16
+      "id": "25",
+      "productID": "25",
+      "stockQTY": 16
     },
     {
-        "id": "26",
-        "productID": "26",
-        "stockQTY": 7
+      "id": "26",
+      "productID": "26",
+      "stockQTY": 7
     },
     {
-        "id": "27",
-        "productID": "27",
-        "stockQTY": 28
+      "id": "27",
+      "productID": "27",
+      "stockQTY": 28
     },
     {
-        "id": "28",
-        "productID": "28",
-        "stockQTY": 41
+      "id": "28",
+      "productID": "28",
+      "stockQTY": 41
     },
     {
-        "id": "29",
-        "productID": "29",
-        "stockQTY": 63
+      "id": "29",
+      "productID": "29",
+      "stockQTY": 63
     },
     {
-        "id": "30",
-        "productID": "30",
-        "stockQTY": 18
+      "id": "30",
+      "productID": "30",
+      "stockQTY": 18
     },
     {
-        "id": "31",
-        "productID": "31",
-        "stockQTY": 69
+      "id": "31",
+      "productID": "31",
+      "stockQTY": 69
     },
     {
-        "id": "32",
-        "productID": "32",
-        "stockQTY": 82
+      "id": "32",
+      "productID": "32",
+      "stockQTY": 82
     },
     {
-        "id": "33",
-        "productID": "33",
-        "stockQTY": 27
+      "id": "33",
+      "productID": "33",
+      "stockQTY": 27
     },
     {
-        "id": "34",
-        "productID": "34",
-        "stockQTY": 19
+      "id": "34",
+      "productID": "34",
+      "stockQTY": 19
     },
     {
-        "id": "35",
-        "productID": "35",
-        "stockQTY": 13
+      "id": "35",
+      "productID": "35",
+      "stockQTY": 13
     },
     {
-        "id": "36",
-        "productID": "36",
-        "stockQTY": 7
+      "id": "36",
+      "productID": "36",
+      "stockQTY": 7
     },
     {
-        "id": "37",
-        "productID": "37",
-        "stockQTY": 93
+      "id": "37",
+      "productID": "37",
+      "stockQTY": 93
     },
     {
-        "id": "38",
-        "productID": "38",
-        "stockQTY": 25
+      "id": "38",
+      "productID": "38",
+      "stockQTY": 25
     },
     {
-        "id": "39",
-        "productID": "39",
-        "stockQTY": 28
+      "id": "39",
+      "productID": "39",
+      "stockQTY": 28
     },
     {
-        "id": "40",
-        "productID": "40",
-        "stockQTY": 32
+      "id": "40",
+      "productID": "40",
+      "stockQTY": 32
     },
     {
-        "id": "41",
-        "productID": "41",
-        "stockQTY": 50
+      "id": "41",
+      "productID": "41",
+      "stockQTY": 50
     },
     {
-        "id": "42",
-        "productID": "42",
-        "stockQTY": 30
+      "id": "42",
+      "productID": "42",
+      "stockQTY": 30
     },
     {
-        "id": "43",
-        "productID": "43",
-        "stockQTY": 7
+      "id": "43",
+      "productID": "43",
+      "stockQTY": 7
     },
     {
-        "id": "44",
-        "productID": "44",
-        "stockQTY": 77
+      "id": "44",
+      "productID": "44",
+      "stockQTY": 77
     },
     {
-        "id": "45",
-        "productID": "45",
-        "stockQTY": 37
+      "id": "45",
+      "productID": "45",
+      "stockQTY": 37
     },
     {
-        "id": "46",
-        "productID": "46",
-        "stockQTY": 95
+      "id": "46",
+      "productID": "46",
+      "stockQTY": 95
     },
     {
-        "id": "47",
-        "productID": "47",
-        "stockQTY": 92
+      "id": "47",
+      "productID": "47",
+      "stockQTY": 92
     },
     {
-        "id": "48",
-        "productID": "48",
-        "stockQTY": 82
+      "id": "48",
+      "productID": "48",
+      "stockQTY": 82
     },
     {
-        "id": "49",
-        "productID": "49",
-        "stockQTY": 53
+      "id": "49",
+      "productID": "49",
+      "stockQTY": 53
     },
     {
-        "id": "50",
-        "productID": "50",
-        "stockQTY": 1
+      "id": "50",
+      "productID": "50",
+      "stockQTY": 1
     }
-]
+  ]
 }

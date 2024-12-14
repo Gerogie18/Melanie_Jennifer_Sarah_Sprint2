@@ -1,24 +1,22 @@
-import { useState, useEffect } from 'react';
+import { useMemo, useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 
-function CategoryDetails(categoryID) {
+import ProductCard from './ProductCard';
 
+function CategoryDetails({ categoryID, products }){
   const navigate = useNavigate();
   const [category, setCategory] = useState({});
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
+
   useEffect(() => {
-    if (!categoryID) {
-      navigate('/shop');
-      return null;
-    }
 
     const fetchCategory = async () => {
       try {
-        const res = await fetch(`http://localhost:5005/categories/0`);
+        const res = await fetch(`http://localhost:5005/categories/${String(categoryID)}`);
         if (!res.ok) {
           throw new Error('Category not found');
         }
@@ -30,14 +28,22 @@ function CategoryDetails(categoryID) {
         setLoading(false);
       }
     };
-
+  
     fetchCategory();
-  }, [categoryID, navigate]);
+  }, [categoryID]);
+
+    // Removed useEffect for filtering products as it is now handled by useMemo
+
+
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error: {error}</p>;
 
 
+
+  const filteredProducts = useMemo(() => {
+    return products.filter(product => product.category == categoryID);
+  }, [products, categoryID]);
 
   return (
     <div>
@@ -45,12 +51,22 @@ function CategoryDetails(categoryID) {
         <h2>{category.title}</h2>
         <p>Description: {category.description}</p>
       </div>
+
+      <div>
+        {filteredProducts.map((product) => (
+          <ProductCard 
+            key={product.id} 
+            product={product}  
+          />
+        ))}
+      </div>
     </div>
   );
 }
 
 CategoryDetails.propTypes = {
-  caegoryID: PropTypes.string,
+  categoryID: PropTypes.string.isRequired,
+  products: PropTypes.array.isRequired,
 };
 
 export default CategoryDetails;

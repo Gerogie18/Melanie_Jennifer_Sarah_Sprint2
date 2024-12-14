@@ -2,6 +2,7 @@ import { memo } from 'react';
 import PropTypes from 'prop-types';
 import UpdateCart from './UpdateCart';
 import RemoveFromCart from './RemoveFromCart';
+import ProductCard from '../shopcomponents/ProductCard';
 
 const CartItem = memo(({ item }) => {
   const formatPrice = (price) => {
@@ -17,12 +18,13 @@ const CartItem = memo(({ item }) => {
   
   return (
     <div key={item.id} className="cart-item">
-      <img
+      {/* <img
         src={`/assets/productthumbnails/${item.img.filepath}_thumbnail.jpg`}
         alt={item.img.alt}
         title={item.img.title}
       />
-      <h3>{item.name}</h3>
+      <h3>{item.name}</h3> */}
+      <ProductCard  product={item} />
       <p>{formatPrice(item.price)}</p>
       <UpdateCart id={item.id} itemQuantity={item.quantity} />
       <RemoveFromCart id={item.id}/>

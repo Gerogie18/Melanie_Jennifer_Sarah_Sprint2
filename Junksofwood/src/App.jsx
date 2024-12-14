@@ -62,11 +62,11 @@ function App() {
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="category" element={<CategoryDetails categoryID = {0}/>} />
-          <Route path="shop" element={<ShopLayout categories={categories} products={products}/>}>
+          {/* <Route path="category" element={<CategoryDetails categoryID = {0}/>} /> */}
+          <Route path="shop/" element={<ShopLayout categories={categories} products={products}/>}>
             <Route index element={<Shop />} />
             <Route path="product/:productID" element={<ProductDetails />} />
-            <Route path="category/:categoryID" element={<CategoryDetails />} />
+            <Route path="category/:categoryID" element={<CategoryDetails categoryID={"0"} products={products}/>} />
           </Route>
           <Route path="about" element={<About />} />
           <Route path="checkout" element={<Checkout />} />
