@@ -72,10 +72,10 @@ const Shop = () => {
       ))}
       <div>
         {indexOfLastProduct < filteredProducts.length && (
-          <button onClick={handlePrev}>Back</button>
+          <button onClick={handlePrev}>&lt;</button>
         )}
         {indexOfLastProduct < filteredProducts.length && (
-          <button onClick={handleNext}>Next</button>
+          <button onClick={handleNext}>&gt;</button>
         )}
         {/* <button onClick={handleDisplayAll}>Display All</button> */}
       </div>
