@@ -143,6 +143,7 @@ main {
 }
 
 .hero_img img {
+  border-radius: 0;
   object-fit: cover;
   object-position: 0 35%; /* adjust the percentage value to control the amount of "cropping" */
   width: 100%;
