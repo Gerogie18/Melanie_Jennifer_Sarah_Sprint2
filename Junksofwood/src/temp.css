@@ -450,3 +450,45 @@ button:focus {
 width: calc(33.333% - 1em); /* Adjust the width to fit three images in a row, accounting for the gap */
 margin-bottom: 1em; /* Add spacing between rows */
 }
+
+.quantity-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width:180px;
+  height: 50px;
+  align-items: center;
+  margin: 5px;
+}
+
+.quantity-container input {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+}
+
+.quantity-container button {
+  width: 50px;
+  height: 50px;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  font-size: 5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  padding: 0.1em;
+}
+
+.quantity-container button:hover {
+  background-color: var(--color-hover);
+  transition: background-color 0.2s ease-in-out;
+}
+
+.quantity-container button:active {
+  background-color: var(--color-primary);
+  transition: background-color 0.2s ease-in-out;
+}
