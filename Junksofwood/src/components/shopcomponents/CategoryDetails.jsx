@@ -1,72 +1,64 @@
-import { useMemo, useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
-import PropTypes from 'prop-types';
+  import { useMemo, useState, useEffect } from 'react';
+  import { useParams } from 'react-router-dom';
+  import PropTypes from 'prop-types';
+  import ProductCard from './ProductCard';
 
+  function CategoryDetails({ products }) {
+    const { categoryID } = useParams();
+    const [category, setCategory] = useState({});
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
 
-import ProductCard from './ProductCard';
-
-function CategoryDetails({ categoryID, products }){
-  const navigate = useNavigate();
-  const [category, setCategory] = useState({});
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-
-
-  useEffect(() => {
-
-    const fetchCategory = async () => {
-      try {
-        const res = await fetch(`http://localhost:5005/categories/${String(categoryID)}`);
-        if (!res.ok) {
-          throw new Error('Category not found');
+    useEffect(() => {
+      const fetchCategory = async () => {
+        try {
+          const res = await fetch(`http://localhost:5005/categories/${String(categoryID)}`);
+          if (!res.ok) {
+            throw new Error('Category not found');
+          }
+          const data = await res.json();
+          setCategory(data);
+          setLoading(false);
+        } catch (error) {
+          setError(error.message);
+          setLoading(false);
         }
-        const data = await res.json();
-        setCategory(data);
-        setLoading(false);
-      } catch (error) {
-        setError(error.message);
-        setLoading(false);
-      }
-    };
-  
-    fetchCategory();
-  }, [categoryID]);
+      };
 
-    // Removed useEffect for filtering products as it is now handled by useMemo
+      fetchCategory();
+    }, [categoryID]);
+
+    const filteredProducts = useMemo(() => {
+      return products.filter(product => product.category == categoryID);
+    }, [products, categoryID]);
+
+    if (loading) return <p>Loading...</p>;
+    if (error) return <p>Error: {error}</p>;
 
 
-
-  if (loading) return <p>Loading...</p>;
-  if (error) return <p>Error: {error}</p>;
-
-
-
-  const filteredProducts = useMemo(() => {
-    return products.filter(product => product.category == categoryID);
-  }, [products, categoryID]);
-
-  return (
-    <div>
-      <div className="category-detail">
-        <h2>{category.title}</h2>
-        <p>Description: {category.description}</p>
-      </div>
-
+    return (
       <div>
-        {filteredProducts.map((product) => (
-          <ProductCard 
-            key={product.id} 
-            product={product}  
-          />
-        ))}
+        <div className="category-detail">
+          <h2>{category.title}</h2>
+          <p>Description: {category.description}</p>
+        </div>
+
+        <div className="img-container">
+          {filteredProducts.map((product) => (
+            <ProductCard 
+              key={product.id} 
+              product={product}  
+            />
+          ))}
+        </div>
       </div>
-    </div>
-  );
-}
+    );
+  }
 
-CategoryDetails.propTypes = {
-  categoryID: PropTypes.string.isRequired,
-  products: PropTypes.array.isRequired,
-};
+  CategoryDetails.propTypes = {
+    products: PropTypes.array.isRequired,
+  };
 
-export default CategoryDetails;
+  export default CategoryDetails;
+
+ 

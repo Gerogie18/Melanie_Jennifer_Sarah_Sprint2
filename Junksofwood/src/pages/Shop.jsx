@@ -62,6 +62,8 @@ const Shop = () => {
     return <div>No products found.</div>;  // Handle empty state
   }
 
+
+
   return (
     <div>
       {currentProducts.map((product) => (

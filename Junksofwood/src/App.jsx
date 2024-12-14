@@ -23,6 +23,7 @@ import CheckoutFinal from "./components/checkoutcomponents/CheckoutFinal";
 import Test from "./pages/Test";
 import NotFound from "./pages/NotFound";
 
+
 function App() {
 
   const location = useLocation();
@@ -62,11 +63,10 @@ function App() {
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          {/* <Route path="category" element={<CategoryDetails categoryID = {0}/>} /> */}
           <Route path="shop/" element={<ShopLayout categories={categories} products={products}/>}>
             <Route index element={<Shop />} />
             <Route path="product/:productID" element={<ProductDetails />} />
-            <Route path="category/:categoryID" element={<CategoryDetails categoryID={"0"} products={products}/>} />
+            <Route path="category/:categoryID" element={<CategoryDetails products={products}/>} />
           </Route>
           <Route path="about" element={<About />} />
           <Route path="checkout" element={<Checkout />} />
