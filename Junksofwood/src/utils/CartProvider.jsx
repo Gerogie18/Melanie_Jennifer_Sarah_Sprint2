@@ -17,6 +17,8 @@ const CartProvider = ({ children }) => {
   const cartisEmpty = cart.length === 0;
   const [cartIcon, setCartIcon] = useState(cartisEmpty ? <BsCart /> : <BsCartFill />)
   const cartLength = cart.length;
+
+  const [submitCart, setSubmitCart] = useState(false);
   
   useEffect(() => {
     (cartisEmpty ? console.log("Cart is Empty") : console.log("Cart is not Empty"))
@@ -38,18 +40,27 @@ const CartProvider = ({ children }) => {
       setPreviousCart(cart);
     }, [cart]);
   
-    useEffect(() => {
-      if (previousCart !== cart) {
-        console.log('Testing: change to cart');
-        console.log(`Cart Length: ${cart.length}`);
-        console.log(JSON.stringify(cart, null, 2));
-        //needed for updates to CartDiv
+     useEffect(() => {
+       if (previousCart !== cart) {
+         //console.log('Testing: change to cart');
+         //console.log(`Cart Length: ${cart.length}`);
+         //console.log(JSON.stringify(cart, null, 2));
+      //needed for updates to CartDiv
         setCartChanged(true);
         setPreviousCart(cart);
       } else {
         setCartChanged(false);
       }
     }, [cart, previousCart]);
+
+  
+    const cartTotal = () => {
+      let total = 0;
+      for (let i = 0; i < cart.length; i++) {
+        total += cart[i].price * cart[i].quantity;
+      }
+      return total;
+    }
 
   // Fetch the current cart from the server
   const fetchCart = async () => {
@@ -115,6 +126,7 @@ const CartProvider = ({ children }) => {
       const newItem = await response.json();
       setCart([...cart, newItem]);
       new Audio(addItemSound).play();
+      submitCart && setSubmitCart(false);
     } catch (error) {
       console.error("Error adding to cart:", error);
     }
@@ -190,6 +202,7 @@ const CartProvider = ({ children }) => {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
       clearCart();
+      setSubmitCart(true);
       console.log("Order finalized successfully");
       
     } catch (error) {
@@ -198,7 +211,7 @@ const CartProvider = ({ children }) => {
   };
 
   return (
-    <CartContext.Provider value={{ cart, cartLength, cartIcon, cartChanged, productInCart, setCart, clearCart, addToCart, removeFromCart, updateQuantity, finalizeCart}}>
+    <CartContext.Provider value={{ cart, cartLength, cartIcon, cartChanged, submitCart, cartTotal, productInCart, setCart, clearCart, addToCart, removeFromCart, updateQuantity, finalizeCart}}>
       {children}
     </CartContext.Provider>
   );

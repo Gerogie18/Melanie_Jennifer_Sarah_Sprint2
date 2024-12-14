@@ -12,7 +12,7 @@ const CartItem = memo(({ item }) => {
     return `$${(price * quantity).toFixed(2)}`;
   };
 
-  console.log(`this is in the cart: ${JSON.stringify(item, null, 2)}`);
+  //console.log(`this is in the cart: ${JSON.stringify(item, null, 2)}`);
   
   
   return (
@@ -27,6 +27,7 @@ const CartItem = memo(({ item }) => {
       <UpdateCart id={item.id} itemQuantity={item.quantity} />
       <RemoveFromCart id={item.id}/>
       <p>{formatPriceTotal(item.price, item.quantity)}</p>
+      <hr />
     </div>
   );
 });
