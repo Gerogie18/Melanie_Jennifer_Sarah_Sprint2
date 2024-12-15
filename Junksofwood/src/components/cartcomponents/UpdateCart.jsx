@@ -23,14 +23,12 @@ const UpdateCart = ({ id, itemQuantity, maxQuantity }) => {
   };
 
   return (
-    <div className="update-container">
+    <div classname = "update-containter">
       <QuantityContainer quantity={quantity} onChange={setQuantity} minQuantity={0} maxQuantity={maxQuantity} />
       <button
-        className='update-button'
         title='Update Cart'
         onClick={handleClick}
       ><IoBagCheck /></button>
-
     </div>
   )
 }

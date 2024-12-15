@@ -16,16 +16,16 @@ const CartDiv = ({ productInCart, product, isLoading, stockQty }) => {
   };
 
   return (
-    <div>
+    <span className='cart-div'>
       {productInCart && productInCart.id === product.id ? (
         <>
           <UpdateCart maxQuantity={stockQty} id={productInCart.id} itemQuantity={productInCart.quantity} />
           <RemoveFromCart id={productInCart.id} />
         </>
       ) : (
-        <AddToCart maxQuantity={stockQty}id={product.id} name={product.name} price={product.price} img={product.images[0]} />
+        <AddToCart maxQuantity={stockQty} id={product.id} name={product.name} price={product.price} img={product.images[0]} />
       )}
-    </div>
+    </span>
   );
 };
 
