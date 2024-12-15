@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
-import { useOutletContext, Outlet, useSearchParams } from "react-router-dom";
+import { useSearchParams } from "react-router-dom";
 import PropTypes from 'prop-types';
 import SearchForm from "./SearchForm";
 import CategoryForm from "./CategoryForm";
+import Shop from '../../pages/Shop'
 
 /**
  * Filters the products based on desired categories and tags.
@@ -61,7 +62,7 @@ function ShopLayout({ categories, products }) {
           </div>
         </div>
         <div id="shop-contents" className="shop-contents">
-        <Outlet context={{ filteredProducts }} />
+          <Shop filteredProducts={filteredProducts}/>
         </div>
       </div>
     </section>

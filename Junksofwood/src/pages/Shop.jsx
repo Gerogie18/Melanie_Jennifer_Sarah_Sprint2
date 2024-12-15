@@ -2,16 +2,16 @@ import { useState, useEffect } from 'react';
 import { useOutletContext, useNavigate } from 'react-router-dom';
 import ProductCard from '../components/shopcomponents/ProductCard';
 
-const Shop = () => {
+const Shop = ({filteredProducts}) => {
 
-  const { filteredProducts } = useOutletContext();
+  // const { filteredProducts } = useOutletContext();
   // Constants for back navigation
   const navigate = useNavigate();
   const [previousPage, setPreviousPage] = useState(null);
 
   // Constants (state, function, etc) for handle products per page
   const [currentImages, setCurrentImages] = useState(1);
-  const productsPerPage = 9;
+  const productsPerPage = 8;
   const indexOfLastProduct = currentImages * productsPerPage;
   const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
   const currentProducts = filteredProducts.slice(indexOfFirstProduct, indexOfLastProduct);
