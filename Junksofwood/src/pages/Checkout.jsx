@@ -31,6 +31,9 @@ const Checkout = () => {
 
   useEffect(() => {
     if (submitCart) { 
+      setTimeout(() => {
+        navigate('/');
+      }, 60000);
       navigate('/');
     }
   }, [submitCart, navigate]);
