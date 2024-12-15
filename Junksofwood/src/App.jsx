@@ -20,7 +20,6 @@ import CategoryDetails from "./components/shopcomponents/CategoryDetails";
 import About from "./pages/About";
 import Checkout from "./pages/Checkout";
 import CheckoutFinal from "./components/checkoutcomponents/CheckoutFinal";
-import Test from "./pages/Test";
 import NotFound from "./pages/NotFound";
 
 
@@ -71,7 +70,6 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="checkout" element={<Checkout />} />
             <Route path="purchasecomplete" element={<CheckoutFinal/>} />
-          <Route path="test" element={<Test />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
