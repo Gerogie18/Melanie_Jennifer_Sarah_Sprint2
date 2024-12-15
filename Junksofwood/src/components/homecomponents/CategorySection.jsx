@@ -22,7 +22,7 @@ function CategorySection() {
 
   return (
     <section id="category_section">
-      <h1>Categories</h1>
+      <h1>Our products</h1>
       <div className="descrpt">
         <p>
           Words go here, Melanie needs to think of Words<br></br>
@@ -42,6 +42,7 @@ function CategorySection() {
             alt={"product image"}
             onClick={() => handleImageClick("0")}
           ></img>
+          <p class='category_titles'>brooches</p>
         </div>
         <div className="category_img">
           <img
@@ -51,6 +52,7 @@ function CategorySection() {
             alt={"product image"}
             onClick={() => handleImageClick("1")}
           ></img>
+          <p class='category_titles'>earrings</p>
         </div>
         <div className="category_img">
           <img
@@ -60,6 +62,7 @@ function CategorySection() {
             alt={"product image"}
             onClick={() => handleImageClick("2")}
           ></img>
+          <p class='category_titles'>keychains</p>
         </div>
       </div>
     </section>
