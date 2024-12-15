@@ -102,12 +102,13 @@ function ProductDetails() {
             ))}
           </div>
         )}
-      
+      <div class='product_desc'>
         <p id="para">
           {formatDescription(product.description)}
-        </p>
+          </p>
+          <br />
         <p>Price: ${product.price}</p>
-        
+        </div>
         <p>
           {stockQty === 0 ? 'Sold out' : stockQty < 10 ? 'Stock low' : `Remaining: ${stockQty}`}
         </p>

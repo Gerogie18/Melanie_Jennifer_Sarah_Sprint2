@@ -64,10 +64,10 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="shop/" element={<ShopLayout categories={categories} products={products}/>}>
-            <Route index element={<Shop />} />
-            <Route path="product/:productID" element={<ProductDetails />} />
-            <Route path="category/:categoryID" element={<CategoryDetails products={products}/>} />
+            {/* <Route index element={<Shop />} /> */}
           </Route>
+          <Route path="category/:categoryID" element={<CategoryDetails products={products}/>} />
+          <Route path="product/:productID" element={<ProductDetails />} />
           <Route path="about" element={<About />} />
           <Route path="checkout" element={<Checkout />} />
             <Route path="purchasecomplete" element={<CheckoutFinal/>} />

@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
-import { useOutletContext, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import ProductCard from '../components/shopcomponents/ProductCard';
+import PropTypes from 'prop-types';
 
-const Shop = () => {
+const Shop = ({filteredProducts}) => {
 
-  const { filteredProducts } = useOutletContext();
   // Constants for back navigation
   const navigate = useNavigate();
   const [previousPage, setPreviousPage] = useState(null);
@@ -83,6 +83,10 @@ const Shop = () => {
       </div>
     </div>
   );
+};
+
+Shop.propTypes = {
+  filteredProducts: PropTypes.array.isRequired,
 };
 
 export default Shop;

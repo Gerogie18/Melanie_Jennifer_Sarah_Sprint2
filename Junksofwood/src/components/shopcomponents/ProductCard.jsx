@@ -11,7 +11,7 @@ function ProductCard({ product }) {
     };
 
     const handleProductClick = (productId) => {
-        navigate(`/shop/product/${productId}`);
+        navigate(`/product/${productId}`);
     };
 
     return (
