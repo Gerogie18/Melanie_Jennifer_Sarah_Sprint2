@@ -191,12 +191,12 @@ const CartProvider = ({ children }) => {
     }
   };
 
-  const finalizeCart = async ( { orderNumber, date } ) => {
+  const finalizeCart = async ( { orderNumber, date, shippingData, billingData } ) => {
     try {
       const response = await fetch("http://localhost:5005/order", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ orderNumber, date, cart }),
+        body: JSON.stringify({ orderNumber, date, cartTotal, cart, shippingData, billingData}),
       });
 
       if (!response.ok) {
