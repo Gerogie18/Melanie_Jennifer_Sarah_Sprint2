@@ -46,9 +46,6 @@ function ShopLayout({ categories, products }) {
 
   return (
     <section id="shop">
-      <div id="shop-header"> 
-        <h1>Shop</h1>
-      </div>
       <div id="shop-container" className="shop-container">
         <div id="shop-sidebar" className="shop-sidebar">
           <h2>Filter by</h2>
@@ -61,8 +58,13 @@ function ShopLayout({ categories, products }) {
             <SearchForm />
           </div>
         </div>
-        <div id="shop-contents" className="shop-contents">
-          <Shop filteredProducts={filteredProducts}/>
+        <div id="shop-main" className="shop-main">
+          <div id="shop-header"> 
+            <h1>Shop</h1>
+          </div>
+          <div id="shop-contents" className="shop-contents">
+            <Shop filteredProducts={filteredProducts}/>
+          </div>
         </div>
       </div>
     </section>

@@ -433,110 +433,38 @@ button:focus {
 /* Shop Container */
 .shop-container {
   display: flex;
-  flex-direction: right; /* Arrange children in a row */
+  flex-direction: row; /* Corrected from 'right' to 'row' */
   width: 100vw;
-  min-height: 100vh; /* Ensure it takes the full height of the viewport */
-  /* border-style: double; */
+  min-height: 100vh;
   border-color: #0099a5;
 }
 
 /* Shop Sidebar */
 .shop-sidebar {
-  width: 25%; /* Adjust the width as needed */
-  background-color: var(
-    --color-background
-  ); /* Optional: Add background color */
-  padding: 1em; /* Add padding for spacing */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for emphasis */
-  border-right: 1px solid var(--color-border); /* Optional: Add border to separate from content */
+  width: 25%;
+  background-color: var(--color-background);
+  padding: 1em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-right: 1px solid var(--color-border);
 }
 
 /* Shop Contents */
 .shop-contents {
-  width: 75%; /* Adjust the width as needed */
-  padding: 1em; /* Add padding for spacing */
-  background-color: var(
-    --color-background
-  ); /* Optional: Add background color */
+  width: 100%;
+  padding: 1em;
+  background-color: var(--color-background);
   display: flex;
-  flex-direction: right; /* Arrange children in a row */
+  flex-direction: row; /* Corrected from 'right' to 'row' */
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-between; /* This can be adjusted to 'flex-start' if you prefer no spaces between rows when not fully filled */
 }
 
 .shop-contents .product-container {
-  width: calc(
-    33.333% - 1em
-  ); /* Adjust the width to fit three images in a row, accounting for the gap */
-  margin-bottom: 1em; /* Add spacing between rows */
+  width: calc(33.333% - 1em); /* Adjust this calculation if needed based on total padding/margins */
+  margin-bottom: 1em; /* Space between rows */
+  display: inline-block; /* Ensure items are displayed inline */
+  vertical-align: bottom; /* Align items to the top */
 }
 
-.quantity-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 180px;
-  height: 50px;
-  align-items: center;
-  margin: 5px;
-}
+/* Adjustments for responsive design or different number of items per row might be required depending on your exact needs */
 
-.quantity-container input {
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  font-size: 2rem;
-  border: 1px solid #ccc;
-  border-radius: 0.5rem;
-}
-
-.quantity-container button {
-  width: 50px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 5rem;
-  border: 1px solid #ccc;
-  border-radius: 0.5rem;
-  cursor: pointer;
-  padding: 0.1em;
-}
-
-.quantity-container button:hover {
-  background-color: var(--color-hover);
-  transition: background-color 0.2s ease-in-out;
-}
-
-.quantity-container button:active {
-  background-color: var(--color-primary);
-  transition: background-color 0.2s ease-in-out;
-}
-
-.product_desc {
-  font-size: 16px;
-  font-family: Arial, Helvetica, sans-serif;
-  color: var(--color-font);
-  padding: 20px;
-  margin-left: 160px;
-  margin-right: 160px;
-  margin-bottom: 10px;
-  text-align: justify;
-}
-
-/* .product_detail {
-  display: flex;
-  position: relative;
-} */
-
-.SearchForm {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 1em;
-  background-color: #f0f0f0; /* Change to your desired background color */
-  color: #333; /* Change to your desired text color */
-  /* border: 1px solid #ccc; Optional: change the border color */
-  padding: 10px; /* Optional: add padding */
-  border-radius: 5px; /* Optional: add rounded corners */
-}

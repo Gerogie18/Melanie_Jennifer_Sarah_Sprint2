@@ -1,17 +1,17 @@
 import { useState, useEffect } from 'react';
-import { useOutletContext, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import ProductCard from '../components/shopcomponents/ProductCard';
+import PropTypes from 'prop-types';
 
 const Shop = ({filteredProducts}) => {
 
-  // const { filteredProducts } = useOutletContext();
   // Constants for back navigation
   const navigate = useNavigate();
   const [previousPage, setPreviousPage] = useState(null);
 
   // Constants (state, function, etc) for handle products per page
   const [currentImages, setCurrentImages] = useState(1);
-  const productsPerPage = 8;
+  const productsPerPage = 9;
   const indexOfLastProduct = currentImages * productsPerPage;
   const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
   const currentProducts = filteredProducts.slice(indexOfFirstProduct, indexOfLastProduct);
@@ -83,6 +83,10 @@ const Shop = ({filteredProducts}) => {
       </div>
     </div>
   );
+};
+
+Shop.propTypes = {
+  filteredProducts: PropTypes.array.isRequired,
 };
 
 export default Shop;
