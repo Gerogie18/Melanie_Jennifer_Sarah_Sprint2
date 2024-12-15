@@ -31,7 +31,7 @@ const Checkout = () => {
 
   useEffect(() => {
     if (submitCart) { 
-      navigate('/purchasecomplete');
+      navigate('/');
     }
   }, [submitCart, navigate]);
 
