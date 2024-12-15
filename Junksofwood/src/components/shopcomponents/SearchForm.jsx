@@ -16,7 +16,7 @@ function SearchForm() {
 
   return (
     <form onSubmit={handleSubmit}>
-      <input
+      <input class='SearchForm'
         type="text"
         placeholder="Search..."
         value={searchQuery}

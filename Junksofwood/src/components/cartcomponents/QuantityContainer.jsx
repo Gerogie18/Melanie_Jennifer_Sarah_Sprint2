@@ -37,7 +37,7 @@ const QuantityContainer = ({quantity, onChange, minQuantity, maxQuantity = 99, }
       >
         <FaRegSquareMinus />
       </button>
-      <input
+      <input class='checkout_forms'
         type="number"
         min={minQuantity}
         max={maxQuantity}

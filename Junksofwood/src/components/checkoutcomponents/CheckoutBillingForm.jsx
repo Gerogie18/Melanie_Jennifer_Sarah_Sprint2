@@ -28,7 +28,7 @@ const CheckoutBillingForm = ({ onSubmit }) => {
       <form onSubmit={handleSubmit}>
         <div>
           <label>Full Name:</label>
-          <input
+          <input class='checkout_forms'
             type="text"
             name="fullName"
             value={formData.fullName}
@@ -38,7 +38,7 @@ const CheckoutBillingForm = ({ onSubmit }) => {
         </div>
         <div>
           <label>Address Line 1:</label>
-          <input
+          <input class='checkout_forms'
             type="text"
             name="address1"
             value={formData.address1}
@@ -48,7 +48,7 @@ const CheckoutBillingForm = ({ onSubmit }) => {
         </div>
         <div>
           <label>Address Line 2:</label>
-          <input
+          <input class='checkout_forms'
             type="text"
             name="address2"
             value={formData.address2}
@@ -57,7 +57,7 @@ const CheckoutBillingForm = ({ onSubmit }) => {
         </div>
         <div>
           <label>City:</label>
-          <input
+          <input class='checkout_forms'
             type="text"
             name="city"
             value={formData.city}
@@ -67,7 +67,7 @@ const CheckoutBillingForm = ({ onSubmit }) => {
         </div>
         <div>
           <label>Province/Province:</label>
-          <input
+          <input class='checkout_forms'
             type="text"
             name="province"
             value={formData.province}
@@ -77,7 +77,7 @@ const CheckoutBillingForm = ({ onSubmit }) => {
         </div>
         <div>
           <label>ZIP/Postal Code:</label>
-          <input
+          <input class='checkout_forms'
             type="text"
             name="zip"
             value={formData.zip}
@@ -87,7 +87,7 @@ const CheckoutBillingForm = ({ onSubmit }) => {
         </div>
         <div>
           <label>Country:</label>
-          <input
+          <input class='checkout_forms'
             type="text"
             name="country"
             value={formData.country}

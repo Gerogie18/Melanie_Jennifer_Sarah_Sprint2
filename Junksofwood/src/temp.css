@@ -20,7 +20,7 @@
   --color-primary: #0099a5;
   --color-secondary: #4f9eb6;
   --color-background: #f9f9f9;
-  --color-focus: #242aea;
+  --color-focus: #148f97;
   --color-font: #282b3f;
   --color-hover: #54ced1;
   --color-border: #cccccc;
@@ -265,6 +265,7 @@ footer {
   letter-spacing: 0.125cap;
   color: white;
   text-align: center;
+  padding-top: 10px;
   /* border-top: 1px solid var(--color-border); */
   /* box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); */
 }
@@ -606,9 +607,55 @@ button:focus {
   justify-content: center;
   align-items: center;
   margin: 1em;
-  background-color: #f0f0f0; /* Change to your desired background color */
+  background-color: white; /* Change to your desired background color */
   color: #333; /* Change to your desired text color */
-  /* border: 1px solid #ccc; Optional: change the border color */
-  padding: 10px; /* Optional: add padding */
-  border-radius: 5px; /* Optional: add rounded corners */
+  border-top: none;
+  border-left: none;
+}
+
+.checkout_forms {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
+  background-color: white; /* Change to your desired background color */
+  color: #333; /* Change to your desired text color */
+  border-radius: 2px; /* Optional: add rounded corners */
+  /* border-bottom: 1px; */
+  border-top: none;
+  border-left: none;
+  text-align: justify;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  justify-content: space-between;
+  margin-right: 35px;
+  margin-bottom: 50px;
+}
+
+table th,
+table td {
+  text-align: left;
+  padding: 8px;
+  border: 1px solid #cccccc;
+}
+
+.shipping_data {
+  margin: 10px;
+  color: var--color-font;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.shipping_data button {
+  color: white;
+  margin-top: 20px;
+  font-family: "root beer";
+  letter-spacing: 0.125cap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
 }

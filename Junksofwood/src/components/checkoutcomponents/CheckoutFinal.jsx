@@ -35,7 +35,7 @@ const CheckoutFinal = ({ shippingData }) => {
           </tr>
         ))}
         <tr>
-          <td style={tableLineStyle} colSpan="3">Cart Total</td>
+          <td style={tableLineStyle} colSpan="3">Cart Total:</td>
           <td style={tableLineStyle}>{formatTotal(cartTotal)}</td>
         </tr>
       </tbody>
@@ -46,7 +46,7 @@ const CheckoutFinal = ({ shippingData }) => {
     <div>
       {cartFinal}
       <h2>Shipping Data</h2>
-      <div>
+      <div class='shipping_data'>
         {Object.entries(shippingData).map(([key, value]) => (
           <p key={key}>
             {key.charAt(0).toUpperCase() + key.slice(1)}: {value}

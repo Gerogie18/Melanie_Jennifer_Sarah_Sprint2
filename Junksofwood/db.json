@@ -3125,17 +3125,52 @@
     }
   ],
   "cart": [],
-  "orders": [],
+  "orders": [
+    {
+      "id": "f5b7",
+      "cartTotal": 20,
+      "cart": [
+        {
+          "id": "1",
+          "quantity": 1,
+          "name": "Rowhouse Brooch - Orange and Blue",
+          "price": 20,
+          "img": {
+            "title": "Rowhouse Brooch - Orange and Blue",
+            "filepath": "/brooches/RowhouseBroochPlate_OrangeBlue.jpg",
+            "alt": "Image of Rowhouse Brooch - Orange and Blue"
+          }
+        }
+      ]
+    },
+    {
+      "id": "463a",
+      "cartTotal": 10,
+      "cart": [
+        {
+          "id": "0",
+          "quantity": 1,
+          "name": "Canada Brooch",
+          "price": 10,
+          "img": {
+            "title": "Canada Brooch - Card",
+            "filepath": "/brooches/CanadaBroochCard.jpg",
+            "alt": "Image of Canada Brooch on card"
+          }
+        }
+      ]
+    }
+  ],
   "stock": [
     {
       "id": "0",
       "productID": "0",
-      "stockQTY": 83
+      "stockQTY": null
     },
     {
       "id": "1",
       "productID": "1",
-      "stockQTY": 19
+      "stockQTY": null
     },
     {
       "id": "2",
@@ -3370,7 +3405,7 @@
     {
       "id": "48",
       "productID": "48",
-      "stockQTY": 82
+      "stockQTY": null
     },
     {
       "id": "49",
