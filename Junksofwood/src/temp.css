@@ -435,9 +435,9 @@ button:focus {
 .shop-container {
   display: flex;
   flex-direction: right; /* Arrange children in a row */
-  width: 100%;
+  width: 100vw;
   min-height: 100vh; /* Ensure it takes the full height of the viewport */
-  border-style: double;
+  /* border-style: double; */
   border-color: #0099a5;
 }
 
@@ -523,4 +523,21 @@ button:focus {
   margin-right: 160px;
   margin-bottom: 10px;
   text-align: justify;
+}
+
+/* .product_detail {
+  display: flex;
+  position: relative;
+} */
+
+.SearchForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
+  background-color: #f0f0f0; /* Change to your desired background color */
+  color: #333; /* Change to your desired text color */
+  /* border: 1px solid #ccc; Optional: change the border color */
+  padding: 10px; /* Optional: add padding */
+  border-radius: 5px; /* Optional: add rounded corners */
 }
