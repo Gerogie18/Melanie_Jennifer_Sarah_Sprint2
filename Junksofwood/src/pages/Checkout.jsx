@@ -84,8 +84,8 @@ const Checkout = () => {
   };
 
   return (
-    <div>
-      <div className='slide-div'>
+    <div className='slide-div'>
+      <div >
         <AnimatePresence initial={false} custom={direction}>
           <motion.div
             key={slides[current].id}

@@ -358,6 +358,7 @@ button:focus {
   border: 1px solid #ccc;
   border-radius: 10px;
 }
+
 .slide-container {
   padding: 5%;
   width: 80%;
@@ -367,6 +368,33 @@ button:focus {
 .slide-buttons {
   display: flex;
   justify-content: space-between;
+  width: 100%;
+  padding: 0;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.slide-buttons button {
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  width: 100%;
+  height: 3rem;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-right:10px;
+  font-size: 1.5rem;
+  background-color: var(--color-primary);
+  color: white;
+  transition: background-color 0.2s ease-in-out;
+};
+.slide-div {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   padding: 0;
 }
@@ -392,8 +420,15 @@ button:focus {
   border: 1px solid var(--border-color);
   border-radius: 0.5rem;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
-  margin-bottom: 1.5rem;
+  margin: 1.5rem;
   background-color: var(--background-color);
+}
+
+/* Adjust margin for smaller screens */
+@media (max-width: 768px) {
+  .cart-item {
+    margin: 1rem;
+  }
 }
 
 .cart-item img {
@@ -422,6 +457,16 @@ button:focus {
   border: none;
   border-top: 1px solid var(--border-color);
   margin-top: 1rem;
+}
+
+.cart-contents {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--background-color);
+  flex-wrap: wrap;
 }
 
 /* Optional: hover effect */
