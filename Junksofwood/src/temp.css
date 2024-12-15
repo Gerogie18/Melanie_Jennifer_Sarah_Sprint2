@@ -160,7 +160,7 @@ main {
   margin-bottom: 10px;
 }
 
-.descrpt button {
+button {
   color: white;
   margin-top: 20px;
   font-family: "root beer";
@@ -267,8 +267,12 @@ footer {
   transition: box-shadow 0.2s ease-in-out;
 }
 
+<<<<<<< HEAD
 button {
   margin: 10px;
+=======
+/* button {
+>>>>>>> 070867e89b6a23e17159936ce10d51b140a2d1e8
   font-weight: bold;
   padding: 10px 20px;
   border: none;
@@ -278,7 +282,7 @@ button {
   font-family: "root beer";
   letter-spacing: 0.125cap;
   transition: background-color 0.2s ease-in-out;
-}
+} */
 
 button:hover {
   background-color: var(--color-hover);
