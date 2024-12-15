@@ -433,7 +433,7 @@ button:focus {
 /* Shop Container */
 .shop-container {
   display: flex;
-  flex-direction: row; /* Corrected from 'right' to 'row' */
+  flex-direction: row; 
   width: 100vw;
   min-height: 100vh;
   border-color: #0099a5;
@@ -448,39 +448,40 @@ button:focus {
   border-right: 1px solid var(--color-border);
 }
 
-/* Shop Contents */
-.shop-page {
-  max-width: 1200px;
-  min-width:fit-content;
-}
-.shop-contents {
-  width: 100%;
-  padding: 1em;
-  background-color: var(--color-background);
+  /* Shop Contents */
+  .shop-container {
   display: flex;
-  flex-direction: row; /* Corrected from 'right' to 'row' */
+  flex-direction: row; 
+  width: 100vw;
+  min-height: 100vh;
+  border-color: #0099a5;
+  }
+
+  /* Shop Sidebar */
+  .shop-sidebar {
+  width: 25%;
+  background-color: var(--color-background);
+  padding: 1em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-right: 1px solid var(--color-border);
+  }
+
+  /* Shop Contents */
+  .shop-contents {
+  width: 75%; /* Adjust the width as needed */
+  padding: 1em; /* Add padding for spacing */
+  background-color: var(--color-background); /* Optional: Add background color */
+  display: flex;
+  flex-direction: row; /* Arrange children in a row */
   flex-wrap: wrap;
-  justify-content: space-between; /* This can be adjusted to 'flex-start' if you prefer no spaces between rows when not fully filled */
-}
-
-.shop-contents .product-container {
-  margin: 1em;
-  flex-basis: calc(33.33% - 2em); /* 3 items per row */
-}
-
-/* Breakpoint for 2 items per row */
-@media (max-width: 768px) {
-  .shop-contents .product-container {
-    flex-basis: calc(50% - 2em); /* 2 items per row */
+  justify-content: space-between;
   }
-}
 
-/* Breakpoint for 1 item per row */
-@media (max-width: 480px) {
   .shop-contents .product-container {
-    flex-basis: 100%; /* 1 item per row */
+  width: calc(33.333% - 1em); /* Adjust the width to fit three images in a row, accounting for the gap */
+  margin-bottom: 1em; /* Add spacing between rows */
   }
-}
+
 
 .quantity-container {
   display: flex;
