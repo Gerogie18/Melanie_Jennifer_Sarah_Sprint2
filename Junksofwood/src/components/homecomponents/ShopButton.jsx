@@ -8,7 +8,7 @@ function ShopButton() {
     navigate("/shop");
   };
 
-  return <button onClick={handleButtonClick}>Shop all</button>;
+  return <button aria-label="ShopAll" onClick={handleButtonClick}>Shop all</button>;
 }
   
 

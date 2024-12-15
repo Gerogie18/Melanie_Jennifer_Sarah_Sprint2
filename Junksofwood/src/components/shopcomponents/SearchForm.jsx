@@ -9,7 +9,7 @@ function SearchForm() {
   const handleSubmit = (event) => {
     event.preventDefault();
     const currentParams = new URLSearchParams(searchParams);
-    currentParams.set("q", searchQuery);
+    currentParams.set("q", searchQuery.charAt(0).toUpperCase() + searchQuery.slice(1).toLowerCase());
     setSearchParams(currentParams);
     navigate(`/shop?${currentParams.toString()}`);
   };

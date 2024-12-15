@@ -14,7 +14,7 @@ const RemoveFromCart = ( {id} ) => {
 
 return (
           <button 
-          className='update-button'
+          className='remove-from-cart'
           title='Remove from Cart'
           onClick={handleClick}
           ><IoBagRemove /></button>

@@ -1,48 +1,65 @@
-import { describe, it, expect } from 'vitest'
-import jest from 'jest-mock';
-import { render, screen } from "@testing-library/react";
+import { describe, it, expect, vi } from 'vitest';
+import { render, screen, waitFor } from "@testing-library/react";
 import { BrowserRouter } from "react-router-dom";
 import userEvent from "@testing-library/user-event";
 import LatestArrivals from "../components/homecomponents/LatestArrivals";
 
-describe("LatestArrivals Component", () => {
-    it("renders the LatestArrivals component with heading and description", () => {
-        render(
-            <BrowserRouter>
-                <LatestArrivals />
-            </BrowserRouter>
-        );
+const mockNavigate = vi.fn();
 
-        expect(screen.getByText("Our Latest Arrivals")).toBeInTheDocument();
-    });
+// Mock setup
+vi.mock('react-router-dom', async (importOriginal) => {
+    const actual = await importOriginal();
+    return {
+      ...actual,
+      useNavigate: () => mockNavigate, // Ensure this is returning correctly
+    };
+  });
 
-    it("renders the images with correct alt text", () => {
-        render(
-            <BrowserRouter>
-                <LatestArrivals />
-            </BrowserRouter>
-        );
+  const renderComponent = () => {
+    return render(
+        <BrowserRouter>
+            <LatestArrivals />
+        </BrowserRouter>
+    );
+};
 
-        const images = screen.getAllByAltText("product image");
-        expect(images).toHaveLength(3);
-    });
 
-    it("navigates to /shop when 'Shop all' button is clicked", () => {
-        const mockNavigate = jest.fn();
-        jest.mock("react-router-dom", () => ({
-            ...jest.requireActual("react-router-dom"),
-            useNavigate: () => mockNavigate,
-        }));
+describe("Latest Arrivals Component", () => {
 
-        render(
-            <BrowserRouter>
-                <LatestArrivals />
-            </BrowserRouter>
-        );
-
-        const button = screen.getByText("Shop all");
-        userEvent.click(button);
-
-        expect(mockNavigate).toHaveBeenCalledWith("/shop");
-    });
+it('renders the category section with heading and description', () => {
+    renderComponent();
+    expect(screen.getByText('Our Latest Arrivals')).toBeInTheDocument();
 });
+
+it('renders the ShopButton component', () => {
+    renderComponent();
+    expect(screen.getByRole('button', { name: /ShopAll/i })).toBeInTheDocument();
+});
+
+
+  
+it("navigates to correct product page when an image is clicked", async () => {
+    render(
+      <BrowserRouter>
+        <LatestArrivals />
+      </BrowserRouter>
+    );
+
+    const images = screen.getAllByAltText((alt) => alt.includes("product image"));
+
+    userEvent.click(images[0]);
+    await waitFor(() => {
+        expect(mockNavigate).toHaveBeenCalledWith("/product/48");
+      });
+
+    userEvent.click(images[1]);
+    await waitFor(() => {
+        expect(mockNavigate).toHaveBeenCalledWith("/product/45");
+      });
+
+    userEvent.click(images[2]);
+    await waitFor(() => {
+        expect(mockNavigate).toHaveBeenCalledWith("/product/50");
+      });
+});
+})

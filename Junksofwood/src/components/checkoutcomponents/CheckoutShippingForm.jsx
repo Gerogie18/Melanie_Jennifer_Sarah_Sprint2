@@ -7,7 +7,7 @@ const CheckoutShippingForm = ({ onSubmit }) => {
     address1: '',
     address2: '',
     city: '',
-    provence: '',
+    province: '',
     zip: '',
     country: '',
     phone: '',
@@ -117,14 +117,15 @@ const CheckoutShippingForm = ({ onSubmit }) => {
             required
           />
         </div>
-        <button type="submit">Submit</button>
+        <button className='submit-button' type="submit">Submit</button>
       </form>
     </div>
   );
 };
 
+export default CheckoutShippingForm;
+
 CheckoutShippingForm.propTypes = {
   onSubmit: PropTypes.func.isRequired,
 };
 
-export default CheckoutShippingForm;

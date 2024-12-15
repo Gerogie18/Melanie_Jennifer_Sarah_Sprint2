@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import UpdateCart from './UpdateCart';
 import RemoveFromCart from './RemoveFromCart';
 
+
 const CartItem = memo(({ item }) => {
   const formatPrice = (price) => {
     return `$${price.toFixed(2)}`;
@@ -11,22 +12,29 @@ const CartItem = memo(({ item }) => {
   const formatPriceTotal = (price, quantity) => {
     return `$${(price * quantity).toFixed(2)}`;
   };
+  const imagePath = '/assets/thumbnails/';
+  const imageSuffix = '_thumbnail.jpg';
 
+  const getFileName = (filename) => {
+      return filename.substring(0, filename.lastIndexOf('.'));
+  };
   //console.log(`this is in the cart: ${JSON.stringify(item, null, 2)}`);
   
   
   return (
     <div key={item.id} className="cart-item">
       <img
-        src={`/assets/productthumbnails/${item.img.filepath}_thumbnail.jpg`}
+        src={imagePath +
+          getFileName(item.img.filepath) +
+          imageSuffix}
         alt={item.img.alt}
         title={item.img.title}
       />
       <h3>{item.name}</h3>
-      <p>{formatPrice(item.price)}</p>
+      <h4>{formatPrice(item.price)}</h4>
       <UpdateCart id={item.id} itemQuantity={item.quantity} />
       <RemoveFromCart id={item.id}/>
-      <p>{formatPriceTotal(item.price, item.quantity)}</p>
+      <h4>Total:{formatPriceTotal(item.price, item.quantity)}</h4>
       <hr />
     </div>
   );

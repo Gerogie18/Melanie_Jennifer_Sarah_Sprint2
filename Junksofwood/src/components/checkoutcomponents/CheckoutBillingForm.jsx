@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
-const CheckoutBillingForm = ({ onSubmit, shippingData }) => {
+const CheckoutBillingForm = ({ onSubmit }) => {
   const [formData, setFormData] = useState({
     fullName: '',
     address1: '',
@@ -21,20 +21,6 @@ const CheckoutBillingForm = ({ onSubmit, shippingData }) => {
     event.preventDefault();
     onSubmit(formData);
   };
-
-  //same as shipping address
-  const handleButtonClick = (event) => {
-    event.preventDefault();
-    const previousFormValuesArray = getPreviousFormValuesArray(); // assume this function returns the previous form values as an array
-    const previousFormValuesObject = previousFormValuesArray.reduce((acc, current) => ({ ...acc, [current.key]: current.value }), {});
-    Object.keys(previousFormValuesObject).forEach((key) => {
-      const formField = document.querySelector(`[name="${key}"]`); 
-      if (formField) {
-        formField.value = previousFormValuesObject[key]; 
-      }
-    });
-    onSubmit(); 
-  }
 
   return (
     <div>
@@ -109,7 +95,6 @@ const CheckoutBillingForm = ({ onSubmit, shippingData }) => {
             required
           />
         </div>
-        <button type="button" onClick={handleButtonClick}>Same as Shipping</button>
         <button type="submit">Submit</button>
       </form>
     </div>
@@ -118,7 +103,6 @@ const CheckoutBillingForm = ({ onSubmit, shippingData }) => {
 
 CheckoutBillingForm.propTypes = {
   onSubmit: PropTypes.func.isRequired,
-  shippingData: PropTypes.object.isRequired, 
 };
 
 export default CheckoutBillingForm;

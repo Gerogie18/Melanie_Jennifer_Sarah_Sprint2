@@ -20,7 +20,6 @@ import CategoryDetails from "./components/shopcomponents/CategoryDetails";
 import About from "./pages/About";
 import Checkout from "./pages/Checkout";
 import CheckoutFinal from "./components/checkoutcomponents/CheckoutFinal";
-import Test from "./pages/Test";
 import NotFound from "./pages/NotFound";
 
 
@@ -64,14 +63,13 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="shop/" element={<ShopLayout categories={categories} products={products}/>}>
-            <Route index element={<Shop />} />
+            {/* <Route index element={<Shop />} /> */}
           </Route>
           <Route path="category/:categoryID" element={<CategoryDetails products={products}/>} />
           <Route path="product/:productID" element={<ProductDetails />} />
           <Route path="about" element={<About />} />
           <Route path="checkout" element={<Checkout />} />
             <Route path="purchasecomplete" element={<CheckoutFinal/>} />
-          <Route path="test" element={<Test />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

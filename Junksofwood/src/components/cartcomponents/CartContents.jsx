@@ -28,9 +28,11 @@ const CartContents = () => {
 };
 
   return (
-    <div className='cart-contents'>
+    <div >
      <h2>Shopping Cart</h2>
-     {cartContents()}
+     <div className='cart-contents'>
+       {cartContents()}
+     </div>
      {cartLength > 0 && <span>{formatTotal}</span>}
         <ClearCart />
     </div>
