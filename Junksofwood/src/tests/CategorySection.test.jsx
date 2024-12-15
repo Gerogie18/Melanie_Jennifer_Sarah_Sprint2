@@ -28,7 +28,7 @@ describe('CategorySection', () => {
 
     it('renders the category section with heading and description', () => {
         renderComponent();
-        expect(screen.getByText('Categories')).toBeInTheDocument();
+        expect(screen.getByText('Our products')).toBeInTheDocument();
     });
 
     it('renders the ShopButton component', () => {
@@ -49,17 +49,17 @@ describe('CategorySection', () => {
             
             userEvent.click(images[0]);
             await waitFor(() => {
-                expect(mockNavigate).toHaveBeenCalledWith('/category/0');
+                expect(mockNavigate).toHaveBeenCalledWith('/shop?cat=0');
             });
 
             userEvent.click(images[1]);
             await waitFor(() => {
-                expect(mockNavigate).toHaveBeenCalledWith('/category/1');
+                expect(mockNavigate).toHaveBeenCalledWith('/shop?cat=1');
             });
             
             userEvent.click(images[2]);
             await waitFor(() => {
-                expect(mockNavigate).toHaveBeenCalledWith('/category/2');
+                expect(mockNavigate).toHaveBeenCalledWith('/shop?cat=2');
             });
             
         } else {
