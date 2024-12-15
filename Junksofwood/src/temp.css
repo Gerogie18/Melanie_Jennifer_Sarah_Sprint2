@@ -541,12 +541,8 @@ button:focus {
     44% - 1em
   ); /* Adjust the width to fit three images in a row, accounting for the gap*/
   margin-bottom: 1em; /* Add spacing between rows */
-  width: calc(
-    33.333% - 1em
-  ); /* Adjust this calculation if needed based on total padding/margins */
-  margin-bottom: 1em; /* Space between rows */
-  display: inline-block; /* Ensure items are displayed inline */
-  vertical-align: bottom; /* Align items to the top */
+  display: inline-block; 
+  vertical-align: bottom; 
 }
 
 .quantity-container {

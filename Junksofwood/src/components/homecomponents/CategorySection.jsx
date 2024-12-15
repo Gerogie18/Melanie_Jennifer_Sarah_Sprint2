@@ -16,7 +16,7 @@ function CategorySection() {
 
   
   const handleImageClick = (id) => {
-    navigate(`/category/${id}`);
+    navigate(`/shop?cat=${id}`);
     //navigate(`/product/${productId}`);
   };
 
@@ -42,7 +42,7 @@ function CategorySection() {
             alt={"product image"}
             onClick={() => handleImageClick("0")}
           ></img>
-          <p class='category_titles'>brooches</p>
+          <p className='category_titles'>brooches</p>
         </div>
         <div className="category_img">
           <img
@@ -52,7 +52,7 @@ function CategorySection() {
             alt={"product image"}
             onClick={() => handleImageClick("1")}
           ></img>
-          <p class='category_titles'>earrings</p>
+          <p className='category_titles'>earrings</p>
         </div>
         <div className="category_img">
           <img
@@ -62,7 +62,7 @@ function CategorySection() {
             alt={"product image"}
             onClick={() => handleImageClick("2")}
           ></img>
-          <p class='category_titles'>keychains</p>
+          <p className='category_titles'>keychains</p>
         </div>
       </div>
     </section>

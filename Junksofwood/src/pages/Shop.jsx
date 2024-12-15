@@ -11,7 +11,7 @@ const Shop = ({filteredProducts}) => {
 
   // Constants (state, function, etc) for handle products per page
   const [currentImages, setCurrentImages] = useState(1);
-  const productsPerPage = 9;
+  const productsPerPage = 8;
   const indexOfLastProduct = currentImages * productsPerPage;
   const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
   const currentProducts = filteredProducts.slice(indexOfFirstProduct, indexOfLastProduct);
