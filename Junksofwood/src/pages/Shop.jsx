@@ -65,7 +65,7 @@ const Shop = ({filteredProducts}) => {
 
 
   return (
-    <div>
+    <div className='shop-page'>
       {currentProducts.map((product) => (
         <ProductCard 
           key={product.id} 
