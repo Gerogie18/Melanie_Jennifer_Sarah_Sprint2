@@ -19,7 +19,7 @@ const Checkout = () => {
 
   const handleShippingSubmit = (formData) => {
     setShippingData(formData);
-    console.log(formData);
+    console.log('Shipping Data:', formData); // For debugging
     handleNext();
   };
 

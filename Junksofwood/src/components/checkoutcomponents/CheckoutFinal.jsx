@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
-import { CartContext } from '../../utils/CartProvider';
+import { CartContext } from '../../utils/CartProvider.jsx';
 import PropTypes from 'prop-types';
-import FinalizeCart from '../cartcomponents/FinalizeCart';
+import FinalizeCart from '../cartcomponents/FinalizeCart.jsx';
 
 const CheckoutFinal = ({ shippingData }) => {
   const { cart, cartTotal } = useContext(CartContext);
@@ -13,8 +13,8 @@ const CheckoutFinal = ({ shippingData }) => {
 
   const tableLineStyle = { 
     borderTop: '2px solid black',
-  }
-  
+  };
+
   const cartFinal = (
     <table>
       <thead>

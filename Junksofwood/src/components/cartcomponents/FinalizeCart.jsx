@@ -1,5 +1,4 @@
-
-import React, { useState, useContext } from 'react';
+import { useState, useContext } from 'react';
 import { CartContext } from '../../utils/CartProvider.jsx';
 import PropTypes from 'prop-types';
 import { MdOutlineShoppingCartCheckout } from "react-icons/md";
