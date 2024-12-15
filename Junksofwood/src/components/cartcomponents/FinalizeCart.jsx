@@ -4,11 +4,19 @@ import PropTypes from 'prop-types';
 import { MdOutlineShoppingCartCheckout } from "react-icons/md";
 
 const FinalizeCart = ({ shippingData }) => {
-  const { finalizeCart } = useContext(CartContext);
+  const { finalizeCart, cartLength } = useContext(CartContext);
   const orderNumber = Math.floor(Math.random() * 10000) + 1;
   const date = new Date().toLocaleDateString();
   const [orderComplete, setOrderComplete] = useState(false);
-
+  if (cartLength === 0) {
+    return (
+      <div>
+        <h2>Error</h2>
+        <p>Your cart is empty.</p>
+      </div>
+    );
+  }
+  
   if (!shippingData || Object.keys(shippingData).length === 0) {
     return (
       <div>
@@ -17,6 +25,7 @@ const FinalizeCart = ({ shippingData }) => {
       </div>
     );
   }
+  
 
   const handleClick = () => {
     try {

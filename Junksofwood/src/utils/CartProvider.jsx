@@ -186,21 +186,65 @@ const CartProvider = ({ children }) => {
     }
   };
 
-  const finalizeCart = async ( { orderNumber, date, shippingData } ) => {
+  const updateStockQuantity = async (cart) => {
     try {
+      // Loop through each item in the cart
+      for (const item of cart) {
+        // Construct the API endpoint URL
+        const url = `http://localhost:5005/stock/${item.id}`;
+  
+        // Set the request headers
+        const headers = {
+          'Content-Type': 'application/json'
+        };
+  
+        // Calculate the new stock quantity
+        const newQuantity = item.stockQTY - item.quantity;
+  
+        // Set the request body
+        const body = JSON.stringify({ stockQTY: newQuantity });
+  
+        // Send the PATCH request
+        const response = await fetch(url, {
+          method: 'PATCH',
+          headers,
+          body
+        });
+  
+        // Check if the response was successful
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+      }
+    } catch (error) {
+      console.error('Error updating stock quantity:', error);
+    }
+  };
+  
+  const finalizeCart = async ({ orderNumber, date, shippingData }) => {
+    try {
+      // Update the stock quantity
+      await updateStockQuantity(cart);
+  
+      // Create a new order
       const response = await fetch("http://localhost:5005/orders", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ orderNumber, date, cartTotal, cart, shippingData}),
+        body: JSON.stringify({ orderNumber, date, cartTotal, cart, shippingData }),
       });
-
+  
+      // Check if the response was successful
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
+  
+      // Clear the cart
       clearCart();
+  
+      // Set submitCart to true
       setSubmitCart(true);
+      new Audio(clearCartSound).play();
       console.log("Order finalized successfully");
-      
     } catch (error) {
       console.error("Error finalizing order:", error);
     }

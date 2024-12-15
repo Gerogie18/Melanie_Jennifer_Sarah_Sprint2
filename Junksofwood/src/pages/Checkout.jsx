@@ -97,8 +97,6 @@ const Checkout = () => {
           </button>
         </div>
       </div>
-      
-      {submitCart && <CheckoutLoading />}
     </div>
   );
 };
