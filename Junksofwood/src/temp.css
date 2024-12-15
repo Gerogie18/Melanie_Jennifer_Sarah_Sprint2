@@ -92,7 +92,6 @@ nav {
   background-color: var(--color-background);
   color: #0099a5;
   font-family: "Root Beer", Arial, Helvetica, sans-serif;
-  font-weight: bold;
   border-bottom: 1px solid var(--color-border);
   /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
 }
@@ -191,6 +190,12 @@ img {
   border-radius: 5px; /* Optional: rounds the corners of the image */
 }
 
+.arrivals_img img {
+  border-radius: 0;
+  object-fit: cover;
+  height: 300px;
+}
+
 .arrivals_img_container {
   display: flex;
   width: 80vw;
@@ -199,6 +204,7 @@ img {
   flex-wrap: wrap;
   gap: 20px; /* Adjust the gap between images sas needed */
   padding: 20px;
+  padding-bottom: 20px;
   border: 1px solid #ccc; /* Adds a border around the container */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds shadow for better visibility */
   text-align: center; /* Centers the image within the container */
@@ -217,14 +223,30 @@ img {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds shadow for better visibility */
   text-align: center; /* Centers the image within the container */
   border-radius: 5px; /* Optional: rounds the corners of the image */
+  margin-bottom: 30px;
 }
 
 .category_img {
   width: calc(
     33.333% - 20px
   ); /* Adjust the width to fit three images in a row, accounting for the gap */
-  height: auto; /* Maintains the aspect ratio */
+  height: 335px; /* Maintains the aspect ratio */
+  object-fit: cover;
   border-radius: 5px; /* Optional: rounds the corners of the image */
+}
+
+.category_img img {
+  border-radius: 0;
+  object-fit: cover;
+  height: 300px;
+}
+
+.category_titles {
+  font-size: 16px;
+  font-family: "root beer";
+  letter-spacing: 0.125cap;
+  color: var(--color-primary);
+  padding: 10px;
 }
 
 input[type="number"]::-webkit-inner-spin-button,
@@ -237,12 +259,13 @@ input[type="number"]::-webkit-outer-spin-button {
 footer {
   margin-top: 40px;
   width: 100%;
+  height: 40px;
   background-color: var(--color-primary);
   font-family: "root beer";
   letter-spacing: 0.125cap;
   color: white;
   text-align: center;
-  border-top: 1px solid var(--color-border);
+  /* border-top: 1px solid var(--color-border); */
   /* box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); */
 }
 
@@ -279,7 +302,6 @@ button {
   letter-spacing: 0.125cap;
   transition: background-color 0.2s ease-in-out;
 }
-
 button:hover {
   background-color: var(--color-hover);
   color: white;
@@ -384,12 +406,12 @@ button:focus {
   border: none;
   cursor: pointer;
   margin-left: 10px;
-  margin-right:10px;
+  margin-right: 10px;
   font-size: 1.5rem;
   background-color: var(--color-primary);
   color: white;
   transition: background-color 0.2s ease-in-out;
-};
+}
 .slide-div {
   width: 100%;
   height: fit-content;
@@ -481,9 +503,9 @@ button:focus {
   display: flex;
   flex-direction: row; /* Arrange children in a row */
   width: 100vw;
-  min-height: 100vh; /* Ensure it takes the full height of the viewport */
-  /* border-style: double; */
-  border-color: #0099a5;
+  min-height: 75vh; /* Ensure it takes the full height of the viewport */
+  /* border-style: double;
+  border-color: #0099a5; */
 }
 
 /* Shop Sidebar */
@@ -493,7 +515,7 @@ button:focus {
     --color-background
   ); /* Optional: Add background color */
   padding: 1em; /* Add padding for spacing */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for emphasis */
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  Optional: Add shadow for emphasis */
   border-right: 1px solid var(--color-border); /* Optional: Add border to separate from content */
 }
 
@@ -508,15 +530,19 @@ button:focus {
   flex-direction: row; /* Arrange children in a row */
   flex-wrap: wrap;
   justify-content: space-between;
-  
 }
 
 .shop-contents .product-container {
+  display: grid;
+  float: left;
+  margin: 1em;
+  width: calc(
+    44% - 1em
+  ); /* Adjust the width to fit three images in a row, accounting for the gap*/
+  margin-bottom: 1em; /* Add spacing between rows */
   width: calc(
     33.333% - 1em
-  ); /* Adjust the width to fit three images in a row, accounting for the gap */
-  margin-bottom: 1em; /* Add spacing between rows */
-  width: calc(33.333% - 1em); /* Adjust this calculation if needed based on total padding/margins */
+  ); /* Adjust this calculation if needed based on total padding/margins */
   margin-bottom: 1em; /* Space between rows */
   display: inline-block; /* Ensure items are displayed inline */
   vertical-align: bottom; /* Align items to the top */
@@ -568,17 +594,12 @@ button:focus {
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
   color: var(--color-font);
-  padding: 20px;
-  margin-left: 160px;
-  margin-right: 160px;
+  padding: 60px;
+  margin-left: 260px;
+  margin-right: 260px;
   margin-bottom: 10px;
   text-align: justify;
 }
-
-/* .product_detail {
-  display: flex;
-  position: relative;
-} */
 
 .SearchForm {
   display: flex;

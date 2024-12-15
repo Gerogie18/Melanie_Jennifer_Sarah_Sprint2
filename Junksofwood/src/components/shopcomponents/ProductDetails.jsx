@@ -87,8 +87,9 @@ function ProductDetails() {
   return (
     <div>
       <div className="product-detail">
+        <br />
         <h2>{product.name}</h2>
-        
+        <br />
         {product.images && (
           <div className="img-container">
             {product.images.map((image, index) => (
@@ -110,7 +111,7 @@ function ProductDetails() {
         <p>Price: ${product.price}</p>
         </div>
         <p>
-          {stockQty === 0 ? 'Sold out' : stockQty < 10 ? 'Stock low' : `Remaining: ${stockQty}`}
+          {stockQty === 0 ? 'Sold out' : stockQty < 10 ? 'Stock low' : `${stockQty} in stock`}
         </p>
         <CartDiv key={cartChanged} isLoading={loading} productInCart={cartProduct} product={product} stockQty={stockQty}/>
       </div>
