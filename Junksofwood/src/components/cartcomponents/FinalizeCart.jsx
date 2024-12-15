@@ -16,7 +16,7 @@ const FinalizeCart = ({ shippingData }) => {
       </div>
     );
   }
-  
+
   if (!shippingData || Object.keys(shippingData).length === 0) {
     return (
       <div>
@@ -25,7 +25,6 @@ const FinalizeCart = ({ shippingData }) => {
       </div>
     );
   }
-  
 
   const handleClick = () => {
     try {
