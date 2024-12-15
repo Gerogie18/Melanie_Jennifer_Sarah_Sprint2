@@ -552,3 +552,7 @@ button:focus {
   padding: 0.1em;
 }
 
+form input {
+  background-color: var(--color-background);
+  color: var(--text-color);
+}
