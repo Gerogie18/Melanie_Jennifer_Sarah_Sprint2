@@ -103,7 +103,7 @@ function ProductDetails() {
             ))}
           </div>
         )}
-      <div class='product_desc'>
+      <div className='product_desc'>
         <p id="para">
           {formatDescription(product.description)}
           </p>
