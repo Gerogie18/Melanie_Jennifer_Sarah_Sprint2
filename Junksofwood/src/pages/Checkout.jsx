@@ -2,7 +2,6 @@ import React, { useContext, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import CartContents from "../components/cartcomponents/CartContents.jsx";
 import CheckoutShippingForm from "../components/checkoutcomponents/CheckoutShippingForm.jsx";
-import CheckoutBillingForm from "../components/checkoutcomponents/CheckoutBillingForm.jsx";
 import CheckoutFinal from "../components/checkoutcomponents/CheckoutFinal.jsx";
 import { CartContext } from "../utils/CartProvider.jsx";
 import { motion, AnimatePresence } from 'framer-motion';
@@ -14,30 +13,20 @@ const Checkout = () => {
 
   const [current, setCurrent] = useState(0);
   const [direction, setDirection] = useState(0); // Track navigation direction
-  const [leftButtonEnabled, setLeftButtonEnabled] = useState(true);
-  const [rightButtonEnabled, setRightButtonEnabled] = useState(true); 
 
-  // State to store address and billing information
+  // State to store shipping information
   const [shippingData, setShippingData] = useState({});
-  const [billingData, setBillingData] = useState({});
 
   const handleShippingSubmit = (formData) => {
     setShippingData(formData);
-    setRightButtonEnabled(true);
-    handleNext();
-  };
-
-  const handleBillingSubmit = (formData) => {
-    setBillingData(formData);
-    setRightButtonEnabled(true);
+    console.log(formData);
     handleNext();
   };
 
   const slides = [
-    { id: 0, content: <CartContents /> }, // CartContents as first slide
+    { id: 0, content: <CartContents /> },
     { id: 1, content: <CheckoutShippingForm onSubmit={handleShippingSubmit} /> },
-    { id: 2, content: <CheckoutBillingForm onSubmit={handleBillingSubmit} shippingData={shippingData} /> },
-    { id: 3, content: <CheckoutFinal shippingData={shippingData} billingData={billingData} /> },
+    { id: 2, content: <CheckoutFinal shippingData={shippingData} /> },
   ];
 
   useEffect(() => {
@@ -47,16 +36,16 @@ const Checkout = () => {
   }, [submitCart, navigate]);
 
   const handleNext = () => {
-    if (rightButtonEnabled) {
+    if (current < slides.length - 1) {
       setDirection(1); // Moving forward
-      setCurrent((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
+      setCurrent((prev) => prev + 1);
     }
   };
 
   const handleBack = () => {
-    if (leftButtonEnabled) {
+    if (current > 0) {
       setDirection(-1); // Moving backward
-      setCurrent((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
+      setCurrent((prev) => prev - 1);
     }
   };
 
@@ -85,7 +74,7 @@ const Checkout = () => {
 
   return (
     <div className='slide-div'>
-      <div >
+      <div>
         <AnimatePresence initial={false} custom={direction}>
           <motion.div
             key={slides[current].id}
@@ -100,10 +89,10 @@ const Checkout = () => {
         </AnimatePresence>
         
         <div className='slide-buttons'>
-          <button onClick={handleBack} disabled={!leftButtonEnabled}>
+          <button onClick={handleBack}>
             <FaAngleLeft />
           </button>
-          <button onClick={handleNext} disabled={!rightButtonEnabled}>
+          <button onClick={handleNext}>
             <FaAngleRight />
           </button>
         </div>

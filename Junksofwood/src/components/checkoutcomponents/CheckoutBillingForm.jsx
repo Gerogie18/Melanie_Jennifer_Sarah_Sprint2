@@ -103,7 +103,6 @@ const CheckoutBillingForm = ({ onSubmit }) => {
 
 CheckoutBillingForm.propTypes = {
   onSubmit: PropTypes.func.isRequired,
-  shippingData: PropTypes.object.isRequired, 
 };
 
 export default CheckoutBillingForm;

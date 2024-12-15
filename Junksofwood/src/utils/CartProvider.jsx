@@ -18,6 +18,8 @@ const CartProvider = ({ children }) => {
   const [cartIcon, setCartIcon] = useState(cartisEmpty ? <BsCart /> : <BsCartFill />)
   const cartLength = cart.length;
 
+  const [cartTotal, setCartTotal] = useState(0);
+
   const [submitCart, setSubmitCart] = useState(false);
   
   useEffect(() => {
@@ -48,20 +50,13 @@ const CartProvider = ({ children }) => {
       //needed for updates to CartDiv
         setCartChanged(true);
         setPreviousCart(cart);
+      //needed for cartTotal
+        const totalPrice = cart.reduce((acc, item) => acc + item.price * item.quantity, 0);
+        setCartTotal(totalPrice);
       } else {
         setCartChanged(false);
       }
     }, [cart, previousCart]);
-
-  
-    const cartTotal = () => {
-      let total = 0;
-      for (let i = 0; i < cart.length; i++) {
-        total += cart[i].price * cart[i].quantity;
-      }
-      return total;
-      console.log('Total:', total);
-    }
 
   // Fetch the current cart from the server
   const fetchCart = async () => {
@@ -191,12 +186,12 @@ const CartProvider = ({ children }) => {
     }
   };
 
-  const finalizeCart = async ( { orderNumber, date, shippingData, billingData } ) => {
+  const finalizeCart = async ( { orderNumber, date, shippingData } ) => {
     try {
       const response = await fetch("http://localhost:5005/order", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ orderNumber, date, cartTotal, cart, shippingData, billingData}),
+        body: JSON.stringify({ orderNumber, date, cartTotal, cart, shippingData}),
       });
 
       if (!response.ok) {
