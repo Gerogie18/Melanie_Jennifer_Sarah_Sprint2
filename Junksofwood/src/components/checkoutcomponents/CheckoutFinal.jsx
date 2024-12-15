@@ -1,4 +1,4 @@
-import { useContext } from 'react';
+import React, { useContext } from 'react';
 import { CartContext } from '../../utils/CartProvider';
 import PropTypes from 'prop-types';
 import FinalizeCart from '../cartcomponents/FinalizeCart';
@@ -6,14 +6,9 @@ import FinalizeCart from '../cartcomponents/FinalizeCart';
 const CheckoutFinal = ({ shippingData }) => {
   const { cart, cartTotal } = useContext(CartContext);
 
-  const formatTotal = (cartTotal) => {
-    return `$${cartTotal.toFixed(2)}`;
-  };
-
-  const totalRowStyle = {
-    
-    borderBottom: '2px solid black',
-    fontWeight: 'bold', // optional
+  const formatTotal = (total) => {
+    const amount = Number(total) || 0;
+    return `$${amount.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,')}`;
   };
 
   const tableLineStyle = { 
@@ -39,16 +34,16 @@ const CheckoutFinal = ({ shippingData }) => {
             <td>${(item.price * item.quantity).toFixed(2)}</td>
           </tr>
         ))}
-        <tr style={totalRowStyle}>
+        <tr>
           <td style={tableLineStyle} colSpan="3">Cart Total</td>
-          <td style={tableLineStyle}> {formatTotal(cartTotal)}</td>
+          <td style={tableLineStyle}>{formatTotal(cartTotal)}</td>
         </tr>
       </tbody>
     </table>
   );
 
   return (
-    <div >
+    <div>
       {cartFinal}
       <h2>Shipping Data</h2>
       <div>
@@ -58,14 +53,15 @@ const CheckoutFinal = ({ shippingData }) => {
           </p>
         ))}
       </div>
-      <FinalizeCart shippingData={shippingData}/>
-    </div> // Added closing tag here
+      <FinalizeCart shippingData={shippingData} />
+    </div>
   );
 };
 
 CheckoutFinal.propTypes = {
   shippingData: PropTypes.object.isRequired,
-  //billingData: PropTypes.object.isRequired,
+  // Uncomment if billingData is used later
+  // billingData: PropTypes.object.isRequired,
 };
 
 export default CheckoutFinal;
