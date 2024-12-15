@@ -12,14 +12,21 @@ const CartItem = memo(({ item }) => {
   const formatPriceTotal = (price, quantity) => {
     return `$${(price * quantity).toFixed(2)}`;
   };
+  const imagePath = '/assets/thumbnails/';
+  const imageSuffix = '_thumbnail.jpg';
 
+  const getFileName = (filename) => {
+      return filename.substring(0, filename.lastIndexOf('.'));
+  };
   //console.log(`this is in the cart: ${JSON.stringify(item, null, 2)}`);
   
   
   return (
     <div key={item.id} className="cart-item">
       <img
-        src={`/assets/productimages/thumbnails/${item.img.filepath}_thumbnail.jpg`}
+        src={imagePath +
+          getFileName(item.img.filepath) +
+          imageSuffix}
         alt={item.img.alt}
         title={item.img.title}
       />
