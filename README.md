@@ -1,5 +1,5 @@
-Junks of Wood ecommerce website
-Final Sprint Semester 2: Programming Concepts in JS
+<b>Junks of Wood ecommerce website</b>
+<br>Final Sprint Semester 2: Programming Concepts in JS
 
 Contributions by:
 <br>Jenn - cart app, json database
