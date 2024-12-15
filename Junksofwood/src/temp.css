@@ -180,7 +180,7 @@ main {
 img {
   width: 100%; /* Makes the image fill the container */
   height: auto; /* Maintains the aspect ratio */
-  border-radius: 10px; /* Optional: rounds the corners of the image */
+  border-radius: 5px; /* Optional: rounds the corners of the image */
 }
 
 .arrivals_img {
@@ -188,7 +188,7 @@ img {
     33.333% - 20px
   ); /* Adjust the width to fit three images in a row, accounting for the gap */
   height: auto; /* Maintains the aspect ratio */
-  border-radius: 10px; /* Optional: rounds the corners of the image */
+  border-radius: 5px; /* Optional: rounds the corners of the image */
 }
 
 .arrivals_img_container {
@@ -197,12 +197,12 @@ img {
   justify-content: space-between;
   margin: auto;
   flex-wrap: wrap;
-  gap: 20px; /* Adjust the gap between images as needed */
+  gap: 20px; /* Adjust the gap between images sas needed */
   padding: 20px;
   border: 1px solid #ccc; /* Adds a border around the container */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds shadow for better visibility */
   text-align: center; /* Centers the image within the container */
-  border-radius: 10px; /* Optional: rounds the corners of the image */
+  border-radius: 5px; /* Optional: rounds the corners of the image */
 }
 
 .category_img_container {
@@ -216,7 +216,7 @@ img {
   border: 1px solid #ccc; /* Adds a border around the container */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds shadow for better visibility */
   text-align: center; /* Centers the image within the container */
-  border-radius: 10px; /* Optional: rounds the corners of the image */
+  border-radius: 5px; /* Optional: rounds the corners of the image */
 }
 
 .category_img {
@@ -224,7 +224,7 @@ img {
     33.333% - 20px
   ); /* Adjust the width to fit three images in a row, accounting for the gap */
   height: auto; /* Maintains the aspect ratio */
-  border-radius: 10px; /* Optional: rounds the corners of the image */
+  border-radius: 5px; /* Optional: rounds the corners of the image */
 }
 
 input[type="number"]::-webkit-inner-spin-button,
@@ -268,18 +268,21 @@ footer {
 }
 
 button {
+  margin: 10px;
   font-weight: bold;
   padding: 10px 20px;
   border: none;
   cursor: pointer;
   background-color: var(--color-primary);
-  color: var(--color-font);
+  color: white;
+  font-family: "root beer";
+  letter-spacing: 0.125cap;
   transition: background-color 0.2s ease-in-out;
 }
 
 button:hover {
   background-color: var(--color-hover);
-  color: var(--color-font);
+  color: white;
   transition: background-color 0.2s ease-in-out;
 }
 button:focus {
@@ -357,8 +360,8 @@ button:focus {
   border-radius: 10px;
 }
 .slide-container {
-  padding:5%;
-  width:80%;
+  padding: 5%;
+  width: 80%;
   align-items: space-between;
 }
 
@@ -431,7 +434,7 @@ button:focus {
 /* Shop Container */
 .shop-container {
   display: flex;
-  flex-direction: row; /* Arrange children in a row */
+  flex-direction: right; /* Arrange children in a row */
   width: 100%;
   min-height: 100vh; /* Ensure it takes the full height of the viewport */
   border-style: double;
@@ -441,7 +444,9 @@ button:focus {
 /* Shop Sidebar */
 .shop-sidebar {
   width: 25%; /* Adjust the width as needed */
-  background-color: var(--color-background); /* Optional: Add background color */
+  background-color: var(
+    --color-background
+  ); /* Optional: Add background color */
   padding: 1em; /* Add padding for spacing */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for emphasis */
   border-right: 1px solid var(--color-border); /* Optional: Add border to separate from content */
@@ -451,23 +456,27 @@ button:focus {
 .shop-contents {
   width: 75%; /* Adjust the width as needed */
   padding: 1em; /* Add padding for spacing */
-  background-color: var(--color-background); /* Optional: Add background color */
-  display: flex; 
-  flex-direction: row; /* Arrange children in a row */
+  background-color: var(
+    --color-background
+  ); /* Optional: Add background color */
+  display: flex;
+  flex-direction: right; /* Arrange children in a row */
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .shop-contents .product-container {
-width: calc(33.333% - 1em); /* Adjust the width to fit three images in a row, accounting for the gap */
-margin-bottom: 1em; /* Add spacing between rows */
+  width: calc(
+    33.333% - 1em
+  ); /* Adjust the width to fit three images in a row, accounting for the gap */
+  margin-bottom: 1em; /* Add spacing between rows */
 }
 
 .quantity-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width:180px;
+  width: 180px;
   height: 50px;
   align-items: center;
   margin: 5px;
@@ -485,9 +494,9 @@ margin-bottom: 1em; /* Add spacing between rows */
 .quantity-container button {
   width: 50px;
   height: 50px;
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 5rem;
   border: 1px solid #ccc;
   border-radius: 0.5rem;
@@ -503,4 +512,15 @@ margin-bottom: 1em; /* Add spacing between rows */
 .quantity-container button:active {
   background-color: var(--color-primary);
   transition: background-color 0.2s ease-in-out;
+}
+
+.product_desc {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--color-font);
+  padding: 20px;
+  margin-left: 160px;
+  margin-right: 160px;
+  margin-bottom: 10px;
+  text-align: justify;
 }

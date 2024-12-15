@@ -50,14 +50,13 @@ function ShopLayout({ categories, products }) {
       </div>
       <div id="shop-container" className="shop-container">
         <div id="shop-sidebar" className="shop-sidebar">
-          <h2>Filter</h2>
+          <h2>Filter by</h2>
           <div id="category-options">
-            <h3>Categories</h3>
             {categories.map(category => (
               <CategoryForm key={category.id} categoryId={category.id} label={category.title} allCategoryIDs={allCategoryIDs}/>
             ))}
           </div>
-          <div>
+          <div id='SearchForm'>
             <SearchForm />
           </div>
         </div>
